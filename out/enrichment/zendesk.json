@@ -1,0 +1,43 @@
+{
+  "slug": "zendesk",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "zendesk",
+    "tools_count": 452.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "zendesk"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.fruggr/zendesk-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.fruggr/zendesk-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.fruggr/zendesk-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.fruggr/zendesk-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.fruggr/zendesk-mcp-server",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zendesk"
+  },
+  "homepage_alive": true
+}

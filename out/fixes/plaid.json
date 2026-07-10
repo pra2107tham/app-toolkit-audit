@@ -1,0 +1,26 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "basic",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://plaid.com/docs/authentication",
+      "confidence": "high",
+      "note": "Plaid issues a client_id and secret (used in request body) and supports HTTP Basic auth. Plaid also issues per-Item access_tokens for user-specific requests; OAuth is used at the institution connection level (via Link) but not as the API auth scheme. 'api_key' is used here to represent client_id/secret, 'basic' for HTTP Basic, 'token' for access_token, and 'other' to reflect institution-level OAuth flows."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "basic",
+        "token"
+      ],
+      "evidence_url": "https://plaid.com/docs/api/",
+      "confidence": "high",
+      "note": "Plaid API requests require a client_id and secret (keys from the Plaid Dashboard). The docs state these are typically sent in the request body, or can be sent via HTTP Basic authentication (in headers). Many endpoints also use an access_token for item-specific access; represented here as 'token'."
+    },
+    "verdict": "dead_url"
+  }
+}

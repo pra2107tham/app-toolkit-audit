@@ -1,0 +1,29 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "basic",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication/",
+      "confidence": "high",
+      "note": "Jira Cloud supports OAuth 2.0 (3LO), OAuth 2.0 client credentials, API tokens (used with basic auth as email:APItoken), and references legacy OAuth 1.0a; documentation page lists these authentication methods."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "basic",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication/",
+      "confidence": "low",
+      "note": "Unable to verify the authentication methods from the official Jira Cloud authentication documentation because the page is not accessible from the current research environment (HTTP 403 from CloudFront geo-block). The auth_methods list is therefore left unchanged from the existing record, pending access to the primary source content."
+    },
+    "verdict": "dead_url"
+  }
+}

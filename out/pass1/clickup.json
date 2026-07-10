@@ -1,0 +1,43 @@
+{
+  "slug": "clickup",
+  "name": "ClickUp",
+  "category": "Productivity and Project Management",
+  "description": "Task and project management platform with workspaces, tasks, docs, goals, time tracking and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developer.clickup.com/docs/authentication",
+    "confidence": "high",
+    "note": "Official docs describe OAuth 2.0 for third-party apps and a Personal API Token (used as a Bearer token in the Authorization header)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.clickup.com/hc/en-us/articles/360001131449-How-to-get-your-API-Token",
+    "confidence": "medium",
+    "note": "The Help Center documents how a user can generate a personal API token from Profile → Apps (self-serve). The docs do not explicitly state a paid-plan requirement; pricing page does not indicate API is restricted to paid plans, so credential creation appears self-serve. However there is no single page explicitly stating 'free plan users may create API tokens', hence medium confidence."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.clickup.com/",
+    "confidence": "high",
+    "note": "Official developer docs describe a RESTful API covering Spaces, Folders, Lists, Tasks, Comments, Users, Teams, Goals, Time Tracking and more (broad coverage)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs are available and users can generate personal API tokens via their profile for immediate testing. OAuth app registration is available in the developer console for multi-user apps."
+  },
+  "research_meta": {
+    "queries": [
+      "ClickUp API documentation site:clickup.com api ClickUp API docs",
+      "ClickUp personal API token generate site:developer.clickup.com \"personal token\" or \"personal_api_token\" \"How to get\" \"API token\"",
+      "site:help.clickup.com \"How to get your API Token\" ClickUp",
+      "ClickUp API pricing site:clickup.com \"API\" \"pricing\"",
+      "ClickUp API partnership contact sales site:clickup.com OR site:developer.clickup.com OR site:help.clickup.com"
+    ],
+    "insufficient_public_docs": false
+  }
+}

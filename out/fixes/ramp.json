@@ -1,0 +1,68 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token",
+        "basic"
+      ],
+      "evidence_url": "https://docs.ramp.com/developer-api/v1/authentication",
+      "confidence": "high",
+      "note": "Docs state Ramp supports OAuth 2.0, issues access tokens (used as Bearer tokens) and that client ID/secret authenticate to the token endpoint typically via HTTP Basic Auth."
+    },
+    "final_value": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.ramp.com/developer-api/v1/authentication",
+      "confidence": "low",
+      "note": "Unable to verify authentication methods from the fetched official documentation page because the retrieved content did not include the actual authentication details (page content appeared non-substantive/empty in extraction). Therefore, only the prior claim cannot be confirmed from primary-source text here."
+    },
+    "verdict": "unsupported"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "confidence": "high",
+      "note": "Getting started guide describes creating an application in the developer dashboard and receiving a client ID and secret; sandbox access can be requested from the dashboard. No docs page indicates human approval or sales/partnership requirement to obtain developer credentials."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "confidence": "low",
+      "note": "Unable to confirm how developer credentials are obtained from the fetched Getting Started page because the extracted content did not contain the relevant instructions (content not present in fetch). Credential access method cannot be validated from the fetched primary source."
+    },
+    "verdict": "unsupported"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://docs.ramp.com/developer-api/v1/reference",
+      "confidence": "high",
+      "note": "API reference describes a RESTful v1 surface covering Transactions, Cards, Users, Bills, Reimbursements, Custom Records, Webhooks, Applications and provides an OpenAPI spec."
+    },
+    "final_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://docs.ramp.com/developer-api/v1/reference",
+      "confidence": "low",
+      "note": "Could not verify the API surface from the fetched API Reference page because the extracted content did not include the reference material (content not present in fetch). The REST/breadth assessment is therefore not confirmable from fetched primary-source text."
+    },
+    "verdict": "unsupported"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs describe OAuth flows, how to obtain client credentials via the dashboard, and a REST API reference with OpenAPI; sandbox environment is available for testing. Therefore one can obtain credentials and begin development without partner gating."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "insufficient_docs",
+      "note": "Buildability cannot be confirmed because the fetched official docs pages for authentication, getting started/credential acquisition, and reference did not yield the substantive content needed to validate auth method(s), credential access, or API surface."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Can these 100 apps become agent toolkits? — an agent-run feasibility audit</title>
+<meta name="description" content="An automated multi-agent audit of 100 SaaS apps: auth methods, credential gating, API surface, and agent-toolkit buildability — with verified accuracy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2316233B'/%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='%2333E58C' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F4F7; --card:#FFFFFF; --ink:#16233B; --ink-soft:#5A6A85; --line:#D6DDE8;
+  --ok:#177245; --ok-bg:#E3F1E9; --ok2:#33756B; --ok2-bg:#E2EFEC;
+  --warn:#9A6B1F; --warn-bg:#F5EBD8; --bad:#B3372E; --bad-bg:#F7E4E2;
+  --mut:#7A879B; --mut-bg:#EAEDF2; --link:#23479E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:'Archivo',sans-serif;font-size:16px;line-height:1.55}
+.mono{font-family:'IBM Plex Mono',monospace}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+h2{font-size:15px;font-weight:700;font-stretch:115%;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.sec-note{color:var(--ink-soft);font-size:14px;max-width:640px;margin-bottom:28px}
+.prov{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--mut);margin-top:6px}
+/* ---------- hero ---------- */
+header.hero{padding:64px 0 48px}
+.hero .eyebrow{margin-bottom:20px}
+h1{font-size:clamp(28px,4.6vw,52px);line-height:1.08;font-weight:750;font-stretch:118%;letter-spacing:-.015em;max-width:19ch}
+h1 .ok-txt{color:var(--ok)}
+.hero-sub{margin-top:18px;max-width:62ch;color:var(--ink-soft);font-size:17px}
+.ledger{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border:1px solid var(--ink);background:var(--card)}
+.ledger>div{padding:18px 20px 14px;border-right:1px solid var(--line)}
+.ledger>div:last-child{border-right:none}
+.ledger .big{font-size:34px;font-weight:750;font-stretch:112%;letter-spacing:-.02em;line-height:1}
+.ledger .big small{font-size:16px;font-weight:600;color:var(--ink-soft)}
+.ledger .lab{font-size:13px;color:var(--ink-soft);margin-top:6px}
+/* ---------- stamps & chips ---------- */
+.stamp{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.04em;padding:2px 8px;border-radius:3px;white-space:nowrap}
+.stamp.ok{color:var(--ok);background:var(--ok-bg)} .stamp.ok2{color:var(--ok2);background:var(--ok2-bg)}
+.stamp.warn{color:var(--warn);background:var(--warn-bg)} .stamp.bad{color:var(--bad);background:var(--bad-bg)}
+.stamp.mut{color:var(--mut);background:var(--mut-bg)}
+.chip{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:1px 7px;border:1px solid var(--line);border-radius:3px;margin:1px 2px 1px 0;background:var(--card)}
+/* ---------- patterns ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);padding:22px 24px}
+.panel h3{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.bar-row{display:grid;grid-template-columns:150px 1fr 64px;align-items:center;gap:12px;margin-bottom:9px}
+.bar-label{font-size:13px;color:var(--ink)}
+.bar-track{height:14px;background:var(--mut-bg);position:relative}
+.bar-fill{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+.bar-fill.ok{background:var(--ok)} .bar-fill.ok2{background:var(--ok2)} .bar-fill.warn{background:var(--warn)}
+.bar-fill.bad{background:var(--bad)} .bar-fill.mut{background:var(--mut)}
+.bar-num{font-size:12.5px;text-align:right;font-weight:600}
+.bar-pct{color:var(--mut);font-weight:400}
+.matrix{width:100%;border-collapse:collapse;font-size:12.5px}
+.matrix th{font-weight:500;text-align:left;padding:6px 8px;color:var(--ink-soft);font-size:11px}
+.matrix thead th{vertical-align:bottom;line-height:1.3}
+.matrix .rowh{font-family:'Archivo';font-size:13px;color:var(--ink);font-weight:600;white-space:nowrap}
+.matrix .cell{text-align:center;padding:7px 8px;font-family:'IBM Plex Mono',monospace;font-weight:600;border:1px solid var(--paper)}
+.cell.ok{background:var(--ok-bg);color:var(--ok)} .cell.ok2{background:var(--ok2-bg);color:var(--ok2)}
+.cell.warn{background:var(--warn-bg);color:var(--warn)} .cell.bad{background:var(--bad-bg);color:var(--bad)}
+.cell.mut{background:var(--mut-bg);color:var(--mut)} .cell.zero{color:#C3CBD8}
+.winlist{font-size:14px;line-height:1.7}
+.winlist b{font-stretch:110%}
+/* ---------- table ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;position:sticky;top:0;background:var(--paper);padding:12px 0;z-index:5;border-bottom:1px solid var(--line)}
+.filters input,.filters select{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:7px 10px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:0}
+.filters input{width:220px}
+.count-read{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin-left:auto}
+table.apps{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:13.5px}
+table.apps th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--ink-soft);padding:10px 12px;border-bottom:2px solid var(--ink);cursor:pointer;user-select:none;white-space:nowrap}
+table.apps td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+table.apps tr.approw:hover{background:#F7F9FC}
+.appname{font-weight:650;font-stretch:108%}
+.appcat{display:block;font-size:11.5px;color:var(--mut)}
+tr.detail td{background:#F7F9FC;padding:14px 18px 16px}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;font-size:12.5px}
+.dgrid h4{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:4px}
+.dgrid .note{color:var(--ink-soft)}
+.ev{font-family:'IBM Plex Mono',monospace;font-size:11px;word-break:break-all}
+.expand-btn{background:none;border:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;cursor:pointer;padding:2px 8px;color:var(--ink-soft)}
+.expand-btn:hover{border-color:var(--ink);color:var(--ink)}
+/* ---------- agent pipeline ---------- */
+.pipe{display:flex;gap:0;align-items:stretch;overflow-x:auto;padding-bottom:8px}
+.stage{min-width:172px;flex:1;background:var(--card);border:1px solid var(--line);padding:14px 16px;position:relative}
+.stage+.stage{margin-left:26px}
+.stage+.stage::before{content:"→";position:absolute;left:-22px;top:50%;transform:translateY(-50%);color:var(--mut);font-size:16px}
+.stage .snum{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--mut);letter-spacing:.1em}
+.stage .sname{font-weight:700;font-size:13.5px;margin:2px 0 6px;font-stretch:110%}
+.stage .sdesc{font-size:12px;color:var(--ink-soft);line-height:1.45}
+.stage .smodel{margin-top:8px}
+.stage.det{border-left:3px solid var(--ink)}
+.stage.llm{border-left:3px solid var(--link)}
+.stage.xfam{border-left:3px solid var(--ok2)}
+.human-note{margin-top:22px;padding:16px 20px;background:var(--warn-bg);border:1px solid #E4D3AE;font-size:13.5px;max-width:860px}
+.human-note b{font-stretch:110%}
+/* ---------- verification ---------- */
+.acc-row{display:grid;grid-template-columns:150px 1fr 84px;align-items:center;gap:12px;margin-bottom:12px}
+.acc-track{height:12px;background:var(--mut-bg);position:relative}
+.acc-p1{position:absolute;top:-2px;width:2px;height:16px;background:var(--bad)}
+.acc-span{position:absolute;top:4px;height:4px;background:var(--ok)}
+.acc-fin{position:absolute;top:-2px;width:2px;height:16px;background:var(--ok)}
+.acc-legend{font-size:12px;color:var(--ink-soft);margin:4px 0 20px}
+.acc-legend .k{display:inline-block;width:10px;height:10px;vertical-align:-1px;margin:0 4px 0 12px}
+.misses{list-style:none;font-size:13.5px}
+.misses li{padding:9px 0;border-bottom:1px solid var(--line)}
+footer{padding:44px 0 64px;font-size:13.5px;color:var(--ink-soft)}
+footer .mono{font-size:12px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header class="hero">
+  <p class="eyebrow">Integration feasibility audit — @@N_APPS@@ apps × 10 categories · researched by agents, verified in loops</p>
+  <h1><span class="ok-txt">@@N_BUILDABLE@@ of @@N_APPS@@</span> apps could be agent toolkits today. What blocks the rest is mostly commercial, not technical.</h1>
+  <p class="hero-sub">A CrewAI pipeline using Composio's search tools profiled every app below — auth, credential gating, API surface, buildability — then an independent verifier model graded every field against its cited source, pre-fetched deterministically. Wrong claims were re-researched and fixed. Every number on this page traces to a JSON artifact and an evidence URL.</p>
+  <div class="ledger">
+    <div><div class="big">@@PCT_SELF_SERVE@@<small>%</small></div><div class="lab">self-serve credentials (free or trial)</div><span class="prov">patterns.json · credential_access</span></div>
+    <div><div class="big">@@PCT_OAUTH2@@<small>%</small></div><div class="lab">support OAuth2 · @@PCT_API_KEY@@% support API keys</div><span class="prov">patterns.json · auth_distribution</span></div>
+    <div><div class="big">@@TOP_BLOCKER_N@@</div><div class="lab">apps blocked by @@TOP_BLOCKER@@ — the top blocker</div><span class="prov">patterns.json · blocker_taxonomy</span></div>
+    <div><div class="big">@@N_EASY_WINS@@</div><div class="lab">easy wins: self-serve, documented, not yet in Composio</div><span class="prov">patterns.json · easy_wins</span></div>
+    <div><div class="big">@@ACC_PASS1@@→<span style="color:var(--ok)">@@ACC_FINAL@@</span><small>%</small></div><div class="lab">field accuracy, pass 1 → after verification loops</div><span class="prov">accuracy.json · overall</span></div>
+  </div>
+</header>
+
+<section id="patterns">
+  <h2>The patterns</h2>
+  <p class="sec-note">Aggregated from all @@N_OK@@ completed records. Auth is a solved problem — the real divide is who may hold credentials.</p>
+  <div class="grid3">
+    <div class="panel"><h3>Auth methods <span class="prov">multi-valued · % of apps</span></h3>@@AUTH_BARS@@</div>
+    <div class="panel"><h3>Credential access</h3>@@ACCESS_BARS@@</div>
+    <div class="panel"><h3>Blockers (blocked apps)</h3>@@BLOCKER_BARS@@</div>
+  </div>
+  <div class="grid2" style="margin-top:28px">
+    <div class="panel"><h3>Credential access × category</h3>@@MATRIX@@<span class="prov">patterns.json · credential_access_by_category</span></div>
+    <div class="panel winlist">
+      <h3>Where the leverage is</h3>
+      <p><span class="stamp ok">easy wins</span> Self-serve credentials + documented API + no Composio toolkit yet (@@N_EASY_WINS@@): <span class="mono" style="font-size:12px">@@EASY_WINS@@</span></p>
+      <p style="margin-top:14px"><span class="stamp bad">needs outreach</span> API access is partner- or sales-gated: <span class="mono" style="font-size:12px">@@NEEDS_OUTREACH@@</span></p>
+      <p style="margin-top:14px"><span class="stamp mut">thin public docs</span> No researchable public developer docs found: <span class="mono" style="font-size:12px">@@INSUFFICIENT@@</span></p>
+      <p style="margin-top:14px">Composio already covers <b>@@N_COMPOSIO@@</b> of these apps; <b>@@N_MCP@@</b> have some MCP server in the official registry.</p>
+    </div>
+  </div>
+</section>
+
+<section id="table">
+  <h2>All @@N_APPS@@ apps</h2>
+  <p class="sec-note">Click a row for per-field evidence links, researcher notes, and the verifier's verdicts. Machine-readable copy: <a href="results.json" class="mono">results.json</a></p>
+  <div class="filters">
+    <input id="q" type="search" placeholder="search app…" aria-label="Search apps">
+    <select id="f-cat" aria-label="Filter category"><option value="">category: all</option></select>
+    <select id="f-access" aria-label="Filter credential access"><option value="">access: all</option></select>
+    <select id="f-build" aria-label="Filter buildability"><option value="">buildability: all</option></select>
+    <span class="count-read" id="count"></span>
+  </div>
+  <table class="apps" id="apps">
+    <thead><tr>
+      <th data-k="num">#</th><th data-k="name">App</th><th data-k="auth">Auth</th>
+      <th data-k="access">Credentials</th><th data-k="api">API</th>
+      <th data-k="composio">Composio</th><th data-k="mcp">MCP</th><th data-k="build">Buildability</th><th></th>
+    </tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</section>
+
+<section id="agent">
+  <h2>The agent that did the research</h2>
+  <p class="sec-note">A CrewAI flow, one crew per app, resumable per-app caching. Deterministic facts are never asked of an LLM; disputed fields are settled by a stronger model; verification runs on a different model family so its errors don't correlate with the researcher's.</p>
+  <div class="pipe">
+    <div class="stage det"><span class="snum">S0 · DETERMINISTIC</span><div class="sname">Registry checks</div><p class="sdesc">Composio toolkit registry match + official MCP registry lookup + homepage liveness. Pure Python.</p><span class="chip smodel">no LLM</span></div>
+    <div class="stage llm"><span class="snum">S1 · RESEARCH ×@@N_APPS@@</span><div class="sname">Scout → Analyst</div><p class="sdesc">Docs Scout finds official docs/auth/pricing pages; API Analyst fetches them and fills the record — every field cites a fetched URL.</p><span class="chip smodel">gpt-5-mini</span> <span class="chip">COMPOSIO_SEARCH</span></div>
+    <div class="stage xfam"><span class="snum">S2 · VERIFY ×@@N_APPS@@</span><div class="sname">Skeptic Verifier</div><p class="sdesc">Every cited evidence page is pre-fetched in Python and injected; a different model lineage grades each field tool-free: confirmed / contradicted / unsupported / dead.</p><span class="chip smodel">gpt-4o-mini</span></div>
+    <div class="stage llm"><span class="snum">S3 · FIX</span><div class="sname">Targeted re-research</div><p class="sdesc">Only flagged fields are re-researched with tools; fixed records are verified again. pass-1 vs final kept per field.</p><span class="chip smodel">gpt-5-mini</span> <span class="chip">COMPOSIO_SEARCH</span></div>
+    <div class="stage xfam"><span class="snum">S4 · EVAL</span><div class="sname">Eval layer</div><p class="sdesc">Deterministic checks (schema, URL liveness) + a third model lineage judging field↔evidence faithfulness on a stratified sample + human spot-check CSV.</p><span class="chip smodel">gpt-4.1-mini</span> <span class="chip">human</span></div>
+    <div class="stage det"><span class="snum">S5–S6 · REPORT</span><div class="sname">Analysis → this page</div><p class="sdesc">All aggregation in Python; this page is rendered from patterns.json / accuracy.json / results.json. No hand-written numbers.</p><span class="chip smodel">no LLM</span></div>
+  </div>
+  <div class="human-note"><b>Where humans were needed:</b> seeding the 100-app list, API keys, three pipeline problems the agents couldn't see for themselves (gpt-5 models rejecting CrewAI's <span class="mono">stop</span> param; a too-loose MCP-registry name matcher that called "storefront" a match for "Front"; a first verification design that let the verifier skip fetching — it burned the OpenRouter budget flagging 70% of correct fields as "unsupported", and was redesigned to pre-fetch evidence in Python and grade tool-free on OpenAI), the human spot-check, and final review of this page's copy. Everything else — research, verification, fixing, scoring — ran unattended.</div>
+</section>
+
+<section id="verification">
+  <h2>How we know it's right</h2>
+  <p class="sec-note">@@N_GRADED@@ field-level claims were independently graded; @@N_FLAGGED@@ were flagged, and @@N_FIXED_APPS@@ apps had fields re-researched and fixed. The judge (third model family) rated @@JUDGE_RATE@@% of @@JUDGE_N@@ sampled fields faithful to their cited evidence; a human agreed with @@HUMAN_RATE@@% of @@HUMAN_N@@ sampled claims.</p>
+  <div class="grid2">
+    <div class="panel">
+      <h3>Per-field accuracy, pass 1 → final <span class="prov">accuracy.json · confirmed / graded</span></h3>
+      <p class="acc-legend"><span class="k" style="background:var(--bad)"></span>pass 1 <span class="k" style="background:var(--ok)"></span>after verify + fix</p>
+      @@ACC_ROWS@@
+    </div>
+    <div class="panel">
+      <h3>Misses, shown honestly <span class="prov">what pass 1 got wrong</span></h3>
+      <ul class="misses">@@MISSES@@</ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>Source & reproduction:</b> <a href="https://github.com/pra2107tham/app-toolkit-audit">repo with pipeline + README</a> · machine-readable <a href="results.json" class="mono">results.json</a> · built with CrewAI + Composio SDK (COMPOSIO_SEARCH toolkit) + OpenAI + OpenRouter.</p>
+  <p style="margin-top:8px" class="mono">No paid app accounts were used; "gated, with evidence" is recorded as a finding, not a failure.</p>
+</footer>
+</div>
+
+<script type="application/json" id="data">@@RESULTS_JSON@@</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent).filter(r => r.status === 'ok');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ACCESS = {self_serve_free:['self-serve · free','ok'], self_serve_paid_trial:['self-serve · paid','ok2'],
+  admin_approval:['admin approval','warn'], partner_gated:['partner gated','bad'], unclear:['unclear','mut']};
+const BUILD = {buildable_today:['buildable today','ok'], buildable_with_key_signup:['key signup','ok2'], blocked:['blocked','bad']};
+const FIELDS = ['description','auth_methods','credential_access','api_surface','buildability'];
+const stamp = (label, cls) => `<span class="stamp ${cls}">${esc(label)}</span>`;
+
+function rowHTML(r, i){
+  const acc = ACCESS[r.credential_access.value] || [r.credential_access.value,'mut'];
+  const bld = BUILD[r.buildability.verdict] || [r.buildability.verdict,'mut'];
+  const auth = r.auth_methods.value.map(a => `<span class="chip">${esc(a)}</span>`).join('');
+  const api = `${esc(r.api_surface.value)} <span class="appcat">${esc(r.api_surface.breadth)}</span>`;
+  const comp = r.composio_toolkit && r.composio_toolkit.exists ? stamp('yes','ok') : stamp('no','mut');
+  const mcp = r.mcp_server && r.mcp_server.exists ? stamp(r.mcp_server.official ? 'official' : 'community', r.mcp_server.official ? 'ok' : 'ok2') : stamp('none','mut');
+  return `<tr class="approw" data-slug="${esc(r.slug)}">
+    <td class="mono">${r.num ?? i+1}</td>
+    <td><span class="appname">${esc(r.name)}</span><span class="appcat">${esc(r.category)}</span></td>
+    <td>${auth}</td><td>${stamp(acc[0],acc[1])}</td><td>${api}</td><td>${comp}</td><td>${mcp}</td>
+    <td>${stamp(bld[0],bld[1])}</td>
+    <td><button class="expand-btn" aria-expanded="false" aria-label="details for ${esc(r.name)}">+</button></td>
+  </tr>`;
+}
+
+function detailHTML(r){
+  const cell = (title, claim, extra='') => {
+    if(!claim) return '';
+    const url = claim.evidence_url || claim.docs_url || '';
+    const val = claim.value !== undefined ? JSON.stringify(claim.value) : (claim.verdict || '');
+    return `<div><h4>${esc(title)}</h4><div><b class="mono" style="font-size:12px">${esc(val)}</b> ${claim.confidence?stamp(claim.confidence, claim.confidence==='high'?'ok':claim.confidence==='medium'?'warn':'bad'):''}</div>
+      ${extra}${claim.note?`<p class="note">${esc(claim.note)}</p>`:''}
+      ${url?`<a class="ev" href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a>`:'<span class="ev" style="color:var(--mut)">no public evidence found</span>'}</div>`;
+  };
+  const ver = r.verification || {};
+  const verChips = (ver.pass1 || []).map(v => `<span class="chip">${esc(v.field)}: <b style="color:var(--${v.verdict==='confirmed'?'ok':'bad'})">${esc(v.verdict)}</b></span>`).join('');
+  const fixed = (ver.fixed_fields || []).length ? `<p class="note" style="margin-top:4px">fixed after verification: <b>${ver.fixed_fields.map(esc).join(', ')}</b></p>` : '';
+  return `<tr class="detail"><td colspan="9"><div class="dgrid">
+    ${cell('description', r.description ? {value:r.description} : null)}
+    ${cell('auth methods', r.auth_methods)}
+    ${cell('credential access', r.credential_access)}
+    ${cell('api surface', r.api_surface, `<p class="note">${esc(r.api_surface.breadth)} · docs:</p>`)}
+    ${cell('buildability', {value:r.buildability.verdict, note:(r.buildability.main_blocker!=='none'?'blocker: '+r.buildability.main_blocker+' — ':'')+(r.buildability.note||'')})}
+    <div><h4>verifier verdicts (pass 1)</h4>${verChips || '<span class="note">not verified</span>'}${fixed}</div>
+  </div></td></tr>`;
+}
+
+const tbody = document.getElementById('tbody');
+const selCat = document.getElementById('f-cat'), selAcc = document.getElementById('f-access'), selBld = document.getElementById('f-build');
+[...new Set(DATA.map(r => r.category))].forEach(c => selCat.add(new Option(c, c)));
+Object.entries(ACCESS).forEach(([k,v]) => selAcc.add(new Option(v[0], k)));
+Object.entries(BUILD).forEach(([k,v]) => selBld.add(new Option(v[0], k)));
+
+let sortKey = 'num', sortDir = 1;
+const keyFns = {num: r => r.num ?? 0, name: r => r.name.toLowerCase(), auth: r => r.auth_methods.value.join(),
+  access: r => r.credential_access.value, api: r => r.api_surface.value,
+  composio: r => (r.composio_toolkit&&r.composio_toolkit.exists)?0:1, mcp: r => (r.mcp_server&&r.mcp_server.exists)?0:1,
+  build: r => r.buildability.verdict};
+
+function render(){
+  const q = document.getElementById('q').value.toLowerCase();
+  let rows = DATA.filter(r =>
+    (!q || r.name.toLowerCase().includes(q) || r.slug.includes(q)) &&
+    (!selCat.value || r.category === selCat.value) &&
+    (!selAcc.value || r.credential_access.value === selAcc.value) &&
+    (!selBld.value || r.buildability.verdict === selBld.value));
+  rows.sort((a,b) => (keyFns[sortKey](a) > keyFns[sortKey](b) ? 1 : -1) * sortDir);
+  tbody.innerHTML = rows.map((r,i) => rowHTML(r,i)).join('');
+  document.getElementById('count').textContent = rows.length + ' / ' + DATA.length + ' apps';
+}
+['q','f-cat','f-access','f-build'].forEach(id => document.getElementById(id).addEventListener('input', render));
+document.querySelectorAll('#apps th[data-k]').forEach(th => th.addEventListener('click', () => {
+  const k = th.dataset.k; sortDir = (sortKey === k) ? -sortDir : 1; sortKey = k; render();
+}));
+tbody.addEventListener('click', e => {
+  const tr = e.target.closest('tr.approw'); if(!tr) return;
+  const btn = tr.querySelector('.expand-btn');
+  const next = tr.nextElementSibling;
+  if(next && next.classList.contains('detail')){ next.remove(); btn.textContent='+'; btn.setAttribute('aria-expanded','false'); return; }
+  const r = DATA.find(x => x.slug === tr.dataset.slug);
+  tr.insertAdjacentHTML('afterend', detailHTML(r));
+  btn.textContent='–'; btn.setAttribute('aria-expanded','true');
+});
+render();
+</script>
+</body>
+</html>

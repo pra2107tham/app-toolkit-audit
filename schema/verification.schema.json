@@ -1,0 +1,70 @@
+{
+  "$defs": {
+    "FieldVerdict": {
+      "properties": {
+        "field": {
+          "enum": [
+            "description",
+            "auth_methods",
+            "credential_access",
+            "api_surface",
+            "buildability"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "verdict": {
+          "enum": [
+            "confirmed",
+            "contradicted",
+            "unsupported",
+            "dead_url"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        },
+        "corrected_value": {
+          "default": "",
+          "description": "Correct value if contradicted, else empty",
+          "title": "Corrected Value",
+          "type": "string"
+        },
+        "better_evidence_url": {
+          "default": "",
+          "title": "Better Evidence Url",
+          "type": "string"
+        },
+        "reasoning": {
+          "default": "",
+          "title": "Reasoning",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "verdict"
+      ],
+      "title": "FieldVerdict",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "slug": {
+      "title": "Slug",
+      "type": "string"
+    },
+    "verdicts": {
+      "items": {
+        "$ref": "#/$defs/FieldVerdict"
+      },
+      "title": "Verdicts",
+      "type": "array"
+    }
+  },
+  "required": [
+    "slug",
+    "verdicts"
+  ],
+  "title": "VerificationReport",
+  "type": "object"
+}

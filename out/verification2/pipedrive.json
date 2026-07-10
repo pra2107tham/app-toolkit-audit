@@ -1,0 +1,40 @@
+{
+  "slug": "pipedrive",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.pipedrive.com",
+      "reasoning": "The homepage describes Pipedrive as a sales CRM platform for managing leads, deals, activities, and sales pipelines, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pipedrive.com/docs/api/v1/#authentication",
+      "reasoning": "The official API documentation confirms that API token (personal API key) and OAuth2 are supported authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "reasoning": "The developer documentation states that each Pipedrive user has an API token that can be found in Personal preferences, indicating self-serve access to credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pipedrive.com/docs/api/v1/",
+      "reasoning": "The API reference confirms that Pipedrive provides a comprehensive REST API covering core product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pipedrive.com/docs/api/v1/",
+      "reasoning": "The existence of public REST API documentation and the ability to obtain a personal API token without human approval confirms that integrations can be built today."
+    }
+  ]
+}

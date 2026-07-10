@@ -1,0 +1,40 @@
+{
+  "slug": "datadog",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.datadoghq.com",
+      "reasoning": "The description accurately reflects Datadog as a monitoring and observability platform for infrastructure, applications, logs, and more."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.datadoghq.com/api/latest/authentication/",
+      "reasoning": "The evidence confirms that Datadog requires an API key and application key for authentication, with no mention of OAuth2, Basic, or JWT."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+      "reasoning": "The evidence supports that API and application keys can be created in the account UI and that users can sign up for a free trial account to obtain keys."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.datadoghq.com/api/latest/",
+      "reasoning": "The evidence confirms that the API is RESTful and extensive, with documentation on various endpoint groups."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The buildability is supported as public REST APIs are documented, and keys can be self-created, enabling immediate development."
+    }
+  ]
+}

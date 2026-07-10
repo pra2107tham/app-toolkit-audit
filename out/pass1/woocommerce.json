@@ -1,0 +1,47 @@
+{
+  "slug": "woocommerce",
+  "name": "WooCommerce",
+  "category": "Ecommerce",
+  "description": "Open-source eCommerce plugin for WordPress providing REST APIs for store and admin (products, orders, customers, etc.).",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic",
+      "oauth2",
+      "none_public"
+    ],
+    "evidence_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/authentication/",
+    "confidence": "high",
+    "note": "Docs describe consumer key & consumer secret (API keys), HTTP Basic Auth (using consumer key as username and secret as password), and OAuth 1.0a for legacy integrations. JWT/bearer tokens are not listed as built-in methods."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.woocommerce.com/docs/creating-an-api-key-for-a-user/",
+    "confidence": "high",
+    "note": "API keys (consumer key & secret) are generated in the WordPress admin (WooCommerce > Settings > Advanced > REST API) by site users—no vendor approval required."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+    "confidence": "high",
+    "note": "Official REST API v3 covers most store objects (products, orders, customers, coupons, settings, etc.). There is also a separate Store API for storefront/customer interactions (see store API docs)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs and self-serve API key creation exist; a developer with access to a WooCommerce site can obtain credentials and use the REST or Store APIs immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "WooCommerce REST API documentation",
+      "WooCommerce REST API authentication consumer key consumer secret generate API keys WooCommerce > Settings > Advanced > REST API",
+      "WooCommerce REST API requires paid plan",
+      "WooCommerce REST API partnership required",
+      "WooCommerce API access contact sales",
+      "site:developer.woocommerce.com REST API paid plan",
+      "woocommerce.com document woocommerce-rest-api"
+    ],
+    "insufficient_public_docs": false
+  }
+}

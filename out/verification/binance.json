@@ -1,0 +1,40 @@
+{
+  "slug": "binance",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.binance.com",
+      "reasoning": "The homepage confirms that Binance is a cryptocurrency exchange providing market data, spot/futures trading, wallets, and partner integration APIs."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://binance-docs.github.io/apidocs/spot/en/#signed-endpoint",
+      "reasoning": "The redirected page does not provide specific details about the authentication methods listed in the record."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.binance.com/docs/binance_link/link-and-trade/fast-api/create-api-key",
+      "reasoning": "The evidence confirms that users can create API keys via their Binance account in a self-serve process."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.binance.com/docs/",
+      "reasoning": "The page does not provide specific details about the breadth of the API surface as claimed in the record."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.binance.com/docs/",
+      "reasoning": "The evidence does not clearly support the claim that building is feasible today with the stated conditions."
+    }
+  ]
+}

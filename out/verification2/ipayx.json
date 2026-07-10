@@ -1,0 +1,40 @@
+{
+  "slug": "ipayx",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Provider of an MCP (modular connector) FX audit server and related payment/FX connector software (appears to publish connector code on GitHub rather than host public API docs).",
+      "better_evidence_url": "https://ipayx.ai",
+      "reasoning": "The description accurately reflects the content of the iPayX homepage, which discusses the FX forensic audit layer."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "other",
+      "better_evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "reasoning": "While the GitHub repo mentions local configuration, it does not provide any information about iPayX-hosted API authentication methods, making the claim unsupported."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://ipayx.ai",
+      "reasoning": "The iPayX homepage is marketing-focused and does not provide developer/API documentation or instructions for obtaining API credentials, confirming the claim of unclear access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "reasoning": "The GitHub repository is the only developer-facing resource and indicates that there is no public API documentation available, confirming the claim of no public API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "reasoning": "The lack of vendor-hosted public API documentation and a clear way to obtain API credentials confirms that building an integration against a public vendor API is blocked."
+    }
+  ]
+}

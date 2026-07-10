@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets & local noise
+.env
+logs/raw/
+logs/failed/
+.playwright-mcp/
+audit-page-full.png
+.DS_Store

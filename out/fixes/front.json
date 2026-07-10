@@ -1,0 +1,23 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://dev.frontapp.com/docs/auth",
+      "confidence": "high",
+      "note": "Official developer docs state Front supports API tokens (used as Bearer tokens) and OAuth 2.0 (authorization code flow)."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://dev.front.com/docs/authentication",
+      "confidence": "high",
+      "note": "Front\u2019s official developer docs state API requests authenticate using an access token in the Authorization header, and that Front supports both OAuth 2.0 access tokens and personal access tokens (used as Bearer tokens)."
+    },
+    "verdict": "dead_url"
+  }
+}

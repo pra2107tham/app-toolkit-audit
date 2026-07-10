@@ -1,0 +1,66 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://paygent.com/",
+      "confidence": "low",
+      "note": "No public developer or API documentation pages found on the official site that describe supported auth methods. Homepage is marketing-only and does not document API auth."
+    },
+    "final_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://paygent.com/en/",
+      "confidence": "low",
+      "note": "The official Paygent site content on the English homepage is marketing/product oriented and does not provide public developer documentation or any described API authentication method (no mention of API keys, OAuth, tokens, signatures, etc.)."
+    },
+    "verdict": "unsupported"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://paygent.com/en/partner",
+      "confidence": "low",
+      "note": "Partner page emphasizes contacting Paygent and joining a partner program; site lacks publicly accessible signup or developer portal describing self-serve credential issuance."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://paygent.com/en/partner",
+      "confidence": "low",
+      "note": "The official partner page focuses on becoming a partner and contacting Paygent, but does not document any self-serve developer portal, signup flow, or how API credentials (if any) are obtained."
+    },
+    "verdict": "unsupported"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://paygent.com/en/products",
+      "confidence": "low",
+      "note": "Product pages list features and integrations but no public REST/GraphQL API docs or SDK links were found; suggests API documentation is not publicly published."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://paygent.com/en/products",
+      "confidence": "low",
+      "note": "The official products page describes Paygent offerings and features but does not link to or include public API documentation, endpoint references, SDKs, or a developer portal; any API surface (if it exists) is not publicly documented on this page."
+    },
+    "verdict": "unsupported"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "no_public_api",
+      "note": "Public developer documentation and self-serve API credential issuance are not available on the official site; integration likely requires contacting Paygent or becoming a partner."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "no_public_api",
+      "note": "Public developer documentation and self-serve API credential issuance are not available on the official site pages reviewed; integration likely requires contacting Paygent or becoming a partner."
+    },
+    "verdict": "unsupported"
+  }
+}

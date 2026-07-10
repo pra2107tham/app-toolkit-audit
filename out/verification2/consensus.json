@@ -1,0 +1,40 @@
+{
+  "slug": "consensus",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Search engine that provides research-backed answers with citations from papers, abstracts, and clinical trials; offers team/enterprise features such as SSO and admin controls.",
+      "better_evidence_url": "https://consensus.app",
+      "reasoning": "The homepage content supports the description provided in the record."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://consensus.app/",
+      "reasoning": "The homepage does not provide any public developer authentication methods, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://consensus.app/teams",
+      "reasoning": "The URL for credential access returns a 404 error, indicating that there is no official public information available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://consensus.app/",
+      "reasoning": "The homepage does not contain any public API documentation, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://consensus.app/",
+      "reasoning": "Integration is blocked due to the lack of a publicly documented API surface, consistent with the other fields."
+    }
+  ]
+}

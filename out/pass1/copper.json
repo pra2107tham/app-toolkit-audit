@@ -1,0 +1,50 @@
+{
+  "slug": "copper",
+  "name": "Copper",
+  "category": "CRM and Sales",
+  "description": "A CRM built for Google Workspace users that manages contacts, pipelines, and sales workflows.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "evidence_url": "https://developer.copper.com/introduction/authentication.html",
+    "confidence": "high",
+    "note": "Developer docs explicitly list OAuth2.0 and API Keys (token-based) as the two supported authentication methods."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+    "confidence": "medium",
+    "note": "The OAuth quickstart shows developers register an app in the Copper developer dashboard to obtain client_id and client_secret (self-serve). The public pricing page indicates Copper offers free trials / 'Start free, no credit card required' (https://www.copper.com/pricing), but no official page explicitly states API access is available on the free plan, so classification is medium confidence."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.copper.com/",
+    "confidence": "high",
+    "note": "The developer site states the Copper Developer API provides a RESTful interface with JSON-formatted responses and 'access most Copper resources.'"
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public developer docs (developer site, authentication, and OAuth quickstart) provide REST API reference and instructions to register apps and obtain credentials, enabling development today without manual approval. The only remaining uncertainty is whether specific plan limits apply (pricing page does not explicitly gate API access)."
+  },
+  "research_meta": {
+    "queries": [
+      "Copper CRM API documentation developer site:copper.com Copper API docs \"developer\" \"API\"",
+      "site:developer.copper.com authentication Copper API \"authentication\"",
+      "site:developer.copper.com register application \"register\" \"application\" Copper OAuth app register",
+      "site:copper.com \"API\" \"pricing\" \"Copper\" \"API\" access pricing plan copper.com pricing API access developer API",
+      "site:help.copper.com API access Copper \"API\" \"access\"",
+      "\"developer.copper.com\" \"client_id\" \"client_secret\"",
+      "site:copper.com \"developer\" \"API\" \"dashboard\" \"client_id\" \"register\"",
+      "Copper API developer docs site:developer.copper.com",
+      "\"Copper API\" \"developer dashboard\" \"register\" \"client_id\"",
+      "site:developer.copper.com \"register your app\" \"developer dashboard\"",
+      "\"Copper API\" \"partner\" \"partner\" site:copper.com \"API\"",
+      "site:copper.com \"API\" \"partner\" \"access\" \"Copper\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

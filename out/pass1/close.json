@@ -1,0 +1,43 @@
+{
+  "slug": "close",
+  "name": "Close",
+  "category": "CRM and Sales",
+  "description": "Close is a CRM focused on sales teams that provides a REST API to access and manage leads, activities, contacts, and related CRM objects.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic"
+    ],
+    "evidence_url": "https://developer.close.com/en/guide/authentication",
+    "confidence": "high",
+    "note": "Close uses API Keys; keys are supplied via HTTP Basic auth (API key as username, blank password) or an Authorization header with Basic <base64(API_KEY:)>."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.close.com/article/44-api-keys",
+    "confidence": "high",
+    "note": "API keys are created by a logged-in user in Settings -> API Keys in the Close dashboard; documentation shows a user can create keys from the UI. Docs note that if you don't see API Keys, organization permissions may restrict visibility (admin settings), but generally keys are self-service from the dashboard."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.close.com/",
+    "confidence": "high",
+    "note": "The developer docs state the Close API is a REST API with a base URL and example endpoints (e.g., /api/v1/lead/). Official docs include API reference and SDKs for multiple languages, indicating broad coverage of product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs exist and API keys can be created self-serve in the dashboard, so a developer can build integrations today. Only potential blocker is organization-level permission settings may prevent some users from creating keys (requires admin in that org)."
+  },
+  "research_meta": {
+    "queries": [
+      "Close API authentication API keys basic auth developer docs",
+      "How do I create an API Key Close docs",
+      "Close API reference developer.close.com",
+      "Close pricing API access",
+      "Close enterprise API access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "woocommerce",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Open-source eCommerce plugin for WordPress providing REST APIs for store and admin (products, orders, customers, etc.).",
+      "better_evidence_url": "https://woocommerce.com",
+      "reasoning": "The homepage confirms that WooCommerce is an open-source commerce platform for WordPress, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/authentication/",
+      "reasoning": "The URL for authentication methods leads to a dead page, preventing verification of the claimed authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.woocommerce.com/docs/creating-an-api-key-for-a-user/",
+      "reasoning": "The URL for credential access leads to a dead page, preventing verification of the claimed self-serve free access to API keys."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "reasoning": "The API documentation confirms that the REST API covers a broad range of store objects, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the buildability claim suggests that a developer can build with the API today, the lack of verifiable evidence from the dead URLs undermines this assertion."
+    }
+  ]
+}

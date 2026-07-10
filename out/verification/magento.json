@@ -1,0 +1,40 @@
+{
+  "slug": "magento",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://business.adobe.com/products/magento/magento-commerce.html",
+      "reasoning": "The homepage URL for Magento returned a fetch error, so the description cannot be confirmed."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "contradicted",
+      "corrected_value": "OAuth 1.0a, token",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+      "reasoning": "The evidence states that traditional admin and integration token generation methods (OAuth 1.0a) are still supported in non-SaaS environments, contradicting the claim that only OAuth2 and token methods are available."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "reasoning": "The evidence confirms that developers can create integrations and obtain tokens without human approval in self-hosted instances."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "both",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/",
+      "reasoning": "The evidence confirms that the API surface includes REST and GraphQL APIs, indicating broad coverage."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/",
+      "reasoning": "The evidence supports that developers can build integrations today, confirming the buildability claim."
+    }
+  ]
+}

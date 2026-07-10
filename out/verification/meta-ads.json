@@ -1,0 +1,40 @@
+{
+  "slug": "meta-ads",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.facebook.com/business/ads",
+      "reasoning": "The description accurately reflects the capabilities of the Meta Ads as it mentions programmatic access to advertising objects and management."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/marketing-api/authentication",
+      "reasoning": "The evidence supports the claim that Meta uses OAuth 2.0 and various access tokens, confirming the listed authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started",
+      "reasoning": "The claim that developers can create a Meta App and generate access tokens without requiring sales or partner approval is supported by the evidence."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/marketing-apis/",
+      "reasoning": "The evidence confirms that the Marketing API is built on the Graph API and covers a broad range of advertising functionalities."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started",
+      "reasoning": "The claim that developers can build against the Marketing API today is supported, as the evidence indicates that access tokens can be generated for immediate use."
+    }
+  ]
+}

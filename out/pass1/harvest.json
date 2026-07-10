@@ -1,0 +1,43 @@
+{
+  "slug": "harvest",
+  "name": "Harvest",
+  "category": "Productivity and Project Management",
+  "description": "Time tracking, invoicing, and project management tool for teams and freelancers.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://help.getharvest.com/api-v2/authentication/",
+    "confidence": "high",
+    "note": "Documentation explicitly lists OAuth 2.0 for third-party apps and Personal Access Tokens (used as bearer tokens). The API root also shows Authorization: Bearer <token> header requirement."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.getharvest.com/api-v2/personal-access-tokens/",
+    "confidence": "high",
+    "note": "Personal Access Tokens can be created via the user UI (Avatar → Personal Settings → API Credentials) which indicates a user can self-serve obtain credentials for their account. Pricing page does not state API access is restricted to paid plans."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://help.getharvest.com/api-v2/",
+    "confidence": "high",
+    "note": "Docs describe a REST API with many resource endpoints (Time Tracking, Users, Clients, Projects, Tasks, Expenses, Invoices, Reports, etc.) and base URL https://api.harvestapp.com/v2/."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API documentation exists and Personal Access Tokens can be self-generated, enabling immediate development and testing."
+  },
+  "research_meta": {
+    "queries": [
+      "Harvest API v2",
+      "site:help.getharvest.com API v2 Harvest",
+      "Harvest personal access tokens",
+      "Harvest OAuth2 authentication",
+      "Harvest API pricing"
+    ],
+    "insufficient_public_docs": false
+  }
+}

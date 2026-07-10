@@ -1,0 +1,42 @@
+{
+  "slug": "pinterest",
+  "name": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Pinterest is a visual discovery engine for finding ideas like recipes, home and style inspiration, and more.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+    "confidence": "high",
+    "note": "Documentation shows OAuth 2.0 Authorization Code Flow and PKCE; token endpoint and authorization endpoint provided."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+    "confidence": "medium",
+    "note": "Developers can register apps in the Pinterest developer portal to obtain client credentials; may require account verification."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.pinterest.com/docs/",
+    "confidence": "medium",
+    "note": "Pinterest provides a v5 REST API covering boards, pins, ads, users, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "none",
+    "note": "Public REST API with OAuth 2.0; developer must sign up and obtain client credentials (app registration) to use."
+  },
+  "research_meta": {
+    "queries": [
+      "Pinterest OAuth endpoints",
+      "Pinterest API authentication",
+      "Pinterest developers OAuth 2.0 PKCE Authorization Code Flow",
+      "Pinterest API docs"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

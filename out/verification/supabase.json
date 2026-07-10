@@ -1,0 +1,40 @@
+{
+  "slug": "supabase",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://supabase.com",
+      "reasoning": "The description accurately reflects the offerings of Supabase as an open-source Firebase alternative, including Postgres database, Auth, Realtime, Storage, Edge Functions, and client libraries with REST/GraphQL APIs."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://supabase.com/docs/guides/auth",
+      "reasoning": "The evidence confirms that Supabase supports JWT, OAuth2, and API key authentication methods, aligning with the recorded values."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://supabase.com/docs/guides/platform/keys",
+      "reasoning": "The URL for credential access returns a 404 error, indicating that the information cannot be verified through the provided link."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://supabase.com/docs/reference",
+      "reasoning": "The evidence supports the claim that Supabase provides a broad API surface with REST, Realtime, and GraphQL endpoints, as well as client SDKs for multiple languages."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://supabase.com/docs/reference",
+      "reasoning": "The existence of public documentation and self-serve API keys on the Free tier supports the claim that Supabase is buildable today."
+    }
+  ]
+}

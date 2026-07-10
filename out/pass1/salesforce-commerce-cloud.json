@@ -1,0 +1,43 @@
+{
+  "slug": "salesforce-commerce-cloud",
+  "name": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "description": "An enterprise commerce platform (B2C) providing storefront, shopper, and admin REST APIs (SCAPI/Shopper APIs and Admin APIs) for products, baskets, orders, customers, and related commerce operations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+    "confidence": "high",
+    "note": "SCAPI uses OAuth-based flows and SLAS for shopper token (bearer) authentication; admin APIs use client credentials to obtain access tokens."
+  },
+  "credential_access": {
+    "value": "admin_approval",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/setting-up-api-access.html",
+    "confidence": "high",
+    "note": "API clients and credentials are created in a merchant's Business Manager (requires access to a Commerce Cloud instance/Business Manager account, which is provisioned to customers), and Commerce Cloud pricing/page instructs contacting sales for purchase — indicating credentials are not publicly self-servable without merchant/admin access."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+    "confidence": "high",
+    "note": "SCAPI is a REST API covering shopper and admin resources (products, baskets, orders, customers, promotions, inventory, etc.)."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "Although documentation and API details are public and REST APIs are well-documented, obtaining working API credentials requires access to a merchant Business Manager (provisioned by purchasing or admin approval). Pricing/contact-sales pages indicate no public self-serve signup; therefore building an integration is blocked until access to a Commerce Cloud instance and Business Manager credentials are obtained."
+  },
+  "research_meta": {
+    "queries": [
+      "Salesforce Commerce Cloud developer documentation API developer.salesforce.com/docs/commerce Commerce Cloud SCAPI",
+      "Set Up API Access developer.salesforce.com setting up api access create api client Business Manager",
+      "Salesforce Commerce Cloud Business Manager create API client credentials",
+      "Shopper Login SLAS Salesforce Commerce Cloud documentation",
+      "Salesforce Commerce Cloud pricing Contact Sales"
+    ],
+    "insufficient_public_docs": false
+  }
+}

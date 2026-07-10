@@ -1,0 +1,43 @@
+{
+  "slug": "se-ranking",
+  "name": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "description": "Cloud SEO platform providing rank tracking, keyword research, backlinks, on-page audit and related SEO data; offers an API to integrate SE Ranking data into external applications.",
+  "auth_methods": {
+    "value": [
+      "token",
+      "api_key"
+    ],
+    "evidence_url": "https://seranking.com/api/",
+    "confidence": "high",
+    "note": "API uses an API token provided in the Authorization header as a bearer token (Authorization: Bearer <your_token>). The documentation page describes generating an API token in account Settings > API."
+  },
+  "credential_access": {
+    "value": "admin_approval",
+    "evidence_url": "https://help.seranking.com/en/articles/4210866-how-to-get-api-access",
+    "confidence": "high",
+    "note": "Help Center states API access is under Account settings \u2192 API, but if the API section is not present you must contact SE Ranking support (via chat or email) to request/enable access, indicating access may be gated and not always self-serve."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://seranking.com/api/",
+    "confidence": "high",
+    "note": "The API docs list a wide set of endpoints (projects, keywords, rankings, competitors, backlinks, on-page), base URL https://api.seranking.com, and describes standard HTTP endpoints and responses."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "Despite clear REST API documentation and bearer-token auth, SE Ranking indicates API access may need to be enabled by support if the API section is not available in account settings, so automated self-serve credential issuance is not guaranteed."
+  },
+  "research_meta": {
+    "queries": [
+      "SE Ranking API token Authorization Bearer",
+      "How to get API access SE Ranking",
+      "SE Ranking pricing API access plans",
+      "SE Ranking API endpoints projects keywords rankings"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

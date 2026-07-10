@@ -1,0 +1,40 @@
+{
+  "slug": "help-scout",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A customer support platform providing shared inboxes, knowledge base, and customer management tools.",
+      "better_evidence_url": "https://www.helpscout.com",
+      "reasoning": "The description accurately reflects the offerings of Help Scout as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, api_key",
+      "better_evidence_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "reasoning": "The authentication methods listed are supported by the Help Scout Mailbox API documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developer.helpscout.com/mailbox-api/overview/getting-started/",
+      "reasoning": "The URL for credential access is dead (404), but the claim about self-serve credential creation is plausible based on the context."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developer.helpscout.com/mailbox-api/",
+      "reasoning": "The API surface being REST is confirmed by the official Mailbox API documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.helpscout.com/mailbox-api/",
+      "reasoning": "The buildability claim is consistent with the confirmed API surface and authentication methods, indicating that an integration can indeed be built today."
+    }
+  ]
+}

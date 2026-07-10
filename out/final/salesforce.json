@@ -1,0 +1,46 @@
+{
+  "slug": "salesforce",
+  "name": "Salesforce",
+  "category": "CRM and Sales",
+  "description": "A cloud-based CRM platform providing APIs (REST, SOAP, GraphQL) to programmatically access and manage CRM data, metadata, and platform features.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "jwt",
+      "token"
+    ],
+    "evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+    "confidence": "high",
+    "note": "Salesforce REST API authentication uses OAuth 2.0 and documents multiple OAuth 2.0 authorization flows including Web Server (authorization code), User-Agent (implicit), JWT bearer, SAML bearer, Username-Password, and Device flows. OAuth access tokens are used as Bearer tokens."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.salesforce.com/signup",
+    "confidence": "high",
+    "note": "Salesforce offers a self-serve sign-up for a free Developer Edition org (described as a free, fully functional Salesforce org with no expiration date), which can be used for development and to create connected apps for API access."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "confidence": "high",
+    "note": "Salesforce provides a broad REST API for accessing Salesforce resources (including creating/updating/deleting records, working with sObjects, and running SOQL queries) and a separate Salesforce GraphQL API that provides a GraphQL interface to query and mutate Salesforce data and services."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Integrations can be built today using a free Salesforce Developer Edition org (self-serve signup) and by creating a connected app, which generates a consumer key and consumer secret used for OAuth-based authentication to Salesforce APIs."
+  },
+  "research_meta": {
+    "queries": [
+      "Salesforce OAuth 2.0 flows developer guide",
+      "Create Connected App Salesforce consumer key secret",
+      "Salesforce Developer Edition signup API access",
+      "Salesforce REST API overview sObjects coverage",
+      "Salesforce GraphQL API documentation",
+      "Which Editions Include API Access Salesforce"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

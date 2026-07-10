@@ -1,0 +1,44 @@
+{
+  "slug": "apify",
+  "name": "Apify",
+  "category": "Data, SEO and Scraping",
+  "description": "Platform for web scraping, automation and web data extraction (actors, datasets, key-value stores, task scheduling and webhooks).",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://docs.apify.com/api/v2",
+    "confidence": "high",
+    "note": "API v2 and Apify Cloud docs state authentication via API tokens passed as HTTP Authorization: Bearer <API_TOKEN>; docs also show an alternative apiKey query parameter (?token=<API_TOKEN>)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.apify.com/platform/integrations/api-tokens",
+    "confidence": "high",
+    "note": "Official docs show API tokens can be created directly in Apify Console (Settings \u2192 Integrations \u2192 API tokens), indicating self-serve credential issuance without manual approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.apify.com/api/v2",
+    "confidence": "high",
+    "note": "API v2 reference lists endpoints for actors, tasks, runs, users, storages, datasets, key-value stores, request queues, webhooks and more, indicating broad REST coverage of product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs exist (API v2), and official docs confirm API tokens can be created self-serve in the Apify Console, so integrations can be built immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "Apify API v2 Authentication Authorization Bearer",
+      "Apify Cloud API authentication token ?token",
+      "Apify API tokens create Account \u2192 API tokens",
+      "Apify pricing Free Developer API access",
+      "Apify partners is API access partner-only"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

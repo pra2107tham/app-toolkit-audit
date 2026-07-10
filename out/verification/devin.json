@@ -1,0 +1,40 @@
+{
+  "slug": "devin",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://devin.ai",
+      "reasoning": "The homepage describes Devin as an autonomous AI software engineer that can write, run, and test code, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.devin.ai/api-reference/overview",
+      "reasoning": "The API reference confirms the use of API keys and bearer tokens for authentication, supporting the recorded auth methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://devin.ai/pricing",
+      "reasoning": "The pricing page explicitly states that there is a Free plan that includes API access, confirming the self-serve free credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.devin.ai/api-reference/overview",
+      "reasoning": "The API reference documents a RESTful API with various endpoints, confirming the recorded API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://devin.ai/pricing",
+      "reasoning": "The existence of public REST documentation and a Free tier with API access indicates that developers can start building today, confirming the buildability claim."
+    }
+  ]
+}

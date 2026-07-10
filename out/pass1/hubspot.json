@@ -1,0 +1,47 @@
+{
+  "slug": "hubspot",
+  "name": "HubSpot",
+  "category": "CRM and Sales",
+  "description": "A CRM platform offering REST APIs and developer tools to integrate with HubSpot CRM objects, marketing, CMS, and other product areas.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "none_public",
+      "other"
+    ],
+    "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+    "confidence": "high",
+    "note": "Official docs state OAuth 2.0 for public apps and Private Apps (account-scoped bearer tokens). API keys are deprecated (removed). 'token' denotes Private App bearer tokens. 'other' included to reflect deprecated API keys which the docs explicitly note were removed (legacy). 'none_public' included not as a supported method but to acknowledge no unauthenticated public API access."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "confidence": "high",
+    "note": "Private apps can be created in the HubSpot UI to generate scoped access tokens; developer docs show steps to create an app and obtain client ID/secret and to create private apps in account settings without human approval or paid plan. Developer account app creation page documents Client ID/secret issuance."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+    "confidence": "high",
+    "note": "HubSpot provides a broad REST API surface covering CRM objects (contacts, companies, deals), marketing, CMS, and more; docs root and API reference show base URL and many endpoints. There is no indication that GraphQL or SDK-only access replaces REST in the official reference."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Documentation and self-service credential issuance (OAuth client creation in developer account and Private App token generation) exist, enabling building integrations today without manual approvals. Publishing to Marketplace may require partner program steps, but building integrations for an account is immediate."
+  },
+  "research_meta": {
+    "queries": [
+      "HubSpot authentication overview OAuth private apps",
+      "HubSpot private apps create token generate",
+      "HubSpot API reference overview REST API base URL",
+      "HubSpot create an app client ID client secret",
+      "HubSpot API keys deprecation removal",
+      "HubSpot marketplace partner program requirements",
+      "HubSpot pricing features API access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

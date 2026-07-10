@@ -1,0 +1,44 @@
+{
+  "slug": "brex",
+  "name": "Brex",
+  "category": "Finance and Fintech",
+  "description": "A unified corporate spend platform offering corporate cards, expense management, payments, travel, and related financial APIs.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://developer.brex.com/reference/authentication",
+    "confidence": "high",
+    "note": "Docs state support for OAuth 2.0 (Authorization Code + PKCE and Client Credentials) and API keys; authorization uses scoped bearer tokens in the Authorization header."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.brex.com/docs/getting-started#api-keys",
+    "confidence": "high",
+    "note": "Getting started docs describe signing up for a developer account and generating API keys in the developer dashboard without manual approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.brex.com/reference",
+    "confidence": "high",
+    "note": "Docs state Brex provides REST APIs described via OpenAPI across many product areas (Accounting, Payments, Expenses, Team, Transactions, Travel, Webhooks, etc.). SDKs are also available."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs + ability to self-generate API keys from the dashboard make integrations possible today. Some product features (e.g., issuing cards, payments) may require a Brex business account but API access itself can be obtained via developer signup."
+  },
+  "research_meta": {
+    "queries": [
+      "site:developer.brex.com authentication",
+      "Brex API keys developer dashboard",
+      "Brex developer getting started API keys",
+      "Brex pricing developer API access",
+      "Brex contact sales partnership API access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

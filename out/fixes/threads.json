@@ -1,0 +1,42 @@
+{
+  "description": {
+    "pass1_value": "API to read and publish content to Instagram Threads, and manage Threads interactions for Business and Creator accounts.",
+    "final_value": "Use the Threads API to read and publish content, manage replies and mentions, and get insights for Threads accounts.",
+    "verdict": "unsupported"
+  },
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://developers.facebook.com/docs/threads/guides/authentication",
+      "confidence": "high",
+      "note": "Threads uses the Instagram Graph authentication model: OAuth 2.0 flows to obtain user access tokens (short- and long-lived) and app access tokens; App ID/Secret are issued in the App Dashboard. 'other' represents App ID/App Secret usage."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developers.facebook.com/docs/threads/guides/authentication",
+      "confidence": "high",
+      "note": "Official authentication guide states the Threads API uses access tokens and obtains them via the Threads API authorization flow (OAuth 2.0), returning a user access token that is then used to authenticate API requests."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "other",
+      "note": "You can create an app and obtain tokens immediately for development/test users; to operate on real user accounts beyond app roles you must complete app review and possibly business verification per Graph API and Platform Policy."
+    },
+    "final_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "other",
+      "note": "You can create a Meta app and add the Threads API product to start making API calls in Development mode using app roles and generated access tokens (Get started). Some Threads permissions require App Review for Advanced Access, and some Meta developer features/technologies may require business verification depending on what permissions/features you request."
+    },
+    "verdict": "unsupported"
+  }
+}

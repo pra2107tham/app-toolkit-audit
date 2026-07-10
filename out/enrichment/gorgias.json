@@ -1,0 +1,23 @@
+{
+  "slug": "gorgias",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "gorgias",
+    "tools_count": 32.0,
+    "auth_schemes": [
+      "API_KEY",
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "gorgias"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gorgias"
+  },
+  "homepage_alive": true
+}

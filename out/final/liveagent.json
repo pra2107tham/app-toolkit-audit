@@ -1,0 +1,42 @@
+{
+  "slug": "liveagent",
+  "name": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "description": "Cloud-based helpdesk and live chat platform for customer service, with RESTful API for tickets, contacts, chat, accounts and more.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://support.liveagent.com/741982-API-key",
+    "confidence": "high",
+    "note": "Docs show API v3 and v1 use API keys and provide header examples (Authorization: Bearer and apikey:)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://support.liveagent.com/741982-API-key",
+    "confidence": "high",
+    "note": "API keys are created in the LiveAgent admin (Configuration > System > API) in the customer dashboard; signup has a free trial per pricing page so developers can self-serve."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://support.liveagent.com/911737-API-v3",
+    "confidence": "high",
+    "note": "API v3 is a RESTful API covering tickets, contacts, customers, accounts, chat; interactive per-account OpenAPI (Swagger) descriptor is provided (per-account docs at https://YOURDOMAIN.ladesk.com/docs/api/v3/ and swagger.json)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs describe API endpoints and auth; API keys are generated in the admin and signup with free trial is available, enabling immediate development against a trial account."
+  },
+  "research_meta": {
+    "queries": [
+      "LiveAgent API documentation site:liveagent.com",
+      "site:support.liveagent.com \"API v3\" LiveAgent",
+      "LiveAgent pricing API access site:liveagent.com OR site:support.liveagent.com OR site:faq.liveagent.com",
+      "site:support.liveagent.com \"Complete API reference\"",
+      "LiveAgent API key where to find API key plan pricing \"API key\" \"LiveAgent\" site:liveagent.com OR site:support.liveagent.com OR site:faq.liveagent.com"
+    ],
+    "insufficient_public_docs": false
+  }
+}

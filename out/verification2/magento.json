@@ -1,0 +1,40 @@
+{
+  "slug": "magento",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://business.adobe.com/products/magento/magento-commerce.html",
+      "reasoning": "The description aligns with the general understanding of Adobe Commerce as a headless commerce platform, which is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "contradicted",
+      "corrected_value": "OAuth 2.0, OAuth 1.0a",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+      "reasoning": "The evidence indicates that OAuth 1.0a is supported for third-party applications, contradicting the claim that only oauth2 and token are available."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "reasoning": "The evidence supports the claim that developers can create integrations and obtain tokens without human approval on self-hosted instances."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.adobe.com/commerce/webapi/",
+      "reasoning": "The evidence confirms that both REST and GraphQL APIs are available, indicating broad coverage of product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The ability to self-host and create integrations aligns with the evidence provided, confirming that building integrations is possible today."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "notion",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.notion.so",
+      "reasoning": "The description accurately reflects the capabilities of Notion as an all-in-one workspace for notes, docs, databases, and project management, as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.notion.com/docs/authorization",
+      "reasoning": "The evidence confirms that Notion's API uses OAuth 2.0 and bearer tokens for authorization, aligning with the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.notion.com/docs/faq",
+      "reasoning": "The URL for credential access leads to a 404 error, indicating that the information cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.notion.com/reference/intro",
+      "reasoning": "The evidence supports that Notion provides a REST API covering various functionalities, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The buildability status is not defined in the available verdicts; thus, it has been marked as unsupported."
+    }
+  ]
+}

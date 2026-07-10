@@ -1,0 +1,40 @@
+{
+  "slug": "freshdesk",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Customer support ticketing and helpdesk platform with APIs to manage tickets, contacts, agents, solutions and more.",
+      "better_evidence_url": "https://www.freshworks.com/freshdesk",
+      "reasoning": "The homepage describes Freshdesk as a customer service platform that includes ticketing and helpdesk functionalities, confirming the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "api_key, oauth2, basic",
+      "better_evidence_url": "https://developers.freshdesk.com/api/#authentication",
+      "reasoning": "The official API documentation explicitly states that Freshdesk supports API key usage via HTTP Basic Auth and OAuth 2.0, confirming the recorded authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://support.freshdesk.com/en/support/solutions/articles/215517-how-to-get-your-api-key",
+      "reasoning": "The support article confirms that users can obtain their API key from their profile settings, indicating self-serve access, and mentions the availability of a free plan."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.freshdesk.com/api/",
+      "reasoning": "The API documentation confirms that Freshdesk API v2 is a REST API covering various functionalities, supporting the recorded API surface claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developers.freshdesk.com/api/",
+      "reasoning": "The existence of public REST API documentation and the ability to obtain API credentials through a free plan confirms that Freshdesk is buildable today."
+    }
+  ]
+}

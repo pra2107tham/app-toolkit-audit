@@ -1,0 +1,45 @@
+{
+  "slug": "cloudflare",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "cloudflare",
+    "tools_count": 20.0,
+    "auth_schemes": [
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "cloudflare",
+      "cloudflare_api_key",
+      "cloudflare_browser_rendering"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "com.cloudflare.mcp/mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "io.github.Ayo-Fam/mcp-cloudflare-dns",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.SidneyBissoli/senado-br-mcp-cloudflare",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.SidneyBissoli/senado-br-mcp-cloudflare",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.SidneyBissoli/senado-br-mcp-cloudflare",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Cloudflare"
+  },
+  "homepage_alive": true
+}

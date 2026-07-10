@@ -1,0 +1,40 @@
+{
+  "slug": "attio",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://attio.com",
+      "reasoning": "The homepage describes Attio as a modern CRM and workspace for managing relationships, contacts, and company data, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.attio.com/reference/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the evidence for the claim is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://attio.com/pricing",
+      "reasoning": "The pricing page indicates that users can start for free, and the Get Started documentation supports that developers can obtain credentials themselves after signup."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.attio.com/reference/overview",
+      "reasoning": "The URL for the API surface overview returns a 404 error, meaning the evidence for the claim is not accessible."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://attio.com/pricing",
+      "reasoning": "The existence of public API documentation and the ability to obtain API keys via signup confirms that Attio is buildable today."
+    }
+  ]
+}

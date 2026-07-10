@@ -1,0 +1,66 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://www.plain.com/help",
+      "confidence": "high",
+      "note": "The Help Center states that for API access and developer documentation you must contact sales or your account representative, indicating there are no publicly documented API auth methods."
+    },
+    "final_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://www.plain.com/help/articles/api-access",
+      "confidence": "high",
+      "note": "Plain's Help Center states that API access and developer documentation are not available by default and must be enabled by contacting sales or an account representative; no public API authentication method details are provided without that access."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "partner_gated",
+      "evidence_url": "https://www.plain.com/help",
+      "confidence": "high",
+      "note": "Help Center explicitly instructs to contact sales or your account representative for API access and developer documentation, which implies access is partner-gated rather than self-serve."
+    },
+    "final_value": {
+      "value": "partner_gated",
+      "evidence_url": "https://www.plain.com/help/articles/api-access",
+      "confidence": "high",
+      "note": "The official Help Center states API access (and developer documentation) must be enabled by contacting sales or your account representative, indicating credential/API enablement is not self-serve."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://www.plain.com/help",
+      "confidence": "high",
+      "note": "The site and Help Center indicate Plain is API-first in product messaging, but developer documentation and API reference are not publicly available \u2014 you must contact sales/account rep to obtain API docs, so public API surface cannot be confirmed."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://www.plain.com/help/articles/developer-documentation",
+      "confidence": "high",
+      "note": "Plain confirms an API exists, but its developer documentation is only available after API access is enabled for your account (via contacting an account representative), so the public API surface cannot be reviewed."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "No public API docs or self-serve credential issuance found; API access requires contacting sales/account representative, preventing building without establishing a commercial relationship."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "API access and developer documentation are not available by default and require contacting sales/account representative to enable, blocking self-serve development without a commercial relationship."
+    },
+    "verdict": "dead_url"
+  }
+}

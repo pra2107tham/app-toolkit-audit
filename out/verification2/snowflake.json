@@ -1,0 +1,40 @@
+{
+  "slug": "snowflake",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.snowflake.com",
+      "reasoning": "The description accurately reflects the capabilities of Snowflake as a cloud data platform, which is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL provided for authentication methods returns a 404 error, meaning the evidence is not accessible to confirm the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for credential access leads to a 404 error, indicating that the evidence to support the claim is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index.html",
+      "reasoning": "The API surface claim is supported by the content of the SQL API documentation, which confirms it is a REST API."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "",
+      "reasoning": "While the claim of buildability is likely true, it cannot be confirmed due to the lack of accessible evidence for credential access and authentication methods."
+    }
+  ]
+}

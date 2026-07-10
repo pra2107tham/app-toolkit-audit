@@ -1,0 +1,39 @@
+{
+  "slug": "mermaid-cli",
+  "name": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "description": "A command-line tool and NodeJS library for rendering Mermaid diagrams to SVG/PNG/PDF locally.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli/blob/36c0bbe575c34d12bab388b5c34a295e1fc2516e/README.md",
+    "confidence": "high",
+    "note": "Repository README and docs present only a CLI and a local NodeJS API; no hosted/public API or authentication mechanisms are documented."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli/blob/36c0bbe575c34d12bab388b5c34a295e1fc2516e/README.md",
+    "confidence": "high",
+    "note": "There is no developer signup, key issuance, or dashboard documented; the project is distributed as an open-source CLI/Node package, so conventional API credential flows are not applicable."
+  },
+  "api_surface": {
+    "value": "sdk_only",
+    "breadth": "narrow",
+    "docs_url": "https://github.com/mermaid-js/mermaid-cli/tree/master/docs",
+    "confidence": "high",
+    "note": "A NodeJS in-process API (exported run function) exists for local programmatic usage (see PR adding NodeJS API); there is no REST/GraphQL hosted API. The node API surface is small (run/CLI integration). Evidence: PR adding NodeJS API and repository README."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "No public REST/GraphQL API or developer credentials are available; integration is possible only by using the local CLI or Node library (installing package), not by calling a hosted API. Therefore building an AI-agent that requires a hosted HTTP API is blocked until a hosted API is provided. Evidence: README and docs show only local CLI/Node usage and no hosted API docs."
+  },
+  "research_meta": {
+    "queries": [
+      "mermaid-cli developer documentation API authentication \"mermaid-cli\" API credentials signup dashboard pricing partnership \"mermaid-cli\" site:github.com OR site:mermaid-js.github.io OR site:mermaid-js.com OR site:github.io \"mermaid-cli\"",
+      "mermaid-cli docs README \"NodeJS API\" authentication credentials signup pricing dashboard \"mermaid-cli\" site:github.com/mermaid-js/mermaid-cli"
+    ],
+    "insufficient_public_docs": true
+  }
+}

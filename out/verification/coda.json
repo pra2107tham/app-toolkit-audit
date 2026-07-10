@@ -1,0 +1,40 @@
+{
+  "slug": "coda",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://coda.io",
+      "reasoning": "The description provided in the record does not have sufficient support from the homepage content, which focuses more on the collaborative aspects and features of Coda rather than its technical specifications."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1#authentication",
+      "reasoning": "The evidence from the API documentation confirms that Personal API tokens and OAuth 2.0 are indeed the authentication methods used."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1",
+      "reasoning": "The documentation clearly states that the Coda API is available to all users free of charge, confirming the self-serve access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1",
+      "reasoning": "The evidence supports that Coda provides a full REST API, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1",
+      "reasoning": "The ability to create personal API tokens and the availability of public REST documentation confirm that the API is buildable today."
+    }
+  ]
+}

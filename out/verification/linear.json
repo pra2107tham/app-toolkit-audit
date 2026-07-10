@@ -1,0 +1,40 @@
+{
+  "slug": "linear",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://linear.app",
+      "reasoning": "The description provided does not have direct support from the homepage content, which focuses more on the product's purpose and features rather than specific functionalities."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.linear.app/docs/graphql/authentication#personal-api-tokens",
+      "reasoning": "The official documentation confirms support for OAuth 2.0 and personal API tokens, which aligns with the recorded values."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.linear.app/docs/graphql/authentication#personal-api-tokens",
+      "reasoning": "The documentation clearly states that personal API tokens can be created from a user's account settings, confirming the self-serve access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.linear.app/docs/graphql/overview",
+      "reasoning": "The documentation supports the claim of a broad GraphQL API surface covering various product objects, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.linear.app/docs/graphql/authentication#personal-api-tokens",
+      "reasoning": "The existence of developer documentation and self-serve options for API tokens and OAuth app registration supports the claim that integrations can be built today."
+    }
+  ]
+}

@@ -1,0 +1,2921 @@
+{
+  "salesforce": {
+    "slug": "salesforce",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "salesforce",
+      "tools_count": 184.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "salesforce",
+        "salesforce_service_cloud"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.cirra/salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.cirra/salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.cirra/salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kodey-ai-salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Salesforce"
+    },
+    "homepage_alive": true
+  },
+  "hubspot": {
+    "slug": "hubspot",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "hubspot",
+      "tools_count": 244.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "hubspot"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Centrify-Internal/hubspot-integrations-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/hubspot-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/hubspot-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-hubspot",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-hubspot",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=HubSpot"
+    },
+    "homepage_alive": true
+  },
+  "pipedrive": {
+    "slug": "pipedrive",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "pipedrive",
+      "tools_count": 399.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "pipedrive"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Servosity/pipedrive-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pipedrive"
+    },
+    "homepage_alive": true
+  },
+  "attio": {
+    "slug": "attio",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "attio",
+      "tools_count": 99.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "attio"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/kaszek-kaszek-attio-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Attio"
+    },
+    "homepage_alive": true
+  },
+  "twenty": {
+    "slug": "twenty",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Twenty"
+    },
+    "homepage_alive": true
+  },
+  "podio": {
+    "slug": "podio",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Podio"
+    },
+    "homepage_alive": true
+  },
+  "zoho-crm": {
+    "slug": "zoho-crm",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "zoho",
+      "tools_count": 57.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "zoho"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zoho%20CRM"
+    },
+    "homepage_alive": true
+  },
+  "close": {
+    "slug": "close",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "close",
+      "tools_count": 6.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "close"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.close/close-mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "com.close/close-mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "io.github.pipeworx-io/close-crm",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Close"
+    },
+    "homepage_alive": true
+  },
+  "copper": {
+    "slug": "copper",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Copper"
+    },
+    "homepage_alive": true
+  },
+  "dealcloud": {
+    "slug": "dealcloud",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=DealCloud"
+    },
+    "homepage_alive": true
+  },
+  "zendesk": {
+    "slug": "zendesk",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "zendesk",
+      "tools_count": 452.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "zendesk"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zendesk"
+    },
+    "homepage_alive": true
+  },
+  "intercom": {
+    "slug": "intercom",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "intercom",
+      "tools_count": 133.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "intercom"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.pipeworx-io/intercom",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Intercom"
+    },
+    "homepage_alive": true
+  },
+  "freshdesk": {
+    "slug": "freshdesk",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "freshdesk",
+      "tools_count": 178.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "freshdesk"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.mindstone/mcp-server-freshdesk",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/freshdesk",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.wyre-technology/freshdesk-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.wyre-technology/freshdesk-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.wyre-technology/freshdesk-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Freshdesk"
+    },
+    "homepage_alive": true
+  },
+  "front": {
+    "slug": "front",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Front"
+    },
+    "homepage_alive": true
+  },
+  "pylon": {
+    "slug": "pylon",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "pylon_mcp"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pylon"
+    },
+    "homepage_alive": true
+  },
+  "liveagent": {
+    "slug": "liveagent",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=LiveAgent"
+    },
+    "homepage_alive": true
+  },
+  "plain": {
+    "slug": "plain",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "plain",
+      "tools_count": 22.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "plain"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Plain"
+    },
+    "homepage_alive": true
+  },
+  "help-scout": {
+    "slug": "help-scout",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "help_scout",
+      "tools_count": 129.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "help_scout"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Help%20Scout"
+    },
+    "homepage_alive": true
+  },
+  "gorgias": {
+    "slug": "gorgias",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "gorgias",
+      "tools_count": 32.0,
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "gorgias"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gorgias"
+    },
+    "homepage_alive": true
+  },
+  "gladly": {
+    "slug": "gladly",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gladly"
+    },
+    "homepage_alive": true
+  },
+  "slack": {
+    "slug": "slack",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "slack",
+      "tools_count": 158.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "slack",
+        "slackbot"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/smithery-ai-slack",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.waystation/slack",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/slack",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/slack",
+          "official_vendor": false
+        },
+        {
+          "name": "com.pulsemcp/slack",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Slack"
+    },
+    "homepage_alive": true
+  },
+  "twilio": {
+    "slug": "twilio",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.codespar/mcp-twilio",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.codespar/mcp-twilio",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/twilio",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Twilio"
+    },
+    "homepage_alive": true
+  },
+  "zoho-cliq": {
+    "slug": "zoho-cliq",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zoho%20Cliq"
+    },
+    "homepage_alive": true
+  },
+  "lark": {
+    "slug": "lark",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Lark%20%28Larksuite%29"
+    },
+    "homepage_alive": true
+  },
+  "pumble": {
+    "slug": "pumble",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pumble"
+    },
+    "homepage_alive": true
+  },
+  "discord": {
+    "slug": "discord",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "discord",
+      "tools_count": 27.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "discord",
+        "discordbot"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/Danushkumar-V-mcp-discord",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Discord"
+    },
+    "homepage_alive": true
+  },
+  "telegram": {
+    "slug": "telegram",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "telegram",
+      "tools_count": 18.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "telegram"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.GeiserX/telegram-archive-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ParthJadhav/telegram-notify-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.auroracapital/claude-ops-telegram-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.daedalus/mcp-telegram-bot",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.jgalea/telegram-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Telegram"
+    },
+    "homepage_alive": true
+  },
+  "whatsapp-business": {
+    "slug": "whatsapp-business",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "whatsapp",
+      "tools_count": 57.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "whatsapp"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=WhatsApp%20Business"
+    },
+    "homepage_alive": true
+  },
+  "aircall": {
+    "slug": "aircall",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Aircall"
+    },
+    "homepage_alive": true
+  },
+  "vonage": {
+    "slug": "vonage",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Vonage/vonage-documentation-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Vonage"
+    },
+    "homepage_alive": true
+  },
+  "google-ads": {
+    "slug": "google-ads",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "googleads",
+      "tools_count": 22.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "googleads"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Google%20Ads"
+    },
+    "homepage_alive": true
+  },
+  "meta-ads": {
+    "slug": "meta-ads",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "metaads",
+      "tools_count": 50.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "metaads",
+        "facebook"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Meta%20Ads"
+    },
+    "homepage_alive": true
+  },
+  "linkedin-ads": {
+    "slug": "linkedin-ads",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "linkedin_ads",
+      "tools_count": 28.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "linkedin_ads",
+        "linkedin"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=LinkedIn%20Ads"
+    },
+    "homepage_alive": true
+  },
+  "gohighlevel": {
+    "slug": "gohighlevel",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "highlevel"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=GoHighLevel"
+    },
+    "homepage_alive": true
+  },
+  "mailchimp": {
+    "slug": "mailchimp",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "mailchimp",
+      "tools_count": 272.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "mailchimp"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.asklokesh/mailchimp-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cyanheads/mailchimp-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Mailchimp"
+    },
+    "homepage_alive": true
+  },
+  "klaviyo": {
+    "slug": "klaviyo",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "klaviyo",
+      "tools_count": 225.0,
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "klaviyo"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/klaviyo",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/klaviyo",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/klaviyo",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Klaviyo"
+    },
+    "homepage_alive": true
+  },
+  "systeme-io": {
+    "slug": "systeme-io",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=systeme.io"
+    },
+    "homepage_alive": true
+  },
+  "pinterest": {
+    "slug": "pinterest",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.cesteral/pinterest-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cesteral/pinterest-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cesteral/pinterest-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cesteral/pinterest-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pinterest"
+    },
+    "homepage_alive": true
+  },
+  "threads": {
+    "slug": "threads",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Threads%20%28Meta%29"
+    },
+    "homepage_alive": true
+  },
+  "sendgrid": {
+    "slug": "sendgrid",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "sendgrid",
+      "tools_count": 359.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "sendgrid"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.codespar/mcp-sendgrid",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.codespar/mcp-sendgrid",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=SendGrid"
+    },
+    "homepage_alive": true
+  },
+  "shopify": {
+    "slug": "shopify",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "shopify",
+      "tools_count": 315.0,
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "shopify"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.gossiper/shopify-admin-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/shopify-admin",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/shopify-admin",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/shopify-admin",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/shopify-admin",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Shopify"
+    },
+    "homepage_alive": true
+  },
+  "woocommerce": {
+    "slug": "woocommerce",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.AmitGurbani/mcp-server-woocommerce",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.AmitGurbani/mcp-server-woocommerce",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/woocommerce",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=WooCommerce"
+    },
+    "homepage_alive": true
+  },
+  "bigcommerce": {
+    "slug": "bigcommerce",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=BigCommerce"
+    },
+    "homepage_alive": false
+  },
+  "salesforce-commerce-cloud": {
+    "slug": "salesforce-commerce-cloud",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "salesforce"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Salesforce%20Commerce%20Cloud"
+    },
+    "homepage_alive": true
+  },
+  "magento": {
+    "slug": "magento",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Magento%20%28Adobe%20Commerce%29"
+    },
+    "homepage_alive": false
+  },
+  "squarespace": {
+    "slug": "squarespace",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "square"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Squarespace"
+    },
+    "homepage_alive": true
+  },
+  "ecwid": {
+    "slug": "ecwid",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Ecwid"
+    },
+    "homepage_alive": true
+  },
+  "gumroad": {
+    "slug": "gumroad",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "gumroad",
+      "tools_count": 7.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "gumroad"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gumroad"
+    },
+    "homepage_alive": true
+  },
+  "amazon-selling-partner": {
+    "slug": "amazon-selling-partner",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Amazon%20Selling%20Partner"
+    },
+    "homepage_alive": true
+  },
+  "fanbasis": {
+    "slug": "fanbasis",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=fanbasis"
+    },
+    "homepage_alive": true
+  },
+  "dataforseo": {
+    "slug": "dataforseo",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "dataforseo",
+      "tools_count": 312.0,
+      "auth_schemes": [
+        "BASIC"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "dataforseo"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=DataForSEO"
+    },
+    "homepage_alive": true
+  },
+  "se-ranking": {
+    "slug": "se-ranking",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=SE%20Ranking"
+    },
+    "homepage_alive": true
+  },
+  "ahrefs": {
+    "slug": "ahrefs",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "ahrefs",
+      "tools_count": 40.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "ahrefs"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/ahrefs",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/ahrefs",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Ahrefs"
+    },
+    "homepage_alive": true
+  },
+  "mrscraper": {
+    "slug": "mrscraper",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=MrScraper"
+    },
+    "homepage_alive": true
+  },
+  "apify": {
+    "slug": "apify",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "apify",
+      "tools_count": 112.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "apify",
+        "apify_mcp",
+        "geoapify"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.apify/apify-mcp-server",
+          "official_vendor": true
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "official_vendor": true
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "official_vendor": true
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "official_vendor": true
+        },
+        {
+          "name": "com.apify/apify-mcp-server",
+          "official_vendor": true
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Apify"
+    },
+    "homepage_alive": true
+  },
+  "firecrawl": {
+    "slug": "firecrawl",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "firecrawl",
+      "tools_count": 29.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "firecrawl"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/firecrawl",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/firecrawl",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.firecrawl/firecrawl-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.firecrawl/firecrawl-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.firecrawl/firecrawl-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Firecrawl"
+    },
+    "homepage_alive": true
+  },
+  "bright-data": {
+    "slug": "bright-data",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "brightdata",
+      "tools_count": 10.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "brightdata"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Bright%20Data"
+    },
+    "homepage_alive": true
+  },
+  "sherlock": {
+    "slug": "sherlock",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.jcucci/dotnet-sherlock-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Sherlock"
+    },
+    "homepage_alive": true
+  },
+  "waterfall-io": {
+    "slug": "waterfall-io",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Waterfall.io"
+    },
+    "homepage_alive": true
+  },
+  "clay": {
+    "slug": "clay",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Clay"
+    },
+    "homepage_alive": true
+  },
+  "github": {
+    "slug": "github",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "github",
+      "tools_count": 871.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "github"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/Hint-Services-obsidian-github-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/smithery-ai-github",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/github",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/github",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=GitHub"
+    },
+    "homepage_alive": true
+  },
+  "vercel": {
+    "slug": "vercel",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "vercel",
+      "tools_count": 131.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "vercel"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.pulsemcp/vercel",
+          "official_vendor": false
+        },
+        {
+          "name": "com.pulsemcp/vercel",
+          "official_vendor": false
+        },
+        {
+          "name": "com.vercel/vercel-mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "com.vercel/vercel-mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "com.vercel/vercel-mcp",
+          "official_vendor": true
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Vercel"
+    },
+    "homepage_alive": true
+  },
+  "netlify": {
+    "slug": "netlify",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Netlify"
+    },
+    "homepage_alive": true
+  },
+  "cloudflare": {
+    "slug": "cloudflare",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "cloudflare",
+      "tools_count": 20.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "cloudflare",
+        "cloudflare_api_key",
+        "cloudflare_browser_rendering"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.cloudflare.mcp/mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "io.github.Ayo-Fam/mcp-cloudflare-dns",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.SidneyBissoli/senado-br-mcp-cloudflare",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.SidneyBissoli/senado-br-mcp-cloudflare",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.SidneyBissoli/senado-br-mcp-cloudflare",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Cloudflare"
+    },
+    "homepage_alive": true
+  },
+  "supabase": {
+    "slug": "supabase",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "supabase",
+      "tools_count": 124.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "supabase"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/pinion05-supabase-mcp-lite",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/pinion05-supabase-mcp-lite",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.waystation/supabase",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Supabase"
+    },
+    "homepage_alive": true
+  },
+  "neo4j": {
+    "slug": "neo4j",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "neo4j",
+      "tools_count": 21.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "BASIC",
+        "API_KEY",
+        "S2S_OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "neo4j"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.neo4j-contrib/mcp-neo4j-cypher",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Neo4j"
+    },
+    "homepage_alive": true
+  },
+  "snowflake": {
+    "slug": "snowflake",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "snowflake",
+      "tools_count": 16.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "snowflake",
+        "snowflake_basic"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.nsphung/mcp-snowflake-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Snowflake"
+    },
+    "homepage_alive": true
+  },
+  "mongodb-atlas": {
+    "slug": "mongodb-atlas",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=MongoDB%20Atlas"
+    },
+    "homepage_alive": true
+  },
+  "datadog": {
+    "slug": "datadog",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "datadog",
+      "tools_count": 63.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "datadog"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/datadog",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/datadog",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.TANTIOPE/datadog-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.us-all/datadog",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.us-all/datadog",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Datadog"
+    },
+    "homepage_alive": true
+  },
+  "sentry": {
+    "slug": "sentry",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "sentry",
+      "tools_count": 209.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "sentry"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/sentry",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/sentry",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/sentry",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.friendlygeorge/sentry-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.getsentry/sentry-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Sentry"
+    },
+    "homepage_alive": true
+  },
+  "notion": {
+    "slug": "notion",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "notion",
+      "tools_count": 45.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "notion"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/smithery-notion",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/notion",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/notion",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ai-aviate/better-notion",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.awkoy/notion-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Notion"
+    },
+    "homepage_alive": true
+  },
+  "airtable": {
+    "slug": "airtable",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "airtable",
+      "tools_count": 24.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "airtable"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "ai.waystation/airtable",
+          "official_vendor": false
+        },
+        {
+          "name": "com.airtable/mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "com.mcparmory/airtable",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/airtable",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Automations-Project/airtable-user-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Airtable"
+    },
+    "homepage_alive": true
+  },
+  "linear": {
+    "slug": "linear",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "linear",
+      "tools_count": 46.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "linear"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "app.linear/linear",
+          "official_vendor": true
+        },
+        {
+          "name": "io.github.Evozim/linear-broker",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.adelaidasofia/linear-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/linear",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.toolwright-adk/linear-bootstrap",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Linear"
+    },
+    "homepage_alive": true
+  },
+  "jira": {
+    "slug": "jira",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "jira",
+      "tools_count": 97.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "jira"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.waystation/jira",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/atlassian-jira",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/atlassian-jira",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Jira"
+    },
+    "homepage_alive": true
+  },
+  "asana": {
+    "slug": "asana",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "asana",
+      "tools_count": 153.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "asana"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/asana",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/asana",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/asana",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Asana"
+    },
+    "homepage_alive": true
+  },
+  "monday": {
+    "slug": "monday",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "monday",
+      "tools_count": 121.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "monday",
+        "monday_mcp"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.monday/monday.com",
+          "official_vendor": true
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Monday.com"
+    },
+    "homepage_alive": true
+  },
+  "clickup": {
+    "slug": "clickup",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "clickup",
+      "tools_count": 162.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "clickup"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/clickup",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/clickup",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cvrt-jh/clickup-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.cvrt-jh/clickup-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=ClickUp"
+    },
+    "homepage_alive": true
+  },
+  "coda": {
+    "slug": "coda",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "coda",
+      "tools_count": 109.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "coda"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.nkpar/coda",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.vish288/mcp-coda",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.vish288/mcp-coda",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.vish288/mcp-coda",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.vish288/mcp-coda",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Coda"
+    },
+    "homepage_alive": true
+  },
+  "smartsheet": {
+    "slug": "smartsheet",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Smartsheet"
+    },
+    "homepage_alive": true
+  },
+  "harvest": {
+    "slug": "harvest",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "harvest",
+      "tools_count": 57.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "harvest"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.virgilvox/vue-harvest",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.virgilvox/vue-harvest",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Harvest"
+    },
+    "homepage_alive": true
+  },
+  "stripe": {
+    "slug": "stripe",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "stripe",
+      "tools_count": 425.0,
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "stripe"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.stripe/mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Stripe"
+    },
+    "homepage_alive": true
+  },
+  "plaid": {
+    "slug": "plaid",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Plaid"
+    },
+    "homepage_alive": true
+  },
+  "binance": {
+    "slug": "binance",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.junct-bot/binance-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.junct-bot/binance-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.junct-bot/binance-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Binance"
+    },
+    "homepage_alive": true
+  },
+  "paygent-connect": {
+    "slug": "paygent-connect",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Paygent%20Connect"
+    },
+    "homepage_alive": true
+  },
+  "ipayx": {
+    "slug": "ipayx",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=iPayX"
+    },
+    "homepage_alive": true
+  },
+  "quickbooks": {
+    "slug": "quickbooks",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "quickbooks",
+      "tools_count": 114.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "quickbooks"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.NyxToolsDev/quickbooks-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/quickbooks-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/quickbooks-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/quickbooks-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/quickbooks-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=QuickBooks"
+    },
+    "homepage_alive": false
+  },
+  "xero": {
+    "slug": "xero",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "xero",
+      "tools_count": 53.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "xero"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Servosity/xero-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.asklokesh/xero-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.codespar/mcp-xero",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.codespar/mcp-xero",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/xero",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Xero"
+    },
+    "homepage_alive": true
+  },
+  "brex": {
+    "slug": "brex",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "brex",
+      "tools_count": 84.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "brex"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Brex"
+    },
+    "homepage_alive": true
+  },
+  "ramp": {
+    "slug": "ramp",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "ramp",
+      "tools_count": 88.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "ramp"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "com.mcparmory/ramp",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/ramp",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/ramp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Ramp"
+    },
+    "homepage_alive": true
+  },
+  "pitchbook": {
+    "slug": "pitchbook",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=PitchBook"
+    },
+    "homepage_alive": false
+  },
+  "notebooklm": {
+    "slug": "notebooklm",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Pantheon-Security/notebooklm-mcp-secure",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Pantheon-Security/notebooklm-mcp-secure",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.mcp-dir/notebooklm-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.roomi-fields/notebooklm-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.roomi-fields/notebooklm-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=NotebookLM"
+    },
+    "homepage_alive": true
+  },
+  "otter-ai": {
+    "slug": "otter-ai",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "sslmate_cert_spotter_api"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Otter%20AI"
+    },
+    "homepage_alive": true
+  },
+  "fathom": {
+    "slug": "fathom",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "fathom",
+      "tools_count": 7.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "fathom"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.agencyenterprise/fathom-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-fathom",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Fathom"
+    },
+    "homepage_alive": true
+  },
+  "consensus": {
+    "slug": "consensus",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.MICONNM/openclaw-consensus-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.adicted07-lang/meridian-consensus",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.adicted07-lang/meridian-consensus",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.adicted07-lang/meridian-consensus",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Consensus"
+    },
+    "homepage_alive": true
+  },
+  "reducto": {
+    "slug": "reducto",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Reducto"
+    },
+    "homepage_alive": true
+  },
+  "devin": {
+    "slug": "devin",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "devin_mcp"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Devin"
+    },
+    "homepage_alive": true
+  },
+  "higgsfield": {
+    "slug": "higgsfield",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=higgsfield"
+    },
+    "homepage_alive": true
+  },
+  "mermaid-cli": {
+    "slug": "mermaid-cli",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Mermaid%20CLI"
+    },
+    "homepage_alive": true
+  },
+  "youtube-transcript": {
+    "slug": "youtube-transcript",
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "youtube",
+      "tools_count": 48.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "youtube"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=YouTube%20Transcript"
+    },
+    "homepage_alive": true
+  },
+  "grain": {
+    "slug": "grain",
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Grain"
+    },
+    "homepage_alive": true
+  }
+}

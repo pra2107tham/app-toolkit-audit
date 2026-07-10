@@ -1,0 +1,44 @@
+{
+  "slug": "cloudflare",
+  "name": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Content delivery, security, and edge platform providing CDN, DNS, Workers, and many networking services accessible via APIs.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token",
+      "oauth2"
+    ],
+    "evidence_url": "https://developers.cloudflare.com/api/operations/authentication/",
+    "confidence": "high",
+    "note": "Cloudflare documents API Tokens (bearer tokens), Global API Key (API key with X-Auth-Key/X-Auth-Email), and OAuth as supported authentication methods."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.cloudflare.com/fundamentals/account-and-billing/api-tokens/",
+    "confidence": "high",
+    "note": "API Tokens are created and managed from the dashboard; dashboard signup has a free plan. Global API Key and API Tokens are accessible from the dashboard for any account."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.cloudflare.com/api/",
+    "confidence": "high",
+    "note": "Cloudflare exposes a broad REST API surface (https://api.cloudflare.com/client/v4/) covering zones, DNS, account settings, Workers, and more; extensive developer docs exist for many product areas."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST APIs + self-serve API Tokens/keys on free accounts allow building integrations today. Some enterprise-only APIs/features require contacting sales or an Enterprise plan, but core API functionality is accessible."
+  },
+  "research_meta": {
+    "queries": [
+      "Cloudflare API authentication API Tokens Global API Key OAuth",
+      "Cloudflare create API token dashboard",
+      "Cloudflare API REST endpoints api.cloudflare.com client v4",
+      "Cloudflare signup free plan API access",
+      "Cloudflare enterprise contact sales enterprise-only APIs"
+    ],
+    "insufficient_public_docs": false
+  }
+}

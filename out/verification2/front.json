@@ -1,0 +1,40 @@
+{
+  "slug": "front",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://front.com",
+      "reasoning": "The homepage describes Front as a shared inbox and customer communication platform for teams, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for authentication methods resulted in a FETCH_ERROR, preventing confirmation of the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.front.com/en/articles/2331",
+      "reasoning": "The Help Center confirms that developers can create personal API tokens without needing human approval or a paid plan."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dev.frontapp.com",
+      "reasoning": "The developer portal lists the Core API as REST and provides extensive documentation on various product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.front.com/en/articles/2438",
+      "reasoning": "The existence of public documentation and self-serve token creation supports the claim that the API is buildable today."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "front",
+  "name": "Front",
+  "category": "Support and Helpdesk",
+  "description": "Shared inbox and customer communication platform for teams (email, chat, social) with APIs and SDKs to integrate and extend Front.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "evidence_url": "https://dev.front.com/docs/authentication",
+    "confidence": "high",
+    "note": "Front\u2019s official developer docs state API requests authenticate using an access token in the Authorization header, and that Front supports both OAuth 2.0 access tokens and personal access tokens (used as Bearer tokens)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.front.com/en/articles/2331",
+    "confidence": "high",
+    "note": "Help Center shows developers can create personal API tokens from Settings > Company > Developers (no human approval or paid plan mentioned). OAuth apps can be created similarly per https://help.front.com/en/articles/2355. No public doc states a paid plan is required to obtain credentials."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://dev.frontapp.com",
+    "confidence": "high",
+    "note": "Developer portal lists Core API (REST) and reference; the site includes REST API reference and guides covering many product objects (tickets, conversations, contacts, webhooks, etc.)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs and self-serve token/OAuth creation exist, so a developer can obtain credentials and use the REST API immediately. Rate limits apply and may require contacting sales for higher limits per https://help.front.com/en/articles/2438."
+  },
+  "research_meta": {
+    "queries": [
+      "dev.frontapp.com Front Developer Portal API docs root",
+      "Front API authentication site:dev.frontapp.com OR site:help.front.com \"authentication\" \"API\" \"Front\"",
+      "How to create and revoke API tokens site:help.front.com",
+      "Create an OAuth app in Front site:help.front.com",
+      "Front API pricing \"API\" \"pricing\" site:front.com",
+      "Front \"API access\" \"Enterprise\" site:front.com OR site:help.front.com"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

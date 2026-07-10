@@ -1,0 +1,22 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/guides/authentication",
+      "confidence": "high",
+      "note": "Authentication uses OAuth-style access tokens (Bearer tokens) including short-lived and long-lived tokens obtained via the Meta App dashboard and Facebook Login flows; API calls use Authorization: Bearer <ACCESS_TOKEN>."
+    },
+    "final_value": {
+      "value": [
+        "token"
+      ],
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "confidence": "high",
+      "note": "Cloud API calls are authenticated with an access token passed in the HTTP Authorization header as a Bearer token (Authorization: Bearer <ACCESS_TOKEN>)."
+    },
+    "verdict": "dead_url"
+  }
+}

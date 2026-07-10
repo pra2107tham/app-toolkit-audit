@@ -1,0 +1,40 @@
+{
+  "slug": "ipayx",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Provider of an MCP (modular connector) FX audit server and related payment/FX connector software (appears to publish connector code on GitHub rather than host public API docs).",
+      "better_evidence_url": "https://ipayx.ai",
+      "reasoning": "The homepage describes iPayX as a provider of an FX forensic audit layer, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "other",
+      "better_evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "reasoning": "The GitHub repository does not provide any information about supported authentication methods, making the claim unsupported."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://ipayx.ai",
+      "reasoning": "The vendor homepage does not provide any information about credential access, and the GitHub repository does not clarify how to obtain credentials, thus the claim is unsupported."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "reasoning": "The GitHub repository is the only developer-facing resource and indicates that there is no public API documentation available, confirming the claim of 'none_public'."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "reasoning": "The lack of public API documentation and credential issuance flow confirms that building an integration against a public vendor API is blocked."
+    }
+  ]
+}

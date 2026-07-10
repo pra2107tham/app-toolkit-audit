@@ -1,0 +1,51 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://help.getharvest.com/api-v2/authentication/",
+      "confidence": "high",
+      "note": "Documentation explicitly lists OAuth 2.0 for third-party apps and Personal Access Tokens (used as bearer tokens). The API root also shows Authorization: Bearer <token> header requirement."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developer.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "confidence": "high",
+      "note": "Harvest\u2019s official developer documentation states the API supports both OAuth2 (for third-party applications) and personal access tokens (used via `Authorization: Bearer {token}` along with the required `Harvest-Account-ID` header)."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.getharvest.com/api-v2/personal-access-tokens/",
+      "confidence": "high",
+      "note": "Personal Access Tokens can be created via the user UI (Avatar \u2192 Personal Settings \u2192 API Credentials) which indicates a user can self-serve obtain credentials for their account. Pricing page does not state API access is restricted to paid plans."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.getharvest.com/api-v2/authentication-api/authentication/personal-access-tokens/",
+      "confidence": "high",
+      "note": "Official docs state that a user can create a personal access token under their Profile (linking to https://id.getharvest.com/profile), indicating self-serve credential creation via the UI."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API documentation exists and Personal Access Tokens can be self-generated, enabling immediate development and testing."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public Harvest API v2 documentation exists and the official authentication documentation confirms immediate usability via OAuth2 or self-created personal access tokens."
+    },
+    "verdict": "unsupported"
+  }
+}

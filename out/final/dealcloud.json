@@ -1,0 +1,45 @@
+{
+  "slug": "dealcloud",
+  "name": "DealCloud",
+  "category": "CRM and Sales",
+  "description": "DealCloud (by Intapp) is a deal and relationship management platform for investment banking, private equity, and corporate development, providing CRM, pipeline, and workflow APIs for integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://dealcloudapidev.azurewebsites.net/docs/authentication",
+    "confidence": "high",
+    "note": "The official DealCloud REST API 'Authentication' documentation describes OAuth 2.0 flows (Authorization Code and Client Credentials), API Key authentication using the X-Api-Key header, and Personal Access Tokens used as Bearer tokens."
+  },
+  "credential_access": {
+    "value": "admin_approval",
+    "evidence_url": "https://dealcloudapidev.azurewebsites.net/docs/getting-started/obtain-api-credentials",
+    "confidence": "high",
+    "note": "The 'Obtain API credentials' documentation indicates credentials (API keys / OAuth client credentials / personal access tokens) are provisioned within DealCloud by an administrator (or via contacting DealCloud/Intapp support), implying non-admin users require admin/support involvement rather than fully self-serve signup."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://api.docs.dealcloud.com/",
+    "confidence": "high",
+    "note": "Swagger JSON at /swagger/v1/swagger.json shows a REST API (paths like /contacts, /accounts, /oauth/token) and securityDefinitions; the Swagger UI is hosted at the docs root. The API covers core objects (Contacts, Accounts, Operations) indicating broad coverage."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "other",
+    "note": "Although the REST API is publicly documented, obtaining working API credentials requires DealCloud admin provisioning and/or contacting support, so a developer cannot immediately self-serve and build without organizational approval."
+  },
+  "research_meta": {
+    "queries": [
+      "DealCloud API authentication",
+      "DealCloud obtain API credentials",
+      "DealCloud API key X-Api-Key",
+      "DealCloud OAuth token /oauth/token",
+      "DealCloud API docs swagger"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

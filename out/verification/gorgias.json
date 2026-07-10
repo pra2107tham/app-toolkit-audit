@@ -1,0 +1,40 @@
+{
+  "slug": "gorgias",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Customer support helpdesk platform for ecommerce teams (tickets, customers, integrations, automation).",
+      "better_evidence_url": "https://www.gorgias.com",
+      "reasoning": "The homepage describes Gorgias as a customer support helpdesk platform for ecommerce, confirming the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, api_key, basic, token",
+      "better_evidence_url": "https://developers.gorgias.com/reference/authentication",
+      "reasoning": "The documentation explicitly states that private apps use API keys and public apps use OAuth2, confirming the recorded authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "reasoning": "The Help Center indicates that API keys can be created from the dashboard, confirming that users can self-serve to obtain keys."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.gorgias.com/reference",
+      "reasoning": "The developer reference lists various endpoints, confirming that the API surface is REST."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developers.gorgias.com/reference",
+      "reasoning": "The existence of public documentation and self-serve API keys confirms that integrations can be built today."
+    }
+  ]
+}

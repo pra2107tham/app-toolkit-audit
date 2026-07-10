@@ -1,0 +1,44 @@
+{
+  "slug": "discord",
+  "name": "Discord",
+  "category": "Communications and Messaging",
+  "description": "A real-time chat platform for communities and developers offering text/voice/video, servers (guilds), channels, and a programmable public API for bots and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "basic",
+      "token"
+    ],
+    "evidence_url": "https://discord.com/developers/docs/topics/oauth2",
+    "confidence": "high",
+    "note": "Discord supports OAuth2 flows (authorization code, PKCE, client credentials, etc.). OAuth token exchanges use HTTP Basic auth (client_id:client_secret base64) for some flows, and bots authenticate to the REST API using a Bot token sent in the Authorization header (Authorization: Bot <token>). Evidence: OAuth2 docs and Applications dashboard docs."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://discord.com/developers/applications",
+    "confidence": "high",
+    "note": "Developers can create applications and add bot users in the Developer Portal to obtain Client ID, Client Secret, and Bot Token without human approval or paid plans."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://discord.com/developers/docs",
+    "confidence": "high",
+    "note": "Discord provides a broad REST API covering channels, guilds, users, messages, etc., plus a real-time Gateway (WebSocket) for events (both documented in the Developer Docs)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs and self-serve credential creation exist, allowing developers to build today. Operational considerations: bots above certain scale or accessing privileged data (e.g., GUILD_MEMBERS, PRESENCE) require intent enablement and verification (human review) as described in the verification and privileged intents docs, but these do not prevent initial development."
+  },
+  "research_meta": {
+    "queries": [
+      "Discord developer docs",
+      "Discord OAuth2",
+      "Discord developer applications create app bot token client secret",
+      "Discord bot verification requirements",
+      "Discord privileged intents enablement"
+    ],
+    "insufficient_public_docs": false
+  }
+}

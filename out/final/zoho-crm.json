@@ -1,0 +1,42 @@
+{
+  "slug": "zoho-crm",
+  "name": "Zoho CRM",
+  "category": "CRM and Sales",
+  "description": "A cloud-based customer relationship management platform providing sales, marketing, and support automation with extensive REST APIs and SDKs.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+    "confidence": "high",
+    "note": "Zoho CRM uses OAuth 2.0 (Authorization Code, self-client, refresh token); API requests use Bearer tokens. No public GraphQL or basic auth documented."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://api-console.zoho.com/",
+    "confidence": "high",
+    "note": "Developers can sign in to the Zoho API Console to create OAuth clients or self-clients and generate client ID/secret and grant tokens without needing partner approval. API usage is subject to edition limits; additional units can be purchased."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://www.zoho.com/crm/developer/docs/",
+    "confidence": "high",
+    "note": "Zoho CRM exposes a broad REST API (v2/v8), covering modules like Leads, Contacts, Accounts, Deals, Products, Quotes, Bulk APIs, search, fields, layouts, attachments, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST APIs and OAuth credentials can be obtained via the API Console; documentation and SDKs are available, so integrations can be built today. API rate limits depend on CRM edition and may require purchasing additional API units for high-volume usage."
+  },
+  "research_meta": {
+    "queries": [
+      "Zoho CRM API documentation developer site:zoho.com/crm/developer/docs",
+      "site:zoho.com \"Zoho CRM\" \"OAuth\" \"client id\" \"client secret\" \"generate\"",
+      "Zoho CRM API pricing site:zoho.com \"Zoho CRM\" API pricing limits \"API\"",
+      "site:zoho.com \"Developer Resources | Zoho CRM\" \"developer/docs\"",
+      "site:zoho.com \"Zoho CRM\" \"API Usage\" \"edition\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

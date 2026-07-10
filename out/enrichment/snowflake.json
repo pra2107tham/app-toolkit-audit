@@ -1,0 +1,44 @@
+{
+  "slug": "snowflake",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "snowflake",
+    "tools_count": 16.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "snowflake",
+      "snowflake_basic"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.nsphung/mcp-snowflake-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.nsphung/mcp-snowflake-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.nsphung/mcp-snowflake-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.nsphung/mcp-snowflake-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.nsphung/mcp-snowflake-server",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Snowflake"
+  },
+  "homepage_alive": true
+}

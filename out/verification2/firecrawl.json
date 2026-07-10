@@ -1,0 +1,40 @@
+{
+  "slug": "firecrawl",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Public REST API for Firecrawl (v1) accessed using API keys as bearer tokens.",
+      "better_evidence_url": "https://www.firecrawl.dev",
+      "reasoning": "The homepage confirms that Firecrawl provides a public REST API for web scraping and interaction."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "api_key",
+      "better_evidence_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "reasoning": "The API reference explicitly states that authentication is done using an API key in the Authorization header as a Bearer token."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://www.firecrawl.dev/pricing",
+      "reasoning": "The pricing page confirms the availability of a self-serve free plan for users to obtain API keys."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://docs.firecrawl.dev/api-reference",
+      "reasoning": "While the base URL is provided, the evidence does not confirm the breadth of the API surface, as only the authentication page was observed."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://www.firecrawl.dev/pricing",
+      "reasoning": "The claim about buildability is not fully substantiated by the documentation, particularly regarding paid-plan-only endpoint scopes."
+    }
+  ]
+}

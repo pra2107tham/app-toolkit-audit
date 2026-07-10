@@ -1,0 +1,44 @@
+{
+  "slug": "ramp",
+  "name": "Ramp",
+  "category": "Finance and Fintech",
+  "description": "Corporate card, spend management, and finance automation platform with APIs for cards, transactions, bills, reimbursements, and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "basic"
+    ],
+    "evidence_url": "https://docs.ramp.com/developer-api/v1/authentication",
+    "confidence": "high",
+    "note": "Docs state Ramp supports OAuth 2.0, issues access tokens (used as Bearer tokens) and that client ID/secret authenticate to the token endpoint typically via HTTP Basic Auth."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "confidence": "high",
+    "note": "Getting started guide describes creating an application in the developer dashboard and receiving a client ID and secret; sandbox access can be requested from the dashboard. No docs page indicates human approval or sales/partnership requirement to obtain developer credentials."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.ramp.com/developer-api/v1/reference",
+    "confidence": "high",
+    "note": "API reference describes a RESTful v1 surface covering Transactions, Cards, Users, Bills, Reimbursements, Custom Records, Webhooks, Applications and provides an OpenAPI spec."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs describe OAuth flows, how to obtain client credentials via the dashboard, and a REST API reference with OpenAPI; sandbox environment is available for testing. Therefore one can obtain credentials and begin development without partner gating."
+  },
+  "research_meta": {
+    "queries": [
+      "site:docs.ramp.com developer-api",
+      "site:docs.ramp.com developer-api getting-started",
+      "site:docs.ramp.com authentication authorization client_id client secret",
+      "site:ramp.com API developer dashboard signup api key",
+      "Ramp API credentials how to get client_id client_secret site:docs.ramp.com"
+    ],
+    "insufficient_public_docs": false
+  }
+}

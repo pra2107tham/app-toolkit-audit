@@ -1,0 +1,43 @@
+{
+  "slug": "mailchimp",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "mailchimp",
+    "tools_count": 272.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "mailchimp"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.asklokesh/mailchimp-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.cyanheads/mailchimp-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.cyanheads/mailchimp-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.cyanheads/mailchimp-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.cyanheads/mailchimp-mcp-server",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Mailchimp"
+  },
+  "homepage_alive": true
+}

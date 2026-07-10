@@ -1,0 +1,23 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://docs.ecwid.com/develop-apps/authorization-and-authentication",
+      "confidence": "high",
+      "note": "Ecwid supports OAuth 2.0 for third\u2011party/public apps and store access tokens (used as Bearer tokens or access_token query parameter) for custom/private apps."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://doc.ecwid.com/api-documentation/authorization-and-authentication",
+      "confidence": "high",
+      "note": "Ecwid API docs state that public applications must use OAuth 2.0, while custom applications can authenticate API requests using API access tokens passed either as an Authorization: Bearer header or as a token query parameter."
+    },
+    "verdict": "dead_url"
+  }
+}

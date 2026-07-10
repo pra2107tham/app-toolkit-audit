@@ -1,0 +1,42 @@
+{
+  "slug": "dataforseo",
+  "name": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "description": "APIs providing SEO data: SERP results, keyword data, rank tracking, backlinks and related SEO metrics.",
+  "auth_methods": {
+    "value": [
+      "basic",
+      "api_key"
+    ],
+    "evidence_url": "https://docs.dataforseo.com/v3/",
+    "confidence": "medium",
+    "note": "Public docs appear to be a client-side rendered docs app; auth details are typically documented there (likely API key via Basic auth or API key token)."
+  },
+  "credential_access": {
+    "value": "self_serve_paid_trial",
+    "evidence_url": "https://dataforseo.com/pricing",
+    "confidence": "medium",
+    "note": "DataForSEO generally requires account signup; trial credits are commonly offered on signup."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.dataforseo.com/v3/",
+    "confidence": "medium",
+    "note": "Docs are a single-page app mounted at /v3; surface appears to cover many SEO-related endpoints."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "none",
+    "note": "Signup (self-serve) is required to obtain credentials; otherwise API appears usable."
+  },
+  "research_meta": {
+    "queries": [
+      "DataForSEO API v3 docs",
+      "DataForSEO API authentication",
+      "DataForSEO pricing trial",
+      "site:dataforseo.com \"API v3\""
+    ],
+    "insufficient_public_docs": true
+  }
+}

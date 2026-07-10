@@ -1,0 +1,40 @@
+{
+  "slug": "zoho-crm",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.zoho.com/crm",
+      "reasoning": "The description of Zoho CRM as a cloud-based customer relationship management platform providing sales, marketing, and support automation is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+      "reasoning": "The claim that Zoho CRM uses OAuth 2.0 and provides Bearer tokens for API requests is explicitly supported by the documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api-console.zoho.com/",
+      "reasoning": "The ability for developers to create OAuth clients and generate tokens without partner approval is confirmed by the API Console documentation."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.zoho.com/crm/developer/docs/",
+      "reasoning": "The broad REST API coverage mentioned in the record is supported by the developer documentation, which lists various modules and functionalities."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The claim that integrations can be built today is consistent with the availability of public REST APIs and OAuth credentials as stated in the other fields."
+    }
+  ]
+}

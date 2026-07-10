@@ -1,0 +1,40 @@
+{
+  "slug": "jira",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Issue and project tracking platform for software teams, providing issues, projects, workflows, boards, and related services.",
+      "better_evidence_url": "https://www.atlassian.com/software/jira",
+      "reasoning": "The homepage confirms that Jira is a project management tool designed for software teams, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "oauth2, api_key, basic, token, other",
+      "better_evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication/",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the evidence for the listed authentication methods is not available."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developer.atlassian.com/console/",
+      "reasoning": "The Developer Console page confirms that developers can create apps and obtain OAuth client credentials without manual approval, supporting the claim of self-serve credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developer.atlassian.com/cloud/jira/platform/",
+      "reasoning": "The API documentation confirms that Jira Cloud provides a comprehensive REST API, supporting the claim of a broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.atlassian.com/cloud/jira/platform/",
+      "reasoning": "The evidence from the API documentation indicates that developer docs and self-serve console enable immediate building of integrations, confirming the buildability claim."
+    }
+  ]
+}

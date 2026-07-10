@@ -1,0 +1,36 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "confidence": "low",
+      "note": "No official vendor auth documentation was found on the vendor site. The primary developer-facing content is a GitHub repo for an MCP FX audit server which documents running/configuration but does not state a public API's supported auth flows (OAuth2, API keys, JWT, etc.)."
+    },
+    "final_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+      "confidence": "low",
+      "note": "The official GitHub repo README documents local configuration via environment variables (e.g., EXCHANGE_RATE_API_KEY, FIXER_API_KEY, OPENEXCHANGERATES_API_KEY) for third-party FX data sources, but it does not document any iPayX-hosted API authentication method (OAuth2, API keys, JWT, etc.). Therefore authentication for a vendor-managed iPayX API remains unspecified; classified as 'other' based on only local/env-based configuration being described."
+    },
+    "verdict": "unsupported"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://ipayx.ai",
+      "confidence": "low",
+      "note": "Vendor homepage contains no developer signup, dashboard, pricing, or credential instructions. GitHub repos show software to run but do not document a vendor-managed credential issuance flow, so it's unclear whether public API credentials exist or how they'd be obtained."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://ipayx.ai",
+      "confidence": "low",
+      "note": "The iPayX homepage is marketing-focused (products plus contact email) and does not provide developer/API documentation, a dashboard/signup flow, or instructions for obtaining API credentials."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "amazon-selling-partner",
+  "name": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "description": "Amazon Selling Partner API (SP-API) \u2014 REST-based API for programmatic access to Amazon seller data (listings, orders, payments, reports, etc.).",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "other"
+    ],
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/signing-selling-partner-api-requests",
+    "confidence": "high",
+    "note": "SP-API uses Login with Amazon (LWA) OAuth 2.0 to obtain access tokens and requires all SP-API requests to be signed with AWS Signature Version 4 (SigV4) using AWS IAM credentials; 'other' represents the SigV4 request-signing requirement."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+    "confidence": "medium",
+    "note": "Documentation describes self-registration in the Developer Console to create a security profile and obtain LWA client credentials and instructs developers to create AWS IAM credentials. The docs describe a self-serve onboarding flow but do not explicitly state pricing or paid approval requirements on the public pages fetched; Seller Central pages that might mention fees require sign-in and were not fetchable."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer-docs.amazon.com/sp-api/",
+    "confidence": "high",
+    "note": "The SP-API is described as a modern REST-based API covering listings, orders, payments, reports, and more (multiple product areas)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public documentation provides REST API references and step-by-step self-registration (create security profile, obtain LWA credentials, create AWS IAM credentials). Access to seller-specific data requires that the selling partner authorize the application via the LWA OAuth workflow."
+  },
+  "research_meta": {
+    "queries": [
+      "Selling Partner API auth methods Login with Amazon AWS SigV4",
+      "registering your application SP-API create security profile LWA client id",
+      "SP-API onboarding seller authorization Developer Console",
+      "Seller Central app fees appstore fees (sellercentral) - attempted, requires sign-in"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

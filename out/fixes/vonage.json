@@ -1,0 +1,22 @@
+{
+  "description": {
+    "pass1_value": "APIs and SDKs for voice, SMS, messaging, video and related cloud communications services.",
+    "final_value": "Cloud communications APIs and SDKs for voice, SMS, messaging, video, and verification.",
+    "verdict": "unsupported"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.vonage.com/en/account/guides/api-key-secret",
+      "confidence": "high",
+      "note": "Developer documentation and the dashboard sign-up show that developers can create an account and obtain API key & secret from the Developer Dashboard without manual approval."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.vonage.com/en/account/guides/api-key-secret",
+      "confidence": "high",
+      "note": "Vonage\u2019s official account guide states you can obtain/find your API key and secret in the Vonage API Dashboard, indicating self-serve access after creating an account."
+    },
+    "verdict": "dead_url"
+  }
+}

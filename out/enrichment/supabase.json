@@ -1,0 +1,44 @@
+{
+  "slug": "supabase",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "supabase",
+    "tools_count": 124.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "supabase"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/pinion05-supabase-mcp-lite",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/pinion05-supabase-mcp-lite",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.waystation/supabase",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Supabase"
+  },
+  "homepage_alive": true
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "close",
+  "name": "Close",
+  "category": "CRM and Sales",
+  "description": "Close is a CRM focused on sales teams that provides a REST API to access and manage leads, activities, contacts, and related CRM objects.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic"
+    ],
+    "evidence_url": "https://developer.close.com/getting-started/authentication/",
+    "confidence": "high",
+    "note": "Close API authentication requires an API key and uses HTTP Basic Authentication: use your API key as the username and leave the password blank (e.g., curl -u \"YOUR_API_KEY:\" ...). Docs also indicate you can authenticate via an Authorization header using a Basic token."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.close.com/docs/api-keys",
+    "confidence": "high",
+    "note": "API keys can be created and managed in the Close app via Settings \u2192 API Keys (New API Key). If a user doesn\u2019t see API Keys in Settings, they may lack permission (e.g., admin-only), but credential creation is otherwise self-serve."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.close.com/",
+    "confidence": "high",
+    "note": "The developer docs state the Close API is a REST API with a base URL and example endpoints (e.g., /api/v1/lead/). Official docs include API reference and SDKs for multiple languages, indicating broad coverage of product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public Close REST API docs exist; authentication is API-key-based HTTP Basic auth; API keys are created in-app (subject to org permissions)."
+  },
+  "research_meta": {
+    "queries": [
+      "Close API authentication API keys basic auth developer docs",
+      "How do I create an API Key Close docs",
+      "Close API reference developer.close.com",
+      "Close pricing API access",
+      "Close enterprise API access"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

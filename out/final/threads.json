@@ -1,0 +1,44 @@
+{
+  "slug": "threads",
+  "name": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Use the Threads API to read and publish content, manage replies and mentions, and get insights for Threads accounts.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.facebook.com/docs/threads/guides/authentication",
+    "confidence": "high",
+    "note": "Official authentication guide states the Threads API uses access tokens and obtains them via the Threads API authorization flow (OAuth 2.0), returning a user access token that is then used to authenticate API requests."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.facebook.com/apps",
+    "confidence": "high",
+    "note": "Developers can create an app in the App Dashboard to get App ID and App Secret and obtain access tokens; development/testing can use test users without human approval. Access to production (non-test users) requires app review but initial credentials are self-servable."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.facebook.com/docs/threads",
+    "confidence": "high",
+    "note": "Threads API is part of the Instagram Graph API (Graph REST endpoints) and includes functionality to publish posts, replies, likes, read public content, profiles, webhooks, insights, and more."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "other",
+    "note": "You can create a Meta app and add the Threads API product to start making API calls in Development mode using app roles and generated access tokens (Get started). Some Threads permissions require App Review for Advanced Access, and some Meta developer features/technologies may require business verification depending on what permissions/features you request."
+  },
+  "research_meta": {
+    "queries": [
+      "Threads API authentication",
+      "Threads API get started create app",
+      "Meta App Dashboard create app App ID App Secret",
+      "Graph API app review access levels",
+      "Meta platform policy app review partner requirements"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

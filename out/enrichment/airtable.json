@@ -1,0 +1,44 @@
+{
+  "slug": "airtable",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "airtable",
+    "tools_count": 24.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "airtable"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "ai.waystation/airtable",
+        "official_vendor": false
+      },
+      {
+        "name": "com.airtable/mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "com.mcparmory/airtable",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/airtable",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Automations-Project/airtable-user-mcp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Airtable"
+  },
+  "homepage_alive": true
+}

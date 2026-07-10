@@ -1,0 +1,49 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://consensus.app/",
+      "confidence": "low",
+      "note": "Public pages (homepage, teams) mention SSO and enterprise admin controls but no public developer/authentication documentation (no API key, OAuth2, token, or other developer auth instructions) was found on the main site."
+    },
+    "final_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://consensus.app/",
+      "confidence": "high",
+      "note": "The official homepage is product/marketing content and does not provide any public developer authentication method (no API keys, OAuth, tokens, or developer sign-in/auth docs)."
+    },
+    "verdict": "unsupported"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://consensus.app/teams",
+      "confidence": "low",
+      "note": "Teams page emphasizes contact-sales and enterprise/demo requests; there is no public self-serve API key or developer account signup documented on the site, so it is unclear whether API credentials (if any) are self-serve, paid, or partner-gated."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://consensus.app/teams",
+      "confidence": "medium",
+      "note": "The previously referenced Teams URL returns 404 (page not found), so there is no official public information there about how (or whether) API credentials can be obtained; the homepage also does not document any self-serve credential issuance."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "no_public_api",
+      "note": "Because there are no public API docs or self-serve credential issuance pages on the official sites, integration is blocked. Next steps would be contacting enterprise/sales or following third-party leads, but that implies partner/enterprise gating or private APIs."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "no_public_api",
+      "note": "Integration is blocked because there is no publicly documented API surface or public credential issuance instructions on the official site."
+    },
+    "verdict": "unsupported"
+  }
+}

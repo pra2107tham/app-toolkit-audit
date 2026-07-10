@@ -1,0 +1,44 @@
+{
+  "slug": "stripe",
+  "name": "Stripe",
+  "category": "Finance and Fintech",
+  "description": "Online payments platform providing APIs to process payments, manage customers, subscriptions, payouts, and financial products.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic",
+      "token"
+    ],
+    "evidence_url": "https://stripe.com/docs/api/authentication",
+    "confidence": "high",
+    "note": "Stripe documents authenticating API requests using HTTP Basic Auth with the secret key (secret key as username) and examples using Authorization: Bearer {SECRET_KEY}; API keys include secret and publishable keys."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://stripe.com/docs/keys",
+    "confidence": "high",
+    "note": "Docs explain developers obtain API keys from the Dashboard (create test keys) and the Dashboard page indicates keys can be created when signed in; no human approval is required for standard account/API key creation."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://stripe.com/docs/api",
+    "confidence": "high",
+    "note": "Stripe API Reference documents a comprehensive REST API with resources covering Charges, Customers, PaymentIntents, Subscriptions, Connect, etc.; the API Explorer lets you make live requests."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs exist and developers can self-serve API keys from the Dashboard (test mode) to build integrations immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "Stripe API reference",
+      "Stripe authentication API keys Basic Auth Bearer",
+      "Obtain API keys Stripe Dashboard",
+      "Stripe pricing contact sales enterprise",
+      "Stripe Connect pricing enterprise contact sales"
+    ],
+    "insufficient_public_docs": false
+  }
+}

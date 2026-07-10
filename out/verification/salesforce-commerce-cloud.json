@@ -1,0 +1,40 @@
+{
+  "slug": "salesforce-commerce-cloud",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.salesforce.com/commerce",
+      "reasoning": "The description aligns with the homepage content, which describes Salesforce Commerce Cloud as an enterprise commerce platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "reasoning": "The URL provided for auth_methods returns a 404 error, meaning the evidence is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/setting-up-api-access.html",
+      "reasoning": "The credential access information is supported by the content of the accessible page, which details the process for creating API clients in Business Manager."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "reasoning": "The URL for api_surface returns a 404 error, indicating that the evidence is not available."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/setting-up-api-access.html",
+      "reasoning": "The buildability claim is consistent with the credential access information, which indicates that access to a Business Manager account is required to obtain API credentials."
+    }
+  ]
+}

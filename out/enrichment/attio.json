@@ -1,0 +1,43 @@
+{
+  "slug": "attio",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "attio",
+    "tools_count": 99.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "attio"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.smithery/kaszek-kaszek-attio-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/kesslerio-attio-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/kesslerio-attio-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/kesslerio-attio-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/kesslerio-attio-mcp-server",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Attio"
+  },
+  "homepage_alive": true
+}

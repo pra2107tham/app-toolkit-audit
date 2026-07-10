@@ -1,0 +1,40 @@
+{
+  "slug": "gohighlevel",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.gohighlevel.com",
+      "reasoning": "The homepage describes GoHighLevel as an all-in-one marketing and CRM platform, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+      "reasoning": "The documentation explicitly describes the use of Private Integration Token and OAuth 2.0 for authentication, confirming the recorded auth methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+      "reasoning": "While the source confirms the auth mechanisms, it does not provide information on whether obtaining developer credentials requires a paid plan or trial, leaving the claim unsupported."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/intro/welcome",
+      "reasoning": "The documentation confirms that API v2 is a RESTful API covering various product areas, supporting the recorded API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The claim of buildability is not fully supported as the exact credential provisioning path and any potential paid requirements are not confirmed in the primary sources."
+    }
+  ]
+}

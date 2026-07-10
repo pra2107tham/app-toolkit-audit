@@ -1,0 +1,45 @@
+{
+  "slug": "vercel",
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Deployment and hosting platform for frontend and serverless applications (static sites, serverless functions, edge functions).",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://vercel.com/docs/rest-api#authentication",
+    "confidence": "high",
+    "note": "Vercel uses Personal Access Tokens sent in the Authorization: Bearer header (documented as API access tokens). Tokens are managed in the account tokens dashboard. Interpreting 'api_key' and 'token' as equivalent here: bearer personal access tokens (API tokens)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://vercel.com/account/tokens",
+    "confidence": "high",
+    "note": "Account Tokens page shows users can create Personal Access Tokens from their account dashboard; no payment or sales approval is required to create tokens (tokens are created in the account UI)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://vercel.com/docs/rest-api",
+    "confidence": "high",
+    "note": "Vercel publishes a full REST API with endpoints for projects, deployments, domains, teams, etc., covering most product objects (see REST API docs root and endpoints)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs exist and developers can create Personal Access Tokens self-serve via account dashboard, enabling immediate integration."
+  },
+  "research_meta": {
+    "queries": [
+      "Vercel REST API docs authentication obtain token \"Personal Token\" \"Vercel\" site:vercel.com/docs OR site:vercel.com \"API Token\" \"Personal Token\" \"REST API\"",
+      "site:vercel.com \"REST API\" \"Vercel\" \"docs\" \"rest-api\"",
+      "Vercel \"Personal Access Token\" site:vercel.com \"Account Tokens\" \"Personal\"",
+      "site:vercel.com \"API\" \"contact sales\" OR \"contact-sales\" OR \"contact sales\"",
+      "site:vercel.com \"REST API\" \"authentication\" \"Vercel\"",
+      "site:vercel.com enterprise API Vercel \"enterprise\" \"API\"",
+      "Vercel \"REST API\" \"requires\" \"enterprise\" OR \"paid\" OR \"contact sales\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

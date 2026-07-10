@@ -1,0 +1,45 @@
+{
+  "slug": "bigcommerce",
+  "name": "BigCommerce",
+  "category": "Ecommerce",
+  "description": "BigCommerce is a hosted e-commerce platform for building and operating online stores.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://developer-center-bigcommerce-dx.vercel.app/docs/start/authentication/api-accounts",
+    "confidence": "high",
+    "note": "Official docs describe two primary auth methods: OAuth 2.0 for apps and Store API Accounts which provide client_id and access token headers (X-Auth-Client, X-Auth-Token) for API calls — mapped here to 'oauth2' and to 'api_key'/'token' respectively."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.bigcommerce.com/apps/guide/getting-started",
+    "confidence": "high",
+    "note": "Developer Guide shows registering as a developer and creating apps; testing/installing apps requires a BigCommerce store and the docs reference using a trial store for testing (i.e., API credentials can be obtained by a developer using a store/trial control panel)."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developer.bigcommerce.com/api-reference",
+    "confidence": "high",
+    "note": "Official API Reference documents both the Store Management REST APIs (manage products, customers, orders, etc.) and the Storefront GraphQL API; the coverage includes core store objects indicating broad coverage."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public API reference and developer guides exist and API credentials can be created from a store control panel (trial available). You need a BigCommerce store (trial suffices) to create Store API Accounts or to install and test OAuth apps."
+  },
+  "research_meta": {
+    "queries": [
+      "BigCommerce OAuth",
+      "BigCommerce Store API Accounts X-Auth-Token",
+      "BigCommerce API reference REST GraphQL",
+      "How to create Store API Account BigCommerce control panel",
+      "BigCommerce developer getting started trial store",
+      "BigCommerce pricing free trial"
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "dealcloud",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "DealCloud (by Intapp) is a deal and relationship management platform for investment banking, private equity, and corporate development, providing CRM, pipeline, and workflow APIs for integrations.",
+      "better_evidence_url": "https://www.intapp.com/dealcloud",
+      "reasoning": "The description aligns with the information provided on the homepage, confirming the platform's purpose and features."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://dealcloudapidev.azurewebsites.net/docs/authentication",
+      "reasoning": "The URL for authentication methods resulted in a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://dealcloudapidev.azurewebsites.net/docs/getting-started/obtain-api-credentials",
+      "reasoning": "The URL for obtaining API credentials resulted in a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://api.docs.dealcloud.com/",
+      "reasoning": "The API documentation confirms the existence of a REST API with broad coverage, as indicated by the available endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "",
+      "reasoning": "The buildability is consistent with the other fields, as the inability to obtain API credentials without admin approval confirms the blocked status."
+    }
+  ]
+}

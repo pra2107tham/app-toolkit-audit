@@ -1,0 +1,40 @@
+{
+  "slug": "github",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://github.com",
+      "reasoning": "The description accurately reflects GitHub's purpose as a git hosting and collaboration platform, which is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api",
+      "reasoning": "The evidence confirms the listed authentication methods, including OAuth2, API key, token, JWT, and basic auth, as stated in the documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token",
+      "reasoning": "The documentation supports the claim that users can self-serve to create personal access tokens without needing human approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.github.com/en/developers",
+      "reasoning": "The evidence confirms that GitHub provides both REST and GraphQL APIs, with broad coverage of product objects as stated."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api",
+      "reasoning": "The existence of public documentation and self-serve credentials confirms that integrations can be built immediately."
+    }
+  ]
+}

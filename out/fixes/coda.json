@@ -1,0 +1,7 @@
+{
+  "description": {
+    "pass1_value": "Coda is a flexible document platform that combines docs, spreadsheets, and apps (Coda docs) which can be read and manipulated via a REST API.",
+    "final_value": "Coda is an all-in-one collaborative workspace that brings teams, tools, and workflows together in one doc so teams can make docs, build workflows, and move work forward.",
+    "verdict": "unsupported"
+  }
+}

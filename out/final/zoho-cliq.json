@@ -1,0 +1,44 @@
+{
+  "slug": "zoho-cliq",
+  "name": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "description": "Team chat and collaboration platform with channels, messaging, bots, and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/authentication.html",
+    "confidence": "low",
+    "note": "Unable to fetch the official authentication page due to access blocking (robot challenge / 403). The record retains OAuth 2.0 as the claimed method, but it could not be re-verified from fetched primary sources in this run."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.zoho.com/accounts/help/api/console.html",
+    "confidence": "low",
+    "note": "Unable to fetch the Zoho API Console help page due to access blocking in this run, so self-serve credential creation could not be re-verified from fetched primary sources here."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+    "confidence": "high",
+    "note": "The REST API v2 provides endpoints for messages, channels, users, bots, webhooks and more (full reference available in the v2 docs)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "REST API docs are publicly listed; however, OAuth and credential issuance could not be re-verified in this run due to access blocking (robot challenge/403) on key pages. Treat auth/credential confidence as low until confirmed."
+  },
+  "research_meta": {
+    "queries": [
+      "Zoho Cliq API documentation",
+      "site:zoho.com/cliq \"developer guide\" Cliq",
+      "Zoho Cliq authentication OAuth client id client secret \"Cliq\" \"OAuth\" site:zoho.com",
+      "Zoho API Console create client \"api-console.zoho.com\" obtain client_id client_secret ZohoCliq",
+      "Zoho Cliq pricing API access \"Cliq\" pricing \"API\" site:zoho.com/cliq",
+      "Does Zoho Cliq API require paid plan partnership \"Cliq API\" \"partner\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

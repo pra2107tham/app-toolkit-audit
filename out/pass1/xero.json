@@ -1,0 +1,42 @@
+{
+  "slug": "xero",
+  "name": "Xero",
+  "category": "Finance and Fintech",
+  "description": "Cloud accounting platform offering APIs for accounting, payroll, assets, files and projects to integrate financial data and workflows.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://developer.xero.com/documentation/oauth2/auth-flow",
+    "confidence": "high",
+    "note": "Xero documents support for OAuth 2.0 Authorization Code grant and Client Credentials grant (for custom connections)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.xero.com/documentation/guides/create-app",
+    "confidence": "high",
+    "note": "The create-app guide shows developers can sign in to the developer portal, create an app, and receive a Client ID and Client Secret from the dashboard (no human approval required to obtain credentials)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.xero.com/documentation/api",
+    "confidence": "high",
+    "note": "Xero exposes RESTful JSON APIs across multiple product areas (Accounting, Payroll, Assets, Files, Projects) and provides official SDKs that wrap the REST endpoints."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs describe REST APIs and OAuth2 flows and developers can self-register an app to get client credentials, so integrations can be developed today."
+  },
+  "research_meta": {
+    "queries": [
+      "Xero developer documentation API auth OAuth2 developer.xero.com",
+      "site:developer.xero.com \"Authenticating with OAuth 2.0\" \"Xero\"",
+      "\"Create a Xero App\" \"developer.xero.com\" \"create-app\"",
+      "site:developer.xero.com \"partner\" \"app\" approval \"Xero\"",
+      "\"API access\" \"Xero\" \"partner\" \"require\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

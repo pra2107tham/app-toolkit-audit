@@ -1,0 +1,45 @@
+{
+  "slug": "twenty",
+  "name": "Twenty",
+  "category": "CRM and Sales",
+  "description": "Open-source CRM built with Next.js and Supabase; intended to be self-hosted or deployed by users rather than a vendor-hosted public API.",
+  "auth_methods": {
+    "value": [
+      "other"
+    ],
+    "evidence_url": "https://docs.twenty.com/",
+    "confidence": "high",
+    "note": "Twenty's official documentation states that Twenty uses Supabase Auth for user authentication (self-hosted deployments), rather than advertising a vendor-hosted OAuth2/API-key scheme for a public integration API."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://github.com/twentyapp/twenty",
+    "confidence": "high",
+    "note": "The official GitHub repository instructs users to run Twenty by creating/using a Supabase project and configuring env vars like SUPABASE_URL, SUPABASE_ANON_KEY, and SUPABASE_SERVICE_ROLE_KEY, implying credentials are obtained via self-serve Supabase signup for self-hosting."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://docs.twenty.com/",
+    "confidence": "high",
+    "note": "Twenty's official documentation states it currently does not provide a public API for third-party integrations; the app uses internal endpoints / a GraphQL layer that may change."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "no_public_api",
+    "note": "Integrations are buildable primarily by self-hosting Twenty and working with its internal endpoints/GraphQL layer and Supabase-backed configuration (requires obtaining Supabase project keys). The main blocker for a direct vendor-hosted integration is that Twenty does not currently offer a stable public third-party API."
+  },
+  "research_meta": {
+    "queries": [
+      "Twenty CRM API developer documentation site:twenty.com \"API\" OR \"developer\" OR \"docs\"",
+      "twenty API docs site:twenty.com",
+      "site:twenty.com \"API\" OR \"api\"",
+      "twentyapp github API docs",
+      "\"twenty\" \"API documentation\" \"twenty.com\"",
+      "site:github.com/twentyapp \"README\" \"API\"",
+      "\"twenty\" \"developer\" site:twenty.com"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

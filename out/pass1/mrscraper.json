@@ -1,0 +1,43 @@
+{
+  "slug": "mrscraper",
+  "name": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "description": "A scraping platform that provides a RESTful API and SDKs to create and run web scrapes, manage projects, and retrieve results.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://docs.mrscraper.com/reference/authentication",
+    "confidence": "high",
+    "note": "Official authentication reference states API keys are sent in the Authorization header as a bearer token; no OAuth or other flows supported."
+  },
+  "credential_access": {
+    "value": "self_serve_paid_trial",
+    "evidence_url": "https://docs.mrscraper.com/getting-started",
+    "confidence": "high",
+    "note": "Developers can sign up and create API keys from the dashboard; free trial credits are available on signup but continued use requires a paid plan per pricing page."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.mrscraper.com/",
+    "confidence": "high",
+    "note": "Mrscraper exposes a RESTful HTTP API covering projects, scrapes, billing, SDKs, and webhooks; many core product objects are represented in the API reference."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "paid_only",
+    "note": "API docs and onboarding allow self-serve API key creation and examples; free trial credits exist but long-term use requires paying for a plan (pricing page)."
+  },
+  "research_meta": {
+    "queries": [
+      "Mrscraper API authentication",
+      "Mrscraper get API key dashboard",
+      "Mrscraper pricing API access",
+      "Mrscraper developer docs REST API reference",
+      "Mrscraper contact sales enterprise API"
+    ],
+    "insufficient_public_docs": false
+  }
+}

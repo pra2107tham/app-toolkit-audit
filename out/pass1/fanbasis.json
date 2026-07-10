@@ -1,0 +1,42 @@
+{
+  "slug": "fanbasis",
+  "name": "fanbasis",
+  "category": "Ecommerce",
+  "description": "Payments and payouts infrastructure for creators, influencers, and platforms (enterprise-focused commerce/recurring payments platform).",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://dev-docs.fanbasis.com/",
+    "confidence": "high",
+    "note": "The official developer docs site is behind a login screen ('Login - FanBasis API Docsv3'), so public API authentication methods are not documented on accessible pages."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://www.fanbasis.com/enterprises",
+    "confidence": "high",
+    "note": "The Enterprises page describes enterprise and partnership offerings, indicating access is likely via commercial engagement rather than open self-serve signup."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://dev-docs.fanbasis.com/",
+    "confidence": "high",
+    "note": "The developer/docs root requires login and is not publicly readable, so the API surface (REST/GraphQL/both) cannot be confirmed from public pages."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "Developer docs require login and API credentials appear to be partner/enterprise gated; without access to the private docs or an enterprise relationship, building against FanBasis is blocked."
+  },
+  "research_meta": {
+    "queries": [
+      "fanbasis developer API documentation site:fanbasis.com OR site:*.fanbasis.com fanbasis API developer docs \"fanbasis\" \"API\"",
+      "site:dev-docs.fanbasis.com authentication \"API\" OR \"API key\" OR \"auth\" fanbasis \"dev-docs\"",
+      "site:fanbasis.com \"API\" \"key\" OR \"keys\" OR \"authentication\" \"fanbasis\"",
+      "site:fanbasis.com \"developer\" \"API\" fanbasis developers \"docs\"",
+      "fanbasis \"dev-docs\" \"login\" \"API\" \"developer\""
+    ],
+    "insufficient_public_docs": true
+  }
+}

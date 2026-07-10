@@ -1,0 +1,43 @@
+{
+  "slug": "consensus",
+  "name": "Consensus",
+  "category": "AI, Research and Media-native",
+  "description": "Search engine that provides research-backed answers with citations from papers, abstracts, and clinical trials; offers team/enterprise features such as SSO and admin controls.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://consensus.app/",
+    "confidence": "high",
+    "note": "The official homepage is product/marketing content and does not provide any public developer authentication method (no API keys, OAuth, tokens, or developer sign-in/auth docs)."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://consensus.app/teams",
+    "confidence": "medium",
+    "note": "The previously referenced Teams URL returns 404 (page not found), so there is no official public information there about how (or whether) API credentials can be obtained; the homepage also does not document any self-serve credential issuance."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://consensus.app/",
+    "confidence": "high",
+    "note": "No public REST or GraphQL API documentation or developer portal was found on the official domains (consensus.app and consensus.ai). The vendor pages reviewed contain product and enterprise information but no API reference or docs."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "Integration is blocked because there is no publicly documented API surface or public credential issuance instructions on the official site."
+  },
+  "research_meta": {
+    "queries": [
+      "site:consensus.app api OR developer OR docs OR \"API\" OR \"developer\"",
+      "consensus.ai API docs \"API\" \"developer\"",
+      "\"Consensus API\" \"API key\" \"developer\"",
+      "consensus \"developer\" \"API\" \"docs\" \"consensus.app\" -towardsdatascience -stackoverflow",
+      "site:consensus.app \"API\" -\"third-party\""
+    ],
+    "insufficient_public_docs": true,
+    "pass": 2
+  }
+}

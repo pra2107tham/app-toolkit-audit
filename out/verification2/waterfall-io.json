@@ -1,0 +1,40 @@
+{
+  "slug": "waterfall-io",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A SaaS platform that connects analytics and search data (Google Analytics, Search Console, Ads, Bing, Shopify, HubSpot) to build dashboards and insights.",
+      "better_evidence_url": "https://waterfall.io",
+      "reasoning": "The homepage describes Waterfall as a B2B data solution that connects various data sources, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://waterfall.io/security",
+      "reasoning": "The URL for the authentication methods returns a 404 error, meaning the evidence for the claim is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://waterfall.io/pricing",
+      "reasoning": "The URL for credential access returns a 404 error, indicating that the evidence for this claim is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://waterfall.io/pricing",
+      "reasoning": "The URL for the API surface returns a 404 error, which means there is no accessible evidence to support the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "Since the URLs for credential access and API surface are dead, the buildability claim cannot be verified and is therefore unsupported."
+    }
+  ]
+}

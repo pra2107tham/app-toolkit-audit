@@ -1,0 +1,49 @@
+{
+  "slug": "plaid",
+  "name": "Plaid",
+  "category": "Finance and Fintech",
+  "description": "Plaid provides APIs and SDKs to connect apps to users' bank accounts, retrieve account and transaction data, and enable payments and identity services.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic",
+      "token"
+    ],
+    "evidence_url": "https://plaid.com/docs/api/",
+    "confidence": "high",
+    "note": "Plaid API requests require a client_id and secret (keys from the Plaid Dashboard). The docs state these are typically sent in the request body, or can be sent via HTTP Basic authentication (in headers). Many endpoints also use an access_token for item-specific access; represented here as 'token'."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://dashboard.plaid.com/signup",
+    "confidence": "high",
+    "note": "Developers can create a free Plaid Dashboard account to access Sandbox and Development and obtain client_id and secret; Sandbox is available without sales approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://plaid.com/docs/api/",
+    "confidence": "high",
+    "note": "Plaid provides a broad REST API covering accounts, transactions, identity, assets, payments, transfers, webhooks, etc., plus server-side client libraries and client-side Link SDKs as documented on the API reference."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "With a self-serve Dashboard signup (Sandbox/Development) and documented REST APIs and SDKs, developers can build integrations today. Production access may require business verification or contacting sales for certain products, but basic development and many integrations are possible immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "Plaid developer documentation API docs site:plaid.com/docs",
+      "site:plaid.com/docs authentication \"client_id\" \"secret\"",
+      "site:plaid.com \"client_id\" \"secret\" dashboard",
+      "site:plaid.com \"pricing\" Plaid pricing API access production contact sales",
+      "site:plaid.com \"production\" \"dashboard\" \"keys\" \"go live\"",
+      "site:plaid.com \"production\" \"approval\" \"go live\" \"production access\"",
+      "site:plaid.com \"production\" \"apply\" \"production keys\" \"Plaid\"",
+      "site:plaid.com \"contact sales\" \"Plaid\" \"pricing\" \"partners\"",
+      "site:plaid.com \"partner\" \"partnership\" \"partner program\" \"Plaid\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

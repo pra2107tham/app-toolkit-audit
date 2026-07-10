@@ -1,0 +1,2699 @@
+[
+  {
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "description": "A cloud-based CRM platform providing APIs (REST, SOAP, GraphQL) to programmatically access and manage CRM data, metadata, and platform features.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "jwt",
+        "token",
+        "none_public"
+      ],
+      "evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+      "confidence": "high",
+      "note": "Salesforce primarily uses OAuth 2.0 flows (Web Server, User-Agent, Username-Password, JWT Bearer, Refresh Token, Device Flow). Access tokens (Bearer) and session IDs (token) are supported. Salesforce does not use a simple API key mechanic."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.salesforce.com/signup",
+      "confidence": "high",
+      "note": "Developers can sign up for a free Developer Edition org which includes API access and lets them create Connected Apps to obtain client_id and client_secret for OAuth."
+    },
+    "api_surface": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://developer.salesforce.com/docs",
+      "confidence": "high",
+      "note": "Salesforce exposes a broad REST API (sObjects, query, composite, tooling, metadata) and also provides a GraphQL API for querying data; authentication via OAuth tokens applies to both."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "With a free Developer Edition and ability to create Connected Apps (client_id/secret) plus documented OAuth flows and APIs, integrations can be built today without manual sales approval. Some production orgs/editions may restrict API access and require upgrading/contacting sales, but development is feasible via Developer Edition."
+    },
+    "research_meta": {
+      "queries": [
+        "Salesforce OAuth 2.0 flows developer guide",
+        "Create Connected App Salesforce consumer key secret",
+        "Salesforce Developer Edition signup API access",
+        "Salesforce REST API overview sObjects coverage",
+        "Salesforce GraphQL API documentation",
+        "Which Editions Include API Access Salesforce"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "salesforce",
+      "tools_count": 184.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "salesforce",
+        "salesforce_service_cloud"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.cirra/salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.cirra/salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.cirra/salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kodey-ai-salesforce-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Salesforce"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "description": "A CRM platform offering REST APIs and developer tools to integrate with HubSpot CRM objects, marketing, CMS, and other product areas.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token",
+        "none_public",
+        "other"
+      ],
+      "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "confidence": "high",
+      "note": "Official docs state OAuth 2.0 for public apps and Private Apps (account-scoped bearer tokens). API keys are deprecated (removed). 'token' denotes Private App bearer tokens. 'other' included to reflect deprecated API keys which the docs explicitly note were removed (legacy). 'none_public' included not as a supported method but to acknowledge no unauthenticated public API access."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+      "confidence": "high",
+      "note": "Private apps can be created in the HubSpot UI to generate scoped access tokens; developer docs show steps to create an app and obtain client ID/secret and to create private apps in account settings without human approval or paid plan. Developer account app creation page documents Client ID/secret issuance."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "confidence": "high",
+      "note": "HubSpot provides a broad REST API surface covering CRM objects (contacts, companies, deals), marketing, CMS, and more; docs root and API reference show base URL and many endpoints. There is no indication that GraphQL or SDK-only access replaces REST in the official reference."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Documentation and self-service credential issuance (OAuth client creation in developer account and Private App token generation) exist, enabling building integrations today without manual approvals. Publishing to Marketplace may require partner program steps, but building integrations for an account is immediate."
+    },
+    "research_meta": {
+      "queries": [
+        "HubSpot authentication overview OAuth private apps",
+        "HubSpot private apps create token generate",
+        "HubSpot API reference overview REST API base URL",
+        "HubSpot create an app client ID client secret",
+        "HubSpot API keys deprecation removal",
+        "HubSpot marketplace partner program requirements",
+        "HubSpot pricing features API access"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "hubspot",
+      "tools_count": 244.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "hubspot"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Centrify-Internal/hubspot-integrations-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/hubspot-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Servosity/hubspot-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-hubspot",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.mindstone/mcp-server-hubspot",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=HubSpot"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "description": "A sales CRM platform for managing leads, deals, activities and sales pipelines, with a public REST API to integrate and automate workflows.",
+    "auth_methods": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://developers.pipedrive.com/docs/api/v1/#authentication",
+      "confidence": "high",
+      "note": "Official API docs enumerate API token (personal API key) and OAuth2 as supported authentication methods."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://support.pipedrive.com/en/article/how-to-find-your-api-token",
+      "confidence": "high",
+      "note": "Personal API token can be obtained from a user's Settings > Personal preferences > API without contacting support. Documentation shows how to retrieve the token from the account UI, indicating developers can self-serve credentials. Marketplace/app publication has review, but basic API access uses account token."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.pipedrive.com/docs/api/v1/",
+      "confidence": "high",
+      "note": "Pipedrive provides a comprehensive REST API (v1) covering core product objects (deals, persons, organizations, activities, products, pipelines, etc.) as documented in the API reference root."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs exist and developers can obtain a personal API token from their account without human approval, so integrations can be built today. Publishing apps to the Marketplace requires app submission/review but that doesn't block initial development."
+    },
+    "research_meta": {
+      "queries": [
+        "Pipedrive API authentication api token oauth2 developers.pipedrive.com",
+        "How to find your API token Pipedrive support",
+        "Pipedrive developers apps register client id client secret",
+        "Pipedrive API v1 reference",
+        "Pipedrive marketplace app submission review",
+        "Pipedrive pricing API access"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "pipedrive",
+      "tools_count": 399.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "pipedrive"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Servosity/pipedrive-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ckalima/pipedrive-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pipedrive"
+    },
+    "verification": {
+      "pass1": [
+        {
+          "field": "description",
+          "verdict": "confirmed",
+          "corrected_value": "",
+          "better_evidence_url": "",
+          "reasoning": "The homepage and API documentation confirm Pipedrive is a sales CRM platform for managing leads, deals, activities and sales pipelines with a public REST API. The description accurately reflects the product."
+        },
+        {
+          "field": "auth_methods",
+          "verdict": "confirmed",
+          "corrected_value": "",
+          "better_evidence_url": "",
+          "reasoning": "The OAuth 2.0 documentation page (https://developers.pipedrive.com/docs/api/v1/Oauth) confirms OAuth 2.0 is supported. The API reference confirms API token authentication is supported. Both authentication methods are officially documented."
+        },
+        {
+          "field": "credential_access",
+          "verdict": "unsupported",
+          "corrected_value": "self_serve_free",
+          "better_evidence_url": "https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key",
+          "reasoning": "The cited evidence_url (https://support.pipedrive.com/en/article/how-to-find-your-api-token) returns a 404 error. However, the correct support article at https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key confirms the value is correct: 'If you ever need your personal API key, it can be found under Settings > Personal preferences > API.' The value itself is accurate but the evidence URL is broken."
+        },
+        {
+          "field": "api_surface",
+          "verdict": "confirmed",
+          "corrected_value": "",
+          "better_evidence_url": "",
+          "reasoning": "The API reference at https://developers.pipedrive.com/docs/api/v1/ confirms it is a comprehensive REST API (v1) with broad coverage including endpoints for deals, persons, organizations, activities, products, pipelines, and many other core objects."
+        },
+        {
+          "field": "buildability",
+          "verdict": "confirmed",
+          "corrected_value": "",
+          "better_evidence_url": "",
+          "reasoning": "The record correctly states developers can build today. Public REST API docs exist and developers can obtain personal API tokens from their account settings without human approval. The app approval process page confirms that marketplace submission requires review, but this doesn't block initial development or private app creation."
+        }
+      ],
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "attio",
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "description": "A modern CRM and workspace for managing relationships, contacts, and company data with a programmable API.",
+    "auth_methods": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.attio.com/reference/authentication",
+      "confidence": "high",
+      "note": "The official Authentication reference page (meta/description) states Attio uses API keys and OAuth 2.0 for authentication; SDK examples (npm/pypi) also show api_key usage."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://attio.com/pricing",
+      "confidence": "high",
+      "note": "Pricing page advertises 'Start for free'. The Get Started docs (https://docs.attio.com/get-started) describe signup, dashboard onboarding and how to access API credentials, indicating developers can obtain credentials themselves after signup."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://docs.attio.com/reference/overview",
+      "confidence": "high",
+      "note": "The API reference overview page (meta/description) mentions 'endpoints, models, REST examples' and there are reference pages for product objects (e.g. Collections, People) showing multiple endpoints."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public API docs exist and developers can obtain API keys via signup (free tier available). You can sign up for an account and generate API keys to start building."
+    },
+    "research_meta": {
+      "queries": [
+        "Attio API documentation site:attio.com OR site:docs.attio.com OR \"Attio API\" OR \"Attio developer\" OR \"Attio developers\" \"API\"",
+        "site:docs.attio.com \"Authentication\" \"Attio\" \"API\" \"reference\"",
+        "Attio \"create API key\" \"dashboard\" site:docs.attio.com OR site:attio.com \"API key\" \"dashboard\"",
+        "site:attio.com \"API\" \"contact sales\" OR \"partner\" OR \"partnership\" OR \"enterprise\" OR \"paid plan\" OR \"requires\"",
+        "Attio docs authentication \"docs.attio.com/reference/authentication\"",
+        "Attio API keys OAuth2 authentication docs",
+        "site:attio.com \"API key\" OR \"API keys\"",
+        "Attio OAuth OAuth2",
+        "Attio REST API GraphQL \"Attio API\"",
+        "site:docs.attio.com reference collections",
+        "site:docs.attio.com reference people records API attio"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "attio",
+      "tools_count": 99.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "attio"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/kaszek-kaszek-attio-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.smithery/kesslerio-attio-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Attio"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "twenty",
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "description": "Open-source CRM built with Next.js and Supabase; intended to be self-hosted or deployed by users rather than a vendor-hosted public API.",
+    "auth_methods": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "Auth for the application is implemented via Supabase (project README references SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY). There is no evidence of a vendor-hosted public API supporting OAuth2/API keys/basic/token/JWT on twenty.com; app-level auth relies on Supabase tokens for self-hosted instances (classified as 'other')."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "Repository README and docs show instructions and environment variables for obtaining and using Supabase credentials to run the app locally or self-host; developers can get Supabase free-tier credentials without vendor approval to run Twenty."
+    },
+    "api_surface": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "There is no vendor-hosted public REST/GraphQL API documented on twenty.com. The codebase exposes Next.js API routes and integrates with Supabase for DB access, but these are part of the self-hosted app (not a documented public API)."
+    },
+    "buildability": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "no_public_api",
+      "note": "You can build integrations by self-hosting Twenty and using its internal API routes or the Supabase backend (requires signing up for Supabase to obtain keys). There is no hosted vendor API to directly integrate with without self-hosting. (Normalized main_blocker from 'no_vendor_hosted_api' to allowed enum 'no_public_api'.)"
+    },
+    "research_meta": {
+      "queries": [
+        "Twenty CRM API developer documentation site:twenty.com \"API\" OR \"developer\" OR \"docs\"",
+        "twenty API docs site:twenty.com",
+        "site:twenty.com \"API\" OR \"api\"",
+        "twentyapp github API docs",
+        "\"twenty\" \"API documentation\" \"twenty.com\"",
+        "site:github.com/twentyapp \"README\" \"API\"",
+        "\"twenty\" \"developer\" site:twenty.com"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Twenty"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "podio",
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "description": "A collaborative work platform for managing projects, CRM, and workflows with a RESTful API to automate and integrate Podio data and actions.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://developers.podio.com/authentication",
+      "confidence": "high",
+      "note": "Documentation states Podio uses OAuth 2 (authorization code flow), supports client credentials (machine-to-machine) and accepts Bearer tokens; Podio does not use API keys for general access. Mapped 'client_credentials' to 'oauth2' and 'bearer_token' to 'token' to match allowed enum values."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.podio.com/applications",
+      "confidence": "high",
+      "note": "Developers can register an application in the developer console to obtain client_id and client_secret instantly after logging in; no mention of paid-only or partner gating."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.podio.com/api",
+      "confidence": "high",
+      "note": "API docs describe a RESTful HTTP API covering many resource types (items, apps, tasks, users, orgs, spaces, contacts, etc.), with CRUD operations."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs plus self-serve client credentials are available; developers can register apps and use OAuth flows to obtain tokens and call endpoints."
+    },
+    "research_meta": {
+      "queries": [
+        "Podio API documentation developer Podio API docs site:podio.com OR site:help.podio.com \"API\" \"developer\"",
+        "Podio API docs \"Podio API\" documentation developer site:podio.com OR site:developers.podio.com OR site:help.podio.com OR site:podio.developerhub.io",
+        "site:developers.podio.com Podio API authentication \"Authentication\"",
+        "Podio create API key \"application\" \"developers.podio.com\" \"app\" \"create\"",
+        "site:developers.podio.com \"Applications\" \"Podio\" \"client_id\" \"client_secret\"",
+        "Podio API pricing \"API\" \"pricing\" site:podio.com OR site:developers.podio.com OR site:help.podio.com"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Podio"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "description": "A cloud-based customer relationship management platform providing sales, marketing, and support automation with extensive REST APIs and SDKs.",
+    "auth_methods": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+      "confidence": "high",
+      "note": "Zoho CRM uses OAuth 2.0 (Authorization Code, self-client, refresh token); API requests use Bearer tokens. No public GraphQL or basic auth documented."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://api-console.zoho.com/",
+      "confidence": "high",
+      "note": "Developers can sign in to the Zoho API Console to create OAuth clients or self-clients and generate client ID/secret and grant tokens without needing partner approval. API usage is subject to edition limits; additional units can be purchased."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://www.zoho.com/crm/developer/docs/",
+      "confidence": "high",
+      "note": "Zoho CRM exposes a broad REST API (v2/v8), covering modules like Leads, Contacts, Accounts, Deals, Products, Quotes, Bulk APIs, search, fields, layouts, attachments, etc."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST APIs and OAuth credentials can be obtained via the API Console; documentation and SDKs are available, so integrations can be built today. API rate limits depend on CRM edition and may require purchasing additional API units for high-volume usage."
+    },
+    "research_meta": {
+      "queries": [
+        "Zoho CRM API documentation developer site:zoho.com/crm/developer/docs",
+        "site:zoho.com \"Zoho CRM\" \"OAuth\" \"client id\" \"client secret\" \"generate\"",
+        "Zoho CRM API pricing site:zoho.com \"Zoho CRM\" API pricing limits \"API\"",
+        "site:zoho.com \"Developer Resources | Zoho CRM\" \"developer/docs\"",
+        "site:zoho.com \"Zoho CRM\" \"API Usage\" \"edition\""
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "zoho",
+      "tools_count": 57.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "zoho"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zoho%20CRM"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "close",
+    "name": "Close",
+    "category": "CRM and Sales",
+    "description": "Close is a CRM focused on sales teams that provides a REST API to access and manage leads, activities, contacts, and related CRM objects.",
+    "auth_methods": {
+      "value": [
+        "api_key",
+        "basic"
+      ],
+      "evidence_url": "https://developer.close.com/en/guide/authentication",
+      "confidence": "high",
+      "note": "Close uses API Keys; keys are supplied via HTTP Basic auth (API key as username, blank password) or an Authorization header with Basic <base64(API_KEY:)>."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.close.com/article/44-api-keys",
+      "confidence": "high",
+      "note": "API keys are created by a logged-in user in Settings -> API Keys in the Close dashboard; documentation shows a user can create keys from the UI. Docs note that if you don't see API Keys, organization permissions may restrict visibility (admin settings), but generally keys are self-service from the dashboard."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.close.com/",
+      "confidence": "high",
+      "note": "The developer docs state the Close API is a REST API with a base URL and example endpoints (e.g., /api/v1/lead/). Official docs include API reference and SDKs for multiple languages, indicating broad coverage of product objects."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST docs exist and API keys can be created self-serve in the dashboard, so a developer can build integrations today. Only potential blocker is organization-level permission settings may prevent some users from creating keys (requires admin in that org)."
+    },
+    "research_meta": {
+      "queries": [
+        "Close API authentication API keys basic auth developer docs",
+        "How do I create an API Key Close docs",
+        "Close API reference developer.close.com",
+        "Close pricing API access",
+        "Close enterprise API access"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "close",
+      "tools_count": 6.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "close"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": true,
+      "matches": [
+        {
+          "name": "com.close/close-mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "com.close/close-mcp",
+          "official_vendor": true
+        },
+        {
+          "name": "io.github.pipeworx-io/close-crm",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Close"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "copper",
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "description": "A CRM built for Google Workspace users that manages contacts, pipelines, and sales workflows.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "api_key"
+      ],
+      "evidence_url": "https://developer.copper.com/introduction/authentication.html",
+      "confidence": "high",
+      "note": "Developer docs explicitly list OAuth2.0 and API Keys (token-based) as the two supported authentication methods."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+      "confidence": "medium",
+      "note": "The OAuth quickstart shows developers register an app in the Copper developer dashboard to obtain client_id and client_secret (self-serve). The public pricing page indicates Copper offers free trials / 'Start free, no credit card required' (https://www.copper.com/pricing), but no official page explicitly states API access is available on the free plan, so classification is medium confidence."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.copper.com/",
+      "confidence": "high",
+      "note": "The developer site states the Copper Developer API provides a RESTful interface with JSON-formatted responses and 'access most Copper resources.'"
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public developer docs (developer site, authentication, and OAuth quickstart) provide REST API reference and instructions to register apps and obtain credentials, enabling development today without manual approval. The only remaining uncertainty is whether specific plan limits apply (pricing page does not explicitly gate API access)."
+    },
+    "research_meta": {
+      "queries": [
+        "Copper CRM API documentation developer site:copper.com Copper API docs \"developer\" \"API\"",
+        "site:developer.copper.com authentication Copper API \"authentication\"",
+        "site:developer.copper.com register application \"register\" \"application\" Copper OAuth app register",
+        "site:copper.com \"API\" \"pricing\" \"Copper\" \"API\" access pricing plan copper.com pricing API access developer API",
+        "site:help.copper.com API access Copper \"API\" \"access\"",
+        "\"developer.copper.com\" \"client_id\" \"client_secret\"",
+        "site:copper.com \"developer\" \"API\" \"dashboard\" \"client_id\" \"register\"",
+        "Copper API developer docs site:developer.copper.com",
+        "\"Copper API\" \"developer dashboard\" \"register\" \"client_id\"",
+        "site:developer.copper.com \"register your app\" \"developer dashboard\"",
+        "\"Copper API\" \"partner\" \"partner\" site:copper.com \"API\"",
+        "site:copper.com \"API\" \"partner\" \"access\" \"Copper\""
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Copper"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "dealcloud",
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "description": "DealCloud (by Intapp) is a deal and relationship management platform for investment banking, private equity, and corporate development, providing CRM, pipeline, and workflow APIs for integrations.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://api.docs.dealcloud.com/docs/authentication",
+      "confidence": "high",
+      "note": "Official docs list OAuth2 (Authorization Code and Client Credentials), API Key via X-Api-Key header, and Personal Access Tokens (used as Bearer tokens)."
+    },
+    "credential_access": {
+      "value": "admin_approval",
+      "evidence_url": "https://api.docs.dealcloud.com/docs/getting-started/obtain-api-credentials",
+      "confidence": "high",
+      "note": "Docs state API Keys and Personal Access Tokens are provisioned by your DealCloud administrator or by contacting DealCloud support; non-admins must contact support/sales."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://api.docs.dealcloud.com/",
+      "confidence": "high",
+      "note": "Swagger JSON at /swagger/v1/swagger.json shows a REST API (paths like /contacts, /accounts, /oauth/token) and securityDefinitions; the Swagger UI is hosted at the docs root. The API covers core objects (Contacts, Accounts, Operations) indicating broad coverage."
+    },
+    "buildability": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Public docs exist and the REST API is documented, but API credentials must be provisioned by an admin or support/sales contact, preventing immediate self-serve developer access; requires contacting admin or sales."
+    },
+    "research_meta": {
+      "queries": [
+        "DealCloud API authentication",
+        "DealCloud obtain API credentials",
+        "DealCloud API key X-Api-Key",
+        "DealCloud OAuth token /oauth/token",
+        "DealCloud API docs swagger"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=DealCloud"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "zendesk",
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "description": "Customer service platform providing ticketing, user and organization management, messaging, and related support APIs.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "basic"
+      ],
+      "evidence_url": "https://developer.zendesk.com/api-reference/introduction/authentication/",
+      "confidence": "high",
+      "note": "Official developer docs list OAuth 2.0, API token (used like an API key), and basic auth (email/password or email/token). Support article details API token usage and basic auth variant."
+    },
+    "credential_access": {
+      "value": "admin_approval",
+      "evidence_url": "https://support.zendesk.com/hc/en-us/articles/226022767-Generating-a-new-API-token-",
+      "confidence": "high",
+      "note": "Generating an API token requires an admin to create it in Admin Center; tokens are not obtainable by a developer without admin privileges. OAuth app creation and admin-level settings likewise require account/admin setup."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+      "confidence": "high",
+      "note": "The Ticketing API reference is a broad REST API covering tickets, users, organizations, ticket fields and many core product objects. Developer portal lists multiple APIs and SDKs, indicating wide coverage."
+    },
+    "buildability": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Technically well-documented and usable, but API credentials (API tokens) must be generated by an account administrator, preventing a third-party developer from self-serving credentials on an arbitrary Zendesk instance."
+    },
+    "research_meta": {
+      "queries": [
+        "Zendesk API authentication oauth2 api token basic",
+        "Zendesk generate API token admin center",
+        "Zendesk REST API ticketing reference",
+        "Zendesk API rate limits vary by plan",
+        "Zendesk pricing API access"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "zendesk",
+      "tools_count": 452.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "zendesk"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.fruggr/zendesk-mcp-server",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zendesk"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "intercom",
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "description": "Customer messaging, helpdesk, and product support platform (inbox, conversations, users, and automation).",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "confidence": "high",
+      "note": "Intercom supports OAuth 2.0 for public apps and Personal Access Tokens (Bearer tokens) for server-to-server/private apps; requests use Authorization: Bearer <token>."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/creating-a-developer-application",
+      "confidence": "high",
+      "note": "You can create an app in the Developer Hub and receive credentials (Access Token for private apps or client ID/secret for public OAuth apps) immediately from your workspace."
+    },
+    "api_surface": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://developers.intercom.com/docs/references/2.13/rest-api/api.intercom.io",
+      "confidence": "high",
+      "note": "Intercom exposes a broad REST API (users, leads, conversations, companies, events, tags, etc.) and also provides a GraphQL endpoint (https://api.intercom.io/graphql) as noted in the API reference."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs plus self-serve credential creation in the Developer Hub allow building integrations today. (Enterprise-only product features may still require paid plans or Sales contact, but API credentials can be obtained from a workspace.)"
+    },
+    "research_meta": {
+      "queries": [
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/creating-a-developer-application",
+        "https://developers.intercom.com/",
+        "https://developers.intercom.com/docs/references/2.13/rest-api/api.intercom.io",
+        "https://www.intercom.com/pricing"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "intercom",
+      "tools_count": 133.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "intercom"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.pipeworx-io/intercom",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Intercom"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "freshdesk",
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "description": "Customer support ticketing and helpdesk platform with APIs to manage tickets, contacts, agents, solutions and more.",
+    "auth_methods": {
+      "value": [
+        "api_key",
+        "oauth2",
+        "basic"
+      ],
+      "evidence_url": "https://developers.freshdesk.com/api/#authentication",
+      "confidence": "high",
+      "note": "Official docs state API key usage via HTTP Basic Auth (API key as username, 'X' as password) and also mention OAuth 2.0 Bearer tokens."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://support.freshdesk.com/en/support/solutions/articles/215517-how-to-get-your-api-key",
+      "confidence": "high",
+      "note": "Support article shows an individual user can obtain their API key from their profile settings after logging in; implies self-serve access. Freshdesk offers a free plan and trial signup (pricing page) so developers can create accounts without manual approval."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.freshdesk.com/api/",
+      "confidence": "high",
+      "note": "API v2 is a REST API covering tickets, contacts, agents, companies, conversations, solutions, forums, time entries and more per the official API reference."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs and self-serve API key (via profile) exist; developers can sign up on Free plan or trial and immediately obtain API credentials to build integrations."
+    },
+    "research_meta": {
+      "queries": [
+        "Freshdesk API authentication api key basic oauth2",
+        "How to get Freshdesk API key profile",
+        "Freshdesk API v2 docs endpoints tickets contacts agents",
+        "Freshdesk pricing api access free plan"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "freshdesk",
+      "tools_count": 178.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "freshdesk"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.mindstone/mcp-server-freshdesk",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/freshdesk",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.wyre-technology/freshdesk-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.wyre-technology/freshdesk-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.wyre-technology/freshdesk-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Freshdesk"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "front",
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "description": "Shared inbox and customer communication platform for teams (email, chat, social) with APIs and SDKs to integrate and extend Front.",
+    "auth_methods": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://dev.frontapp.com/docs/auth",
+      "confidence": "high",
+      "note": "Official developer docs state Front supports API tokens (used as Bearer tokens) and OAuth 2.0 (authorization code flow)."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.front.com/en/articles/2331",
+      "confidence": "high",
+      "note": "Help Center shows developers can create personal API tokens from Settings > Company > Developers (no human approval or paid plan mentioned). OAuth apps can be created similarly per https://help.front.com/en/articles/2355. No public doc states a paid plan is required to obtain credentials."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://dev.frontapp.com",
+      "confidence": "high",
+      "note": "Developer portal lists Core API (REST) and reference; the site includes REST API reference and guides covering many product objects (tickets, conversations, contacts, webhooks, etc.)."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs and self-serve token/OAuth creation exist, so a developer can obtain credentials and use the REST API immediately. Rate limits apply and may require contacting sales for higher limits per https://help.front.com/en/articles/2438."
+    },
+    "research_meta": {
+      "queries": [
+        "dev.frontapp.com Front Developer Portal API docs root",
+        "Front API authentication site:dev.frontapp.com OR site:help.front.com \"authentication\" \"API\" \"Front\"",
+        "How to create and revoke API tokens site:help.front.com",
+        "Create an OAuth app in Front site:help.front.com",
+        "Front API pricing \"API\" \"pricing\" site:front.com",
+        "Front \"API access\" \"Enterprise\" site:front.com OR site:help.front.com"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Front"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "pylon",
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "description": "A platform for customer support and helpdesk workflows that provides a RESTful developer API for interacting with account and product data.",
+    "auth_methods": {
+      "value": [
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "confidence": "high",
+      "note": "Authentication uses Bearer tokens provided in the Authorization header (Authorization: Bearer <token>). The docs state admin users create API tokens in the Pylon dashboard."
+    },
+    "credential_access": {
+      "value": "admin_approval",
+      "evidence_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "confidence": "high",
+      "note": "Docs explicitly state API tokens are created by Admin users in the Pylon dashboard, implying credentials must be created by an admin rather than self-serve by any end-user."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "unknown",
+      "docs_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "confidence": "high",
+      "note": "Official docs are a REST API (endpoints like GET /api/v1/me referenced). The docs are the API root. The breadth (whether most product objects are covered) is not fully documented on a single page; the API reference exists but the fetch did not enumerate all endpoints to classify broad vs narrow."
+    },
+    "buildability": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Although the API is documented and uses bearer tokens, API tokens must be generated by Admin users in the dashboard, so a developer without admin access cannot self-serve obtain working credentials. This blocks building immediately for a typical external developer account."
+    },
+    "research_meta": {
+      "queries": [
+        "Pylon API authentication bearer token docs",
+        "Pylon developer API docs",
+        "Pylon API token create dashboard admin",
+        "Pylon pricing api access",
+        "Pylon contact sales"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "ambiguous",
+      "candidates": [
+        "pylon_mcp"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.JustinBeckwith/pylon-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pylon"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "liveagent",
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "description": "Cloud-based helpdesk and live chat platform for customer service, with RESTful API for tickets, contacts, chat, accounts and more.",
+    "auth_methods": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://support.liveagent.com/741982-API-key",
+      "confidence": "high",
+      "note": "Docs show API v3 and v1 use API keys and provide header examples (Authorization: Bearer and apikey:)."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://support.liveagent.com/741982-API-key",
+      "confidence": "high",
+      "note": "API keys are created in the LiveAgent admin (Configuration > System > API) in the customer dashboard; signup has a free trial per pricing page so developers can self-serve."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://support.liveagent.com/911737-API-v3",
+      "confidence": "high",
+      "note": "API v3 is a RESTful API covering tickets, contacts, customers, accounts, chat; interactive per-account OpenAPI (Swagger) descriptor is provided (per-account docs at https://YOURDOMAIN.ladesk.com/docs/api/v3/ and swagger.json)."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs describe API endpoints and auth; API keys are generated in the admin and signup with free trial is available, enabling immediate development against a trial account."
+    },
+    "research_meta": {
+      "queries": [
+        "LiveAgent API documentation site:liveagent.com",
+        "site:support.liveagent.com \"API v3\" LiveAgent",
+        "LiveAgent pricing API access site:liveagent.com OR site:support.liveagent.com OR site:faq.liveagent.com",
+        "site:support.liveagent.com \"Complete API reference\"",
+        "LiveAgent API key where to find API key plan pricing \"API key\" \"LiveAgent\" site:liveagent.com OR site:support.liveagent.com OR site:faq.liveagent.com"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=LiveAgent"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "plain",
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "description": "Plain is a modern customer support / helpdesk platform for product teams, offering inboxes, knowledge bases, integrations, AI assistants and extensibility.",
+    "auth_methods": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://www.plain.com/help",
+      "confidence": "high",
+      "note": "The Help Center states that for API access and developer documentation you must contact sales or your account representative, indicating there are no publicly documented API auth methods."
+    },
+    "credential_access": {
+      "value": "partner_gated",
+      "evidence_url": "https://www.plain.com/help",
+      "confidence": "high",
+      "note": "Help Center explicitly instructs to contact sales or your account representative for API access and developer documentation, which implies access is partner-gated rather than self-serve."
+    },
+    "api_surface": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://www.plain.com/help",
+      "confidence": "high",
+      "note": "The site and Help Center indicate Plain is API-first in product messaging, but developer documentation and API reference are not publicly available \u2014 you must contact sales/account rep to obtain API docs, so public API surface cannot be confirmed."
+    },
+    "buildability": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "No public API docs or self-serve credential issuance found; API access requires contacting sales/account representative, preventing building without establishing a commercial relationship."
+    },
+    "research_meta": {
+      "queries": [
+        "Plain support helpdesk Plain.com developer API docs \"Plain API\" \"plain.com\"",
+        "site:plain.com \"API\" \"Plain\" \"developers\"",
+        "Plain helpdesk \"API\" \"plain\" \"developer\"",
+        "\"Plain API\" \"plain.com\" -plaintext -other \"support\" \"helpdesk\"",
+        "Composio Tavily advanced search constrained to include_domains: [\"plain.com\"]"
+      ],
+      "insufficient_public_docs": true
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "plain",
+      "tools_count": 22.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "plain"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Plain"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "help-scout",
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "description": "A customer support platform providing shared inboxes, knowledge base, and customer management tools.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "api_key"
+      ],
+      "evidence_url": "https://developer.helpscout.com/api-auth/",
+      "confidence": "high",
+      "note": "Docs state Help Scout supports OAuth 2.0; legacy API Keys are still mentioned as supported for existing apps."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.helpscout.com/docs/getting-started/",
+      "confidence": "high",
+      "note": "Developers can register apps in the Developer Dashboard and obtain client ID/secret for development; creating a test app implies self-serve credentials without human approval."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.helpscout.com/api/",
+      "confidence": "high",
+      "note": "API Reference states a REST API covering Conversations, Customers, Mailboxes, Users, reports and webhooks; community SDKs exist but no official SDKs."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST docs and self-serve OAuth credentials exist, so integrations can be built today."
+    },
+    "research_meta": {
+      "queries": [
+        "Help Scout API authentication OAuth 2.0",
+        "Help Scout API keys legacy",
+        "How to register Help Scout app Developer Dashboard",
+        "Help Scout API reference conversations customers mailboxes"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "help_scout",
+      "tools_count": 129.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "help_scout"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Help%20Scout"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "gorgias",
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "description": "Customer support helpdesk platform for ecommerce teams (tickets, customers, integrations, automation).",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "basic",
+        "token"
+      ],
+      "evidence_url": "https://developers.gorgias.com/reference/authentication",
+      "confidence": "high",
+      "note": "Docs explicitly describe private apps using API keys (HTTP Basic or Bearer) and public apps using OAuth2 Bearer tokens."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "confidence": "high",
+      "note": "Help Center shows API keys can be created from the dashboard (Settings \u2192 Integrations \u2192 API & Webhooks). This implies a developer user can self-serve to obtain keys; pricing pages do not state API is gated."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.gorgias.com/reference",
+      "confidence": "high",
+      "note": "The developer reference lists endpoints for accounts, tickets, users, customers, integrations and more; OpenAPI spec is available for SDK generation."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs + self-serve API keys or OAuth app registration exist, so integrations can be built today."
+    },
+    "research_meta": {
+      "queries": [
+        "Gorgias API authentication",
+        "Gorgias API keys create dashboard Settings Integrations API & Webhooks",
+        "Gorgias OAuth2 developer portal",
+        "Gorgias REST API reference endpoints tickets customers users",
+        "Gorgias API access requirements pricing"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "gorgias",
+      "tools_count": 32.0,
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "gorgias"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gorgias"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "gladly",
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "description": "Customer service platform (inbox) that centralizes customer conversations across channels and exposes a REST API for integrations.",
+    "auth_methods": {
+      "value": [
+        "basic",
+        "token"
+      ],
+      "evidence_url": "https://developer.gladly.com/rest/authentication.html",
+      "confidence": "high",
+      "note": "Docs state Gladly uses token-based Basic Authentication: use the user's email as the username and an API token as the password."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "confidence": "high",
+      "note": "Help center shows how to generate API tokens in Settings > App Developer Tools > API Tokens; procedure implies developers can self-generate tokens from the product UI without contacting sales."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.gladly.com/rest/index.html",
+      "confidence": "high",
+      "note": "API reference lists many REST endpoints across conversations, contacts, messages, webhooks, etc., indicating broad REST coverage. No public GraphQL docs found."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST docs plus self-serve API token generation allow immediate integration and development using Basic auth with API tokens."
+    },
+    "research_meta": {
+      "queries": [
+        "Gladly API developer documentation site Gladly API authentication \"Gladly API\" \"developer\" site:gladly.com OR site:developers.gladly.com OR site:docs.gladly.com OR \"Gladly API\" authentication \"API key\"",
+        "site:developer.gladly.com developer.gladly.com REST index \"Gladly API\" \"developer\"",
+        "site:developer.gladly.com \"Authentication\" \"Gladly\" \"API token\" \"API Tokens\"",
+        "site:help.gladly.com \"Generate API Tokens\" Gladly \"API Tokens\" \"webhooks\"",
+        "site:gladly.com \"App Platform\" \"API\" Gladly pricing API access \"partner\" \"partnership\" \"contact sales\"",
+        "\"developer.gladly.com\" \"authentication\" \"API token\" \"Basic Authentication\" site:developer.gladly.com/rest"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gladly"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "description": "Team communication platform providing messaging, channels, and integrations via HTTP Web APIs, Events (webhooks), and real-time APIs.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://api.slack.com/authentication",
+      "confidence": "high",
+      "note": "Slack recommends OAuth 2.0 for app installation and issues bearer tokens (bot/user/app tokens) used in the Authorization: Bearer <token> header; tokens are the primary authentication mechanism for Web API calls."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://api.slack.com/apps",
+      "confidence": "high",
+      "note": "Developers can create a Slack App in the App Dashboard to obtain client ID/secret and install to a workspace to receive tokens; this can be done on a workspace (including free plan) without human approval."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://api.slack.com/",
+      "confidence": "high",
+      "note": "Slack exposes a broad Web API (HTTP REST methods) plus Events (webhook delivery), RTM (WebSocket) and additional APIs like SCIM and Admin; the docs root lists Web API, Events API, RTM, SCIM, Admin, and SDKs."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs and self-serve credential creation exist, so you can build integrations immediately. Note some admin/provisioning endpoints (e.g., SCIM, Admin APIs) are restricted to Enterprise Grid or require paid/enterprise plans."
+    },
+    "research_meta": {
+      "queries": [
+        "site:api.slack.com authentication",
+        "site:api.slack.com oauth v2 slack",
+        "site:api.slack.com/apps create app client id secret",
+        "site:api.slack.com scim enterprise grid",
+        "site:api.slack.com admin apis enterprise grid",
+        "slack pricing enterprise grid contact sales"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "slack",
+      "tools_count": 158.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "slack",
+        "slackbot"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/smithery-ai-slack",
+          "official_vendor": false
+        },
+        {
+          "name": "ai.waystation/slack",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/slack",
+          "official_vendor": false
+        },
+        {
+          "name": "com.mcparmory/slack",
+          "official_vendor": false
+        },
+        {
+          "name": "com.pulsemcp/slack",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Slack"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "twilio",
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "description": "Cloud communications platform providing REST APIs and SDKs for SMS, Voice, Video, WhatsApp, and other messaging/real-time communications services.",
+    "auth_methods": {
+      "value": [
+        "basic",
+        "api_key"
+      ],
+      "evidence_url": "https://www.twilio.com/docs/iam/api",
+      "confidence": "high",
+      "note": "Twilio's main REST API uses HTTP Basic Auth with Account SID as username and Auth Token as password. API Key SID/Secret can also be used in place of Account SID/Auth Token (used in HTTP Basic Auth)."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+      "confidence": "high",
+      "note": "Developers can sign up for a free Twilio trial account and receive Account SID and Auth Token (and create API Keys) without human approval; trial has usage limits."
+    },
+    "api_surface": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://www.twilio.com/docs",
+      "confidence": "high",
+      "note": "Twilio provides REST APIs across its products plus official helper libraries (SDKs) in multiple languages; the docs hub lists REST APIs, SDKs, quickstarts, and API references covering messaging, voice, video, etc."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST APIs and self-serve credentials are available; developers can build integrations immediately. Some specific product features (e.g., WhatsApp Business onboarding, short codes) require additional approvals or provisioning which may require applications/fees (see evidence)."
+    },
+    "research_meta": {
+      "queries": [
+        "Twilio API authentication",
+        "Twilio API Keys SID Secret",
+        "Twilio REST API docs",
+        "Twilio free trial account credentials",
+        "Twilio WhatsApp request access",
+        "Twilio short codes provisioning"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.codespar/mcp-twilio",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.codespar/mcp-twilio",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.pipeworx-io/twilio",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Twilio"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "zoho-cliq",
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "description": "Team chat and collaboration platform with channels, messaging, bots, and integrations.",
+    "auth_methods": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/authentication.html",
+      "confidence": "high",
+      "note": "Zoho Cliq REST API uses OAuth 2.0; access tokens are passed in the Authorization header as 'Zoho-oauthtoken <access_token>'."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.zoho.com/accounts/help/api/console.html",
+      "confidence": "high",
+      "note": "Developers can sign in to the Zoho API Console to create a client and obtain client_id and client_secret without mention of payment or manual approval."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "confidence": "high",
+      "note": "The REST API v2 provides endpoints for messages, channels, users, bots, webhooks and more (full reference available in the v2 docs)."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs and self-serve OAuth client registration exist; developers can obtain credentials and call APIs today."
+    },
+    "research_meta": {
+      "queries": [
+        "Zoho Cliq API documentation",
+        "site:zoho.com/cliq \"developer guide\" Cliq",
+        "Zoho Cliq authentication OAuth client id client secret \"Cliq\" \"OAuth\" site:zoho.com",
+        "Zoho API Console create client \"api-console.zoho.com\" obtain client_id client_secret ZohoCliq",
+        "Zoho Cliq pricing API access \"Cliq\" pricing \"API\" site:zoho.com/cliq",
+        "Does Zoho Cliq API require paid plan partnership \"Cliq API\" \"partner\""
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Zoho%20Cliq"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "lark",
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "description": "An enterprise collaboration platform (chat, docs, calendar) with an Open Platform for building apps and integrations.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://open.larksuite.com/document/ukTM4EjL/ucDO3EjL3gTNx4yN",
+      "confidence": "high",
+      "note": "Authentication docs page (Authentication) for the Open Platform documents OAuth flows, App Access Token and Tenant Access Token methods (token-based). The fetched page is the official Authentication doc root confirming these methods are documented."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://open.larksuite.com/document/ukTM4EjL/ucDO2EjL3gTNx4yN",
+      "confidence": "high",
+      "note": "Getting Started / Manage App doc indicates how to create an app and obtain App ID and App Secret from the developer console (self-serve). The developer console root is accessible at https://open.larksuite.com/ for account sign-up."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://open.larksuite.com/document/ukTM4EjL/ucDO1EjL3gTNx4yN",
+      "confidence": "high",
+      "note": "The Open Platform documentation root provides navigation to API reference and SDKs; Lark/Feishu exposes a broad REST API surface covering many product objects. The docs root confirms the API reference exists."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public developer docs and self-serve app creation are available; standard credentials (App ID/Secret) and token flows are documented enabling development today."
+    },
+    "research_meta": {
+      "queries": [
+        "Lark Open Platform authentication App Access Token Tenant Access Token OAuth",
+        "Lark Feishu manage app obtain App ID App Secret create app",
+        "Lark Open Platform API reference REST SDKs",
+        "Lark app review permissions require enterprise partner review"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Lark%20%28Larksuite%29"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "pumble",
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "description": "Team chat and collaboration platform with a REST API add-on for automating workspace actions (messages, channels, members, webhooks).",
+    "auth_methods": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-integration-installation-and-usage/",
+      "confidence": "high",
+      "note": "Pumble uses API keys sent in the X-Api-Key header to authenticate REST API requests; API keys are created in the workspace API section."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "confidence": "high",
+      "note": "The docs state the API add-on can be installed in a workspace and API keys generated via the workspace UI. The public pricing page does not indicate API access requires paid plan or sales/partnership approval."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "confidence": "high",
+      "note": "Documentation describes a REST API (Swagger UI at /api/docs) and lists ability to create messages, manage channels, members, webhooks and more; full endpoint docs exposed via Swagger on workspace."
+    },
+    "buildability": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "none",
+      "note": "Developer can install the API addon in a workspace and generate API keys via the UI (self-serve). No evidence that admin/partner approval or paid-only access is required, so building is feasible after routine key signup in a workspace."
+    },
+    "research_meta": {
+      "queries": [
+        "Pumble API documentation site:pumble.com OR \"Pumble API\" OR \"Pumble developer\" OR \"Pumble integrations\"",
+        "Pumble API Overview site:pumble.com \"API\" \"Swagger\"",
+        "site:pumble.com \"API Integration - Installation and Usage\"",
+        "site:pumble.com \"api key\" \"Pumble\" \"Swagger\"",
+        "site:pumble.com \"generate an API key\" \"Pumble\"",
+        "site:pumble.com \"Swagger\" \"Pumble\" \"api\"",
+        "site:pumble.com \"API addon\" \"Pumble\"",
+        "site:pumble.com \"pricing\" \"Pumble\" API addon \"API\"",
+        "site:pumble.com \"pricing\" \"API\" \"pumble\" \"addon\"",
+        "Pumble \"API\" \"Help\" site:pumble.com/help",
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "site:pumble.com \"Get an API key\" \"Pumble\""
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pumble"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "discord",
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "description": "A real-time chat platform for communities and developers offering text/voice/video, servers (guilds), channels, and a programmable public API for bots and integrations.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "basic",
+        "token"
+      ],
+      "evidence_url": "https://discord.com/developers/docs/topics/oauth2",
+      "confidence": "high",
+      "note": "Discord supports OAuth2 flows (authorization code, PKCE, client credentials, etc.). OAuth token exchanges use HTTP Basic auth (client_id:client_secret base64) for some flows, and bots authenticate to the REST API using a Bot token sent in the Authorization header (Authorization: Bot <token>). Evidence: OAuth2 docs and Applications dashboard docs."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://discord.com/developers/applications",
+      "confidence": "high",
+      "note": "Developers can create applications and add bot users in the Developer Portal to obtain Client ID, Client Secret, and Bot Token without human approval or paid plans."
+    },
+    "api_surface": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://discord.com/developers/docs",
+      "confidence": "high",
+      "note": "Discord provides a broad REST API covering channels, guilds, users, messages, etc., plus a real-time Gateway (WebSocket) for events (both documented in the Developer Docs)."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs and self-serve credential creation exist, allowing developers to build today. Operational considerations: bots above certain scale or accessing privileged data (e.g., GUILD_MEMBERS, PRESENCE) require intent enablement and verification (human review) as described in the verification and privileged intents docs, but these do not prevent initial development."
+    },
+    "research_meta": {
+      "queries": [
+        "Discord developer docs",
+        "Discord OAuth2",
+        "Discord developer applications create app bot token client secret",
+        "Discord bot verification requirements",
+        "Discord privileged intents enablement"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "discord",
+      "tools_count": 27.0,
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "discord",
+        "discordbot"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "ai.smithery/Danushkumar-V-mcp-discord",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.Oratorian/discord-node-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Discord"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "telegram",
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "description": "Instant messaging platform providing user/client APIs (MTProto/TDLib) and a HTTP-based Bot API for bots and integrations.",
+    "auth_methods": {
+      "value": [
+        "token",
+        "api_key"
+      ],
+      "evidence_url": "https://core.telegram.org/",
+      "confidence": "high",
+      "note": "The Bot API authenticates using a bot token issued by BotFather (token). The Telegram API (MTProto) requires an api_id and api_hash obtained via my.telegram.org (API key/secret). Both are documented on the official Telegram developer site."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://core.telegram.org/api/obtaining_api_id",
+      "confidence": "high",
+      "note": "Developers can create an application at my.telegram.org to receive api_id and api_hash, and can create bots via BotFather to receive bot tokens, without human approval or paid partnership."
+    },
+    "api_surface": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://core.telegram.org/",
+      "confidence": "high",
+      "note": "Telegram provides a RESTful HTTP Bot API for bots and an MTProto API (used by client libraries and TDLib). The docs site lists Bot API, Telegram API (MTProto), and TDLib, indicating broad coverage of product objects via these APIs."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public documentation exists and credentials (bot token or api_id/api_hash) can be obtained via BotFather and my.telegram.org respectively, enabling development today."
+    },
+    "research_meta": {
+      "queries": [
+        "Telegram developer documentation core.telegram.org developer docs root",
+        "site:core.telegram.org obtaining_api_id OR \"obtain an API identifier\"",
+        "site:core.telegram.org \"Authorisation\" \"Bot API\"",
+        "site:core.telegram.org \"my.telegram.org\" \"apps\" \"api_id\"",
+        "site:telegram.org \"API\" pricing \"contact\" \"partnership\" \"paid\"",
+        "site:core.telegram.org \"partnership\" \"API\" \"Telegram\"",
+        "\"my.telegram.org/apps\" \"create application\" \"api_id\"",
+        "Telegram BotFather create bot token Bot API how to create bot site:core.telegram.org \"BotFather\"",
+        "site:telegram.org \"API\" \"pricing\""
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "telegram",
+      "tools_count": 18.0,
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "telegram"
+      ]
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.GeiserX/telegram-archive-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.ParthJadhav/telegram-notify-mcp",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.auroracapital/claude-ops-telegram-server",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.daedalus/mcp-telegram-bot",
+          "official_vendor": false
+        },
+        {
+          "name": "io.github.jgalea/telegram-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Telegram"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "whatsapp-business",
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "description": "WhatsApp Business Platform lets businesses send and receive messages at scale via Meta-hosted Cloud API or a self\u2011hosted on\u2011premises API, with support for message templates, media, and webhooks.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/guides/authentication",
+      "confidence": "high",
+      "note": "Authentication uses OAuth-style access tokens (Bearer tokens) including short-lived and long-lived tokens obtained via the Meta App dashboard and Facebook Login flows; API calls use Authorization: Bearer <ACCESS_TOKEN>."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "confidence": "high",
+      "note": "Developers can create a Meta App and generate temporary access tokens and test phone numbers from the dashboard for free testing. Production usage requires business verification and a WABA but initial credentials for development are self-serve and free."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.facebook.com/docs/whatsapp",
+      "confidence": "high",
+      "note": "The WhatsApp Business Platform provides REST endpoints (Cloud API and on\u2011premises) covering messaging, media, templates, webhooks and account management; SDK client libraries are referenced from the docs."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "You can obtain test tokens and a test phone number immediately via the Meta for Developers dashboard and call REST endpoints (Cloud API) for development. Production requires business verification and phone number approval but does not block initial development."
+    },
+    "research_meta": {
+      "queries": [
+        "WhatsApp Business Platform authentication access tokens bearer",
+        "WhatsApp Cloud API get started generate temporary access token test phone number",
+        "WhatsApp Business API pricing billing production charges",
+        "WhatsApp Business on-premises API reference endpoints",
+        "WhatsApp Business Solution Provider BSP partner directory"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": true,
+      "slug": "whatsapp",
+      "tools_count": 57.0,
+      "auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "match_kind": "exact",
+      "candidates": [
+        "whatsapp"
+      ]
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=WhatsApp%20Business"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "aircall",
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "description": "Cloud phone system & call center platform \u2014 REST API for calls, contacts, and webhooks to build integrations.",
+    "auth_methods": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developer.aircall.io",
+      "confidence": "medium",
+      "note": "Aircall docs reference OAuth2 and personal access tokens / API tokens in places."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.aircall.io",
+      "confidence": "medium",
+      "note": "Developers can register apps and obtain credentials from the developer portal after signing up."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.aircall.io",
+      "confidence": "high",
+      "note": "Site exposes an OpenAPI JSON at /openapi.json."
+    },
+    "buildability": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "none",
+      "note": "Public REST API available; requires account signup and app credential creation."
+    },
+    "research_meta": {
+      "queries": [
+        "Aircall Developer API authentication",
+        "Aircall openapi.json",
+        "Aircall webhooks docs"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": false,
+      "official": false,
+      "matches": [],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Aircall"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "vonage",
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "description": "APIs and SDKs for voice, SMS, messaging, video and related cloud communications services.",
+    "auth_methods": {
+      "value": [
+        "api_key",
+        "jwt",
+        "other"
+      ],
+      "evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "confidence": "high",
+      "note": "Official docs describe API key & secret usage, Application JWTs for apps, and other signing/auth concepts (signatures)."
+    },
+    "credential_access": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.vonage.com/en/account/guides/api-key-secret",
+      "confidence": "high",
+      "note": "Developer documentation and the dashboard sign-up show that developers can create an account and obtain API key & secret from the Developer Dashboard without manual approval."
+    },
+    "api_surface": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.vonage.com/en/home",
+      "confidence": "high",
+      "note": "Vonage exposes RESTful APIs across its product surfaces (SMS, Voice, Messages, Verify, etc.) and provides official SDKs that wrap those REST APIs; documentation root lists product APIs and SDKs."
+    },
+    "buildability": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs and self-serve account signup + API key issuance allow developers to start building immediately. Some specific channels/features (e.g., WhatsApp Business) require additional verification/onboarding documented separately and may block that channel until approved."
+    },
+    "research_meta": {
+      "queries": [
+        "Vonage authentication methods",
+        "Vonage API key secret Developer Dashboard",
+        "Vonage developer sign up get api key",
+        "Vonage Developer home APIs SDKs",
+        "Vonage WhatsApp onboarding verification",
+        "Vonage communications APIs pricing"
+      ],
+      "insufficient_public_docs": false
+    },
+    "composio_toolkit": {
+      "exists": false,
+      "slug": null,
+      "tools_count": null,
+      "auth_schemes": null,
+      "match_kind": "none",
+      "candidates": []
+    },
+    "mcp_server": {
+      "exists": true,
+      "official": false,
+      "matches": [
+        {
+          "name": "io.github.Vonage/vonage-documentation-mcp",
+          "official_vendor": false
+        }
+      ],
+      "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Vonage"
+    },
+    "verification": {
+      "pass1": null,
+      "post_fix": null,
+      "fixed_fields": []
+    },
+    "status": "ok"
+  },
+  {
+    "slug": "google-ads",
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "meta-ads",
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "linkedin-ads",
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "gohighlevel",
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "systeme-io",
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "pinterest",
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "threads",
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "sendgrid",
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "status": "missing"
+  },
+  {
+    "slug": "shopify",
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "woocommerce",
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "bigcommerce",
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "salesforce-commerce-cloud",
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "magento",
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "squarespace",
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "ecwid",
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "gumroad",
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "amazon-selling-partner",
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "fanbasis",
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "status": "missing"
+  },
+  {
+    "slug": "dataforseo",
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "se-ranking",
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "ahrefs",
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "mrscraper",
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "apify",
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "firecrawl",
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "bright-data",
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "sherlock",
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "waterfall-io",
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "clay",
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "status": "missing"
+  },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "vercel",
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "netlify",
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "cloudflare",
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "neo4j",
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "snowflake",
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "mongodb-atlas",
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "datadog",
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "sentry",
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "status": "missing"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "linear",
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "jira",
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "monday",
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "coda",
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "harvest",
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "status": "missing"
+  },
+  {
+    "slug": "stripe",
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "plaid",
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "binance",
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "paygent-connect",
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "ipayx",
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "quickbooks",
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "xero",
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "brex",
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "ramp",
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "pitchbook",
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "status": "missing"
+  },
+  {
+    "slug": "notebooklm",
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "otter-ai",
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "fathom",
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "consensus",
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "reducto",
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "devin",
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "higgsfield",
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "mermaid-cli",
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "youtube-transcript",
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  },
+  {
+    "slug": "grain",
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "status": "missing"
+  }
+]

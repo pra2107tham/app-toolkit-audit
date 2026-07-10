@@ -1,0 +1,67 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "none_public"
+      ],
+      "evidence_url": "https://help.waterfall.io/en/articles/6948295-integrations",
+      "confidence": "high",
+      "note": "User-facing integrations use OAuth for connecting third-party sources. No public API authentication docs or API reference discovered on official docs; therefore 'none_public' indicates no public developer API found."
+    },
+    "final_value": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://waterfall.io/security",
+      "confidence": "high",
+      "note": "Waterfall states it uses OAuth 2.0 (where available) to request permissioned access when connecting third-party services, and it does not store third-party account passwords."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://waterfall.io/pricing",
+      "confidence": "low",
+      "note": "Pricing page shows Free/Pro/Business tiers; no documentation on obtaining API credentials or whether API access is available on plans. Contact/sales page suggests enterprise contact for custom solutions."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://waterfall.io/pricing",
+      "confidence": "high",
+      "note": "The pricing page FAQ explicitly says: \"Do you have an API? No, Waterfall does not currently offer a public API.\" Therefore there is no self-serve way to obtain API credentials."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://help.waterfall.io/en/",
+      "confidence": "high",
+      "note": "No public REST/GraphQL API docs or SDKs found on official domains; only user integration articles. 'narrow' used because only connectors are documented (OAuth integrations), not a public API surface."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://waterfall.io/pricing",
+      "confidence": "high",
+      "note": "Waterfall's pricing FAQ states it does not currently offer a public API; the product instead provides access/export via dashboards and reports."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "no_public_api",
+      "note": "Cannot build an AI-agent integration today because there is no public developer API documentation or a documented way to self-serve API credentials. Recommend contacting Waterfall sales via https://waterfall.io/contact/ to inquire about partner/enterprise API access."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "no_public_api",
+      "note": "Waterfall states it does not currently offer a public API (pricing FAQ). Without a public API and self-serve credentials, an AI-agent integration cannot be built via standard API methods."
+    },
+    "verdict": "unsupported"
+  }
+}

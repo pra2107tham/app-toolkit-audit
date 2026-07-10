@@ -1,0 +1,40 @@
+{
+  "slug": "pinterest",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.pinterest.com",
+      "reasoning": "The description provided does not have direct support from the homepage content, which is more general and does not specifically mention the API or its features."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2",
+      "better_evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+      "reasoning": "The documentation explicitly states the use of OAuth 2.0 Authorization Code Flow and PKCE, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+      "reasoning": "The evidence supports that developers can register apps to obtain client credentials, confirming the self-serve nature of access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.pinterest.com/docs/",
+      "reasoning": "The documentation confirms that Pinterest provides a v5 REST API covering various aspects like boards, pins, ads, and users."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+      "reasoning": "The public REST API with OAuth 2.0 and the requirement for app registration supports the claim of buildability."
+    }
+  ]
+}

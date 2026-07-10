@@ -1,0 +1,35 @@
+{
+  "slug": "ramp",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "ramp",
+    "tools_count": 88.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "ramp"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "com.mcparmory/ramp",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/ramp",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/ramp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Ramp"
+  },
+  "homepage_alive": true
+}

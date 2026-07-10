@@ -1,0 +1,40 @@
+{
+  "slug": "vercel",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://vercel.com",
+      "reasoning": "The description accurately reflects the content on the homepage, which describes Vercel as a deployment and hosting platform for frontend and serverless applications."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://vercel.com/docs/rest-api#authentication",
+      "reasoning": "The evidence confirms that Vercel uses Personal Access Tokens sent in the Authorization header, aligning with the recorded values of 'api_key' and 'token'."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://vercel.com/account/tokens",
+      "reasoning": "The evidence supports that users can create Personal Access Tokens without payment or sales approval, confirming the self-serve free access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://vercel.com/docs/rest-api",
+      "reasoning": "The evidence confirms that Vercel provides a full REST API with various endpoints, supporting the claim of a broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://vercel.com/docs/rest-api",
+      "reasoning": "The existence of public REST API documentation and the ability to create Personal Access Tokens self-serve confirms that Vercel is buildable today."
+    }
+  ]
+}

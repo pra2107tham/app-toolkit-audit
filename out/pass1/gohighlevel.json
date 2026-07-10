@@ -1,0 +1,46 @@
+{
+  "slug": "gohighlevel",
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "All-in-one marketing & CRM platform for agencies with a public REST API for integrations and Marketplace apps.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+    "confidence": "high",
+    "note": "Docs explicitly describe Private Integration Token (used as a Bearer token) and OAuth 2.0 (authorization code & token exchange)."
+  },
+  "credential_access": {
+    "value": "self_serve_paid_trial",
+    "evidence_url": "https://help.gohighlevel.com/support/solutions/articles/360003419193-register-your-app-for-developer-marketplace",
+    "confidence": "medium",
+    "note": "Docs show developers can create Private Integrations and register Marketplace apps via the Developer section and must submit apps for review. The docs do not explicitly state whether a paid plan or card is required to create developer credentials; however, developer onboarding runs through agency/developer accounts (which commonly require account setup). No explicit public doc states entirely free, self-serve credentials without any account setup or billing — so classified as self_serve_paid_trial (routine signup likely required)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/intro/welcome",
+    "confidence": "high",
+    "note": "API v2 is documented as a RESTful API with many product areas covered (contacts, campaigns, appointments, etc.). Official OpenAPI sources are in the project's GitHub repo."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "other",
+    "note": "Public REST docs, examples, and SDKs exist and authentication methods are documented. Building integrations requires creating Private Integration Tokens or registering an OAuth Marketplace app (which involves submitting for review). No explicit paid/partner gating found in docs, so a routine developer signup and app registration is the likely path."
+  },
+  "research_meta": {
+    "queries": [
+      "GoHighLevel API documentation stoplight highlevel.stoplight.io GoHighLevel developer API auth \"GoHighLevel API\"",
+      "site:stoplight.io \"GoHighLevel\" OR \"highlevel.stoplight.io\" API docs",
+      "site:gohighlevel.com \"API\" \"developer\" \"marketplace\" \"docs\"",
+      "\"HighLevel Public API\" \"authentication\" site:gohighlevel.com OR site:help.gohighlevel.com",
+      "\"Register your App for Developer Marketplace\" \"HighLevel\" site:help.gohighlevel.com",
+      "site:github.com GoHighLevel \"highlevel-api-docs\" \"README\"",
+      "\"Marketplace Docs — HighLevel\" \"marketplace.gohighlevel.com/docs\"",
+      "\"How to get started with the Developer's Marketplace\" \"GoHighLevel\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "bigcommerce",
+  "name": "BigCommerce",
+  "category": "Ecommerce",
+  "description": "BigCommerce is a hosted e-commerce platform for building and operating online stores.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://developer.bigcommerce.com/docs/start/authentication/api-accounts",
+    "confidence": "high",
+    "note": "Official docs describe two primary ways to authenticate: (1) OAuth 2.0 for apps (https://developer.bigcommerce.com/docs/start/authentication/oauth2) and (2) Store API Accounts (API Accounts) created in a store control panel, which generate a Client ID and Access Token used as headers X-Auth-Client and X-Auth-Token. Mapped here to oauth2 and to api_key/token respectively."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.bigcommerce.com/apps/guide/getting-started",
+    "confidence": "high",
+    "note": "Getting Started guide lists prerequisites including a BigCommerce store and explicitly notes you can use a trial store for development/testing; it also describes creating an app in the Developer Portal to obtain Client ID/Client Secret and installing it to receive an OAuth access token."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developer.bigcommerce.com/api-reference",
+    "confidence": "high",
+    "note": "Official API Reference documents both the Store Management REST APIs (manage products, customers, orders, etc.) and the Storefront GraphQL API; the coverage includes core store objects indicating broad coverage."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public API reference is available (https://developer.bigcommerce.com/api-reference). Official authentication docs show self-serve credential paths: OAuth 2.0 for apps (https://developer.bigcommerce.com/docs/start/authentication/oauth2) and Store API Accounts created in a store control panel that generate Client ID and Access Token for X-Auth-Client/X-Auth-Token headers (https://developer.bigcommerce.com/docs/start/authentication/api-accounts). Getting started guide indicates you can use a trial store for development/testing (https://developer.bigcommerce.com/apps/guide/getting-started)."
+  },
+  "research_meta": {
+    "queries": [
+      "BigCommerce OAuth",
+      "BigCommerce Store API Accounts X-Auth-Token",
+      "BigCommerce API reference REST GraphQL",
+      "How to create Store API Account BigCommerce control panel",
+      "BigCommerce developer getting started trial store",
+      "BigCommerce pricing free trial"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

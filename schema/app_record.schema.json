@@ -1,0 +1,248 @@
+{
+  "$defs": {
+    "ApiSurfaceClaim": {
+      "properties": {
+        "value": {
+          "enum": [
+            "rest",
+            "graphql",
+            "both",
+            "sdk_only",
+            "none_public"
+          ],
+          "title": "Value",
+          "type": "string"
+        },
+        "breadth": {
+          "description": "broad = most product objects covered; narrow = a handful of endpoints",
+          "enum": [
+            "broad",
+            "moderate",
+            "narrow",
+            "unknown"
+          ],
+          "title": "Breadth",
+          "type": "string"
+        },
+        "docs_url": {
+          "description": "Root URL of the public API reference",
+          "title": "Docs Url",
+          "type": "string"
+        },
+        "confidence": {
+          "default": "medium",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "breadth",
+        "docs_url"
+      ],
+      "title": "ApiSurfaceClaim",
+      "type": "object"
+    },
+    "AuthMethodsClaim": {
+      "properties": {
+        "value": {
+          "description": "Every auth method the public API supports",
+          "items": {
+            "enum": [
+              "oauth2",
+              "api_key",
+              "basic",
+              "token",
+              "jwt",
+              "other",
+              "none_public"
+            ],
+            "type": "string"
+          },
+          "title": "Value",
+          "type": "array"
+        },
+        "evidence_url": {
+          "description": "URL of the auth docs page supporting this",
+          "title": "Evidence Url",
+          "type": "string"
+        },
+        "confidence": {
+          "default": "medium",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "evidence_url"
+      ],
+      "title": "AuthMethodsClaim",
+      "type": "object"
+    },
+    "BuildabilityClaim": {
+      "properties": {
+        "verdict": {
+          "enum": [
+            "buildable_today",
+            "buildable_with_key_signup",
+            "blocked"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        },
+        "main_blocker": {
+          "default": "none",
+          "enum": [
+            "none",
+            "partner_gate",
+            "no_public_api",
+            "insufficient_docs",
+            "enterprise_only",
+            "paid_only",
+            "other"
+          ],
+          "title": "Main Blocker",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "verdict"
+      ],
+      "title": "BuildabilityClaim",
+      "type": "object"
+    },
+    "CredentialAccessClaim": {
+      "properties": {
+        "value": {
+          "description": "Can a developer get API credentials themselves for free/trial, or is it gated",
+          "enum": [
+            "self_serve_free",
+            "self_serve_paid_trial",
+            "admin_approval",
+            "partner_gated",
+            "unclear"
+          ],
+          "title": "Value",
+          "type": "string"
+        },
+        "evidence_url": {
+          "title": "Evidence Url",
+          "type": "string"
+        },
+        "confidence": {
+          "default": "medium",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "evidence_url"
+      ],
+      "title": "CredentialAccessClaim",
+      "type": "object"
+    },
+    "ResearchMeta": {
+      "properties": {
+        "queries": {
+          "description": "Search queries actually used",
+          "items": {
+            "type": "string"
+          },
+          "title": "Queries",
+          "type": "array"
+        },
+        "insufficient_public_docs": {
+          "default": false,
+          "description": "True when no public developer docs could be found; evidence_url fields may then be empty",
+          "title": "Insufficient Public Docs",
+          "type": "boolean"
+        }
+      },
+      "title": "ResearchMeta",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "slug": {
+      "title": "Slug",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string"
+    },
+    "description": {
+      "description": "What the app does, in one line",
+      "title": "Description",
+      "type": "string"
+    },
+    "auth_methods": {
+      "$ref": "#/$defs/AuthMethodsClaim"
+    },
+    "credential_access": {
+      "$ref": "#/$defs/CredentialAccessClaim"
+    },
+    "api_surface": {
+      "$ref": "#/$defs/ApiSurfaceClaim"
+    },
+    "buildability": {
+      "$ref": "#/$defs/BuildabilityClaim"
+    },
+    "research_meta": {
+      "$ref": "#/$defs/ResearchMeta"
+    }
+  },
+  "required": [
+    "slug",
+    "name",
+    "category",
+    "description",
+    "auth_methods",
+    "credential_access",
+    "api_surface",
+    "buildability"
+  ],
+  "title": "AppRecord",
+  "type": "object"
+}

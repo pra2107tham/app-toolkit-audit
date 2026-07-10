@@ -1,0 +1,40 @@
+{
+  "slug": "plain",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Plain is a modern customer support / helpdesk platform for product teams, offering inboxes, knowledge bases, integrations, AI assistants and extensibility.",
+      "better_evidence_url": "https://www.plain.com",
+      "reasoning": "The homepage describes Plain as a support infrastructure that enables B2B teams to build anything, confirming the description provided."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://www.plain.com/help",
+      "reasoning": "The URL for the Help Center resulted in a FETCH_ERROR due to exceeding redirects, preventing confirmation of the claim regarding API auth methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "partner_gated",
+      "better_evidence_url": "https://www.plain.com/help",
+      "reasoning": "The URL for the Help Center resulted in a FETCH_ERROR due to exceeding redirects, preventing confirmation of the claim regarding credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://www.plain.com/help",
+      "reasoning": "The URL for the Help Center resulted in a FETCH_ERROR due to exceeding redirects, preventing confirmation of the claim regarding the public API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "dead_url",
+      "corrected_value": "blocked",
+      "better_evidence_url": "N/A",
+      "reasoning": "The buildability status cannot be confirmed due to the lack of accessible documentation, as indicated by the dead URLs for the Help Center."
+    }
+  ]
+}

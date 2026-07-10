@@ -1,0 +1,40 @@
+{
+  "slug": "sherlock",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A command-line tool and Python package to find usernames across many social networks.",
+      "better_evidence_url": "https://github.com/sherlock-project/sherlock",
+      "reasoning": "The description accurately reflects the content on the GitHub page, which describes the tool's purpose."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://github.com/sherlock-project/sherlock",
+      "reasoning": "The GitHub page confirms that there are no public API authentication methods, aligning with the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://sherlock.readthedocs.io/",
+      "reasoning": "The documentation URL returns a 404 error, making it impossible to verify the claim about credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://github.com/sherlock-project/sherlock",
+      "reasoning": "The GitHub page confirms that there are no public API endpoints, which supports the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://github.com/sherlock-project/sherlock",
+      "reasoning": "The lack of public API endpoints and authentication methods confirms that building an AI-agent integration is blocked."
+    }
+  ]
+}

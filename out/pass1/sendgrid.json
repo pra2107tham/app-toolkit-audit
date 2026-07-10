@@ -1,0 +1,43 @@
+{
+  "slug": "sendgrid",
+  "name": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Email delivery and marketing platform for sending transactional and marketing email at scale.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2",
+      "basic"
+    ],
+    "evidence_url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+    "confidence": "high",
+    "note": "Primary method is API Key (Bearer token). Docs also mention OAuth2 for integrations and legacy/basic SMTP username/password (deprecated) for SMTP; Web API uses Bearer API keys."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://sendgrid.com/pricing",
+    "confidence": "high",
+    "note": "SendGrid offers a free tier and docs show API keys can be created in the account UI, allowing developers to obtain working credentials without human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.sendgrid.com/",
+    "confidence": "high",
+    "note": "SendGrid provides a broad Web API (Web API v3) covering sending mail, marketing campaigns, contacts, etc., plus official SDKs for multiple languages listed in the docs."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Documentation is public and developers can self-create API keys on the free tier; therefore integration can be built today."
+  },
+  "research_meta": {
+    "queries": [
+      "SendGrid API documentation developer docs site:sendgrid.com \"API\" \"docs\" \"sendgrid\"",
+      "SendGrid authentication API keys docs",
+      "Create API key SendGrid docs",
+      "SendGrid pricing API access plan"
+    ],
+    "insufficient_public_docs": false
+  }
+}

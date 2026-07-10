@@ -1,0 +1,40 @@
+{
+  "slug": "gumroad",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A platform for creators to sell digital and physical products; provides an OAuth-based REST API plus a license-key verification endpoint.",
+      "better_evidence_url": "https://gumroad.com",
+      "reasoning": "The homepage supports the claim that Gumroad is a platform for creators to sell products."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://app.gumroad.com/api/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://gumroad.com/help/article/280-create-application-api",
+      "reasoning": "The help center confirms that users can register an OAuth application and generate access tokens without human approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://app.gumroad.com/api",
+      "reasoning": "The API documentation confirms that it is a REST API with various endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "",
+      "reasoning": "The existence of a public REST API and self-serve OAuth application creation supports the claim of buildability."
+    }
+  ]
+}

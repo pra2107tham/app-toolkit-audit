@@ -1,0 +1,45 @@
+{
+  "slug": "higgsfield",
+  "name": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "description": "Higgsfield is an AI image & video generation platform exposing a Minimal Connector Protocol (MCP) server and CLI for programmatic agent integrations.",
+  "auth_methods": {
+    "value": [
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://higgsfield.ai/cli",
+    "confidence": "high",
+    "note": "The CLI page explicitly states the CLI opens a browser to complete login and 'stores session tokens locally' for programmatic use. MCP docs also state authentication is via your Higgsfield account (no API keys), i.e., account web login + session tokens."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://higgsfield.ai/pricing",
+    "confidence": "low",
+    "note": "Unable to fetch the pricing page content from this environment (Cloudflare/403), so I cannot verify whether developers can self-register, receive free trial credits, or otherwise obtain programmatic access without human approval. Treat as unclear."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "narrow",
+    "docs_url": "https://higgsfield.ai/mcp",
+    "confidence": "low",
+    "note": "Unable to fetch the MCP documentation content from this environment (blocked), so I cannot quote/verify the precise interface description. Based on the disputed finding, the surface should be treated as a narrow MCP/HTTP-style interface rather than a broad public REST/GraphQL API; however confidence is low without retrievable primary text."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "other",
+    "note": "Unable to fetch/verify pricing and MCP docs due to access blocks from this environment. Buildability depends on whether account creation and credits are self-serve and immediately usable; without primary-source confirmation, verdict and blocker must remain unclear."
+  },
+  "research_meta": {
+    "queries": [
+      "Higgsfield MCP docs",
+      "Higgsfield MCP API",
+      "Higgsfield CLI auth login tokens",
+      "Higgsfield API keys no api keys",
+      "Higgsfield pricing credits free trial",
+      "Higgsfield enterprise SSO provisioning"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

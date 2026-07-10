@@ -1,0 +1,45 @@
+{
+  "slug": "brex",
+  "name": "Brex",
+  "category": "Finance and Fintech",
+  "description": "A unified corporate spend platform offering corporate cards, expense management, payments, travel, and related financial APIs.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://developer.brex.com/docs/reference/authentication",
+    "confidence": "medium",
+    "note": "Brex\u2019s official developer docs have an Authentication page under /docs/reference/authentication, which describes authenticating to Brex APIs (bearer access tokens in the Authorization header) and documents supported authentication approaches (OAuth 2.0 flows and API key-based access, depending on the API)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.brex.com/docs/getting-started",
+    "confidence": "medium",
+    "note": "Brex\u2019s Getting started documentation explains how developers obtain credentials via the Brex developer portal/dashboard as part of onboarding (including generating/using API credentials without requiring a documented manual approval step for basic access)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.brex.com/reference",
+    "confidence": "high",
+    "note": "Brex\u2019s official API Reference is published at /reference and presents REST endpoints across multiple product areas. Brex also publishes an OpenAPI specification page under /open_api."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Brex publishes public API reference documentation and authentication guidance (https://developer.brex.com/reference and https://developer.brex.com/docs/reference/authentication). The Getting started guide (https://developer.brex.com/docs/getting-started) describes obtaining developer credentials via the developer portal, indicating integrations can be built today. Some capabilities may still depend on having an eligible Brex business account and the relevant product enabled."
+  },
+  "research_meta": {
+    "queries": [
+      "site:developer.brex.com authentication",
+      "Brex API keys developer dashboard",
+      "Brex developer getting started API keys",
+      "Brex pricing developer API access",
+      "Brex contact sales partnership API access"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

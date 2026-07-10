@@ -1,0 +1,431 @@
+{"ts": "2026-07-09T18:25:06", "stage": "s1", "slug": "pipedrive", "status": "failed"}
+{"ts": "2026-07-09T18:26:13", "stage": "s1", "slug": "pipedrive", "status": "failed"}
+{"ts": "2026-07-09T18:29:07", "stage": "s1", "slug": "pipedrive", "status": "ok", "attempt": 1, "secs": 61}
+{"ts": "2026-07-09T18:29:55", "stage": "verification", "slug": "pipedrive", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:36:30", "stage": "verification", "slug": "pipedrive", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:38:30", "stage": "s1", "slug": "twenty", "status": "ok", "attempt": 1, "secs": 89}
+{"ts": "2026-07-09T18:38:39", "stage": "s1", "slug": "podio", "status": "ok", "attempt": 1, "secs": 99}
+{"ts": "2026-07-09T18:39:14", "stage": "s1", "slug": "salesforce", "status": "ok", "attempt": 1, "secs": 134}
+{"ts": "2026-07-09T18:39:17", "stage": "s1", "slug": "close", "status": "ok", "attempt": 1, "secs": 47}
+{"ts": "2026-07-09T18:39:25", "stage": "s1", "slug": "hubspot", "status": "ok", "attempt": 1, "secs": 144}
+{"ts": "2026-07-09T18:39:26", "stage": "s1", "slug": "attio", "status": "ok", "attempt": 1, "secs": 146}
+{"ts": "2026-07-09T18:40:03", "stage": "s1", "slug": "zoho-crm", "status": "ok", "attempt": 1, "secs": 182}
+{"ts": "2026-07-09T18:40:10", "stage": "s1", "slug": "zendesk", "status": "ok", "attempt": 1, "secs": 53}
+{"ts": "2026-07-09T18:40:17", "stage": "s1", "slug": "copper", "status": "ok", "attempt": 1, "secs": 98}
+{"ts": "2026-07-09T18:40:20", "stage": "s1", "slug": "dealcloud", "status": "ok", "attempt": 1, "secs": 65}
+{"ts": "2026-07-09T18:40:28", "stage": "s1", "slug": "freshdesk", "status": "ok", "attempt": 1, "secs": 62}
+{"ts": "2026-07-09T18:41:18", "stage": "s1", "slug": "intercom", "status": "ok", "attempt": 1, "secs": 113}
+{"ts": "2026-07-09T18:41:18", "stage": "s1", "slug": "help-scout", "status": "ok", "attempt": 1, "secs": 50}
+{"ts": "2026-07-09T18:41:30", "stage": "s1", "slug": "front", "status": "ok", "attempt": 1, "secs": 88}
+{"ts": "2026-07-09T18:41:38", "stage": "s1", "slug": "pylon", "status": "ok", "attempt": 1, "secs": 88}
+{"ts": "2026-07-09T18:41:41", "stage": "s1", "slug": "plain", "status": "ok", "attempt": 1, "secs": 82}
+{"ts": "2026-07-09T18:42:01", "stage": "s1", "slug": "gladly", "status": "ok", "attempt": 1, "secs": 43}
+{"ts": "2026-07-09T18:42:16", "stage": "s1", "slug": "liveagent", "status": "ok", "attempt": 1, "secs": 119}
+{"ts": "2026-07-09T18:42:41", "stage": "s1", "slug": "lark", "status": "ok", "attempt": 1, "secs": 40}
+{"ts": "2026-07-09T18:42:53", "stage": "s1", "slug": "slack", "status": "ok", "attempt": 1, "secs": 83}
+{"ts": "2026-07-09T18:43:17", "stage": "s1", "slug": "zoho-cliq", "status": "ok", "attempt": 1, "secs": 96}
+{"ts": "2026-07-09T18:43:25", "stage": "s1", "slug": "pumble", "status": "ok", "attempt": 1, "secs": 69}
+{"ts": "2026-07-09T18:43:26", "stage": "s1", "slug": "gorgias", "status": "ok", "attempt": 1, "secs": 128}
+{"ts": "2026-07-09T18:43:33", "stage": "s1", "slug": "twilio", "status": "ok", "attempt": 1, "secs": 115}
+{"ts": "2026-07-09T18:43:59", "stage": "s1", "slug": "discord", "status": "ok", "attempt": 1, "secs": 77}
+{"ts": "2026-07-09T18:44:02", "stage": "s1", "slug": "aircall", "status": "ok", "attempt": 1, "secs": 37}
+{"ts": "2026-07-09T18:44:10", "stage": "s1", "slug": "telegram", "status": "ok", "attempt": 1, "secs": 77}
+{"ts": "2026-07-09T18:44:31", "stage": "s1", "slug": "whatsapp-business", "status": "ok", "attempt": 1, "secs": 74}
+{"ts": "2026-07-09T18:44:41", "stage": "s1", "slug": "vonage", "status": "ok", "attempt": 1, "secs": 75}
+{"ts": "2026-07-09T18:45:29", "stage": "verification", "slug": "twenty", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:30", "stage": "s1", "slug": "linkedin-ads", "status": "ok", "attempt": 1, "secs": 88}
+{"ts": "2026-07-09T18:45:31", "stage": "verification", "slug": "attio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:31", "stage": "verification", "slug": "salesforce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:33", "stage": "s1", "slug": "google-ads", "status": "ok", "attempt": 1, "secs": 120}
+{"ts": "2026-07-09T18:45:36", "stage": "verification", "slug": "zoho-crm", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:38", "stage": "verification", "slug": "close", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:39", "stage": "verification", "slug": "copper", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:42", "stage": "s1", "slug": "meta-ads", "status": "ok", "attempt": 1, "secs": 103}
+{"ts": "2026-07-09T18:45:45", "stage": "verification", "slug": "zendesk", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:52", "stage": "verification", "slug": "freshdesk", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:45:59", "stage": "s1", "slug": "klaviyo", "status": "ok", "attempt": 1, "secs": 78}
+{"ts": "2026-07-09T18:45:59", "stage": "verification", "slug": "front", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:00", "stage": "verification", "slug": "dealcloud", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:06", "stage": "verification", "slug": "pylon", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:12", "stage": "verification", "slug": "plain", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:12", "stage": "verification", "slug": "podio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:13", "stage": "verification", "slug": "hubspot", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:22", "stage": "verification", "slug": "gladly", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:31", "stage": "verification", "slug": "slack", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:31", "stage": "s1", "slug": "sendgrid", "status": "ok", "attempt": 1, "secs": 32}
+{"ts": "2026-07-09T18:46:34", "stage": "s1", "slug": "systeme-io", "status": "ok", "attempt": 1, "secs": 64}
+{"ts": "2026-07-09T18:46:36", "stage": "s1", "slug": "gohighlevel", "status": "ok", "attempt": 1, "secs": 146}
+{"ts": "2026-07-09T18:46:43", "stage": "s1", "slug": "mailchimp", "status": "ok", "attempt": 1, "secs": 133}
+{"ts": "2026-07-09T18:46:51", "stage": "verification", "slug": "twilio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:46:51", "stage": "s1", "slug": "pinterest", "status": "ok", "attempt": 1, "secs": 78}
+{"ts": "2026-07-09T18:47:21", "stage": "s1", "slug": "threads", "status": "ok", "attempt": 1, "secs": 99}
+{"ts": "2026-07-09T18:47:27", "stage": "s1", "slug": "shopify", "status": "ok", "attempt": 1, "secs": 56}
+{"ts": "2026-07-09T18:48:14", "stage": "s1", "slug": "woocommerce", "status": "ok", "attempt": 1, "secs": 100}
+{"ts": "2026-07-09T18:48:22", "stage": "verification", "slug": "zoho-cliq", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:27", "stage": "verification", "slug": "intercom", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:31", "stage": "s1", "slug": "salesforce-commerce-cloud", "status": "ok", "attempt": 1, "secs": 107}
+{"ts": "2026-07-09T18:48:31", "stage": "verification", "slug": "lark", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:35", "stage": "verification", "slug": "pumble", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:37", "stage": "verification", "slug": "discord", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:40", "stage": "verification", "slug": "telegram", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:45", "stage": "verification", "slug": "whatsapp-business", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:47", "stage": "verification", "slug": "aircall", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:50", "stage": "verification", "slug": "vonage", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:53", "stage": "verification", "slug": "google-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:48:56", "stage": "verification", "slug": "meta-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:00", "stage": "verification", "slug": "linkedin-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:04", "stage": "verification", "slug": "gohighlevel", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:07", "stage": "verification", "slug": "mailchimp", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:11", "stage": "verification", "slug": "klaviyo", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:14", "stage": "s1", "slug": "bigcommerce", "status": "ok", "attempt": 1, "secs": 158}
+{"ts": "2026-07-09T18:49:19", "stage": "s1", "slug": "magento", "status": "ok", "attempt": 1, "secs": 147}
+{"ts": "2026-07-09T18:49:22", "stage": "s1", "slug": "ecwid", "status": "ok", "attempt": 1, "secs": 115}
+{"ts": "2026-07-09T18:49:32", "stage": "verification", "slug": "help-scout", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:32", "stage": "verification", "slug": "liveagent", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:40", "stage": "verification", "slug": "threads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:45", "stage": "verification", "slug": "shopify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:49:46", "stage": "s1", "slug": "squarespace", "status": "ok", "attempt": 1, "secs": 145}
+{"ts": "2026-07-09T18:49:51", "stage": "verification", "slug": "woocommerce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:50:02", "stage": "s1", "slug": "amazon-selling-partner", "status": "ok", "attempt": 1, "secs": 92}
+{"ts": "2026-07-09T18:50:11", "stage": "s1", "slug": "se-ranking", "status": "ok", "attempt": 1, "secs": 49}
+{"ts": "2026-07-09T18:50:11", "stage": "s1", "slug": "dataforseo", "status": "ok", "attempt": 1, "secs": 53}
+{"ts": "2026-07-09T18:50:15", "stage": "s1", "slug": "gumroad", "status": "ok", "attempt": 1, "secs": 121}
+{"ts": "2026-07-09T18:50:45", "stage": "s1", "slug": "fanbasis", "status": "ok", "attempt": 1, "secs": 91}
+{"ts": "2026-07-09T18:50:46", "stage": "verification", "slug": "sendgrid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:50:49", "stage": "s1", "slug": "mrscraper", "status": "ok", "attempt": 1, "secs": 46}
+{"ts": "2026-07-09T18:50:51", "stage": "verification", "slug": "salesforce-commerce-cloud", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:50:58", "stage": "verification", "slug": "magento", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:05", "stage": "verification", "slug": "squarespace", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:07", "stage": "s1", "slug": "apify", "status": "ok", "attempt": 1, "secs": 56}
+{"ts": "2026-07-09T18:51:08", "stage": "s1", "slug": "firecrawl", "status": "ok", "attempt": 1, "secs": 57}
+{"ts": "2026-07-09T18:51:12", "stage": "verification", "slug": "ecwid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:13", "stage": "s1", "slug": "ahrefs", "status": "ok", "attempt": 1, "secs": 87}
+{"ts": "2026-07-09T18:51:16", "stage": "verification", "slug": "systeme-io", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:20", "stage": "verification", "slug": "gumroad", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:23", "stage": "verification", "slug": "amazon-selling-partner", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:27", "stage": "verification", "slug": "fanbasis", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:29", "stage": "verification", "slug": "dataforseo", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:33", "stage": "verification", "slug": "se-ranking", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:36", "stage": "s1", "slug": "sherlock", "status": "ok", "attempt": 1, "secs": 51}
+{"ts": "2026-07-09T18:51:36", "stage": "verification", "slug": "ahrefs", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:40", "stage": "verification", "slug": "mrscraper", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:51:59", "stage": "s1", "slug": "netlify", "status": "ok", "attempt": 1, "secs": 24}
+{"ts": "2026-07-09T18:52:13", "stage": "s1", "slug": "github", "status": "ok", "attempt": 1, "secs": 65}
+{"ts": "2026-07-09T18:52:35", "stage": "s1", "slug": "waterfall-io", "status": "ok", "attempt": 1, "secs": 107}
+{"ts": "2026-07-09T18:52:47", "stage": "verification", "slug": "pinterest", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:52:52", "stage": "s1", "slug": "bright-data", "status": "ok", "attempt": 1, "secs": 157}
+{"ts": "2026-07-09T18:52:54", "stage": "verification", "slug": "sherlock", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:02", "stage": "verification", "slug": "waterfall-io", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:04", "stage": "s1", "slug": "clay", "status": "ok", "attempt": 1, "secs": 118}
+{"ts": "2026-07-09T18:53:09", "stage": "verification", "slug": "bigcommerce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:30", "stage": "s1", "slug": "supabase", "status": "ok", "attempt": 1, "secs": 77}
+{"ts": "2026-07-09T18:53:34", "stage": "s1", "slug": "cloudflare", "status": "ok", "attempt": 1, "secs": 95}
+{"ts": "2026-07-09T18:53:48", "stage": "verification", "slug": "github", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:52", "stage": "verification", "slug": "netlify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:54", "stage": "verification", "slug": "firecrawl", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:56", "stage": "verification", "slug": "cloudflare", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:53:58", "stage": "s1", "slug": "snowflake", "status": "ok", "attempt": 1, "secs": 66}
+{"ts": "2026-07-09T18:54:14", "stage": "s1", "slug": "neo4j", "status": "ok", "attempt": 1, "secs": 99}
+{"ts": "2026-07-09T18:54:31", "stage": "s1", "slug": "mongodb-atlas", "status": "ok", "attempt": 1, "secs": 87}
+{"ts": "2026-07-09T18:54:35", "stage": "s1", "slug": "datadog", "status": "ok", "attempt": 1, "secs": 66}
+{"ts": "2026-07-09T18:54:38", "stage": "s1", "slug": "sentry", "status": "ok", "attempt": 1, "secs": 64}
+{"ts": "2026-07-09T18:54:57", "stage": "s1", "slug": "vercel", "status": "ok", "attempt": 1, "secs": 225}
+{"ts": "2026-07-09T18:55:01", "stage": "s1", "slug": "notion", "status": "ok", "attempt": 1, "secs": 63}
+{"ts": "2026-07-09T18:55:07", "stage": "verification", "slug": "apify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:55:09", "stage": "s1", "slug": "airtable", "status": "ok", "attempt": 1, "secs": 55}
+{"ts": "2026-07-09T18:55:12", "stage": "s1", "slug": "linear", "status": "ok", "attempt": 1, "secs": 41}
+{"ts": "2026-07-09T18:55:27", "stage": "verification", "slug": "gorgias", "status": "ok", "attempt": 2}
+{"ts": "2026-07-09T18:55:53", "stage": "s1", "slug": "monday", "status": "ok", "attempt": 1, "secs": 56}
+{"ts": "2026-07-09T18:56:01", "stage": "s1", "slug": "smartsheet", "status": "ok", "attempt": 1, "secs": 49}
+{"ts": "2026-07-09T18:56:13", "stage": "s1", "slug": "jira", "status": "ok", "attempt": 1, "secs": 98}
+{"ts": "2026-07-09T18:56:28", "stage": "s1", "slug": "harvest", "status": "ok", "attempt": 1, "secs": 35}
+{"ts": "2026-07-09T18:56:41", "stage": "verification", "slug": "supabase", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T18:56:49", "stage": "s1", "slug": "clickup", "status": "ok", "attempt": 1, "secs": 108}
+{"ts": "2026-07-09T18:57:04", "stage": "s1", "slug": "asana", "status": "ok", "attempt": 1, "secs": 147}
+{"ts": "2026-07-09T18:57:08", "stage": "s1", "slug": "coda", "status": "ok", "attempt": 1, "secs": 119}
+{"ts": "2026-07-09T18:57:30", "stage": "s1", "slug": "stripe", "status": "ok", "attempt": 1, "secs": 89}
+{"ts": "2026-07-09T18:57:43", "stage": "s1", "slug": "paygent-connect", "status": "ok", "attempt": 1, "secs": 54}
+{"ts": "2026-07-09T18:57:58", "stage": "s1", "slug": "plaid", "status": "ok", "attempt": 1, "secs": 105}
+{"ts": "2026-07-09T18:58:00", "stage": "s1", "slug": "binance", "status": "ok", "attempt": 1, "secs": 92}
+{"ts": "2026-07-09T18:58:45", "stage": "s1", "slug": "brex", "status": "ok", "attempt": 1, "secs": 62}
+{"ts": "2026-07-09T18:58:57", "stage": "s1", "slug": "quickbooks", "status": "ok", "attempt": 1, "secs": 109}
+{"ts": "2026-07-09T18:59:20", "stage": "s1", "slug": "pitchbook", "status": "ok", "attempt": 1, "secs": 81}
+{"ts": "2026-07-09T18:59:22", "stage": "s1", "slug": "ipayx", "status": "ok", "attempt": 1, "secs": 137}
+{"ts": "2026-07-09T19:00:01", "stage": "s1", "slug": "xero", "status": "ok", "attempt": 1, "secs": 151}
+{"ts": "2026-07-09T19:00:14", "stage": "s1", "slug": "otter-ai", "status": "ok", "attempt": 1, "secs": 77}
+{"ts": "2026-07-09T19:00:31", "stage": "s1", "slug": "consensus", "status": "ok", "attempt": 1, "secs": 69}
+{"ts": "2026-07-09T19:00:35", "stage": "s1", "slug": "notebooklm", "status": "ok", "attempt": 1, "secs": 111}
+{"ts": "2026-07-09T19:00:36", "stage": "s1", "slug": "fathom", "status": "ok", "attempt": 1, "secs": 76}
+{"ts": "2026-07-09T19:01:17", "stage": "s1", "slug": "ramp", "status": "ok", "attempt": 1, "secs": 198}
+{"ts": "2026-07-09T19:01:42", "stage": "s1", "slug": "reducto", "status": "ok", "attempt": 1, "secs": 101}
+{"ts": "2026-07-09T19:01:50", "stage": "s1", "slug": "devin", "status": "ok", "attempt": 1, "secs": 96}
+{"ts": "2026-07-09T19:01:53", "stage": "s1", "slug": "youtube-transcript", "status": "ok", "attempt": 1, "secs": 77}
+{"ts": "2026-07-09T19:02:42", "stage": "s1", "slug": "grain", "status": "ok", "attempt": 1, "secs": 86}
+{"ts": "2026-07-09T19:03:23", "stage": "s1", "slug": "higgsfield", "status": "ok", "attempt": 1, "secs": 172}
+{"ts": "2026-07-09T19:03:41", "stage": "s1", "slug": "mermaid-cli", "status": "ok", "attempt": 1, "secs": 185}
+{"ts": "2026-07-09T22:58:56", "stage": "verification", "slug": "clay", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:58:56", "stage": "verification", "slug": "neo4j", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:58:57", "stage": "verification", "slug": "snowflake", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:58:57", "stage": "verification", "slug": "vercel", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:05", "stage": "verification", "slug": "mongodb-atlas", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:06", "stage": "verification", "slug": "datadog", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:06", "stage": "verification", "slug": "notion", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:07", "stage": "verification", "slug": "sentry", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:12", "stage": "verification", "slug": "linear", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:14", "stage": "verification", "slug": "jira", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:15", "stage": "verification", "slug": "asana", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:20", "stage": "verification", "slug": "monday", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:21", "stage": "verification", "slug": "clickup", "status": "ok", "attempt": 1}
+{"ts": "2026-07-09T22:59:22", "stage": "verification", "slug": "coda", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:19:44", "stage": "verification", "slug": "asana", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:19:44", "stage": "verification", "slug": "plain", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:19:45", "stage": "verification", "slug": "pipedrive", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:20", "stage": "verification", "slug": "salesforce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:21", "stage": "verification", "slug": "twenty", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:25", "stage": "verification", "slug": "attio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:27", "stage": "verification", "slug": "hubspot", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:28", "stage": "verification", "slug": "podio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:28", "stage": "verification", "slug": "zoho-crm", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:31", "stage": "verification", "slug": "close", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:33", "stage": "verification", "slug": "copper", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:36", "stage": "verification", "slug": "dealcloud", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:38", "stage": "verification", "slug": "zendesk", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:38", "stage": "verification", "slug": "freshdesk", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:39", "stage": "verification", "slug": "intercom", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:41", "stage": "verification", "slug": "pylon", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:44", "stage": "verification", "slug": "front", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:46", "stage": "verification", "slug": "help-scout", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:46", "stage": "verification", "slug": "gorgias", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:47", "stage": "verification", "slug": "liveagent", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:49", "stage": "verification", "slug": "gladly", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:53", "stage": "verification", "slug": "slack", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:53", "stage": "verification", "slug": "lark", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:54", "stage": "verification", "slug": "twilio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:54", "stage": "verification", "slug": "zoho-cliq", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:57", "stage": "verification", "slug": "discord", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:20:59", "stage": "verification", "slug": "pumble", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:01", "stage": "verification", "slug": "telegram", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:01", "stage": "verification", "slug": "aircall", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:02", "stage": "verification", "slug": "whatsapp-business", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:03", "stage": "verification", "slug": "vonage", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:07", "stage": "verification", "slug": "google-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:08", "stage": "verification", "slug": "meta-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:11", "stage": "verification", "slug": "mailchimp", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:11", "stage": "verification", "slug": "gohighlevel", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:13", "stage": "verification", "slug": "linkedin-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:15", "stage": "verification", "slug": "klaviyo", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:16", "stage": "verification", "slug": "systeme-io", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:19", "stage": "verification", "slug": "threads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:20", "stage": "verification", "slug": "pinterest", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:20", "stage": "verification", "slug": "shopify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:23", "stage": "verification", "slug": "woocommerce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:24", "stage": "verification", "slug": "sendgrid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:28", "stage": "verification", "slug": "salesforce-commerce-cloud", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:33", "stage": "verification", "slug": "ecwid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:34", "stage": "verification", "slug": "squarespace", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:41", "stage": "verification", "slug": "gumroad", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:41", "stage": "verification", "slug": "amazon-selling-partner", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:41", "stage": "verification", "slug": "bigcommerce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:44", "stage": "verification", "slug": "dataforseo", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:45", "stage": "verification", "slug": "fanbasis", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:48", "stage": "verification", "slug": "magento", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:48", "stage": "verification", "slug": "ahrefs", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:50", "stage": "verification", "slug": "se-ranking", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:51", "stage": "verification", "slug": "mrscraper", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:52", "stage": "verification", "slug": "apify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:55", "stage": "verification", "slug": "firecrawl", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:56", "stage": "verification", "slug": "sherlock", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:57", "stage": "verification", "slug": "bright-data", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:21:58", "stage": "verification", "slug": "clay", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:03", "stage": "verification", "slug": "vercel", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:05", "stage": "verification", "slug": "netlify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:06", "stage": "verification", "slug": "supabase", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:07", "stage": "verification", "slug": "waterfall-io", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:07", "stage": "verification", "slug": "cloudflare", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:08", "stage": "verification", "slug": "github", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:14", "stage": "verification", "slug": "neo4j", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:16", "stage": "verification", "slug": "sentry", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:16", "stage": "verification", "slug": "datadog", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:18", "stage": "verification", "slug": "snowflake", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:18", "stage": "verification", "slug": "mongodb-atlas", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:33", "stage": "verification", "slug": "notion", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:33", "stage": "verification", "slug": "jira", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:34", "stage": "verification", "slug": "linear", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:34", "stage": "verification", "slug": "monday", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:34", "stage": "verification", "slug": "clickup", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:34", "stage": "verification", "slug": "airtable", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:41", "stage": "verification", "slug": "coda", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:42", "stage": "verification", "slug": "harvest", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:43", "stage": "verification", "slug": "binance", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:44", "stage": "verification", "slug": "plaid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:46", "stage": "verification", "slug": "stripe", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:56", "stage": "verification", "slug": "brex", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:57", "stage": "verification", "slug": "xero", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:58", "stage": "verification", "slug": "ipayx", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:22:59", "stage": "verification", "slug": "paygent-connect", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:02", "stage": "verification", "slug": "smartsheet", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:02", "stage": "verification", "slug": "pitchbook", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:03", "stage": "verification", "slug": "ramp", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:09", "stage": "verification", "slug": "notebooklm", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:10", "stage": "verification", "slug": "reducto", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:12", "stage": "verification", "slug": "fathom", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:15", "stage": "verification", "slug": "devin", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:17", "stage": "verification", "slug": "higgsfield", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:21", "stage": "verification", "slug": "consensus", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:22", "stage": "verification", "slug": "mermaid-cli", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:23", "stage": "verification", "slug": "grain", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:23", "stage": "verification", "slug": "youtube-transcript", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:24", "stage": "verification", "slug": "otter-ai", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:23:25", "stage": "verification", "slug": "quickbooks", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:31:30", "stage": "verification", "slug": "whatsapp-business", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:31:30", "stage": "verification", "slug": "threads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:31:31", "stage": "verification", "slug": "salesforce-commerce-cloud", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:31:31", "stage": "verification", "slug": "meta-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:31:34", "stage": "verification", "slug": "pitchbook", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:32:32", "stage": "s3", "slug": "podio", "status": "fixed", "fields": ["credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:32:33", "stage": "s3", "slug": "pipedrive", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:32:33", "stage": "s3", "slug": "twenty", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:32:34", "stage": "s3", "slug": "attio", "status": "fixed", "fields": ["auth_methods", "api_surface"]}
+{"ts": "2026-07-10T09:32:45", "stage": "s3", "slug": "zendesk", "status": "fixed", "fields": ["auth_methods", "credential_access"]}
+{"ts": "2026-07-10T09:32:51", "stage": "s3", "slug": "dealcloud", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:32:54", "stage": "s3", "slug": "salesforce", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:32:55", "stage": "s3", "slug": "close", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:32:56", "stage": "s3", "slug": "copper", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:33:00", "stage": "s3", "slug": "front", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:33:03", "stage": "s3", "slug": "intercom", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:33:07", "stage": "s3", "slug": "help-scout", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:33:08", "stage": "s3", "slug": "slack", "status": "fixed", "fields": ["description"]}
+{"ts": "2026-07-10T09:33:10", "stage": "s3", "slug": "plain", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:33:20", "stage": "s3", "slug": "gladly", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:33:21", "stage": "s3", "slug": "whatsapp-business", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:33:21", "stage": "s3", "slug": "vonage", "status": "fixed", "fields": ["description", "credential_access"]}
+{"ts": "2026-07-10T09:33:22", "stage": "s3", "slug": "zoho-cliq", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:33:30", "stage": "s3", "slug": "systeme-io", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:33:38", "stage": "s3", "slug": "linkedin-ads", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:33:45", "stage": "s3", "slug": "mailchimp", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:33:45", "stage": "s3", "slug": "pumble", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:33:49", "stage": "s3", "slug": "pinterest", "status": "fixed", "fields": ["description"]}
+{"ts": "2026-07-10T09:33:52", "stage": "s3", "slug": "gohighlevel", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:33:59", "stage": "s3", "slug": "shopify", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:34:07", "stage": "s3", "slug": "threads", "status": "fixed", "fields": ["description", "auth_methods", "buildability"]}
+{"ts": "2026-07-10T09:34:11", "stage": "s3", "slug": "woocommerce", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:34:19", "stage": "s3", "slug": "bigcommerce", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:34:25", "stage": "s3", "slug": "magento", "status": "fixed", "fields": ["description", "auth_methods"]}
+{"ts": "2026-07-10T09:34:36", "stage": "s3", "slug": "amazon-selling-partner", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:34:38", "stage": "s3", "slug": "squarespace", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:34:40", "stage": "s3", "slug": "ecwid", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:34:50", "stage": "s3", "slug": "fanbasis", "status": "fixed", "fields": ["auth_methods", "api_surface"]}
+{"ts": "2026-07-10T09:34:53", "stage": "s3", "slug": "gumroad", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:34:56", "stage": "s3", "slug": "dataforseo", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:35:08", "stage": "s3", "slug": "ahrefs", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:35:08", "stage": "s3", "slug": "se-ranking", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:35:17", "stage": "s3", "slug": "mrscraper", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:35:20", "stage": "s3", "slug": "apify", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:35:34", "stage": "s3", "slug": "sherlock", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:35:40", "stage": "s3", "slug": "firecrawl", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:35:52", "stage": "s3", "slug": "waterfall-io", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:35:54", "stage": "s3", "slug": "netlify", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:35:55", "stage": "s3", "slug": "clay", "status": "fixed", "fields": ["description", "auth_methods", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:35:59", "stage": "s3", "slug": "cloudflare", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:36:16", "stage": "s3", "slug": "mongodb-atlas", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:36:18", "stage": "s3", "slug": "snowflake", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:36:19", "stage": "s3", "slug": "supabase", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:36:27", "stage": "s3", "slug": "notion", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:36:29", "stage": "s3", "slug": "airtable", "status": "fixed", "fields": ["description", "auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:36:38", "stage": "s3", "slug": "linear", "status": "fixed", "fields": ["description"]}
+{"ts": "2026-07-10T09:36:43", "stage": "s3", "slug": "jira", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:36:53", "stage": "s3", "slug": "clickup", "status": "fixed", "fields": ["credential_access"]}
+{"ts": "2026-07-10T09:36:53", "stage": "s3", "slug": "asana", "status": "fixed", "fields": ["api_surface", "buildability"]}
+{"ts": "2026-07-10T09:36:55", "stage": "s3", "slug": "monday", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:37:01", "stage": "s3", "slug": "coda", "status": "fixed", "fields": ["description"]}
+{"ts": "2026-07-10T09:37:11", "stage": "s3", "slug": "smartsheet", "status": "fixed", "fields": ["description", "auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:37:13", "stage": "s3", "slug": "plaid", "status": "fixed", "fields": ["auth_methods"]}
+{"ts": "2026-07-10T09:37:28", "stage": "s3", "slug": "harvest", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:37:35", "stage": "s3", "slug": "paygent-connect", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:37:36", "stage": "s3", "slug": "binance", "status": "fixed", "fields": ["auth_methods", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:37:37", "stage": "s3", "slug": "ipayx", "status": "fixed", "fields": ["auth_methods", "credential_access"]}
+{"ts": "2026-07-10T09:37:42", "stage": "s3", "slug": "xero", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:37:47", "stage": "s3", "slug": "brex", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:37:49", "stage": "s3", "slug": "ramp", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:37:50", "stage": "s3", "slug": "quickbooks", "status": "fixed", "fields": ["description"]}
+{"ts": "2026-07-10T09:37:53", "stage": "s3", "slug": "pitchbook", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:38:02", "stage": "s3", "slug": "fathom", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:38:15", "stage": "s3", "slug": "otter-ai", "status": "fixed", "fields": ["auth_methods", "credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:38:16", "stage": "s3", "slug": "consensus", "status": "fixed", "fields": ["auth_methods", "credential_access", "buildability"]}
+{"ts": "2026-07-10T09:38:19", "stage": "s3", "slug": "notebooklm", "status": "fixed", "fields": ["credential_access", "buildability"]}
+{"ts": "2026-07-10T09:38:21", "stage": "s3", "slug": "higgsfield", "status": "fixed", "fields": ["credential_access", "api_surface", "buildability"]}
+{"ts": "2026-07-10T09:38:26", "stage": "s3", "slug": "grain", "status": "fixed", "fields": ["auth_methods", "api_surface"]}
+{"ts": "2026-07-10T09:41:47", "stage": "verification2", "slug": "salesforce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:47", "stage": "verification2", "slug": "twenty", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:47", "stage": "verification2", "slug": "attio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:47", "stage": "verification2", "slug": "podio", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:48", "stage": "verification2", "slug": "close", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:48", "stage": "verification2", "slug": "pipedrive", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:51", "stage": "verification2", "slug": "dealcloud", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:52", "stage": "verification2", "slug": "copper", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:52", "stage": "verification2", "slug": "front", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:54", "stage": "verification2", "slug": "intercom", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:55", "stage": "verification2", "slug": "plain", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:55", "stage": "verification2", "slug": "zendesk", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:56", "stage": "verification2", "slug": "slack", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:57", "stage": "verification2", "slug": "gladly", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:41:59", "stage": "verification2", "slug": "zoho-cliq", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:00", "stage": "verification2", "slug": "whatsapp-business", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:01", "stage": "verification2", "slug": "pumble", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:01", "stage": "verification2", "slug": "linkedin-ads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:02", "stage": "verification2", "slug": "vonage", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:04", "stage": "verification2", "slug": "gohighlevel", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:06", "stage": "verification2", "slug": "help-scout", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:06", "stage": "verification2", "slug": "pinterest", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:06", "stage": "verification2", "slug": "systeme-io", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:06", "stage": "verification2", "slug": "threads", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:08", "stage": "verification2", "slug": "mailchimp", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:11", "stage": "verification2", "slug": "shopify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:11", "stage": "verification2", "slug": "magento", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:12", "stage": "verification2", "slug": "woocommerce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:13", "stage": "verification2", "slug": "bigcommerce", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:15", "stage": "verification2", "slug": "ecwid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:16", "stage": "verification2", "slug": "squarespace", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:16", "stage": "verification2", "slug": "gumroad", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:17", "stage": "verification2", "slug": "fanbasis", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:19", "stage": "verification2", "slug": "dataforseo", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:19", "stage": "verification2", "slug": "amazon-selling-partner", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:20", "stage": "verification2", "slug": "ahrefs", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:21", "stage": "verification2", "slug": "se-ranking", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:22", "stage": "verification2", "slug": "mrscraper", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:22", "stage": "verification2", "slug": "apify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:24", "stage": "verification2", "slug": "sherlock", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:26", "stage": "verification2", "slug": "firecrawl", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:26", "stage": "verification2", "slug": "clay", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:26", "stage": "verification2", "slug": "waterfall-io", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:27", "stage": "verification2", "slug": "cloudflare", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:31", "stage": "verification2", "slug": "netlify", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:31", "stage": "verification2", "slug": "snowflake", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:37", "stage": "verification2", "slug": "linear", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:37", "stage": "verification2", "slug": "jira", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:38", "stage": "verification2", "slug": "mongodb-atlas", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:38", "stage": "verification2", "slug": "supabase", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:40", "stage": "verification2", "slug": "notion", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:41", "stage": "verification2", "slug": "airtable", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:43", "stage": "verification2", "slug": "monday", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:44", "stage": "verification2", "slug": "coda", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:46", "stage": "verification2", "slug": "asana", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:46", "stage": "verification2", "slug": "harvest", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:46", "stage": "verification2", "slug": "smartsheet", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:47", "stage": "verification2", "slug": "plaid", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:48", "stage": "verification2", "slug": "binance", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:50", "stage": "verification2", "slug": "quickbooks", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:52", "stage": "verification2", "slug": "ipayx", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:52", "stage": "verification2", "slug": "xero", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:53", "stage": "verification2", "slug": "clickup", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:55", "stage": "verification2", "slug": "brex", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:58", "stage": "verification2", "slug": "notebooklm", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:42:58", "stage": "verification2", "slug": "paygent-connect", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:00", "stage": "verification2", "slug": "fathom", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:00", "stage": "verification2", "slug": "pitchbook", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:04", "stage": "verification2", "slug": "grain", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:04", "stage": "verification2", "slug": "higgsfield", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:05", "stage": "verification2", "slug": "ramp", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:13", "stage": "verification2", "slug": "consensus", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:43:14", "stage": "verification2", "slug": "otter-ai", "status": "ok", "attempt": 1}
+{"ts": "2026-07-10T09:44:14", "stage": "s3", "slug": "salesforce-commerce-cloud", "status": "fixed", "fields": ["auth_methods", "api_surface"]}

@@ -1,0 +1,47 @@
+{
+  "slug": "telegram",
+  "name": "Telegram",
+  "category": "Communications and Messaging",
+  "description": "Instant messaging platform providing user/client APIs (MTProto/TDLib) and a HTTP-based Bot API for bots and integrations.",
+  "auth_methods": {
+    "value": [
+      "token",
+      "api_key"
+    ],
+    "evidence_url": "https://core.telegram.org/",
+    "confidence": "high",
+    "note": "The Bot API authenticates using a bot token issued by BotFather (token). The Telegram API (MTProto) requires an api_id and api_hash obtained via my.telegram.org (API key/secret). Both are documented on the official Telegram developer site."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://core.telegram.org/api/obtaining_api_id",
+    "confidence": "high",
+    "note": "Developers can create an application at my.telegram.org to receive api_id and api_hash, and can create bots via BotFather to receive bot tokens, without human approval or paid partnership."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://core.telegram.org/",
+    "confidence": "high",
+    "note": "Telegram provides a RESTful HTTP Bot API for bots and an MTProto API (used by client libraries and TDLib). The docs site lists Bot API, Telegram API (MTProto), and TDLib, indicating broad coverage of product objects via these APIs."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public documentation exists and credentials (bot token or api_id/api_hash) can be obtained via BotFather and my.telegram.org respectively, enabling development today."
+  },
+  "research_meta": {
+    "queries": [
+      "Telegram developer documentation core.telegram.org developer docs root",
+      "site:core.telegram.org obtaining_api_id OR \"obtain an API identifier\"",
+      "site:core.telegram.org \"Authorisation\" \"Bot API\"",
+      "site:core.telegram.org \"my.telegram.org\" \"apps\" \"api_id\"",
+      "site:telegram.org \"API\" pricing \"contact\" \"partnership\" \"paid\"",
+      "site:core.telegram.org \"partnership\" \"API\" \"Telegram\"",
+      "\"my.telegram.org/apps\" \"create application\" \"api_id\"",
+      "Telegram BotFather create bot token Bot API how to create bot site:core.telegram.org \"BotFather\"",
+      "site:telegram.org \"API\" \"pricing\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

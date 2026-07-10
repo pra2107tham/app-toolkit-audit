@@ -1,0 +1,40 @@
+{
+  "slug": "gladly",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.gladly.com",
+      "reasoning": "The homepage describes Gladly as a customer service platform that centralizes customer conversations across channels, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.gladly.com/rest/index.html",
+      "reasoning": "The official REST API documentation confirms that Gladly uses HTTP Basic Authentication with an API token, supporting the recorded authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "reasoning": "The help center documentation indicates that developers can self-generate API tokens from the product UI, confirming the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.gladly.com/rest/index.html",
+      "reasoning": "The API reference lists many REST endpoints, indicating broad REST coverage, which supports the recorded API surface value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.gladly.com/rest/index.html",
+      "reasoning": "The availability of public REST documentation and self-serve API token generation confirms that integration and development are feasible today."
+    }
+  ]
+}

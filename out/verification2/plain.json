@@ -1,0 +1,40 @@
+{
+  "slug": "plain",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Plain is a modern customer support / helpdesk platform for product teams, offering inboxes, knowledge bases, integrations, AI assistants and extensibility.",
+      "better_evidence_url": "https://www.plain.com",
+      "reasoning": "The homepage describes Plain as a customer support platform with various features, confirming the description provided in the record."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://www.plain.com/help/articles/api-access",
+      "reasoning": "The URL provided for auth methods returns a 404 error, meaning there is no evidence to support the claim about API access and authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "partner_gated",
+      "better_evidence_url": "https://www.plain.com/help/articles/api-access",
+      "reasoning": "The URL for credential access also returns a 404 error, leaving the claim unsupported by any evidence."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://www.plain.com/help/articles/developer-documentation",
+      "reasoning": "The evidence URL for API surface returns a 404 error, indicating that there is no available documentation to confirm or contradict the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "dead_url",
+      "corrected_value": "blocked",
+      "better_evidence_url": "N/A",
+      "reasoning": "Since all related URLs return 404 errors, the buildability claim cannot be confirmed or contradicted, but it aligns with the other fields indicating a lack of accessible documentation."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "description": {
+    "pass1_value": "Issue tracking and project management tool with a GraphQL API, webhooks, and SDKs for automation and integrations.",
+    "final_value": "Issue tracking and project management tool with a GraphQL API, webhooks, and SDKs for automation and integrations.",
+    "verdict": "unsupported"
+  }
+}

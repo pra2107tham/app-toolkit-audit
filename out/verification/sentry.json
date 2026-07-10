@@ -1,0 +1,40 @@
+{
+  "slug": "sentry",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://sentry.io",
+      "reasoning": "The description accurately reflects the functionality of Sentry as an error monitoring and observability platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.sentry.io/api/auth/",
+      "reasoning": "The documentation explicitly states that Sentry supports OAuth2 and 'Auth Tokens' as Bearer tokens, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.sentry.io/product/accounts/auth-tokens/",
+      "reasoning": "The documentation confirms that users can create auth tokens from the dashboard without requiring sales or admin approval, supporting the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.sentry.io/api/",
+      "reasoning": "The API reference shows a wide set of REST endpoints, confirming the broad coverage of the API surface as stated."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The existence of public REST API docs and the ability for developers to self-issue auth tokens confirms that integrations can be built today without manual approvals."
+    }
+  ]
+}

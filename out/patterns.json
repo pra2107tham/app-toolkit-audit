@@ -1,0 +1,142 @@
+{
+  "n_apps": 30,
+  "headline": {
+    "pct_oauth2": 67,
+    "pct_api_key": 50,
+    "pct_self_serve": 87,
+    "pct_gated": 13,
+    "pct_buildable_now": 87,
+    "top_blocker": [
+      "other",
+      3
+    ],
+    "composio_already_covers": 16,
+    "existing_mcp_servers": 14,
+    "easy_wins_count": 12
+  },
+  "auth_distribution": {
+    "oauth2": 20,
+    "api_key": 15,
+    "token": 14,
+    "basic": 7,
+    "other": 6,
+    "none_public": 3,
+    "jwt": 2
+  },
+  "auth_combos": {
+    "api_key+oauth2": 5,
+    "oauth2+token": 4,
+    "oauth2+other+token": 2,
+    "oauth2": 2,
+    "api_key+basic": 2,
+    "api_key+basic+oauth2": 2,
+    "api_key": 2,
+    "jwt+none_public+oauth2+token": 1,
+    "none_public+oauth2+other+token": 1,
+    "other": 1
+  },
+  "credential_access": {
+    "self_serve_free": 26,
+    "admin_approval": 3,
+    "partner_gated": 1
+  },
+  "credential_access_by_category": {
+    "CRM and Sales": {
+      "self_serve_free": 9,
+      "admin_approval": 1
+    },
+    "Communications and Messaging": {
+      "self_serve_free": 10
+    },
+    "Support and Helpdesk": {
+      "admin_approval": 2,
+      "self_serve_free": 7,
+      "partner_gated": 1
+    }
+  },
+  "buildability": {
+    "buildable_today": 23,
+    "blocked": 4,
+    "buildable_with_key_signup": 3
+  },
+  "buildability_by_category": {
+    "CRM and Sales": {
+      "buildable_today": 8,
+      "buildable_with_key_signup": 1,
+      "blocked": 1
+    },
+    "Communications and Messaging": {
+      "buildable_today": 8,
+      "buildable_with_key_signup": 2
+    },
+    "Support and Helpdesk": {
+      "blocked": 3,
+      "buildable_today": 7
+    }
+  },
+  "blocker_taxonomy": {
+    "other": 3,
+    "none": 2,
+    "no_public_api": 1,
+    "partner_gate": 1
+  },
+  "composio_covered": [
+    "attio",
+    "close",
+    "discord",
+    "freshdesk",
+    "gorgias",
+    "help-scout",
+    "hubspot",
+    "intercom",
+    "pipedrive",
+    "plain",
+    "salesforce",
+    "slack",
+    "telegram",
+    "whatsapp-business",
+    "zendesk",
+    "zoho-crm"
+  ],
+  "mcp_servers": {
+    "any": [
+      "attio",
+      "close",
+      "discord",
+      "freshdesk",
+      "hubspot",
+      "intercom",
+      "pipedrive",
+      "pylon",
+      "salesforce",
+      "slack",
+      "telegram",
+      "twilio",
+      "vonage",
+      "zendesk"
+    ],
+    "vendor_official": [
+      "close"
+    ]
+  },
+  "easy_wins": [
+    "aircall",
+    "copper",
+    "front",
+    "gladly",
+    "lark",
+    "liveagent",
+    "podio",
+    "pumble",
+    "twenty",
+    "twilio",
+    "vonage",
+    "zoho-cliq"
+  ],
+  "needs_outreach": [
+    "plain"
+  ],
+  "insufficient_public_docs": [
+    "plain"
+  ]
+}

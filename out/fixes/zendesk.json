@@ -1,0 +1,40 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "basic"
+      ],
+      "evidence_url": "https://developer.zendesk.com/api-reference/introduction/authentication/",
+      "confidence": "high",
+      "note": "Official developer docs list OAuth 2.0, API token (used like an API key), and basic auth (email/password or email/token). Support article details API token usage and basic auth variant."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "basic"
+      ],
+      "evidence_url": "https://developer.zendesk.com/documentation/ticketing/using-the-zendesk-api/authentication/",
+      "confidence": "high",
+      "note": "Zendesk's official Ticketing API docs list authentication options including OAuth 2.0, API tokens (used in requests like an API key), and basic authentication (including the email/token pattern)."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "admin_approval",
+      "evidence_url": "https://support.zendesk.com/hc/en-us/articles/226022767-Generating-a-new-API-token-",
+      "confidence": "high",
+      "note": "Generating an API token requires an admin to create it in Admin Center; tokens are not obtainable by a developer without admin privileges. OAuth app creation and admin-level settings likewise require account/admin setup."
+    },
+    "final_value": {
+      "value": "admin_approval",
+      "evidence_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token",
+      "confidence": "high",
+      "note": "Zendesk's official support article instructs admins to generate API tokens in Admin Center (Apps and integrations -> APIs -> Zendesk API -> Add API token), indicating token creation requires admin-level access/approval."
+    },
+    "verdict": "dead_url"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "bright-data",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://brightdata.com",
+      "reasoning": "The description accurately reflects the services provided by Bright Data as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.brightdata.com/api-reference/authentication",
+      "reasoning": "The authentication methods listed are supported by the official documentation, which describes API key and native access methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://brightdata.com/pricing",
+      "reasoning": "The pricing page confirms that Bright Data offers a free trial credit at signup, supporting the claim of self-serve free credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.brightdata.com/api-reference",
+      "reasoning": "The API surface is confirmed as REST based on the documentation, which details REST endpoints for various products."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.brightdata.com/getting-started/account-setup",
+      "reasoning": "The buildability is confirmed as the public REST documentation exists, and immediate access is provided upon signup, aligning with the claims made."
+    }
+  ]
+}

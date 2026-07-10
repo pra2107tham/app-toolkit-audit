@@ -1,0 +1,40 @@
+{
+  "slug": "zoho-cliq",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Team chat and collaboration platform with channels, messaging, bots, and integrations.",
+      "better_evidence_url": "https://www.zoho.com/cliq",
+      "reasoning": "The homepage confirms that Zoho Cliq is a team chat and communication software for businesses, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "oauth2",
+      "better_evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/authentication.html",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim directly."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://www.zoho.com/accounts/help/api/console.html",
+      "reasoning": "The URL for credential access returns a 404 error, preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "reasoning": "The API documentation confirms that the REST API v2 provides endpoints for various functionalities, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "reasoning": "While the API documentation is accessible, the lack of verification for authentication and credential access suggests that buildability cannot be confirmed."
+    }
+  ]
+}

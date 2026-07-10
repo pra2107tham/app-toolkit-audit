@@ -1,0 +1,41 @@
+{
+  "slug": "netlify",
+  "name": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "description": "A platform for deploying, hosting, and managing modern web projects (static sites and serverless functions) with a REST API for programmatic control of sites, deploys, builds, DNS, and more.",
+  "auth_methods": {
+    "value": [
+      "token"
+    ],
+    "evidence_url": "https://docs.netlify.com/api/get-started/#authentication",
+    "confidence": "high",
+    "note": "Netlify API authenticates using Personal Access Tokens passed as a Bearer token in the Authorization header (Authorization: Bearer <personal_access_token>)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.netlify.com/accounts-and-billing/members-teams/#personal-access-tokens",
+    "confidence": "high",
+    "note": "Personal Access Tokens are created by users via the Netlify account UI (Account Settings > Applications) without requiring human approval; Netlify offers a Free tier account signup per pricing page."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.netlify.com/api/get-started/",
+    "confidence": "high",
+    "note": "Netlify provides a broad REST API covering many product objects (sites, deploys, builds, functions, DNS, teams, etc.) and publishes an OpenAPI spec at https://open-api.netlify.com/."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Documentation + self-service creation of personal access tokens on a free account allow immediate use of the REST API. OpenAPI spec available for integration tooling."
+  },
+  "research_meta": {
+    "queries": [
+      "Netlify API authentication personal access token Authorization: Bearer",
+      "Netlify personal access tokens create account settings applications",
+      "Netlify OpenAPI spec open-api.netlify.com",
+      "Netlify pricing free plan API access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

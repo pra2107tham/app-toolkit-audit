@@ -1,0 +1,45 @@
+{
+  "slug": "google-ads",
+  "name": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "API to programmatically manage Google Ads accounts: campaigns, ad groups, ads, keywords, budgets, bids, account management, and reporting.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.google.com/google-ads/api/rest/auth",
+    "confidence": "high",
+    "note": "Primary authorization is OAuth2 (including service-account/server-to-server flows via OAuth token exchange). Additionally requests must include a developer token in the developer-token header."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.google.com/google-ads/api/docs/get-started/dev-token",
+    "confidence": "high",
+    "note": "Developers can create OAuth2 credentials via Google Cloud and use test developer tokens/test accounts without approval for development (no human approval required to get working test credentials). Production developer token access requires application and review."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developers.google.com/google-ads/api",
+    "confidence": "high",
+    "note": "The API exposes gRPC as the primary protocol and a limited REST interface; client libraries are provided in multiple languages. The API covers campaign, ad group, ad, keyword, budget, bidding, reporting, and many other product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "other",
+    "note": "Production developer token requires approval/review for production access if you need live production access. You can get OAuth2 credentials and a test developer token/self-serve test accounts to develop and test immediately; to use production access against live accounts an approved developer token is required and may involve review."
+  },
+  "research_meta": {
+    "queries": [
+      "Google Ads API pricing \"pricing\" \"Google Ads API\"",
+      "site:developers.google.com Google Ads API pricing",
+      "Google Ads API cost",
+      "Google Ads API pricing developers.google.com",
+      "\"Google Ads API\" \"partner required\" \"API access\"",
+      "\"Google Ads API\" contact sales \"developer token\"",
+      "\"Google Ads API\" partnership required access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

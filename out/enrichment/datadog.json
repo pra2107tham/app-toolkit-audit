@@ -1,0 +1,44 @@
+{
+  "slug": "datadog",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "datadog",
+    "tools_count": 63.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "datadog"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "com.mcparmory/datadog",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/datadog",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.TANTIOPE/datadog-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.us-all/datadog",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.us-all/datadog",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Datadog"
+  },
+  "homepage_alive": true
+}

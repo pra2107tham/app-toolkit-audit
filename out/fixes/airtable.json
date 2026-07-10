@@ -1,0 +1,57 @@
+{
+  "description": {
+    "pass1_value": "Airtable is a cloud spreadsheet-database hybrid for building collaborative apps and workflows with a REST API, SDKs, webhooks, and OAuth integration.",
+    "final_value": "Airtable is an app-building platform for creating and sharing business applications.",
+    "verdict": "unsupported"
+  },
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "evidence_url": "https://www.airtable.com/developers/authentication",
+      "confidence": "high",
+      "note": "Official docs state Airtable supports OAuth 2.0 and Personal access tokens (used as Bearer tokens). The docs also reference legacy API key usage; present auth methods are OAuth and personal access tokens (Bearer). 'other' included to reflect legacy API key mention in docs."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://airtable.com/developers/web/api/authentication",
+      "confidence": "high",
+      "note": "Airtable Web API authentication documentation states the API uses personal access tokens (sent as a Bearer token) or OAuth 2.0."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://support.airtable.com/docs/personal-access-tokens",
+      "confidence": "high",
+      "note": "The support article documents how a user creates personal access tokens from their account settings; the public pricing page shows a Free plan, and the getting-started guide links to token creation\u2014indicating developers can obtain tokens via self-serve without human approval."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://support.airtable.com/docs/creating-and-using-api-keys-and-access-tokens",
+      "confidence": "high",
+      "note": "Official support documentation explains how users create personal access tokens from their Airtable account (self-serve)."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST docs and self-service personal access tokens (or OAuth app registration) are available, so an integration/agent can be developed today."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Airtable provides public REST API documentation and supports authentication via self-serve personal access tokens or OAuth 2.0, so an integration can be built today."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "telegram",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://telegram.org",
+      "reasoning": "The description accurately reflects the capabilities of Telegram as an instant messaging platform providing user/client APIs and a Bot API."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://core.telegram.org/",
+      "reasoning": "The evidence supports the claim that the Bot API uses a bot token and the Telegram API requires an api_id and api_hash, confirming the recorded authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://core.telegram.org/api/obtaining_api_id",
+      "reasoning": "The evidence confirms that developers can obtain the necessary credentials (api_id, api_hash, and bot tokens) without human approval or payment."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://core.telegram.org/",
+      "reasoning": "The evidence supports the claim that Telegram provides both a RESTful HTTP Bot API and an MTProto API, indicating broad coverage of product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://core.telegram.org/",
+      "reasoning": "The existence of public documentation and the ability to obtain credentials confirm that development is feasible today."
+    }
+  ]
+}

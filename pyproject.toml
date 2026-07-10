@@ -1,0 +1,15 @@
+[project]
+name = "composio-research"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "composio>=0.17.1",
+    "composio-crewai>=0.17.1",
+    "crewai>=0.134.0",
+    "jsonschema>=4.26.0",
+    "litellm>=1.72.0",
+    "playwright>=1.61.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+]

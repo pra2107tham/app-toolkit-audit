@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://shopify.dev/docs/apps/building-apps/getting-started#create-an-app",
+      "confidence": "high",
+      "note": "Developers can create a Partner account (free) and create apps and development stores to obtain API credentials via the Partner Dashboard."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://shopify.dev/docs/apps/getting-started/create",
+      "confidence": "high",
+      "note": "Shopify's official 'Create a Shopify app' guide states you need a Partner account to create an app (via Partner Dashboard or Shopify CLI). Creating an app in the Partner Dashboard provides app credentials (API key/secret) for API access, and Partner accounts/dev tooling are self-serve."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "With a free Partner account and development store, developers can obtain API credentials and use REST/GraphQL APIs immediately. Some advanced features (e.g., Multipass, certain checkout extensibility) require Shopify Plus or additional feature access which may restrict parts of integration."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Shopify's official 'Getting started' / 'Create a Shopify app' docs indicate you can self-serve by creating a Partner account and creating an app (and using a development store for testing). The Shopify APIs documentation provides immediate access to API docs (Admin/Storefront), enabling building and testing integrations today; some advanced features may still require additional Shopify plan/feature access."
+    },
+    "verdict": "unsupported"
+  }
+}

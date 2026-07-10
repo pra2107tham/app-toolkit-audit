@@ -1,0 +1,40 @@
+{
+  "slug": "snowflake",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.snowflake.com",
+      "reasoning": "The homepage describes Snowflake as a cloud data platform providing data warehouse, data lake, and data application capabilities, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authentication.html",
+      "reasoning": "The URL for authentication methods returned a 404 error, meaning the evidence for the claimed authentication methods is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.snowflake.com/get-started/",
+      "reasoning": "The URL for credential access returned a 404 error, indicating that the evidence supporting the claim of self-serve credential access is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index.html",
+      "reasoning": "The SQL API documentation confirms that the SQL API is a REST API for sending SQL statements over HTTPS, supporting the recorded claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the SQL API documentation exists, the lack of accessible evidence for credential access and authentication methods raises doubts about the overall buildability claim."
+    }
+  ]
+}

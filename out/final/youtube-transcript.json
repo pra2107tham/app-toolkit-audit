@@ -1,0 +1,42 @@
+{
+  "slug": "youtube-transcript",
+  "name": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "description": "Service/API for transcribing and summarizing audio and video content.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://transcriptapi.com/docs#authentication",
+    "confidence": "high",
+    "note": "Docs state requests must include an Authorization header with your API key: Authorization: Bearer <API_KEY>."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://transcriptapi.com/pricing",
+    "confidence": "high",
+    "note": "Pricing and signup pages show a Free tier and indicate you can sign up to receive an API key and view it in the dashboard."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "narrow",
+    "docs_url": "https://transcriptapi.com/docs",
+    "confidence": "high",
+    "note": "Docs show a REST base URL (https://api.transcriptapi.com) and endpoints such as POST /v1/transcriptions, GET /v1/transcriptions/{id}, POST /v1/summaries; SDKs (Node, Python) are also mentioned."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs plus self-serve signup and a free API key are available, so a developer can obtain credentials and call the API immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "transcriptapi.com API docs",
+      "site:transcriptapi.com \"docs\" \"auth\" \"API\"",
+      "transcriptapi.com/docs authentication \"Authorization\" \"API key\"",
+      "transcriptapi.com pricing \"API\" \"plan\" \"contact\"",
+      "site:transcriptapi.com \"signup\" \"API key\" OR \"API key\" \"dashboard\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

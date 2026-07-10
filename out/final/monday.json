@@ -1,0 +1,48 @@
+{
+  "slug": "monday",
+  "name": "Monday.com",
+  "category": "Productivity and Project Management",
+  "description": "Work operating system for teams: boards, tasks, automations, integrations and custom apps to manage projects and workflows.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developer.monday.com/api-reference/docs/authorization",
+    "confidence": "high",
+    "note": "Official monday.com API docs state you authenticate by providing an authorization token in the Authorization header, supporting both Personal API tokens (Authorization: <your_api_token>) and OAuth 2.0 access tokens (Authorization: Bearer <access_token>)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.monday.com/api-reference/docs/the-developer-center",
+    "confidence": "high",
+    "note": "The Developer Center docs explain creating apps and obtaining client_id/client_secret as well as generating personal API tokens from the product UI without requiring partner approval; support article shows how to create a personal API v2 token in the UI."
+  },
+  "api_surface": {
+    "value": "graphql",
+    "breadth": "broad",
+    "docs_url": "https://developer.monday.com/api-reference/docs/getting-started",
+    "confidence": "high",
+    "note": "monday.com exposes a GraphQL API at https://api.monday.com/v2 and developer docs and API reference show wide GraphQL schema to access boards, items, users and automations (GraphQL endpoint and examples present in official docs)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developer docs and product UI allow self-service creation of personal API tokens and OAuth apps, and the GraphQL API endpoint is public in docs, so integration development can start immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "monday.com developer API documentation root site:developer.monday.com OR site:monday.com \"API\" \"developer\" \"monday\"",
+      "site:developer.monday.com authentication \"OAuth\" \"monday.com\" \"access token\"",
+      "site:developer.monday.com \"Getting started\" \"API\" \"monday\" \"developer\"",
+      "site:developer.monday.com \"How to get your API token\" \"monday\"",
+      "monday.com API token \"how to get\" site:monday.com OR site:developer.monday.com",
+      "site:monday.com \"API\" \"pricing\" \"developer\" \"access\" \"plan\"",
+      "\"monday.com\" \"partner\" \"API\" site:developer.monday.com OR site:monday.com \"partner program\" \"API\"",
+      "site:support.monday.com \"API token\" \"create\"",
+      "\"Developer Center\" \"monday.com\" \"API token\" \"Developer Center\" site:developer.monday.com"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

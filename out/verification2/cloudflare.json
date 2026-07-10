@@ -1,0 +1,40 @@
+{
+  "slug": "cloudflare",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.cloudflare.com",
+      "reasoning": "The description accurately reflects the services provided by Cloudflare as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for the authentication methods returned a 404 error, making it impossible to confirm the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for credential access returned a 404 error, preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.cloudflare.com/api/",
+      "reasoning": "The API surface is confirmed as broad and RESTful based on the content of the fetched API documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the claim states that integration can be built today, the lack of confirmation for authentication methods and credential access undermines this assertion."
+    }
+  ]
+}

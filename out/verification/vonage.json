@@ -1,0 +1,40 @@
+{
+  "slug": "vonage",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.vonage.com",
+      "reasoning": "The homepage is inaccessible (HTTP 403), and thus the description cannot be confirmed."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "reasoning": "The evidence confirms that Vonage supports API Key and Secret, JWT, and other signing/auth concepts."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.vonage.com/en/account/guides/api-key-secret",
+      "reasoning": "The evidence URL returns a 404 error, preventing confirmation of the credential access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.vonage.com/en/home",
+      "reasoning": "The evidence confirms that Vonage exposes RESTful APIs across various product surfaces."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.vonage.com/en/home",
+      "reasoning": "The evidence supports that public documentation and self-serve account signup allow developers to start building immediately."
+    }
+  ]
+}

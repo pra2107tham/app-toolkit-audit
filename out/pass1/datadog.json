@@ -1,0 +1,48 @@
+{
+  "slug": "datadog",
+  "name": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Datadog is a monitoring and observability platform for infrastructure, applications, logs, and more, offering REST APIs and SDKs to interact with product data and configuration.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://docs.datadoghq.com/api/latest/authentication/",
+    "confidence": "high",
+    "note": "Datadog requires two header keys: DD-API-KEY (API key) and DD-APPLICATION-KEY (application key) passed as headers. The docs do not describe OAuth2, Basic, or JWT for the public API."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "confidence": "high",
+    "note": "API and application keys are created in the account UI (Settings > API keys / Integrations > APIs). A user can sign up for a free trial account to obtain keys (trial signup documented). No docs indicate partner gating or manual approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.datadoghq.com/api/latest/",
+    "confidence": "high",
+    "note": "The API docs document many endpoint groups (metrics, traces, logs, dashboards, monitors, Synthetics, key management, etc.). Client libraries/SDKs are also provided, but the public API surface is RESTful and extensive."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST APIs are documented and API/application keys can be self-created via account UI or API (and trial accounts are available), enabling immediate development."
+  },
+  "research_meta": {
+    "queries": [
+      "Datadog API documentation root site:docs.datadoghq.com \"API\" \"Datadog API\" \"docs.datadoghq.com/api\"",
+      "site:docs.datadoghq.com \"api latest\" \"Datadog API\" \"docs.datadoghq.com/api/latest\"",
+      "site:docs.datadoghq.com \"create an API key\" OR \"Create an API key\" \"Datadog\"",
+      "site:docs.datadoghq.com \"API and application keys\" \"API keys\" \"app keys\" Datadog account settings create key",
+      "site:datadoghq.com pricing API access \"API\" \"access\" Datadog pricing API keys included plan \"API access\" \"partner\"",
+      "site:docs.datadoghq.com \"authentication\" \"API\" \"Datadog\" \"DD-API-KEY\" \"DD-APPLICATION-KEY\"",
+      "site:docs.datadoghq.com \"validate API\" \"validate\" \"validate API and application keys\" Datadog validate endpoint /validate",
+      "site:docs.datadoghq.com \"Key Management\" \"create\" \"API key\" \"application key\"",
+      "site:docs.datadoghq.com \"sign up\" \"Datadog\" \"create account\" \"trial\" \"API key\"",
+      "\"API access\" \"Datadog\" \"requires\" \"paid\" \"trial\" \"partner\" \"contact sales\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

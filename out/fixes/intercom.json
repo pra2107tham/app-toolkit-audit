@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/creating-a-developer-application",
+      "confidence": "high",
+      "note": "You can create an app in the Developer Hub and receive credentials (Access Token for private apps or client ID/secret for public OAuth apps) immediately from your workspace."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.intercom.com/docs/build-an-integration/app-configuration/",
+      "confidence": "high",
+      "note": "Intercom\u2019s Developer Hub is where you configure an app and obtain credentials: public apps provide a Client ID/Client Secret (OAuth 2.0), and private apps can generate an access token (personal access token) for API requests."
+    },
+    "verdict": "dead_url"
+  }
+}

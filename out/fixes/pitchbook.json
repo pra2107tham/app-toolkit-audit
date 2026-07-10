@@ -1,0 +1,66 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://pitchbook.com/products/direct-data",
+      "confidence": "low",
+      "note": "PitchBook's Direct Data/product pages mention a 'flexible API' but do not publish technical auth details (OAuth2, API keys, tokens, etc.) on public pages; access/setup is handled via sales/account teams, so public auth method is not documented."
+    },
+    "final_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://pitchbook.com/products/direct-data",
+      "confidence": "low",
+      "note": "PitchBook\u2019s official Direct Data page states that access is available via an \"API\" (\"flexible API\") and via bulk Datafeed delivery, but it does not publish any public technical authentication method details (e.g., OAuth2, API keys, tokens) on the page."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "partner_gated",
+      "evidence_url": "https://pitchbook.com/products/direct-data",
+      "confidence": "high",
+      "note": "Direct Data is described as an enterprise-grade product and the page instructs clients to contact their account rep or sales for access; this indicates access is gated and requires a sales/partnership process."
+    },
+    "final_value": {
+      "value": "partner_gated",
+      "evidence_url": "https://pitchbook.com/products/direct-data",
+      "confidence": "high",
+      "note": "The official Direct Data page positions the product as enterprise-focused and directs users to contact sales/request access (i.e., not self-serve), indicating credentials/access are obtained through a sales/account process."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://pitchbook.com/products/direct-data",
+      "confidence": "low",
+      "note": "Product pages state there is a 'flexible API' and bulk Datafeed (SFTP/AWS/Azure) but no public developer reference, REST/GraphQL details, or endpoint documentation is published on pitchbook.com; thus no public API surface to reference."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://pitchbook.com/products/direct-data",
+      "confidence": "high",
+      "note": "PitchBook\u2019s Direct Data page mentions an API and datafeed delivery methods (SFTP/cloud), but provides no public developer documentation (no endpoints, schemas, reference docs, or authentication setup) accessible on pitchbook.com from this page."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "Because Direct Data is an enterprise product that requires engagement with sales or an account representative to obtain access, you cannot obtain self-serve credentials or public API docs to build against today."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "Direct Data access is gated via sales/request-access and there are no public API docs or self-serve credentials on the official product page, so building an integration cannot be completed without becoming a customer/partner."
+    },
+    "verdict": "unsupported"
+  }
+}

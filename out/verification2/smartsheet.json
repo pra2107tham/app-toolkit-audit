@@ -1,0 +1,40 @@
+{
+  "slug": "smartsheet",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.smartsheet.com",
+      "reasoning": "The homepage could not be fetched due to a timeout, leaving the description unverified."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://smartsheet-platform.github.io/api-docs/?shell#authentication",
+      "reasoning": "The evidence confirms that Smartsheet API authentication uses access tokens and supports OAuth 2.0."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.smartsheet.com/articles/2482062-smartsheet-api-access-token",
+      "reasoning": "The provided URL returned a 404 error, indicating that the claim about self-serve API access token generation is unverified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://smartsheet.redoc.ly/",
+      "reasoning": "The evidence confirms that the Smartsheet API has broad resource coverage as stated."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://smartsheet.redoc.ly/",
+      "reasoning": "While the API documentation supports building integrations, the lack of confirmation for credential access affects the overall buildability claim."
+    }
+  ]
+}

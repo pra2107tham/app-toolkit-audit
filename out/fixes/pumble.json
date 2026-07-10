@@ -1,0 +1,21 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-integration-installation-and-usage/",
+      "confidence": "high",
+      "note": "Pumble uses API keys sent in the X-Api-Key header to authenticate REST API requests; API keys are created in the workspace API section."
+    },
+    "final_value": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://api.pumble.com/api/docs/swagger.json",
+      "confidence": "high",
+      "note": "Pumble's OpenAPI/Swagger definition declares a security scheme of type apiKey with name \"X-Api-Key\" in the request header (components.securitySchemes.ApiKeyAuth), and applies it globally via the top-level security requirement."
+    },
+    "verdict": "dead_url"
+  }
+}

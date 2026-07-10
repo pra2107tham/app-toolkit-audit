@@ -1,0 +1,40 @@
+{
+  "slug": "pitchbook",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "PitchBook provides private capital markets data; Direct Data delivers that data via an API and bulk datafeeds (SFTP/cloud) for enterprise integrations.",
+      "better_evidence_url": "https://pitchbook.com",
+      "reasoning": "The description accurately reflects the information available on the homepage, which outlines PitchBook's offerings in private capital markets data."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com/products/direct-data",
+      "reasoning": "The URL for auth methods returned a 404 error, indicating that the page does not exist, and thus the claim cannot be verified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com/products/direct-data",
+      "reasoning": "The URL for credential access returned a 404 error, indicating that the page does not exist, and thus the claim cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com/products/direct-data",
+      "reasoning": "The URL for API surface returned a 404 error, indicating that the page does not exist, and thus the claim cannot be verified."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "",
+      "reasoning": "While the claim of being blocked is plausible given the context of needing sales engagement, the lack of accessible documentation or credentials makes it unsupported due to the dead URLs."
+    }
+  ]
+}

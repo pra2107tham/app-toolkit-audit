@@ -1,0 +1,40 @@
+{
+  "slug": "jira",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Issue and project tracking platform for software teams, providing issues, projects, workflows, boards, and related services.",
+      "better_evidence_url": "https://www.atlassian.com/software/jira",
+      "reasoning": "The homepage confirms the description of Jira as a project management tool for software teams."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "oauth2, api_key, basic, token, other",
+      "better_evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication/",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the listed authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developer.atlassian.com/console/",
+      "reasoning": "The Developer Console confirms that developers can create apps and obtain OAuth client credentials without manual approval, supporting the claim of self-service credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developer.atlassian.com/cloud/jira/platform/",
+      "reasoning": "The API documentation confirms that Jira Cloud provides a comprehensive REST API covering various functionalities."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.atlassian.com/cloud/jira/platform/",
+      "reasoning": "The available developer documentation and self-serve console indicate that integrations can be built immediately, confirming the buildability claim."
+    }
+  ]
+}

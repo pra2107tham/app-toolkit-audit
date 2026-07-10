@@ -1,0 +1,40 @@
+{
+  "slug": "shopify",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.shopify.com",
+      "reasoning": "The description accurately reflects the offerings of Shopify as an ecommerce platform, which is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://shopify.dev/docs/apps/auth",
+      "reasoning": "The evidence from the official documentation confirms the listed authentication methods, including OAuth, access tokens, API key, and JWT."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://shopify.dev/docs/apps/getting-started/create",
+      "reasoning": "The official guide supports the claim that creating an app requires a Partner account and provides app credentials, confirming the self-serve nature of access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://shopify.dev/docs/api",
+      "reasoning": "The documentation confirms the existence of both Admin REST and GraphQL APIs, supporting the claim of broad API surface coverage."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://shopify.dev/docs/apps/getting-started/create",
+      "reasoning": "The documentation indicates that developers can build and test integrations today, confirming the buildable status without any blockers."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "binance",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.binance.com",
+      "reasoning": "The homepage does not provide specific details about the services offered by Binance, making the claim unsupported."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://binance-docs.github.io/apidocs/spot/en/#signed-endpoint",
+      "reasoning": "The redirected page does not confirm the specific authentication methods mentioned in the record."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.binance.com/docs/binance_link/link-and-trade/fast-api/create-api-key",
+      "reasoning": "The pre-fetched page does not provide sufficient detail to confirm the self-serve process for creating API keys."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.binance.com/docs/",
+      "reasoning": "The page does not provide enough information to confirm the breadth of the API surface as described."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.binance.com/docs/",
+      "reasoning": "The lack of specific evidence from the documentation regarding buildability leads to this claim being unsupported."
+    }
+  ]
+}

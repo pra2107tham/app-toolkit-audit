@@ -1,0 +1,50 @@
+{
+  "slug": "notebooklm",
+  "name": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "description": "NotebookLM Enterprise (part of Gemini Enterprise) provides programmatic creation and management of NotebookLM notebooks on Google Cloud.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "other",
+      "none_public"
+    ],
+    "evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+    "confidence": "high",
+    "note": "Docs instruct creating service accounts, using gcloud to obtain access tokens, and show Authorization: Bearer <access_token>; this indicates OAuth2 bearer tokens via service accounts or user credentials. 'service_account' mapped to 'other' to fit schema; 'none_public' included to reflect no anonymous/no API-key-only access."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://cloud.google.com/products/generative-ai/ai-enterprise",
+    "confidence": "medium",
+    "note": "The official AI Enterprise product page positions AI Enterprise (including NotebookLM) as an organizational/enterprise offering and the primary call-to-action to get started is 'Contact sales', suggesting access may be sales-gated; however, it does not explicitly confirm whether NotebookLM Enterprise API credentials can be obtained self-serve in any billed Google Cloud project."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "confidence": "high",
+    "note": "API reference documents REST endpoints for creating, getting, patching, and deleting notebooks and includes request/response schemas, indicating a broad REST surface."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "other",
+    "note": "The setup guide documents technical prerequisites (Google Cloud project, billing enabled, enabling the NotebookLM Enterprise API, creating a service account, and using Bearer access tokens), but it does not clarify whether the NotebookLM Enterprise API is generally available to any self-serve Google Cloud project or requires enterprise enrollment/sales approval to actually obtain working access; this uncertainty blocks buildability determination."
+  },
+  "research_meta": {
+    "queries": [
+      "NotebookLM API developer documentation NotebookLM API auth \"NotebookLM\" developer site:google.com OR site:cloud.google.com OR site:notebooklm.google.com OR site:developers.google.com \"NotebookLM\"",
+      "NotebookLM Enterprise authentication \"NotebookLM Enterprise\" auth \"cloud.google.com\" \"auth\" \"API\"",
+      "NotebookLM Enterprise \"pricing\" \"NotebookLM\" \"Google Cloud\" pricing NotebookLM Enterprise contact sales \"NotebookLM Enterprise\" pricing site:cloud.google.com",
+      "\"NotebookLM Enterprise\" \"contact sales\" \"NotebookLM\" \"Gemini Enterprise\"",
+      "site:notebooklm.google.com API docs \"NotebookLM\" \"API\"",
+      "\"Create and manage notebooks (API)\" \"NotebookLM Enterprise\"",
+      "\"Set up NotebookLM Enterprise\" \"enable API\" \"billing\" \"service account\"",
+      "\"NotebookLM Enterprise\" \"API\" \"credentials\" \"service account\" \"create service account\"",
+      "\"NotebookLM\" \"Gemini Enterprise\" \"NotebookLM Enterprise\" \"signup\" \"enroll\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

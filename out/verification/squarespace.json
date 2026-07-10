@@ -1,0 +1,40 @@
+{
+  "slug": "squarespace",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.squarespace.com",
+      "reasoning": "The description accurately reflects the Squarespace platform as a website and commerce platform with REST Commerce APIs."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "reasoning": "The official documentation states that the Commerce APIs use OAuth and Developer API Keys for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "reasoning": "While the documentation mentions how to create Developer API Keys, it does not clarify whether a paid plan, trial, or partner approval is necessary to obtain working API credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.squarespace.com/commerce-apis",
+      "reasoning": "The documentation explicitly states that the Commerce APIs are REST APIs and lists various endpoints, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The buildability claim is not fully supported as the documentation does not specify whether a paid plan or partner approval is required to create Developer API Keys."
+    }
+  ]
+}

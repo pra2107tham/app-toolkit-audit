@@ -1,0 +1,43 @@
+{
+  "slug": "vercel",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "vercel",
+    "tools_count": 131.0,
+    "auth_schemes": [
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "vercel"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "com.pulsemcp/vercel",
+        "official_vendor": false
+      },
+      {
+        "name": "com.pulsemcp/vercel",
+        "official_vendor": false
+      },
+      {
+        "name": "com.vercel/vercel-mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "com.vercel/vercel-mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "com.vercel/vercel-mcp",
+        "official_vendor": true
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Vercel"
+  },
+  "homepage_alive": true
+}

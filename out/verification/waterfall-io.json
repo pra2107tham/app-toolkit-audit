@@ -1,0 +1,40 @@
+{
+  "slug": "waterfall-io",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A SaaS platform that connects analytics and search data (Google Analytics, Search Console, Ads, Bing, Shopify, HubSpot) to build dashboards and insights.",
+      "better_evidence_url": "https://waterfall.io",
+      "reasoning": "The homepage confirms that Waterfall.io is a B2B data solution that aggregates various data sources, aligning with the description provided."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "none",
+      "better_evidence_url": "https://help.waterfall.io/en/articles/6948295-integrations",
+      "reasoning": "The URL for auth methods resulted in a FETCH_ERROR, preventing verification of the claim regarding OAuth and public API authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "none",
+      "better_evidence_url": "https://waterfall.io/pricing",
+      "reasoning": "The pricing page returned a 404 error, which means there is no accessible information to confirm or contradict the claim about API credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "none",
+      "better_evidence_url": "https://help.waterfall.io/en/",
+      "reasoning": "The URL for API surface documentation resulted in a FETCH_ERROR, thus failing to provide evidence for the claim regarding public API documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "none",
+      "better_evidence_url": "none",
+      "reasoning": "The lack of public API documentation and the inability to access relevant URLs confirms that building an AI-agent integration is unsupported."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "firecrawl",
+  "name": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "description": "Public REST API for Firecrawl (v1) accessed using API keys as bearer tokens.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "confidence": "high",
+    "note": "The API reference states to authenticate by including the API key in the Authorization header as a Bearer token (example shown as `Authorization: Bearer fc-xxxxxxxx`)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.firecrawl.dev/pricing",
+    "confidence": "high",
+    "note": "Firecrawl publishes a self-serve \"Free\" plan on its Pricing page. API keys are managed via the Firecrawl dashboard (Settings \u2192 API Keys) per the API reference introduction."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "moderate",
+    "docs_url": "https://docs.firecrawl.dev/api-reference",
+    "confidence": "medium",
+    "note": "Base URL: https://api.firecrawl.dev/v1. Only the authentication page was observed, so full endpoint coverage is unknown."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "none",
+    "note": "The API is buildable after self-serve signup by using an API key from the dashboard (Settings \u2192 API Keys). Product limits are plan-based (e.g., rate limits/usage by plan), but the docs do not substantiate the prior claim about paid-plan-only endpoint scopes."
+  },
+  "research_meta": {
+    "queries": [
+      "Firecrawl API authentication",
+      "Firecrawl API keys create dashboard",
+      "site:docs.firecrawl.dev Firecrawl API authentication",
+      "Firecrawl API base URL"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "basic",
+        "oauth2",
+        "none_public"
+      ],
+      "evidence_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/authentication/",
+      "confidence": "high",
+      "note": "Docs describe consumer key & consumer secret (API keys), HTTP Basic Auth (using consumer key as username and secret as password), and OAuth 1.0a for legacy integrations. JWT/bearer tokens are not listed as built-in methods."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "basic",
+        "other"
+      ],
+      "evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "confidence": "high",
+      "note": "Official WooCommerce REST API docs state WooCommerce uses API keys (Consumer Key/Consumer Secret). Over HTTPS it supports HTTP Basic Authentication using the consumer key as username and consumer secret as password; without SSL it supports OAuth 1.0a."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.woocommerce.com/docs/creating-an-api-key-for-a-user/",
+      "confidence": "high",
+      "note": "API keys (consumer key & secret) are generated in the WordPress admin (WooCommerce > Settings > Advanced > REST API) by site users\u2014no vendor approval required."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "confidence": "high",
+      "note": "Official docs describe creating REST API keys in the WordPress admin under WooCommerce > Settings > Advanced > REST API by selecting Add key for a user, generating a consumer key and consumer secret (no vendor approval flow indicated)."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST docs and self-serve API key creation exist; a developer with access to a WooCommerce site can obtain credentials and use the REST or Store APIs immediately."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "WooCommerce's official REST API documentation describes supported authentication (API keys with Basic Auth over HTTPS or OAuth 1.0a) and self-serve REST API key generation in the WooCommerce admin, enabling immediate development for anyone with access to a WooCommerce site."
+    },
+    "verdict": "unsupported"
+  }
+}

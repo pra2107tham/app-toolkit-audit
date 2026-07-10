@@ -1,0 +1,41 @@
+{
+  "slug": "firecrawl",
+  "name": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "description": "Public REST API for Firecrawl (v1) accessed using API keys as bearer tokens.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://docs.firecrawl.dev/api-reference/authentication",
+    "confidence": "high",
+    "note": "API keys are passed as Bearer tokens in the Authorization header. Docs mention contacting support for OAuth support."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.firecrawl.dev/api-reference/authentication",
+    "confidence": "high",
+    "note": "You can create API keys in the dashboard under Settings → API Keys. Scopes may be limited by plan."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "moderate",
+    "docs_url": "https://docs.firecrawl.dev/api-reference",
+    "confidence": "medium",
+    "note": "Base URL: https://api.firecrawl.dev/v1. Only the authentication page was observed, so full endpoint coverage is unknown."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "paid_only",
+    "note": "API keys are available via the dashboard, but some endpoints require elevated scopes available on paid plans."
+  },
+  "research_meta": {
+    "queries": [
+      "Firecrawl API authentication",
+      "Firecrawl API keys create dashboard",
+      "site:docs.firecrawl.dev Firecrawl API authentication",
+      "Firecrawl API base URL"
+    ],
+    "insufficient_public_docs": false
+  }
+}

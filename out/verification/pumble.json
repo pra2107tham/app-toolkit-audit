@@ -1,0 +1,40 @@
+{
+  "slug": "pumble",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Team chat and collaboration platform with a REST API add-on for automating workspace actions (messages, channels, members, webhooks).",
+      "better_evidence_url": "https://pumble.com",
+      "reasoning": "The homepage describes Pumble as a team communication and collaboration tool, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-integration-installation-and-usage/",
+      "reasoning": "The URL for the auth methods returned a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "reasoning": "The evidence confirms that API keys can be generated via the workspace UI and that no paid plan is required for API access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "reasoning": "The documentation confirms the existence of a REST API and describes its capabilities, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "reasoning": "The ability to install the API add-on and generate API keys without requiring admin approval supports the claim of buildability."
+    }
+  ]
+}

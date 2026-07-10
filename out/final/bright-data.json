@@ -1,0 +1,52 @@
+{
+  "slug": "bright-data",
+  "name": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "description": "A platform providing proxy networks, web-scraping and rendering APIs, and data-collection products (proxies, Web Unlocker, Scraping Browser, LLM API).",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic",
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://docs.brightdata.com/api-reference/authentication",
+    "confidence": "high",
+    "note": "Official docs describe API key authentication (used as a Bearer token in Authorization header), Native Access proxy credentials (username:password, i.e., basic-style proxy auth), and mention short-lived/other tokens in SDKs/tools."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://brightdata.com/pricing",
+    "confidence": "high",
+    "note": "Pricing page states Bright Data offers a free trial credit at signup (immediate access without entering payment details). Combined with account setup docs showing a default API key is created on account signup, this supports self-serve free credential issuance. See account setup: https://docs.brightdata.com/getting-started/account-setup"
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.brightdata.com/api-reference",
+    "confidence": "high",
+    "note": "Documentation and API Reference Overview state Bright Data exposes REST endpoints for many products (Web Unlocker, Scraping Browser, Proxies, LLM API). Official product API pages list endpoints (e.g., POST https://api.brightdata.com/unlocker, proxies management endpoints)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs exist and signup provides immediate/free-trial access and a default API key. Some networks/products may require payment details or KYC for full access (per account setup/pricing docs), but core APIs are accessible after signup."
+  },
+  "research_meta": {
+    "queries": [
+      "https://docs.brightdata.com/api-reference/authentication",
+      "https://docs.brightdata.com/getting-started/account-setup",
+      "https://docs.brightdata.com/",
+      "https://docs.brightdata.com/api-reference",
+      "https://docs.brightdata.com/api-reference/overview",
+      "https://docs.brightdata.com/api-reference/web-unlocker",
+      "https://docs.brightdata.com/api-reference/scraping-browser",
+      "https://docs.brightdata.com/api-reference/proxies",
+      "https://docs.brightdata.com/api-reference/llm",
+      "https://brightdata.com/pricing",
+      "https://brightdata.com/plans",
+      "https://brightdata.com/contact-sales"
+    ],
+    "insufficient_public_docs": false
+  }
+}

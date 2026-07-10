@@ -1,0 +1,28 @@
+{
+  "description": {
+    "pass1_value": "Open-source and enterprise ecommerce platform (Magento / Adobe Commerce) providing REST, GraphQL and SOAP APIs for storefront and back-office integrations.",
+    "final_value": "Adobe Commerce (formerly Magento Commerce) is a headless commerce platform for delivering personalized commerce experiences across touchpoints, with tools to create and manage storefronts, commerce content, merchandising, and core operations like product catalogs, orders, and customers.",
+    "verdict": "unsupported"
+  },
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+      "confidence": "high",
+      "note": "Adobe Commerce as a Cloud Service REST APIs use Adobe IMS (OAuth 2) and bearer access tokens for API authorization (server-to-server and user flows). Older / non\u2011SaaS Magento docs also reference OAuth 1.0a and admin/integration tokens (see Getting Started), but the cited page explicitly documents OAuth2 and bearer token flows for Cloud."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+      "confidence": "high",
+      "note": "Official REST authentication docs list Integration tokens (used as a Bearer token in the Authorization header), OAuth 1.0a for third-party apps, and Adobe IMS (OAuth 2.0) for Adobe Commerce as a Cloud Service. (Tool schema supports oauth2/token; oauth1 not represented.)"
+    },
+    "verdict": "contradicted"
+  }
+}

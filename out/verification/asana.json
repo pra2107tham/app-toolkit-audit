@@ -1,0 +1,40 @@
+{
+  "slug": "asana",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://asana.com",
+      "reasoning": "The description accurately reflects the functionality of Asana as a work management platform for teams."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.asana.com/docs/authentication",
+      "reasoning": "The evidence confirms that Asana supports OAuth 2.0 and Personal Access Tokens for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.asana.com/docs/personal-access-token",
+      "reasoning": "The evidence supports that Personal Access Tokens can be created without human approval and that API access does not require a paid plan."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.asana.com/docs/api-reference",
+      "reasoning": "The URL for the API surface returned a 404 error, indicating that the specific page for API reference is not available."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the other fields suggest that building is possible, the lack of a valid API surface page means that the buildability claim cannot be fully supported."
+    }
+  ]
+}

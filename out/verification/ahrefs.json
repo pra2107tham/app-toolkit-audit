@@ -1,0 +1,40 @@
+{
+  "slug": "ahrefs",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Ahrefs provides SEO and backlink data products accessible programmatically via the Ahrefs API v3 for paying customers.",
+      "better_evidence_url": "https://ahrefs.com",
+      "reasoning": "The homepage describes Ahrefs as providing SEO tools and data, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ahrefs.com/en/api/docs/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_paid_trial",
+      "better_evidence_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "reasoning": "The introduction page confirms that API v3 is available to paying customers and that API access is tied to paid plans."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "reasoning": "The documentation states that API v3 uses REST endpoints, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "reasoning": "The documentation indicates that API access requires a paid account, confirming the buildability claim."
+    }
+  ]
+}

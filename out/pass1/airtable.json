@@ -1,0 +1,45 @@
+{
+  "slug": "airtable",
+  "name": "Airtable",
+  "category": "Productivity and Project Management",
+  "description": "Airtable is a cloud spreadsheet-database hybrid for building collaborative apps and workflows with a REST API, SDKs, webhooks, and OAuth integration.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://www.airtable.com/developers/authentication",
+    "confidence": "high",
+    "note": "Official docs state Airtable supports OAuth 2.0 and Personal access tokens (used as Bearer tokens). The docs also reference legacy API key usage; present auth methods are OAuth and personal access tokens (Bearer). 'other' included to reflect legacy API key mention in docs."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://support.airtable.com/docs/personal-access-tokens",
+    "confidence": "high",
+    "note": "The support article documents how a user creates personal access tokens from their account settings; the public pricing page shows a Free plan, and the getting-started guide links to token creation—indicating developers can obtain tokens via self-serve without human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://airtable.com/api",
+    "confidence": "high",
+    "note": "The API reference at https://airtable.com/api is an auto-generated REST API for bases (endpoints for tables, records, attachments, fields). The Developers hub also lists SDKs and webhooks, but the primary documented surface is a comprehensive REST API."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs and self-service personal access tokens (or OAuth app registration) are available, so an integration/agent can be developed today."
+  },
+  "research_meta": {
+    "queries": [
+      "Airtable authentication personal access tokens",
+      "Airtable OAuth documentation",
+      "Airtable REST API docs base endpoints",
+      "How to get Airtable API key personal access token",
+      "Airtable pricing API access",
+      "Airtable partner program API restriction"
+    ],
+    "insufficient_public_docs": false
+  }
+}

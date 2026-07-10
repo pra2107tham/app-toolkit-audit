@@ -1,0 +1,40 @@
+{
+  "slug": "mongodb-atlas",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/atlas",
+      "reasoning": "The description of MongoDB Atlas as a managed, cloud-hosted database service aligns with the information provided on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "reasoning": "The authentication methods listed (api_key, oauth2, other, none_public) are explicitly supported by the documentation, confirming the claims made."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/configure-api-access/#manage-programmatic-api-keys",
+      "reasoning": "The documentation supports the claim that users can self-serve create API keys in the Atlas UI, confirming the self_serve_free access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+      "reasoning": "The claim that Atlas exposes a versioned REST administration API is confirmed by the documentation, which details the API's endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "reasoning": "The existence of public REST API documentation and the ability for users to create API keys supports the claim that the API is buildable today."
+    }
+  ]
+}

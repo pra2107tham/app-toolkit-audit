@@ -1,0 +1,43 @@
+{
+  "slug": "plain",
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "description": "Plain is a modern customer support / helpdesk platform for product teams, offering inboxes, knowledge bases, integrations, AI assistants and extensibility.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://www.plain.com/help/articles/api-access",
+    "confidence": "high",
+    "note": "Plain's Help Center states that API access and developer documentation are not available by default and must be enabled by contacting sales or an account representative; no public API authentication method details are provided without that access."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://www.plain.com/help/articles/api-access",
+    "confidence": "high",
+    "note": "The official Help Center states API access (and developer documentation) must be enabled by contacting sales or your account representative, indicating credential/API enablement is not self-serve."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://www.plain.com/help/articles/developer-documentation",
+    "confidence": "high",
+    "note": "Plain confirms an API exists, but its developer documentation is only available after API access is enabled for your account (via contacting an account representative), so the public API surface cannot be reviewed."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "API access and developer documentation are not available by default and require contacting sales/account representative to enable, blocking self-serve development without a commercial relationship."
+  },
+  "research_meta": {
+    "queries": [
+      "Plain support helpdesk Plain.com developer API docs \"Plain API\" \"plain.com\"",
+      "site:plain.com \"API\" \"Plain\" \"developers\"",
+      "Plain helpdesk \"API\" \"plain\" \"developer\"",
+      "\"Plain API\" \"plain.com\" -plaintext -other \"support\" \"helpdesk\"",
+      "Composio Tavily advanced search constrained to include_domains: [\"plain.com\"]"
+    ],
+    "insufficient_public_docs": true,
+    "pass": 2
+  }
+}

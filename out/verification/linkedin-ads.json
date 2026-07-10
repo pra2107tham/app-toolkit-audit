@@ -1,0 +1,40 @@
+{
+  "slug": "linkedin-ads",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://business.linkedin.com/marketing-solutions/ads",
+      "reasoning": "The description accurately reflects the capabilities of LinkedIn Marketing APIs as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://learn.microsoft.com/linkedin/shared/authentication/",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim about OAuth 2.0."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://learn.microsoft.com/linkedin/marketing/getting-access",
+      "reasoning": "The content confirms that access to Marketing APIs requires application and approval, aligning with the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://learn.microsoft.com/linkedin/marketing/",
+      "reasoning": "The page confirms that the Marketing APIs provide REST API resources for various functionalities, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The buildability is consistent with the other fields, as access to full Marketing APIs is gated by approval, confirming the recorded value."
+    }
+  ]
+}

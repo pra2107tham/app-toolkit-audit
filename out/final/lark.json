@@ -1,0 +1,43 @@
+{
+  "slug": "lark",
+  "name": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "description": "An enterprise collaboration platform (chat, docs, calendar) with an Open Platform for building apps and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://open.larksuite.com/document/ukTM4EjL/ucDO3EjL3gTNx4yN",
+    "confidence": "high",
+    "note": "Authentication docs page (Authentication) for the Open Platform documents OAuth flows, App Access Token and Tenant Access Token methods (token-based). The fetched page is the official Authentication doc root confirming these methods are documented."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://open.larksuite.com/document/ukTM4EjL/ucDO2EjL3gTNx4yN",
+    "confidence": "high",
+    "note": "Getting Started / Manage App doc indicates how to create an app and obtain App ID and App Secret from the developer console (self-serve). The developer console root is accessible at https://open.larksuite.com/ for account sign-up."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://open.larksuite.com/document/ukTM4EjL/ucDO1EjL3gTNx4yN",
+    "confidence": "high",
+    "note": "The Open Platform documentation root provides navigation to API reference and SDKs; Lark/Feishu exposes a broad REST API surface covering many product objects. The docs root confirms the API reference exists."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public developer docs and self-serve app creation are available; standard credentials (App ID/Secret) and token flows are documented enabling development today."
+  },
+  "research_meta": {
+    "queries": [
+      "Lark Open Platform authentication App Access Token Tenant Access Token OAuth",
+      "Lark Feishu manage app obtain App ID App Secret create app",
+      "Lark Open Platform API reference REST SDKs",
+      "Lark app review permissions require enterprise partner review"
+    ],
+    "insufficient_public_docs": false
+  }
+}

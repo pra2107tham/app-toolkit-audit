@@ -1,0 +1,40 @@
+{
+  "slug": "attio",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A modern CRM and workspace for managing relationships, contacts, and company data with a programmable API.",
+      "better_evidence_url": "https://attio.com",
+      "reasoning": "The homepage describes Attio as a modern CRM platform, confirming the description provided in the record."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "api_key, oauth2",
+      "better_evidence_url": "https://docs.attio.com/reference/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim directly from the documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://attio.com/pricing",
+      "reasoning": "The pricing page confirms that users can start for free and obtain API credentials after signup, supporting the claim of self-serve access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://docs.attio.com/reference/overview",
+      "reasoning": "The URL for the API surface returns a 404 error, preventing verification of the REST API claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://attio.com/pricing",
+      "reasoning": "While the pricing page indicates that developers can sign up and generate API keys, the lack of accessible documentation for authentication and API surface raises concerns about the overall buildability."
+    }
+  ]
+}

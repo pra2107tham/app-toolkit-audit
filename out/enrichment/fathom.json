@@ -1,0 +1,32 @@
+{
+  "slug": "fathom",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "fathom",
+    "tools_count": 7.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "fathom"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.agencyenterprise/fathom-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.mindstone/mcp-server-fathom",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Fathom"
+  },
+  "homepage_alive": true
+}

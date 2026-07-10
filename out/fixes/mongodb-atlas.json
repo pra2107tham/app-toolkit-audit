@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.mongodb.com/docs/atlas/tutorial/create-api-key/",
+      "confidence": "high",
+      "note": "The 'Create an API Key' tutorial shows how a user in the Atlas UI can create API keys without human approval. Keys are created by project owners/organization admins; signup and free tier are available."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.mongodb.com/docs/atlas/configure-api-access/#manage-programmatic-api-keys",
+      "confidence": "high",
+      "note": "MongoDB Atlas docs describe creating (programmatic) API keys directly in the Atlas UI via Project Settings \u2192 Access Manager \u2192 API Keys \u2192 Create API Key, requiring Organization Owner or Project Owner role\u2014indicating self-serve credential creation for eligible users."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs plus self-serve API key and OAuth2 service-account flows exist; credentials can be obtained via the Atlas UI or service account token flow."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs exist, and Atlas supports self-serve creation of programmatic API keys in the Atlas UI for users with the required roles (Org Owner/Project Owner), enabling immediate authenticated API access."
+    },
+    "verdict": "unsupported"
+  }
+}

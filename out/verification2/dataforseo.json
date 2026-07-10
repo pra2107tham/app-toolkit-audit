@@ -1,0 +1,40 @@
+{
+  "slug": "dataforseo",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dataforseo.com",
+      "reasoning": "The description accurately reflects the services provided by DataForSEO as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dataforseo.com/pricing",
+      "reasoning": "The pricing page confirms that DataForSEO requires account signup and offers trial credits upon signup."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.dataforseo.com/v3/",
+      "reasoning": "The API surface is confirmed as REST and covers many SEO-related endpoints as indicated in the documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The requirement for signup to obtain credentials aligns with the other confirmed fields, indicating that the API is buildable with key signup."
+    }
+  ]
+}

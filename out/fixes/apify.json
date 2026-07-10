@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.apify.com/account-and-billing/api-tokens",
+      "confidence": "high",
+      "note": "API tokens are created in the Apify Console (Account \u2192 API tokens) with no mention of manual approval; pricing shows a Free plan, indicating developers can obtain and use tokens on a free tier subject to quotas."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.apify.com/platform/integrations/api-tokens",
+      "confidence": "high",
+      "note": "Official docs show API tokens can be created directly in Apify Console (Settings \u2192 Integrations \u2192 API tokens), indicating self-serve credential issuance without manual approval."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs exist and API tokens can be self-generated on the Free plan, so integrations can be built immediately."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs exist (API v2), and official docs confirm API tokens can be created self-serve in the Apify Console, so integrations can be built immediately."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "firecrawl",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Public REST API for Firecrawl (v1) accessed using API keys as bearer tokens.",
+      "better_evidence_url": "https://www.firecrawl.dev",
+      "reasoning": "The homepage describes Firecrawl as a public API for searching, scraping, and interacting with the web, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.firecrawl.dev",
+      "reasoning": "The URL for authentication methods returned a 404 error, meaning the evidence for the claim about API keys as bearer tokens is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.firecrawl.dev",
+      "reasoning": "The URL for credential access also returned a 404 error, leaving the claim unsupported as there is no evidence to confirm the self-serve free access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://docs.firecrawl.dev/api-reference",
+      "reasoning": "The API surface is confirmed as REST based on the documentation index, which outlines various endpoints and the base URL."
+    },
+    {
+      "field": "buildability",
+      "verdict": "contradicted",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://docs.firecrawl.dev/api-reference",
+      "reasoning": "While the claim of buildability is partially supported, the note about some endpoints requiring elevated scopes on paid plans contradicts the assertion that it is fully buildable without restrictions."
+    }
+  ]
+}

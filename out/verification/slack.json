@@ -1,0 +1,40 @@
+{
+  "slug": "slack",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://slack.com",
+      "reasoning": "The description provided in the record is not directly supported by the homepage content, which focuses more on features and benefits rather than the specific technical aspects mentioned."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/authentication",
+      "reasoning": "The evidence from the authentication overview confirms that Slack uses OAuth 2.0 and tokens as the primary authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/apps",
+      "reasoning": "The evidence supports that developers can create a Slack App and obtain client ID/secret without human approval, confirming the self-serve access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/",
+      "reasoning": "The evidence confirms that Slack exposes a broad Web API and additional APIs, aligning with the recorded value of a broad REST API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/",
+      "reasoning": "The existence of public documentation and self-serve credential creation supports the claim that integrations can be built immediately."
+    }
+  ]
+}

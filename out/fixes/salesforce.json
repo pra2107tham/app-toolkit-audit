@@ -1,0 +1,71 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "jwt",
+        "token",
+        "none_public"
+      ],
+      "evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+      "confidence": "high",
+      "note": "Salesforce primarily uses OAuth 2.0 flows (Web Server, User-Agent, Username-Password, JWT Bearer, Refresh Token, Device Flow). Access tokens (Bearer) and session IDs (token) are supported. Salesforce does not use a simple API key mechanic."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "jwt",
+        "token"
+      ],
+      "evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+      "confidence": "high",
+      "note": "Salesforce REST API authentication uses OAuth 2.0 and documents multiple OAuth 2.0 authorization flows including Web Server (authorization code), User-Agent (implicit), JWT bearer, SAML bearer, Username-Password, and Device flows. OAuth access tokens are used as Bearer tokens."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.salesforce.com/signup",
+      "confidence": "high",
+      "note": "Developers can sign up for a free Developer Edition org which includes API access and lets them create Connected Apps to obtain client_id and client_secret for OAuth."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.salesforce.com/signup",
+      "confidence": "high",
+      "note": "Salesforce offers a self-serve sign-up for a free Developer Edition org (described as a free, fully functional Salesforce org with no expiration date), which can be used for development and to create connected apps for API access."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://developer.salesforce.com/docs",
+      "confidence": "high",
+      "note": "Salesforce exposes a broad REST API (sObjects, query, composite, tooling, metadata) and also provides a GraphQL API for querying data; authentication via OAuth tokens applies to both."
+    },
+    "final_value": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "confidence": "high",
+      "note": "Salesforce provides a broad REST API for accessing Salesforce resources (including creating/updating/deleting records, working with sObjects, and running SOQL queries) and a separate Salesforce GraphQL API that provides a GraphQL interface to query and mutate Salesforce data and services."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "With a free Developer Edition and ability to create Connected Apps (client_id/secret) plus documented OAuth flows and APIs, integrations can be built today without manual sales approval. Some production orgs/editions may restrict API access and require upgrading/contacting sales, but development is feasible via Developer Edition."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Integrations can be built today using a free Salesforce Developer Edition org (self-serve signup) and by creating a connected app, which generates a consumer key and consumer secret used for OAuth-based authentication to Salesforce APIs."
+    },
+    "verdict": "unsupported"
+  }
+}

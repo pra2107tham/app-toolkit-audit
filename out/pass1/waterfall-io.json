@@ -1,0 +1,42 @@
+{
+  "slug": "waterfall-io",
+  "name": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "description": "A SaaS platform that connects analytics and search data (Google Analytics, Search Console, Ads, Bing, Shopify, HubSpot) to build dashboards and insights.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "none_public"
+    ],
+    "evidence_url": "https://help.waterfall.io/en/articles/6948295-integrations",
+    "confidence": "high",
+    "note": "User-facing integrations use OAuth for connecting third-party sources. No public API authentication docs or API reference discovered on official docs; therefore 'none_public' indicates no public developer API found."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://waterfall.io/pricing",
+    "confidence": "low",
+    "note": "Pricing page shows Free/Pro/Business tiers; no documentation on obtaining API credentials or whether API access is available on plans. Contact/sales page suggests enterprise contact for custom solutions."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://help.waterfall.io/en/",
+    "confidence": "high",
+    "note": "No public REST/GraphQL API docs or SDKs found on official domains; only user integration articles. 'narrow' used because only connectors are documented (OAuth integrations), not a public API surface."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "Cannot build an AI-agent integration today because there is no public developer API documentation or a documented way to self-serve API credentials. Recommend contacting Waterfall sales via https://waterfall.io/contact/ to inquire about partner/enterprise API access."
+  },
+  "research_meta": {
+    "queries": [
+      "Waterfall.io API documentation Waterfall API developer docs waterfall.io \"API\" \"developer\" \"authentication\"",
+      "Waterfall API site:waterfall.io OR site:help.waterfall.io \"API\" \"developer\" \"authentication\" \"API key\"",
+      "waterfall.io API documentation \"API\" \"developer\" \"help.waterfall.io\"",
+      "site:help.waterfall.io \"API\" OR \"API key\" OR \"developer\" \"Waterfall\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

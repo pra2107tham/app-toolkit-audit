@@ -1,0 +1,40 @@
+{
+  "slug": "dataforseo",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dataforseo.com",
+      "reasoning": "The homepage clearly states that DataForSEO provides APIs for various SEO data, including SERP results, keyword data, rank tracking, backlinks, and related metrics."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.dataforseo.com/v3/",
+      "reasoning": "While the documentation mentions authentication methods, it does not explicitly confirm the specific methods listed in the record. The note suggests uncertainty about the details."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dataforseo.com/pricing",
+      "reasoning": "The pricing page indicates that DataForSEO requires account signup and offers trial credits, confirming the self-serve paid trial claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.dataforseo.com/v3/",
+      "reasoning": "The documentation supports the claim of a REST API surface with broad coverage of SEO-related endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dataforseo.com/pricing",
+      "reasoning": "The requirement for signup to obtain credentials aligns with the claim that the API is buildable with key signup."
+    }
+  ]
+}

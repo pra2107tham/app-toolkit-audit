@@ -1,0 +1,40 @@
+{
+  "slug": "help-scout",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A customer support platform providing shared inboxes, knowledge base, and customer management tools.",
+      "better_evidence_url": "https://www.helpscout.com",
+      "reasoning": "The homepage describes Help Scout as a customer service software that includes features like shared inboxes and a knowledge base, confirming the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for auth methods returns a 404 error, meaning the claim about OAuth 2.0 and API keys cannot be verified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for credential access returns a 404 error, making it impossible to confirm the claim regarding self-serve credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for API surface returns a 404 error, thus the claim about the REST API cannot be confirmed."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "not buildable_today",
+      "better_evidence_url": "",
+      "reasoning": "Due to the dead URLs for the other fields, the claim of buildability cannot be supported, as the necessary documentation is not accessible."
+    }
+  ]
+}

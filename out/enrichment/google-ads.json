@@ -1,0 +1,22 @@
+{
+  "slug": "google-ads",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "googleads",
+    "tools_count": 22.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "googleads"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Google%20Ads"
+  },
+  "homepage_alive": true
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "ecwid",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.ecwid.com",
+      "reasoning": "The homepage confirms that Ecwid is an ecommerce platform providing online store management."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ecwid.com/develop-apps/authorization-and-authentication",
+      "reasoning": "The evidence URL for auth methods returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+      "reasoning": "The documentation confirms that developers can create a custom app and obtain access tokens without requiring partner approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ecwid.com/",
+      "reasoning": "The documentation indicates that Ecwid provides a broad REST API surface with various endpoints for store objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+      "reasoning": "The public documentation supports that developers can start building immediately with the provided REST API reference and guides."
+    }
+  ]
+}

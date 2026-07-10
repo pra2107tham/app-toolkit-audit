@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://sherlock.readthedocs.io/",
+      "confidence": "high",
+      "note": "Project documentation describes installation and usage of the CLI and package; there is no mention of API keys, signup, or developer credentials."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://sherlock.readthedocs.io/en/stable/",
+      "confidence": "high",
+      "note": "The official Read the Docs pages describe installing the package (e.g., via pip) and running the CLI (e.g., `sherlock username`) and do not mention API keys, account signup, or developer credentials."
+    },
+    "verdict": "dead_url"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "supabase",
+  "name": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "description": "An open source Firebase alternative providing Postgres database, Auth, Realtime, Storage, Edge Functions and client libraries with REST/GraphQL APIs.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "jwt",
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://supabase.com/docs/guides/auth",
+    "confidence": "high",
+    "note": "Supabase issues JWT access tokens for sessions, supports OAuth providers, and uses project API keys (anon and service_role) for client/server access (service_role treated as a bearer token)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://supabase.com/docs/guides/api/api-keys",
+    "confidence": "medium",
+    "note": "Supabase documents that API keys (including the anon key and the service role key) can be found in the Supabase Dashboard under Project Settings \u2192 API, indicating credentials are self-serve retrievable from the dashboard."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://supabase.com/docs/reference",
+    "confidence": "high",
+    "note": "Reference docs list REST (PostgREST), Realtime (websockets), and GraphQL endpoints, plus client SDKs for multiple languages \u2014 covering core product objects (DB, auth, storage, functions)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs and self-serve API keys on the Free tier exist, enabling immediate development."
+  },
+  "research_meta": {
+    "queries": [
+      "site:supabase.com/docs Supabase docs developer documentation root API documentation",
+      "site:supabase.com \"API keys\" \"Supabase\" dashboard keys \"service_role\" \"anon\"",
+      "site:supabase.com \"authentication\" \"auth\" \"API\" supabase auth docs jwt oauth api key",
+      "site:supabase.com pricing API rate limits \"API access\" \"pricing\" supabase pricing API access paid plan",
+      "site:supabase.com/docs \"how to get API key\" \"get API key\" supabase dashboard signup \"get started\"",
+      "\"supabase requires partnership\" \"API access\" \"contact sales\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

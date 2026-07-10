@@ -1,0 +1,22 @@
+{
+  "slug": "plain",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "plain",
+    "tools_count": 22.0,
+    "auth_schemes": [
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "plain"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Plain"
+  },
+  "homepage_alive": true
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "pipedrive",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A sales CRM platform for managing leads, deals, activities and sales pipelines, with a public REST API to integrate and automate workflows.",
+      "better_evidence_url": "https://www.pipedrive.com",
+      "reasoning": "The homepage describes Pipedrive as a sales CRM platform that helps manage sales processes, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "api_key, oauth2",
+      "better_evidence_url": "https://developers.pipedrive.com/docs/api/v1/#authentication",
+      "reasoning": "The API documentation explicitly states that both API token and OAuth2 are supported authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://support.pipedrive.com/en/article/how-to-find-your-api-token",
+      "reasoning": "The URL for retrieving the API token returns a 404 error, indicating that the evidence for this claim is not accessible."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.pipedrive.com/docs/api/v1/",
+      "reasoning": "The API documentation confirms that Pipedrive provides a REST API covering core product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developers.pipedrive.com/docs/api/v1/",
+      "reasoning": "The existence of public REST API documentation and the ability to obtain an API token without human approval supports the claim that integrations can be built today."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "jwt",
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authentication.html",
+      "confidence": "high",
+      "note": "The SQL API documentation explicitly describes OAuth 2.0 and key-pair (JWT/private-key) authentication and usage of bearer tokens. 'api_key' and 'token' included as general labels because the docs show use of bearer tokens (access tokens) and key-pair credentials registered for API Integration. See the cited page for exact supported flows."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "jwt",
+        "token"
+      ],
+      "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authentication.html",
+      "confidence": "high",
+      "note": "Snowflake SQL API docs list supported methods as OAuth (using an OAuth access token) and key-pair authentication (sign a JWT). Requests use an Authorization: Bearer <token> header where the bearer token is either an OAuth access token or a JWT."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.snowflake.com/get-started/",
+      "confidence": "high",
+      "note": "Snowflake offers a public free trial sign-up flow allowing developers to create accounts and obtain credentials without human approval; combined with docs showing how to create API_INTEGRATION objects inside an account, this supports self-serve credential setup."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.snowflake.com/get-started/",
+      "confidence": "medium",
+      "note": "Snowflake's official Get Started page advertises a self-serve free trial sign-up (\"Start for free\" / \"Start your free trial\"), indicating developers can create an account without sales approval to obtain access for building/testing."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Developer-facing REST SQL API docs exist and a public free trial sign-up is available, so a developer can obtain credentials and begin integrating immediately. Production usage may require paid account/consumption (per pricing), but that does not prevent building and testing."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Snowflake provides public SQL API documentation including supported authentication (OAuth access token or key-pair/JWT bearer token) and offers a self-serve free trial sign-up flow, so a developer can obtain an account and start integrating immediately (with potential paid usage later depending on consumption)."
+    },
+    "verdict": "unsupported"
+  }
+}

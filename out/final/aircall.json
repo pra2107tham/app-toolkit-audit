@@ -1,0 +1,41 @@
+{
+  "slug": "aircall",
+  "name": "Aircall",
+  "category": "Communications and Messaging",
+  "description": "Cloud phone system & call center platform \u2014 REST API for calls, contacts, and webhooks to build integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developer.aircall.io",
+    "confidence": "medium",
+    "note": "Aircall docs reference OAuth2 and personal access tokens / API tokens in places."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.aircall.io",
+    "confidence": "medium",
+    "note": "Developers can register apps and obtain credentials from the developer portal after signing up."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.aircall.io",
+    "confidence": "high",
+    "note": "Site exposes an OpenAPI JSON at /openapi.json."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "none",
+    "note": "Public REST API available; requires account signup and app credential creation."
+  },
+  "research_meta": {
+    "queries": [
+      "Aircall Developer API authentication",
+      "Aircall openapi.json",
+      "Aircall webhooks docs"
+    ],
+    "insufficient_public_docs": false
+  }
+}

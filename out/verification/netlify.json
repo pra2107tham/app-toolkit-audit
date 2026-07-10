@@ -1,0 +1,40 @@
+{
+  "slug": "netlify",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.netlify.com",
+      "reasoning": "The description accurately reflects the capabilities of the Netlify platform as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.netlify.com/api/get-started/#authentication",
+      "reasoning": "The evidence confirms that Netlify API uses Personal Access Tokens as Bearer tokens for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.netlify.com/accounts-and-billing/members-teams/#personal-access-tokens",
+      "reasoning": "The URL provided for credential access returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.netlify.com/api/get-started/",
+      "reasoning": "The evidence supports that Netlify provides a broad REST API covering various product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.netlify.com/api/get-started/",
+      "reasoning": "While the documentation allows for immediate use of the REST API, the lack of a specific URL for buildability makes this claim unsupported."
+    }
+  ]
+}

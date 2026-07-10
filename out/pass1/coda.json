@@ -1,0 +1,43 @@
+{
+  "slug": "coda",
+  "name": "Coda",
+  "category": "Productivity and Project Management",
+  "description": "Coda is a flexible document platform that combines docs, spreadsheets, and apps (Coda docs) which can be read and manipulated via a REST API.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://coda.io/developers/apis/v1beta1#authentication",
+    "confidence": "high",
+    "note": "Official docs describe Personal API tokens used as Bearer tokens (Authorization: Bearer <token>) and OAuth 2.0 for integrations."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://coda.io/developers/apis/v1beta1",
+    "confidence": "high",
+    "note": "Docs state the Coda API is available to all users free of charge (both free and paid workspaces) and personal API tokens can be created in account settings (https://coda.io/account/settings/apis)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://coda.io/developers/apis/v1beta1",
+    "confidence": "high",
+    "note": "The v1beta1 reference documents a full REST API (base path https://coda.io/apis/v1) covering docs, pages, folders, tables, rows, formulas, controls, automations, analytics, etc., and an OpenAPI spec is provided."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs + an ability to create personal API tokens via account settings (self-serve) mean a developer can obtain credentials and use the API today. See the API docs and account settings pages for token creation."
+  },
+  "research_meta": {
+    "queries": [
+      "Coda Developers apis v1beta1 authentication create token site:coda.io",
+      "site:coda.io \"API tokens\" \"Coda\" \"developers\"",
+      "Coda API pricing site:coda.io \"API\" \"pricing\"",
+      "\"Coda Developers\" \"developers\" \"coda.io/developers\"",
+      "site:coda.io \"developers/apis\" \"v1beta1\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "meta-ads",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "metaads",
+    "tools_count": 50.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "metaads",
+      "facebook"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Meta%20Ads"
+  },
+  "homepage_alive": true
+}

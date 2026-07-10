@@ -1,0 +1,40 @@
+{
+  "slug": "gladly",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.gladly.com",
+      "reasoning": "The homepage describes Gladly as a customer service platform that centralizes customer conversations, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to verify the claim about authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "reasoning": "The help center confirms that developers can generate API tokens from the product UI without contacting sales, supporting the claim of self-serve access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.gladly.com/rest/index.html",
+      "reasoning": "The API documentation lists many REST endpoints, confirming the broad REST coverage claimed in the record."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The availability of public REST documentation and self-serve API token generation supports the claim that integration and development are possible today."
+    }
+  ]
+}

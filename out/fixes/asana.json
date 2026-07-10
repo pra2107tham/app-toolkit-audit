@@ -1,0 +1,32 @@
+{
+  "api_surface": {
+    "pass1_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.asana.com/docs/api-reference",
+      "confidence": "high",
+      "note": "The Asana API is RESTful (base URL https://app.asana.com/api/1.0) and documents endpoints for tasks, projects, users, teams, webhooks, attachments, custom fields, etc., covering most product objects."
+    },
+    "final_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developers.asana.com/docs/api-reference",
+      "confidence": "high",
+      "note": "The official API reference states the Asana API is organized around REST, uses resource-oriented URLs, accepts/returns JSON, and uses standard HTTP verbs/status codes, with base URL https://app.asana.com/api/1.0. The page enumerates many resources (e.g., tasks, projects, teams, users, webhooks, attachments, custom fields), indicating broad coverage."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs plus self-serve personal access tokens and app registration in the developer console allow building integrations today."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Asana's publicly accessible API reference documents a REST API (base URL https://app.asana.com/api/1.0) and the authentication docs specify OAuth2 and personal access tokens, supporting that integrations can be built today."
+    },
+    "verdict": "unsupported"
+  }
+}

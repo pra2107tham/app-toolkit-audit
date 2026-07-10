@@ -1,0 +1,42 @@
+{
+  "slug": "sherlock",
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "description": "A command-line tool and Python package to find usernames across many social networks.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "confidence": "high",
+    "note": "Official README and project docs describe a CLI tool and Python package; they contain no public API auth methods or developer API documentation."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://sherlock.readthedocs.io/",
+    "confidence": "high",
+    "note": "Project documentation describes installation and usage of the CLI and package; there is no mention of API keys, signup, or developer credentials."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://github.com/sherlock-project/sherlock",
+    "confidence": "high",
+    "note": "There are no public REST/GraphQL or SDK-only developer API docs. The repository and ReadTheDocs describe a CLI and Python package only."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "There are no public API endpoints or developer authentication flows to build an AI-agent integration against. The project is a CLI/package; one could wrap the CLI or library locally, but there is no official public API to integrate with."
+  },
+  "research_meta": {
+    "queries": [
+      "Sherlock project API documentation developer docs \"sherlock-project\" \"API\" \"developer\" site:github.com OR site:readthedocs.io OR site:docs.sherlock-project.github.io OR \"sherlock\" username search API \"sherlock-project\"",
+      "sherlock api documentation",
+      "sherlock username search API",
+      "sherlock-project API docs",
+      "sherlock readthedocs api"
+    ],
+    "insufficient_public_docs": false
+  }
+}

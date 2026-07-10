@@ -1,0 +1,47 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://higgsfield.ai/pricing",
+      "confidence": "low",
+      "note": "Pricing documents show credit-based plans and that a credit card is required for paid billing/overages, but the public docs do not explicitly state whether a developer can self-register and obtain free trial credits or immediate self-serve access for programmatic use without human approval."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://higgsfield.ai/pricing",
+      "confidence": "low",
+      "note": "Unable to fetch the pricing page content from this environment (Cloudflare/403), so I cannot verify whether developers can self-register, receive free trial credits, or otherwise obtain programmatic access without human approval. Treat as unclear."
+    },
+    "verdict": "unsupported"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "rest",
+      "breadth": "narrow",
+      "docs_url": "https://higgsfield.ai/mcp",
+      "confidence": "medium",
+      "note": "Public developer-facing material describes a hosted MCP server (https://mcp.higgsfield.ai), connector manifests, and webhooks (programmatic endpoints). There is no separate, extensive REST or GraphQL reference site; the MCP page is the authoritative programmatic doc, so the surface appears to be a narrow REST-like MCP server interface rather than a broad documented public REST/GraphQL API."
+    },
+    "final_value": {
+      "value": "rest",
+      "breadth": "narrow",
+      "docs_url": "https://higgsfield.ai/mcp",
+      "confidence": "low",
+      "note": "Unable to fetch the MCP documentation content from this environment (blocked), so I cannot quote/verify the precise interface description. Based on the disputed finding, the surface should be treated as a narrow MCP/HTTP-style interface rather than a broad public REST/GraphQL API; however confidence is low without retrievable primary text."
+    },
+    "verdict": "contradicted"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "paid_only",
+      "note": "MCP developer docs and a CLI exist showing how to authenticate and call the MCP server programmatically. Building is possible today once you sign in (CLI or web) and have account credits. The main operational blocker is account provisioning/credits (pricing/billing) rather than missing technical docs."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Unable to fetch/verify pricing and MCP docs due to access blocks from this environment. Buildability depends on whether account creation and credits are self-serve and immediately usable; without primary-source confirmation, verdict and blocker must remain unclear."
+    },
+    "verdict": "contradicted"
+  }
+}

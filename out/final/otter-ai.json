@@ -1,0 +1,43 @@
+{
+  "slug": "otter-ai",
+  "name": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "description": "Transcription and meeting-note AI that generates searchable, shareable transcripts and summaries from audio and meetings.",
+  "auth_methods": {
+    "value": [
+      "other"
+    ],
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+    "confidence": "medium",
+    "note": "Otter\u2019s official Help Center page confirms an API exists and is available for Enterprise organizations via contacting an Account Executive or Customer Success Manager, but it does not specify the authentication method (e.g., OAuth2 vs API key). Therefore, the exact auth scheme is not publicly documented."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+    "confidence": "high",
+    "note": "The official Help Center states API access is for Enterprise organizations and must be requested through an Account Executive or Customer Success Manager; it also states API access is not available for individual users."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+    "confidence": "high",
+    "note": "No public API reference (endpoints, schemas, auth details) is provided in the official documentation located; the available official page only describes how Enterprise customers can request access."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "Otter\u2019s official documentation indicates API access is Enterprise-only and must be requested via an Account Executive/Customer Success Manager (not available to individual users). Without self-serve credentials and without public API reference docs, typical developer buildability is blocked."
+  },
+  "research_meta": {
+    "queries": [
+      "Otter.ai API developer docs site:otter.ai OR site:help.otter.ai \"Otter API\" \"developer\" \"API\" authentication credentials pricing partnership",
+      "Otter API documentation site:otter.ai",
+      "Otter API authentication site:help.otter.ai",
+      "Otter developer API credentials \"Otter.ai\"",
+      "Otter API partner program site:otter.ai integrations partners"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

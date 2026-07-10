@@ -1,0 +1,22 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "basic",
+        "api_key"
+      ],
+      "evidence_url": "https://docs.dataforseo.com/v3/",
+      "confidence": "medium",
+      "note": "Public docs appear to be a client-side rendered docs app; auth details are typically documented there (likely API key via Basic auth or API key token)."
+    },
+    "final_value": {
+      "value": [
+        "basic"
+      ],
+      "evidence_url": "https://docs.dataforseo.com/v3/authentication/",
+      "confidence": "high",
+      "note": "Official docs explicitly state DataForSEO uses HTTP Basic Authentication, using the account login and password in the Authorization: Basic header (Base64 of login:password)."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "ecwid",
+  "name": "Ecwid",
+  "category": "Ecommerce",
+  "description": "An ecommerce platform that provides online store management and a REST API (v3) for accessing store data and building apps/integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://docs.ecwid.com/develop-apps/authorization-and-authentication",
+    "confidence": "high",
+    "note": "Ecwid supports OAuth 2.0 for third‑party/public apps and store access tokens (used as Bearer tokens or access_token query parameter) for custom/private apps."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "confidence": "high",
+    "note": "Developers can create a custom app in the Ecwid Control Panel and obtain client_id/client_secret and access tokens directly via the UI; docs show creating apps and copying tokens without requiring partner approval or paid plan."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.ecwid.com/",
+    "confidence": "high",
+    "note": "Documentation and quickstart show Ecwid REST API v3 endpoints for store objects (products, profile, etc.), indicating a broad REST API surface. No GraphQL or SDK‑only indication on docs root."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs provide REST API reference and guides; developers can self‑create apps and tokens in the control panel to start building immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "Ecwid Authorization and authentication",
+      "Make your first API request Ecwid",
+      "Set up your dev environment in Ecwid",
+      "Ecwid Developers portal",
+      "Ecwid pricing API access",
+      "Ecwid partner API access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

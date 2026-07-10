@@ -1,0 +1,45 @@
+{
+  "slug": "shopify",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "shopify",
+    "tools_count": 315.0,
+    "auth_schemes": [
+      "API_KEY",
+      "OAUTH2",
+      "S2S_OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "shopify"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.gossiper/shopify-admin-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/shopify-admin",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/shopify-admin",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/shopify-admin",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/shopify-admin",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Shopify"
+  },
+  "homepage_alive": true
+}

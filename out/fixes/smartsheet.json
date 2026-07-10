@@ -1,0 +1,56 @@
+{
+  "description": {
+    "pass1_value": "A cloud-based platform for work management and collaboration (sheets, reports, dashboards, automation, integrations).",
+    "final_value": "A cloud-based work management platform for planning, tracking, automating, and reporting on work (including sheets, dashboards, reports, automation, and integrations).",
+    "verdict": "unsupported"
+  },
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://smartsheet-platform.github.io/api-docs/?shell#authentication",
+      "confidence": "high",
+      "note": "Smartsheet supports OAuth 2.0 (Authorization Code flow) for integrations and user-generated API Access Tokens used as Bearer tokens in the Authorization header."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://smartsheet-platform.github.io/api-docs/?shell#authentication",
+      "confidence": "high",
+      "note": "Smartsheet API authentication uses access tokens sent as `Authorization: Bearer ...`, and it also supports OAuth 2.0 using the Authorization Code flow to obtain access tokens."
+    },
+    "verdict": "unsupported"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.smartsheet.com/articles/2476158-accessing-the-smartsheet-api",
+      "confidence": "high",
+      "note": "Personal API access tokens are generated from a user account (Account > Apps & Integrations > API Access). The Help Center shows how an individual user creates tokens from their account, implying self-service access for account holders. Pricing page does not indicate partner gating or paid-only restriction."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.smartsheet.com/articles/2482062-smartsheet-api-access-token",
+      "confidence": "high",
+      "note": "Smartsheet Help Center documents that users can generate a personal API access token directly from within their Smartsheet account settings (self-serve), and use it to authenticate API requests."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs are available and developers can self-generate an API access token or use OAuth 2.0 to start building. SDKs and examples are provided."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Smartsheet provides public REST API reference documentation and supports both self-generated access tokens and OAuth 2.0 for authentication, enabling developers to build integrations immediately."
+    },
+    "verdict": "unsupported"
+  }
+}

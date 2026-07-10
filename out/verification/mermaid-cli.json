@@ -1,0 +1,40 @@
+{
+  "slug": "mermaid-cli",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A command-line tool and NodeJS library for rendering Mermaid diagrams to SVG/PNG/PDF locally.",
+      "better_evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+      "reasoning": "The description accurately reflects the functionality of the tool as stated in the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://github.com/mermaid-js/mermaid-cli/blob/36c0bbe575c34d12bab388b5c34a295e1fc2516e/README.md",
+      "reasoning": "The README confirms that there are no authentication mechanisms documented, supporting the claim of 'none_public'."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://github.com/mermaid-js/mermaid-cli/blob/36c0bbe575c34d12bab388b5c34a295e1fc2516e/README.md",
+      "reasoning": "The README indicates that there is no developer signup or key issuance, which aligns with the 'unclear' status of credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "sdk_only",
+      "better_evidence_url": "https://github.com/mermaid-js/mermaid-cli/tree/master/docs",
+      "reasoning": "The documentation confirms the existence of a NodeJS API for local usage and states that there is no hosted API, supporting the 'sdk_only' claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://github.com/mermaid-js/mermaid-cli/blob/36c0bbe575c34d12bab388b5c34a295e1fc2516e/README.md",
+      "reasoning": "The README clearly states that integration is only possible through local usage, confirming that building an AI-agent requiring a hosted API is blocked."
+    }
+  ]
+}

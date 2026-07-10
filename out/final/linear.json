@@ -1,0 +1,45 @@
+{
+  "slug": "linear",
+  "name": "Linear",
+  "category": "Productivity and Project Management",
+  "description": "Issue tracking and project management tool with a GraphQL API, webhooks, and SDKs for automation and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://developers.linear.app/docs/graphql/authentication#personal-api-tokens",
+    "confidence": "high",
+    "note": "Official docs state support for OAuth 2.0 (for apps) and personal API tokens used as Bearer tokens. 'api_key' and 'token' are represented by personal API tokens; OAuth2 uses access/refresh tokens."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.linear.app/docs/graphql/authentication#personal-api-tokens",
+    "confidence": "high",
+    "note": "Docs show personal API tokens can be created from a user's Linear account settings; OAuth apps can be registered to obtain client ID/secret. These are self-serve for users (no partner gating indicated)."
+  },
+  "api_surface": {
+    "value": "graphql",
+    "breadth": "broad",
+    "docs_url": "https://developers.linear.app/docs/graphql/overview",
+    "confidence": "high",
+    "note": "Official GraphQL API covers many product objects (teams, issues, projects, cycles, users, comments, labels, states, attachments, etc.). SDKs wrap the GraphQL API and webhooks are available as well."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developer docs plus self-serve personal API tokens and OAuth app registration exist, so integrations can be built today. SDKs and GraphQL explorer further ease development."
+  },
+  "research_meta": {
+    "queries": [
+      "Linear GraphQL API authentication personal API tokens",
+      "Linear OAuth 2.0 developer docs",
+      "Linear developer docs GraphQL overview",
+      "Linear webhooks docs",
+      "Linear pricing API access partner"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

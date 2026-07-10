@@ -1,0 +1,40 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "confidence": "high",
+      "note": "SCAPI uses OAuth-based flows and SLAS for shopper token (bearer) authentication; admin APIs use client credentials to obtain access tokens."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "confidence": "high",
+      "note": "The official Commerce API (SCAPI) overview documentation indicates API requests are authorized using OAuth 2.0 access tokens (Bearer tokens) for shopper/admin API access."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "confidence": "high",
+      "note": "SCAPI is a REST API covering shopper and admin resources (products, baskets, orders, customers, promotions, inventory, etc.)."
+    },
+    "final_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "confidence": "high",
+      "note": "The Commerce API (SCAPI) overview describes a REST API surface spanning shopper and admin commerce resources/endpoints (for example catalog/product data, baskets/carts, orders, customers, and related commerce functionality)."
+    },
+    "verdict": "dead_url"
+  }
+}

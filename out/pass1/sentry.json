@@ -1,0 +1,44 @@
+{
+  "slug": "sentry",
+  "name": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Error monitoring and observability platform that provides RESTful APIs for accessing organizations, projects, issues, events, and configuration.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://docs.sentry.io/api/auth/",
+    "confidence": "high",
+    "note": "Docs explicitly document OAuth2 and 'Auth Tokens' used as Bearer tokens (Authorization: Bearer <token>)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.sentry.io/product/accounts/auth-tokens/",
+    "confidence": "high",
+    "note": "Auth tokens can be created by users from the dashboard (Account settings) without requiring sales or admin approval; documentation shows UI steps to create personal tokens. Organization tokens can be created from Org settings by authorized members."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.sentry.io/api/",
+    "confidence": "high",
+    "note": "API reference shows a wide set of REST endpoints (projects, organizations, issues, events, etc.) with base URL https://sentry.io/api/0/ indicating broad coverage of product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs exist and developers can self-issue auth tokens from the dashboard; therefore integrations can be built today without manual approvals."
+  },
+  "research_meta": {
+    "queries": [
+      "Sentry API docs",
+      "Sentry API authentication",
+      "Sentry auth tokens create",
+      "Sentry organization auth tokens",
+      "Sentry pricing API access",
+      "Sentry contact sales enterprise API access"
+    ],
+    "insufficient_public_docs": false
+  }
+}

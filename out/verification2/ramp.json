@@ -1,0 +1,40 @@
+{
+  "slug": "ramp",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Corporate card, spend management, and finance automation platform with APIs for cards, transactions, bills, reimbursements, and integrations.",
+      "better_evidence_url": "https://ramp.com",
+      "reasoning": "The description provided in the record matches the information available on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://docs.ramp.com/developer-api/v1/authentication",
+      "reasoning": "The fetched documentation did not contain any authentication details, making it impossible to confirm the claimed authentication method."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "reasoning": "The content from the fetched page did not provide any instructions on how developer credentials are obtained, leaving the claim unverified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://docs.ramp.com/developer-api/v1/reference",
+      "reasoning": "The API Reference page did not include the necessary reference material to confirm the API surface, thus the claim cannot be validated."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "N/A",
+      "reasoning": "Buildability is blocked due to insufficient documentation, as the fetched pages did not provide the necessary content to validate authentication methods, credential access, or API surface."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "xero",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.xero.com",
+      "reasoning": "The description accurately reflects the content on the homepage, which describes Xero as a cloud accounting platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.xero.com/documentation/oauth2/auth-flow",
+      "reasoning": "The evidence confirms that Xero supports OAuth 2.0 Authorization Code grant and Client Credentials grant."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.xero.com/documentation/guides/create-app",
+      "reasoning": "The URL for credential access returned a 'Not Authorized' error, indicating that the evidence is not accessible."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.xero.com/documentation/api",
+      "reasoning": "The evidence confirms that Xero exposes RESTful JSON APIs across multiple product areas."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.xero.com/documentation/api",
+      "reasoning": "While the evidence suggests that integrations can be developed, it does not explicitly confirm the buildability status as stated."
+    }
+  ]
+}

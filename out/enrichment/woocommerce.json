@@ -1,0 +1,31 @@
+{
+  "slug": "woocommerce",
+  "composio_toolkit": {
+    "exists": false,
+    "slug": null,
+    "tools_count": null,
+    "auth_schemes": null,
+    "match_kind": "none",
+    "candidates": []
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.AmitGurbani/mcp-server-woocommerce",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.AmitGurbani/mcp-server-woocommerce",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.pipeworx-io/woocommerce",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=WooCommerce"
+  },
+  "homepage_alive": true
+}

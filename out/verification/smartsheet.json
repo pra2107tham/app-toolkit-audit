@@ -1,0 +1,40 @@
+{
+  "slug": "smartsheet",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.smartsheet.com",
+      "reasoning": "The homepage was not fetched successfully due to a timeout, so the description cannot be confirmed."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://smartsheet-platform.github.io/api-docs/?shell#authentication",
+      "reasoning": "The evidence URL redirects to another site, and while it may contain relevant information, it does not directly confirm the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.smartsheet.com/articles/2476158-accessing-the-smartsheet-api",
+      "reasoning": "The evidence URL returned a 404 error, indicating that the page does not exist and thus cannot support the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://smartsheet.redoc.ly/",
+      "reasoning": "The API documentation confirms the REST API surface and broad resource coverage."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://smartsheet.redoc.ly/",
+      "reasoning": "While the API documentation is available, the lack of confirmation for the other fields leads to uncertainty about buildability."
+    }
+  ]
+}

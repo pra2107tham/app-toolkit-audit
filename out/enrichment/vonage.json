@@ -1,0 +1,23 @@
+{
+  "slug": "vonage",
+  "composio_toolkit": {
+    "exists": false,
+    "slug": null,
+    "tools_count": null,
+    "auth_schemes": null,
+    "match_kind": "none",
+    "candidates": []
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.Vonage/vonage-documentation-mcp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Vonage"
+  },
+  "homepage_alive": true
+}

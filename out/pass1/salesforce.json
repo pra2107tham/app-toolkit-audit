@@ -1,0 +1,46 @@
+{
+  "slug": "salesforce",
+  "name": "Salesforce",
+  "category": "CRM and Sales",
+  "description": "A cloud-based CRM platform providing APIs (REST, SOAP, GraphQL) to programmatically access and manage CRM data, metadata, and platform features.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "jwt",
+      "token",
+      "none_public"
+    ],
+    "evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+    "confidence": "high",
+    "note": "Salesforce primarily uses OAuth 2.0 flows (Web Server, User-Agent, Username-Password, JWT Bearer, Refresh Token, Device Flow). Access tokens (Bearer) and session IDs (token) are supported. Salesforce does not use a simple API key mechanic."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.salesforce.com/signup",
+    "confidence": "high",
+    "note": "Developers can sign up for a free Developer Edition org which includes API access and lets them create Connected Apps to obtain client_id and client_secret for OAuth."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developer.salesforce.com/docs",
+    "confidence": "high",
+    "note": "Salesforce exposes a broad REST API (sObjects, query, composite, tooling, metadata) and also provides a GraphQL API for querying data; authentication via OAuth tokens applies to both."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "With a free Developer Edition and ability to create Connected Apps (client_id/secret) plus documented OAuth flows and APIs, integrations can be built today without manual sales approval. Some production orgs/editions may restrict API access and require upgrading/contacting sales, but development is feasible via Developer Edition."
+  },
+  "research_meta": {
+    "queries": [
+      "Salesforce OAuth 2.0 flows developer guide",
+      "Create Connected App Salesforce consumer key secret",
+      "Salesforce Developer Edition signup API access",
+      "Salesforce REST API overview sObjects coverage",
+      "Salesforce GraphQL API documentation",
+      "Which Editions Include API Access Salesforce"
+    ],
+    "insufficient_public_docs": false
+  }
+}

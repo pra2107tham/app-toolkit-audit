@@ -1,0 +1,46 @@
+{
+  "slug": "shopify",
+  "name": "Shopify",
+  "category": "Ecommerce",
+  "description": "Hosted ecommerce platform offering storefronts, admin, and partner APIs to manage products, orders, customers, checkout, and storefronts.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token",
+      "jwt"
+    ],
+    "evidence_url": "https://shopify.dev/docs/apps/auth",
+    "confidence": "high",
+    "note": "Official docs state OAuth for public apps, access tokens required for Admin API, API key/secret shown in app credentials, and session tokens (JWT) for frontend-backend auth."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://shopify.dev/docs/apps/getting-started/create",
+    "confidence": "high",
+    "note": "Shopify's official 'Create a Shopify app' guide states you need a Partner account to create an app (via Partner Dashboard or Shopify CLI). Creating an app in the Partner Dashboard provides app credentials (API key/secret) for API access, and Partner accounts/dev tooling are self-serve."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://shopify.dev/docs/api",
+    "confidence": "high",
+    "note": "Official docs list Admin REST and GraphQL APIs and the Storefront (GraphQL) API; wide coverage across products, orders, customers, checkout, webhooks, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Shopify's official 'Getting started' / 'Create a Shopify app' docs indicate you can self-serve by creating a Partner account and creating an app (and using a development store for testing). The Shopify APIs documentation provides immediate access to API docs (Admin/Storefront), enabling building and testing integrations today; some advanced features may still require additional Shopify plan/feature access."
+  },
+  "research_meta": {
+    "queries": [
+      "Shopify app authentication OAuth access tokens session tokens site:shopify.dev docs",
+      "Create an app Partner Dashboard development store get API credentials shopify.dev",
+      "Shopify APIs REST GraphQL Admin Storefront shopify.dev docs",
+      "Multipass Shopify Plus shopify.dev multipass",
+      "Checkout extensibility Shopify Plus shopify.dev"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

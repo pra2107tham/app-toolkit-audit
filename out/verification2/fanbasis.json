@@ -1,0 +1,40 @@
+{
+  "slug": "fanbasis",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://fanbasis.com",
+      "reasoning": "The homepage describes FanBasis as a payments infrastructure for creators and platforms, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://dev-docs.fanbasis.com/",
+      "reasoning": "The developer docs URL leads to a login page, and there are no publicly readable API authentication details available."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.fanbasis.com/enterprises",
+      "reasoning": "The Enterprises page indicates that access is likely via commercial engagement, confirming the partner-gated access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://dev-docs.fanbasis.com/",
+      "reasoning": "The developer/docs site is gated behind a login screen, and no public information confirms the API type or endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The requirement for login and partner/enterprise gated access confirms that building against FanBasis is blocked."
+    }
+  ]
+}

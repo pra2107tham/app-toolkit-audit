@@ -1,0 +1,43 @@
+{
+  "slug": "asana",
+  "name": "Asana",
+  "category": "Productivity and Project Management",
+  "description": "Work management platform for teams to track tasks, projects, and workflows; provides an API to create, read, update, and automate Asana data and embed app components.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.asana.com/docs/authentication",
+    "confidence": "high",
+    "note": "Asana explicitly documents OAuth 2.0 for apps and Personal Access Tokens (used as Bearer tokens) for testing and scripts; both are sent as 'Authorization: Bearer <token>'."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.asana.com/docs/personal-access-token",
+    "confidence": "high",
+    "note": "Personal Access Tokens can be created from the developer console for testing (no human approval). Creating OAuth client credentials is done via the developer console (create-an-app). Pricing page shows free plan exists and docs do not state API access requires a paid plan."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.asana.com/docs/api-reference",
+    "confidence": "high",
+    "note": "The Asana API is RESTful (base URL https://app.asana.com/api/1.0) and documents endpoints for tasks, projects, users, teams, webhooks, attachments, custom fields, etc., covering most product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs plus self-serve personal access tokens and app registration in the developer console allow building integrations today."
+  },
+  "research_meta": {
+    "queries": [
+      "Asana developer API documentation root developers.asana.com api docs Asana API developers.asana.com OAuth personal access token developer documentation",
+      "site:developers.asana.com \"Personal Access Token\" \"developer console\"",
+      "site:developers.asana.com register app \"Register an app\" Asana",
+      "Asana API requires paid plan partner \"API access requires\" site:asana.com OR site:developers.asana.com \"API\" \"paid\"",
+      "Asana \"developer console\" url \"developer_console\" \"app.asana.com\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

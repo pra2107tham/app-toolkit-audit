@@ -1,0 +1,45 @@
+{
+  "slug": "airtable",
+  "name": "Airtable",
+  "category": "Productivity and Project Management",
+  "description": "Airtable is an app-building platform for creating and sharing business applications.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://airtable.com/developers/web/api/authentication",
+    "confidence": "high",
+    "note": "Airtable Web API authentication documentation states the API uses personal access tokens (sent as a Bearer token) or OAuth 2.0."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://support.airtable.com/docs/creating-and-using-api-keys-and-access-tokens",
+    "confidence": "high",
+    "note": "Official support documentation explains how users create personal access tokens from their Airtable account (self-serve)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://airtable.com/api",
+    "confidence": "high",
+    "note": "The API reference at https://airtable.com/api is an auto-generated REST API for bases (endpoints for tables, records, attachments, fields). The Developers hub also lists SDKs and webhooks, but the primary documented surface is a comprehensive REST API."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Airtable provides public REST API documentation and supports authentication via self-serve personal access tokens or OAuth 2.0, so an integration can be built today."
+  },
+  "research_meta": {
+    "queries": [
+      "Airtable authentication personal access tokens",
+      "Airtable OAuth documentation",
+      "Airtable REST API docs base endpoints",
+      "How to get Airtable API key personal access token",
+      "Airtable pricing API access",
+      "Airtable partner program API restriction"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "intercom",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Customer messaging, helpdesk, and product support platform (inbox, conversations, users, and automation).",
+      "better_evidence_url": "https://www.intercom.com",
+      "reasoning": "The description accurately reflects the content on the homepage, which describes Intercom as a helpdesk and customer messaging platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "reasoning": "The evidence confirms that Intercom supports OAuth 2.0 for public apps and Personal Access Tokens for private apps, matching the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/creating-a-developer-application",
+      "reasoning": "The URL provided for credential access returns a 404 error, indicating that the evidence is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "both",
+      "better_evidence_url": "https://developers.intercom.com/docs/references/2.13/rest-api/api.intercom.io",
+      "reasoning": "The evidence confirms that Intercom provides both a REST API and a GraphQL endpoint, supporting the claim of a broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "reasoning": "The evidence supports that public documentation and self-serve credential creation allow for building integrations today, aligning with the recorded value."
+    }
+  ]
+}

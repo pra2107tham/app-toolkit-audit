@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://supabase.com/docs/guides/platform/keys",
+      "confidence": "high",
+      "note": "Project API keys (anon and service_role) are available in the dashboard Project Settings \u2192 API; the Pricing page confirms Free tier projects exist, implying developers can obtain keys on a free tier without human approval."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://supabase.com/docs/guides/api/api-keys",
+      "confidence": "medium",
+      "note": "Supabase documents that API keys (including the anon key and the service role key) can be found in the Supabase Dashboard under Project Settings \u2192 API, indicating credentials are self-serve retrievable from the dashboard."
+    },
+    "verdict": "dead_url"
+  }
+}

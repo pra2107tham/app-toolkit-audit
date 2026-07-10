@@ -1,0 +1,40 @@
+{
+  "slug": "otter-ai",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Transcription and meeting-note AI that generates searchable, shareable transcripts and summaries from audio and meetings.",
+      "better_evidence_url": "https://otter.ai",
+      "reasoning": "The homepage describes Otter AI as a transcription and meeting-note tool that generates searchable transcripts and summaries, confirming the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "other",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "reasoning": "The URL provided for auth methods returns a 404 error, meaning the evidence is not accessible to confirm the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "partner_gated",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "reasoning": "The URL for credential access is also a dead link (404), preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "reasoning": "The evidence URL for API surface is dead (404), which means the claim cannot be verified."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "reasoning": "Given the lack of accessible API documentation and the requirement for enterprise access, the buildability is assessed as unsupported."
+    }
+  ]
+}

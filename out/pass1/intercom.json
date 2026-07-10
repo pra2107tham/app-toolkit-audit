@@ -1,0 +1,43 @@
+{
+  "slug": "intercom",
+  "name": "Intercom",
+  "category": "Support and Helpdesk",
+  "description": "Customer messaging, helpdesk, and product support platform (inbox, conversations, users, and automation).",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "confidence": "high",
+    "note": "Intercom supports OAuth 2.0 for public apps and Personal Access Tokens (Bearer tokens) for server-to-server/private apps; requests use Authorization: Bearer <token>."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/creating-a-developer-application",
+    "confidence": "high",
+    "note": "You can create an app in the Developer Hub and receive credentials (Access Token for private apps or client ID/secret for public OAuth apps) immediately from your workspace."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developers.intercom.com/docs/references/2.13/rest-api/api.intercom.io",
+    "confidence": "high",
+    "note": "Intercom exposes a broad REST API (users, leads, conversations, companies, events, tags, etc.) and also provides a GraphQL endpoint (https://api.intercom.io/graphql) as noted in the API reference."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs plus self-serve credential creation in the Developer Hub allow building integrations today. (Enterprise-only product features may still require paid plans or Sales contact, but API credentials can be obtained from a workspace.)"
+  },
+  "research_meta": {
+    "queries": [
+      "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "https://developers.intercom.com/docs/build-an-integration/learn-more/creating-a-developer-application",
+      "https://developers.intercom.com/",
+      "https://developers.intercom.com/docs/references/2.13/rest-api/api.intercom.io",
+      "https://www.intercom.com/pricing"
+    ],
+    "insufficient_public_docs": false
+  }
+}

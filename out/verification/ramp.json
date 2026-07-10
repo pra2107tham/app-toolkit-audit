@@ -1,0 +1,40 @@
+{
+  "slug": "ramp",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://ramp.com",
+      "reasoning": "The homepage confirms that Ramp is a corporate card, spend management, and finance automation platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ramp.com/developer-api/v1/authentication",
+      "reasoning": "The pre-fetched evidence indicates that the page is a shell and does not provide the necessary content to confirm the authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+      "reasoning": "The pre-fetched evidence indicates that the page is a shell and does not provide the necessary content to confirm the credential access method."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.ramp.com/developer-api/v1/reference",
+      "reasoning": "The pre-fetched evidence indicates that the page is a shell and does not provide the necessary content to confirm the API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "Since the evidence for the other fields is unsupported, the buildability claim cannot be confirmed."
+    }
+  ]
+}

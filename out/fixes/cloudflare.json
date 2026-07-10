@@ -1,0 +1,53 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "token",
+        "oauth2"
+      ],
+      "evidence_url": "https://developers.cloudflare.com/api/operations/authentication/",
+      "confidence": "high",
+      "note": "Cloudflare documents API Tokens (bearer tokens), Global API Key (API key with X-Auth-Key/X-Auth-Email), and OAuth as supported authentication methods."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "token",
+        "oauth2"
+      ],
+      "evidence_url": "https://developers.cloudflare.com/api/operations/authentication/",
+      "confidence": "high",
+      "note": "Cloudflare\u2019s Authentication documentation states the API uses API tokens (recommended; Authorization: Bearer), the Global API Key (X-Auth-Email and X-Auth-Key headers), and OAuth 2.0."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.cloudflare.com/fundamentals/account-and-billing/api-tokens/",
+      "confidence": "high",
+      "note": "API Tokens are created and managed from the dashboard; dashboard signup has a free plan. Global API Key and API Tokens are accessible from the dashboard for any account."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.cloudflare.com/fundamentals/account-and-billing/api-tokens/",
+      "confidence": "medium",
+      "note": "Cloudflare\u2019s API Tokens documentation describes creating and managing API tokens in the Cloudflare dashboard (Manage Account > API Tokens) and notes the Global API Key is available in the dashboard. The page confirms self-serve access via dashboard, but does not explicitly state free-plan eligibility."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST APIs + self-serve API Tokens/keys on free accounts allow building integrations today. Some enterprise-only APIs/features require contacting sales or an Enterprise plan, but core API functionality is accessible."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Cloudflare provides public REST APIs and supports self-serve authentication methods (API tokens, Global API Key, and OAuth 2.0). API tokens can be created in the Cloudflare dashboard, so an integration can be built and tested today without contacting sales for core functionality."
+    },
+    "verdict": "unsupported"
+  }
+}

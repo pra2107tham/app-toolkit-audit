@@ -1,0 +1,49 @@
+{
+  "slug": "pumble",
+  "name": "Pumble",
+  "category": "Communications and Messaging",
+  "description": "Team chat and collaboration platform with a REST API add-on for automating workspace actions (messages, channels, members, webhooks).",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-integration-installation-and-usage/",
+    "confidence": "high",
+    "note": "Pumble uses API keys sent in the X-Api-Key header to authenticate REST API requests; API keys are created in the workspace API section."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "confidence": "high",
+    "note": "The docs state the API add-on can be installed in a workspace and API keys generated via the workspace UI. The public pricing page does not indicate API access requires paid plan or sales/partnership approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "confidence": "high",
+    "note": "Documentation describes a REST API (Swagger UI at /api/docs) and lists ability to create messages, manage channels, members, webhooks and more; full endpoint docs exposed via Swagger on workspace."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "none",
+    "note": "Developer can install the API addon in a workspace and generate API keys via the UI (self-serve). No evidence that admin/partner approval or paid-only access is required, so building is feasible after routine key signup in a workspace."
+  },
+  "research_meta": {
+    "queries": [
+      "Pumble API documentation site:pumble.com OR \"Pumble API\" OR \"Pumble developer\" OR \"Pumble integrations\"",
+      "Pumble API Overview site:pumble.com \"API\" \"Swagger\"",
+      "site:pumble.com \"API Integration - Installation and Usage\"",
+      "site:pumble.com \"api key\" \"Pumble\" \"Swagger\"",
+      "site:pumble.com \"generate an API key\" \"Pumble\"",
+      "site:pumble.com \"Swagger\" \"Pumble\" \"api\"",
+      "site:pumble.com \"API addon\" \"Pumble\"",
+      "site:pumble.com \"pricing\" \"Pumble\" API addon \"API\"",
+      "site:pumble.com \"pricing\" \"API\" \"pumble\" \"addon\"",
+      "Pumble \"API\" \"Help\" site:pumble.com/help",
+      "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "site:pumble.com \"Get an API key\" \"Pumble\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

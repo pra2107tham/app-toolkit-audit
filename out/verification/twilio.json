@@ -1,0 +1,40 @@
+{
+  "slug": "twilio",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.twilio.com",
+      "reasoning": "The description accurately reflects Twilio's offerings as a cloud communications platform providing REST APIs and SDKs for various messaging and real-time communication services."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.twilio.com/docs/iam/api",
+      "reasoning": "The evidence confirms that Twilio's main REST API uses HTTP Basic Auth with Account SID and Auth Token, and also supports API Key SID/Secret for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+      "reasoning": "The evidence supports that developers can sign up for a free Twilio trial account and receive necessary credentials without human approval, confirming the self-serve nature of credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.twilio.com/docs",
+      "reasoning": "The evidence confirms that Twilio provides a broad range of REST APIs and SDKs across its products, covering messaging, voice, video, and more."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.twilio.com/docs",
+      "reasoning": "The evidence supports that public REST APIs and self-serve credentials are available, allowing developers to build integrations immediately, with some exceptions for specific features."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "pipedrive",
+  "name": "Pipedrive",
+  "category": "CRM and Sales",
+  "description": "A sales CRM platform for managing leads, deals, activities and sales pipelines, with a public REST API to integrate and automate workflows.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "evidence_url": "https://developers.pipedrive.com/docs/api/v1/#authentication",
+    "confidence": "high",
+    "note": "Official API docs enumerate API token (personal API key) and OAuth2 as supported authentication methods."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "confidence": "high",
+    "note": "Official Pipedrive developer documentation states each Pipedrive user has an API token and that it can be found in Personal preferences under the user menu, indicating credentials can be obtained self-serve from the product UI without contacting support."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.pipedrive.com/docs/api/v1/",
+    "confidence": "high",
+    "note": "Pipedrive provides a comprehensive REST API (v1) covering core product objects (deals, persons, organizations, activities, products, pipelines, etc.) as documented in the API reference root."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs exist and developers can obtain a personal API token from their account without human approval, so integrations can be built today. Publishing apps to the Marketplace requires app submission/review but that doesn't block initial development."
+  },
+  "research_meta": {
+    "queries": [
+      "Pipedrive API authentication api token oauth2 developers.pipedrive.com",
+      "How to find your API token Pipedrive support",
+      "Pipedrive developers apps register client id client secret",
+      "Pipedrive API v1 reference",
+      "Pipedrive marketplace app submission review",
+      "Pipedrive pricing API access"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

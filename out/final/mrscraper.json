@@ -1,0 +1,43 @@
+{
+  "slug": "mrscraper",
+  "name": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "description": "A scraping platform that provides a RESTful API and SDKs to create and run web scrapes, manage projects, and retrieve results.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://docs.mrscraper.com/getting-started/authentication",
+    "confidence": "high",
+    "note": "Official docs state MrScraper authenticates requests using an API key created in the dashboard and sent in the Authorization header as a Bearer token (\"Authorization: Bearer <YOUR_API_KEY>\")."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://docs.mrscraper.com/getting-started",
+    "confidence": "medium",
+    "note": "Getting Started docs instruct users to sign up at dashboard.mrscraper.com and create an API key in the dashboard (self-serve credential issuance). The fetched docs do not confirm paid trial/plan requirements."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.mrscraper.com/",
+    "confidence": "high",
+    "note": "Mrscraper exposes a RESTful HTTP API covering projects, scrapes, billing, SDKs, and webhooks; many core product objects are represented in the API reference."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "paid_only",
+    "note": "Docs confirm self-serve signup and API key creation in the dashboard and show how to authenticate requests with an API key. However, the fetched primary sources do not confirm whether long-term usage is paid-only; monetization is not verified from the fetched docs."
+  },
+  "research_meta": {
+    "queries": [
+      "Mrscraper API authentication",
+      "Mrscraper get API key dashboard",
+      "Mrscraper pricing API access",
+      "Mrscraper developer docs REST API reference",
+      "Mrscraper contact sales enterprise API"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

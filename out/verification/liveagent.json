@@ -1,0 +1,40 @@
+{
+  "slug": "liveagent",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Cloud-based helpdesk and live chat platform for customer service, with RESTful API for tickets, contacts, chat, accounts and more.",
+      "better_evidence_url": "https://www.liveagent.com",
+      "reasoning": "The description accurately reflects the content on the homepage, which describes LiveAgent as a help desk software and live chat platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "api_key",
+      "better_evidence_url": "https://support.liveagent.com/741982-API-key",
+      "reasoning": "The evidence confirms that API keys are used for authentication in both API v1 and v3, as stated in the documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://support.liveagent.com/741982-API-key",
+      "reasoning": "The documentation clearly states that API keys can be generated in the admin dashboard and that there is a free trial available for developers."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://support.liveagent.com/911737-API-v3",
+      "reasoning": "The evidence confirms that LiveAgent's API v3 is a RESTful API covering various functionalities, as stated in the documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://support.liveagent.com/911737-API-v3",
+      "reasoning": "The public documentation describes the API endpoints and authentication methods, confirming that development can begin immediately with a trial account."
+    }
+  ]
+}

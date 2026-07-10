@@ -1,0 +1,22 @@
+{
+  "slug": "bright-data",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "brightdata",
+    "tools_count": 10.0,
+    "auth_schemes": [
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "brightdata"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Bright%20Data"
+  },
+  "homepage_alive": true
+}

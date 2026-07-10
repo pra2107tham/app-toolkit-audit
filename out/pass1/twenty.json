@@ -1,0 +1,44 @@
+{
+  "slug": "twenty",
+  "name": "Twenty",
+  "category": "CRM and Sales",
+  "description": "Open-source CRM built with Next.js and Supabase; intended to be self-hosted or deployed by users rather than a vendor-hosted public API.",
+  "auth_methods": {
+    "value": [
+      "other"
+    ],
+    "evidence_url": "https://github.com/twentyapp/twenty",
+    "confidence": "high",
+    "note": "Auth for the application is implemented via Supabase (project README references SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY). There is no evidence of a vendor-hosted public API supporting OAuth2/API keys/basic/token/JWT on twenty.com; app-level auth relies on Supabase tokens for self-hosted instances (classified as 'other')."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://github.com/twentyapp/twenty",
+    "confidence": "high",
+    "note": "Repository README and docs show instructions and environment variables for obtaining and using Supabase credentials to run the app locally or self-host; developers can get Supabase free-tier credentials without vendor approval to run Twenty."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://github.com/twentyapp/twenty",
+    "confidence": "high",
+    "note": "There is no vendor-hosted public REST/GraphQL API documented on twenty.com. The codebase exposes Next.js API routes and integrates with Supabase for DB access, but these are part of the self-hosted app (not a documented public API)."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "no_public_api",
+    "note": "You can build integrations by self-hosting Twenty and using its internal API routes or the Supabase backend (requires signing up for Supabase to obtain keys). There is no hosted vendor API to directly integrate with without self-hosting. (Normalized main_blocker from 'no_vendor_hosted_api' to allowed enum 'no_public_api'.)"
+  },
+  "research_meta": {
+    "queries": [
+      "Twenty CRM API developer documentation site:twenty.com \"API\" OR \"developer\" OR \"docs\"",
+      "twenty API docs site:twenty.com",
+      "site:twenty.com \"API\" OR \"api\"",
+      "twentyapp github API docs",
+      "\"twenty\" \"API documentation\" \"twenty.com\"",
+      "site:github.com/twentyapp \"README\" \"API\"",
+      "\"twenty\" \"developer\" site:twenty.com"
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://dev-docs.fanbasis.com/",
+      "confidence": "high",
+      "note": "The official developer docs site is behind a login screen ('Login - FanBasis API Docsv3'), so public API authentication methods are not documented on accessible pages."
+    },
+    "final_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://dev-docs.fanbasis.com/",
+      "confidence": "high",
+      "note": "The official developer docs URL resolves to a login page (\"Login - FanBasis API Docsv3\") with no publicly readable API authentication details."
+    },
+    "verdict": "unsupported"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://dev-docs.fanbasis.com/",
+      "confidence": "high",
+      "note": "The developer/docs root requires login and is not publicly readable, so the API surface (REST/GraphQL/both) cannot be confirmed from public pages."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://dev-docs.fanbasis.com/",
+      "confidence": "high",
+      "note": "The developer/docs site is gated behind a login screen, so public pages do not confirm whether the API is REST, GraphQL, or otherwise, nor expose any endpoints."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "grain",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://grain.com",
+      "reasoning": "The homepage confirms that Grain is a meeting capture tool for recording meetings, creating clips/highlights, and sharing/exporting meeting moments."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.grain.com/en/articles/5239892-integrations",
+      "reasoning": "The URL for the auth methods is dead, as it resulted in a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://grain.com/contact",
+      "reasoning": "The contact page indicates that advanced access is handled via sales/partnership, supporting the claim of partner_gated access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.grain.com/",
+      "reasoning": "The URL for the API surface is dead, as it resulted in a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://grain.com/contact",
+      "reasoning": "The lack of public API documentation and the need to contact sales for integration support confirms that building against a public API is blocked."
+    }
+  ]
+}

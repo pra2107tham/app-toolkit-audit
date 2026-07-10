@@ -1,0 +1,44 @@
+{
+  "slug": "ahrefs",
+  "name": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "description": "Ahrefs provides SEO and backlink data products accessible programmatically via the Ahrefs API v3 for paying customers.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://docs.ahrefs.com/en/api/docs/authentication",
+    "confidence": "high",
+    "note": "Ahrefs API docs state all requests require an API token, which can be sent either as an Authorization header using the Bearer scheme (Authorization: Bearer YOUR_API_TOKEN) or as a query parameter (?token=YOUR_API_TOKEN)."
+  },
+  "credential_access": {
+    "value": "self_serve_paid_trial",
+    "evidence_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "confidence": "high",
+    "note": "Introduction and Limits pages state API v3 is available to paying customers and API access must be enabled on the workspace; pricing page shows plans are paid. Developers can generate API tokens in the dashboard but API access is tied to paid plans/units."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "confidence": "high",
+    "note": "Docs reference API v3 REST endpoints (site-explorer, keywords-explorer, backlinks, etc.) at base URL https://apiv3.ahrefs.com and indicate multiple product endpoints are available (broad coverage)."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "paid_only",
+    "note": "Documentation and pricing indicate API requires a paying account with API access/units. Once payment/plan is in place, developers can generate API tokens in the dashboard and call the REST endpoints."
+  },
+  "research_meta": {
+    "queries": [
+      "Ahrefs API authentication API token API key",
+      "Ahrefs API v3 introduction API eligibility",
+      "Ahrefs API limits consumption unit costs rate limits",
+      "Ahrefs API pricing API access paid plans",
+      "How to generate Ahrefs API token dashboard API keys"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

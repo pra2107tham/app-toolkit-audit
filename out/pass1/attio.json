@@ -1,0 +1,49 @@
+{
+  "slug": "attio",
+  "name": "Attio",
+  "category": "CRM and Sales",
+  "description": "A modern CRM and workspace for managing relationships, contacts, and company data with a programmable API.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "evidence_url": "https://docs.attio.com/reference/authentication",
+    "confidence": "high",
+    "note": "The official Authentication reference page (meta/description) states Attio uses API keys and OAuth 2.0 for authentication; SDK examples (npm/pypi) also show api_key usage."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://attio.com/pricing",
+    "confidence": "high",
+    "note": "Pricing page advertises 'Start for free'. The Get Started docs (https://docs.attio.com/get-started) describe signup, dashboard onboarding and how to access API credentials, indicating developers can obtain credentials themselves after signup."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.attio.com/reference/overview",
+    "confidence": "high",
+    "note": "The API reference overview page (meta/description) mentions 'endpoints, models, REST examples' and there are reference pages for product objects (e.g. Collections, People) showing multiple endpoints."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public API docs exist and developers can obtain API keys via signup (free tier available). You can sign up for an account and generate API keys to start building."
+  },
+  "research_meta": {
+    "queries": [
+      "Attio API documentation site:attio.com OR site:docs.attio.com OR \"Attio API\" OR \"Attio developer\" OR \"Attio developers\" \"API\"",
+      "site:docs.attio.com \"Authentication\" \"Attio\" \"API\" \"reference\"",
+      "Attio \"create API key\" \"dashboard\" site:docs.attio.com OR site:attio.com \"API key\" \"dashboard\"",
+      "site:attio.com \"API\" \"contact sales\" OR \"partner\" OR \"partnership\" OR \"enterprise\" OR \"paid plan\" OR \"requires\"",
+      "Attio docs authentication \"docs.attio.com/reference/authentication\"",
+      "Attio API keys OAuth2 authentication docs",
+      "site:attio.com \"API key\" OR \"API keys\"",
+      "Attio OAuth OAuth2",
+      "Attio REST API GraphQL \"Attio API\"",
+      "site:docs.attio.com reference collections",
+      "site:docs.attio.com reference people records API attio"
+    ],
+    "insufficient_public_docs": false
+  }
+}

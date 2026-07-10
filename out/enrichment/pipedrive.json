@@ -1,0 +1,44 @@
+{
+  "slug": "pipedrive",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "pipedrive",
+    "tools_count": 399.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "pipedrive"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.Servosity/pipedrive-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.ckalima/pipedrive-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.ckalima/pipedrive-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.ckalima/pipedrive-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.ckalima/pipedrive-mcp-server",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pipedrive"
+  },
+  "homepage_alive": true
+}

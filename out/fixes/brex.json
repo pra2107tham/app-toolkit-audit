@@ -1,0 +1,70 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://developer.brex.com/reference/authentication",
+      "confidence": "high",
+      "note": "Docs state support for OAuth 2.0 (Authorization Code + PKCE and Client Credentials) and API keys; authorization uses scoped bearer tokens in the Authorization header."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://developer.brex.com/docs/reference/authentication",
+      "confidence": "medium",
+      "note": "Brex\u2019s official developer docs have an Authentication page under /docs/reference/authentication, which describes authenticating to Brex APIs (bearer access tokens in the Authorization header) and documents supported authentication approaches (OAuth 2.0 flows and API key-based access, depending on the API)."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.brex.com/docs/getting-started#api-keys",
+      "confidence": "high",
+      "note": "Getting started docs describe signing up for a developer account and generating API keys in the developer dashboard without manual approval."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.brex.com/docs/getting-started",
+      "confidence": "medium",
+      "note": "Brex\u2019s Getting started documentation explains how developers obtain credentials via the Brex developer portal/dashboard as part of onboarding (including generating/using API credentials without requiring a documented manual approval step for basic access)."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.brex.com/reference",
+      "confidence": "high",
+      "note": "Docs state Brex provides REST APIs described via OpenAPI across many product areas (Accounting, Payments, Expenses, Team, Transactions, Travel, Webhooks, etc.). SDKs are also available."
+    },
+    "final_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://developer.brex.com/reference",
+      "confidence": "high",
+      "note": "Brex\u2019s official API Reference is published at /reference and presents REST endpoints across multiple product areas. Brex also publishes an OpenAPI specification page under /open_api."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs + ability to self-generate API keys from the dashboard make integrations possible today. Some product features (e.g., issuing cards, payments) may require a Brex business account but API access itself can be obtained via developer signup."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Brex publishes public API reference documentation and authentication guidance (https://developer.brex.com/reference and https://developer.brex.com/docs/reference/authentication). The Getting started guide (https://developer.brex.com/docs/getting-started) describes obtaining developer credentials via the developer portal, indicating integrations can be built today. Some capabilities may still depend on having an eligible Brex business account and the relevant product enabled."
+    },
+    "verdict": "dead_url"
+  }
+}

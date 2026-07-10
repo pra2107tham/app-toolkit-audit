@@ -1,0 +1,40 @@
+{
+  "slug": "threads",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.threads.net",
+      "reasoning": "The homepage confirms the existence of Threads but does not provide specific details about the API functionalities mentioned in the description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/threads/guides/authentication",
+      "reasoning": "The URL for the authentication guide returns a 404 error, meaning the claim about OAuth 2.0 and access tokens is not supported by the evidence."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/apps",
+      "reasoning": "The content from the Apps page supports the claim that developers can create an app and obtain access tokens, confirming the self-serve nature of credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/threads",
+      "reasoning": "The API surface description is confirmed by the documentation, which details the functionalities available through the Threads API."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/threads",
+      "reasoning": "While the claim about buildability is mentioned, the lack of specific evidence supporting the claim about app roles and permissions makes it unsupported."
+    }
+  ]
+}

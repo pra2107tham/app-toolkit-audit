@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "admin_approval",
+      "evidence_url": "https://help.seranking.com/en/articles/how-to-get-api-access",
+      "confidence": "high",
+      "note": "The help article states that if the API section is not visible you must contact support (help@seranking.com or in-app chat) to request API access; availability may depend on subscription plan."
+    },
+    "final_value": {
+      "value": "admin_approval",
+      "evidence_url": "https://help.seranking.com/en/articles/4210866-how-to-get-api-access",
+      "confidence": "high",
+      "note": "Help Center states API access is under Account settings \u2192 API, but if the API section is not present you must contact SE Ranking support (via chat or email) to request/enable access, indicating access may be gated and not always self-serve."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "Docs show clear REST API and token auth, but the Help Center indicates API access must be enabled by contacting support and may depend on plan; therefore automated self-serve credential issuance is not guaranteed."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "Despite clear REST API documentation and bearer-token auth, SE Ranking indicates API access may need to be enabled by support if the API section is not available in account settings, so automated self-serve credential issuance is not guaranteed."
+    },
+    "verdict": "contradicted"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "podio",
+  "name": "Podio",
+  "category": "CRM and Sales",
+  "description": "A collaborative work platform for managing projects, CRM, and workflows with a RESTful API to automate and integrate Podio data and actions.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://developers.podio.com/authentication",
+    "confidence": "high",
+    "note": "Documentation states Podio uses OAuth 2 (authorization code flow), supports client credentials (machine-to-machine) and accepts Bearer tokens; Podio does not use API keys for general access. Mapped 'client_credentials' to 'oauth2' and 'bearer_token' to 'token' to match allowed enum values."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.podio.com/applications",
+    "confidence": "high",
+    "note": "Developers can register an application in the developer console to obtain client_id and client_secret instantly after logging in; no mention of paid-only or partner gating."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.podio.com/api",
+    "confidence": "high",
+    "note": "API docs describe a RESTful HTTP API covering many resource types (items, apps, tasks, users, orgs, spaces, contacts, etc.), with CRUD operations."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs plus self-serve client credentials are available; developers can register apps and use OAuth flows to obtain tokens and call endpoints."
+  },
+  "research_meta": {
+    "queries": [
+      "Podio API documentation developer Podio API docs site:podio.com OR site:help.podio.com \"API\" \"developer\"",
+      "Podio API docs \"Podio API\" documentation developer site:podio.com OR site:developers.podio.com OR site:help.podio.com OR site:podio.developerhub.io",
+      "site:developers.podio.com Podio API authentication \"Authentication\"",
+      "Podio create API key \"application\" \"developers.podio.com\" \"app\" \"create\"",
+      "site:developers.podio.com \"Applications\" \"Podio\" \"client_id\" \"client_secret\"",
+      "Podio API pricing \"API\" \"pricing\" site:podio.com OR site:developers.podio.com OR site:help.podio.com"
+    ],
+    "insufficient_public_docs": false
+  }
+}

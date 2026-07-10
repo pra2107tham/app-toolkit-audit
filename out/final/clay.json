@@ -1,0 +1,43 @@
+{
+  "slug": "clay",
+  "name": "Clay",
+  "category": "Data, SEO and Scraping",
+  "description": "Clay is an AI-powered platform for scaling personalized outbound and automating GTM workflows, using a table-based workflow builder to enrich, score, and reach out to leads.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://www.clay.com/developers",
+    "confidence": "high",
+    "note": "Clay\u2019s Developers page instructs to create an API key in Clay and authenticate to https://api.clay.com/v1/ using the Authorization header in the form `Authorization: Bearer <YOUR_API_KEY>`."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.clay.com/signup",
+    "confidence": "high",
+    "note": "The signup page provides a self-serve account creation flow and the API Keys help article documents creating API keys in the dashboard. The help docs do not state that keys require sales or admin approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://www.clay.com/developers",
+    "confidence": "high",
+    "note": "Clay\u2019s Developers page documents a REST API with base URL `https://api.clay.com/v1/` and lists endpoints for core objects including tables and rows (e.g., `GET /v1/tables`, `POST /v1/tables/{table_id}/rows`, `PATCH /v1/tables/{table_id}/rows/{row_id}`, `DELETE /v1/tables/{table_id}/rows/{row_id}`)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Clay\u2019s public Developers page documents how to create an API key (Settings \u2192 API keys), the API base URL, and example REST endpoints; a developer can sign up and begin integrating immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "site:help.clay.com \"API Keys\" Clay",
+      "site:help.clay.com \"Webhooks and API\" Clay",
+      "site:clay.com \"pricing\" \"API\" Clay",
+      "Clay API keys create dashboard",
+      "Clay REST API tables rows"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

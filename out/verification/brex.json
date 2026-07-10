@@ -1,0 +1,40 @@
+{
+  "slug": "brex",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.brex.com",
+      "reasoning": "The homepage confirms that Brex offers a unified corporate spend platform with features like corporate cards, expense management, payments, and travel."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for authentication methods returned a 404 error, meaning the specific details about OAuth 2.0 and API keys cannot be verified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for credential access returned a 404 error, preventing verification of the claim regarding self-serve API key generation."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for the API surface returned a 404 error, so the claim about REST APIs and OpenAPI documentation cannot be confirmed."
+    },
+    {
+      "field": "buildability",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "Due to the dead URLs for the other fields, the buildability claim cannot be substantiated as the necessary documentation is unavailable."
+    }
+  ]
+}

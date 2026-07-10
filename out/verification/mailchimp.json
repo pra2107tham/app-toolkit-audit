@@ -1,0 +1,40 @@
+{
+  "slug": "mailchimp",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com",
+      "reasoning": "The description of Mailchimp as an email marketing platform providing APIs to manage audiences, campaigns, automations, and reports is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/developer/marketing/guides/authorization/",
+      "reasoning": "The evidence confirms that both API keys and OAuth 2.0 are valid authentication methods for the Marketing API."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/help/how-do-i-find-my-api-key/",
+      "reasoning": "The URL provided for credential access returns a 404 error, indicating that the page is not found and thus the claim cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/developer/marketing/api/",
+      "reasoning": "The evidence confirms that the Marketing API is a REST API covering various functionalities such as lists, members, campaigns, and reports."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/developer/marketing/api/",
+      "reasoning": "The existence of public REST API documentation and the ability to create API keys supports the claim that the API is buildable today."
+    }
+  ]
+}

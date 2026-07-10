@@ -1,0 +1,43 @@
+{
+  "slug": "whatsapp-business",
+  "name": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "description": "WhatsApp Business Platform lets businesses send and receive messages at scale via Meta-hosted Cloud API or a self‑hosted on‑premises API, with support for message templates, media, and webhooks.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.facebook.com/docs/whatsapp/guides/authentication",
+    "confidence": "high",
+    "note": "Authentication uses OAuth-style access tokens (Bearer tokens) including short-lived and long-lived tokens obtained via the Meta App dashboard and Facebook Login flows; API calls use Authorization: Bearer <ACCESS_TOKEN>."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "confidence": "high",
+    "note": "Developers can create a Meta App and generate temporary access tokens and test phone numbers from the dashboard for free testing. Production usage requires business verification and a WABA but initial credentials for development are self-serve and free."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.facebook.com/docs/whatsapp",
+    "confidence": "high",
+    "note": "The WhatsApp Business Platform provides REST endpoints (Cloud API and on‑premises) covering messaging, media, templates, webhooks and account management; SDK client libraries are referenced from the docs."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "You can obtain test tokens and a test phone number immediately via the Meta for Developers dashboard and call REST endpoints (Cloud API) for development. Production requires business verification and phone number approval but does not block initial development."
+  },
+  "research_meta": {
+    "queries": [
+      "WhatsApp Business Platform authentication access tokens bearer",
+      "WhatsApp Cloud API get started generate temporary access token test phone number",
+      "WhatsApp Business API pricing billing production charges",
+      "WhatsApp Business on-premises API reference endpoints",
+      "WhatsApp Business Solution Provider BSP partner directory"
+    ],
+    "insufficient_public_docs": false
+  }
+}

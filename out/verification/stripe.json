@@ -1,0 +1,40 @@
+{
+  "slug": "stripe",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://stripe.com",
+      "reasoning": "The description accurately reflects the services provided by Stripe as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://stripe.com/docs/api/authentication",
+      "reasoning": "The authentication methods listed are supported by the documentation, which details the use of API keys and Basic Auth."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://stripe.com/docs/keys",
+      "reasoning": "The documentation confirms that API keys can be created without human approval, supporting the claim of self-serve access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://stripe.com/docs/api",
+      "reasoning": "The API surface is confirmed as REST, with comprehensive documentation covering various resources."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://stripe.com/docs/api",
+      "reasoning": "The availability of public documentation and the ability to self-serve API keys confirm that developers can build integrations immediately."
+    }
+  ]
+}

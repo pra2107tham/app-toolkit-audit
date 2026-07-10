@@ -1,0 +1,46 @@
+{
+  "slug": "podio",
+  "name": "Podio",
+  "category": "CRM and Sales",
+  "description": "A collaborative work platform for managing projects, CRM, and workflows with a RESTful API to automate and integrate Podio data and actions.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://developers.podio.com/authentication",
+    "confidence": "high",
+    "note": "Documentation states Podio uses OAuth 2 (authorization code flow), supports client credentials (machine-to-machine) and accepts Bearer tokens; Podio does not use API keys for general access. Mapped 'client_credentials' to 'oauth2' and 'bearer_token' to 'token' to match allowed enum values."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.podio.com/applications",
+    "confidence": "high",
+    "note": "The Applications documentation states that to use the Podio API you must create an application, and when you create an application Podio generates a client_id and client_secret; it also states you can create an application from the Developer Portal after logging in (self-serve access to credentials)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.podio.com/api",
+    "confidence": "high",
+    "note": "The Podio API documentation states the Podio API is a RESTful API over HTTP with JSON responses, and lists multiple resource areas (e.g., organizations, spaces, apps, items, tasks, users, contacts), indicating a broad REST API surface."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Official developer docs confirm a RESTful API endpoint at https://api.podio.com and self-serve creation of an application in the Developer Portal to obtain client_id/client_secret, supporting implementability today."
+  },
+  "research_meta": {
+    "queries": [
+      "Podio API documentation developer Podio API docs site:podio.com OR site:help.podio.com \"API\" \"developer\"",
+      "Podio API docs \"Podio API\" documentation developer site:podio.com OR site:developers.podio.com OR site:help.podio.com OR site:podio.developerhub.io",
+      "site:developers.podio.com Podio API authentication \"Authentication\"",
+      "Podio create API key \"application\" \"developers.podio.com\" \"app\" \"create\"",
+      "site:developers.podio.com \"Applications\" \"Podio\" \"client_id\" \"client_secret\"",
+      "Podio API pricing \"API\" \"pricing\" site:podio.com OR site:developers.podio.com OR site:help.podio.com"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

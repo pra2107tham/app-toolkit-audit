@@ -1,0 +1,45 @@
+{
+  "slug": "salesforce",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "salesforce",
+    "tools_count": 184.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "S2S_OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "salesforce",
+      "salesforce_service_cloud"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.cirra/salesforce-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.cirra/salesforce-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.cirra/salesforce-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/kodey-ai-salesforce-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/kodey-ai-salesforce-mcp-kodey",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Salesforce"
+  },
+  "homepage_alive": true
+}

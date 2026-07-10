@@ -1,0 +1,44 @@
+{
+  "slug": "dealcloud",
+  "name": "DealCloud",
+  "category": "CRM and Sales",
+  "description": "DealCloud (by Intapp) is a deal and relationship management platform for investment banking, private equity, and corporate development, providing CRM, pipeline, and workflow APIs for integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://api.docs.dealcloud.com/docs/authentication",
+    "confidence": "high",
+    "note": "Official docs list OAuth2 (Authorization Code and Client Credentials), API Key via X-Api-Key header, and Personal Access Tokens (used as Bearer tokens)."
+  },
+  "credential_access": {
+    "value": "admin_approval",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/getting-started/obtain-api-credentials",
+    "confidence": "high",
+    "note": "Docs state API Keys and Personal Access Tokens are provisioned by your DealCloud administrator or by contacting DealCloud support; non-admins must contact support/sales."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://api.docs.dealcloud.com/",
+    "confidence": "high",
+    "note": "Swagger JSON at /swagger/v1/swagger.json shows a REST API (paths like /contacts, /accounts, /oauth/token) and securityDefinitions; the Swagger UI is hosted at the docs root. The API covers core objects (Contacts, Accounts, Operations) indicating broad coverage."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "other",
+    "note": "Public docs exist and the REST API is documented, but API credentials must be provisioned by an admin or support/sales contact, preventing immediate self-serve developer access; requires contacting admin or sales."
+  },
+  "research_meta": {
+    "queries": [
+      "DealCloud API authentication",
+      "DealCloud obtain API credentials",
+      "DealCloud API key X-Api-Key",
+      "DealCloud OAuth token /oauth/token",
+      "DealCloud API docs swagger"
+    ],
+    "insufficient_public_docs": false
+  }
+}

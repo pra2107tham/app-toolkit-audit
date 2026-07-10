@@ -1,0 +1,40 @@
+{
+  "slug": "aircall",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://aircall.io",
+      "reasoning": "The homepage describes Aircall as a cloud phone system and call center platform, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.aircall.io",
+      "reasoning": "The developer documentation confirms the use of OAuth2 and personal access tokens, supporting the recorded auth methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.aircall.io",
+      "reasoning": "The documentation states that developers can register apps and obtain credentials after signing up, confirming the self-serve free access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.aircall.io",
+      "reasoning": "The API documentation indicates that the API is RESTful and exposes an OpenAPI JSON, confirming the recorded API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.aircall.io",
+      "reasoning": "The information provided supports that the API is buildable with key signup, as it requires account signup and app credential creation."
+    }
+  ]
+}

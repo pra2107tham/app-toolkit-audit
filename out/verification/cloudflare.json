@@ -1,0 +1,40 @@
+{
+  "slug": "cloudflare",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.cloudflare.com",
+      "reasoning": "The homepage describes Cloudflare as a content delivery, security, and edge platform providing various services, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.cloudflare.com/api/operations/authentication/",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to confirm the claim based on the provided evidence."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.cloudflare.com/fundamentals/account-and-billing/api-tokens/",
+      "reasoning": "The URL for credential access returns a 404 error, preventing confirmation of the claim regarding API Tokens and Global API Key access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.cloudflare.com/api/",
+      "reasoning": "The API reference page confirms that Cloudflare exposes a broad REST API surface covering various functionalities, which supports the recorded claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the claim about buildability is plausible given the confirmed API surface, the lack of supporting evidence for authentication methods and credential access means this claim cannot be fully substantiated."
+    }
+  ]
+}

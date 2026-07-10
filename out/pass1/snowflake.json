@@ -1,0 +1,45 @@
+{
+  "slug": "snowflake",
+  "name": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Cloud data platform providing data warehouse, data lake, and data application capabilities; exposes a REST SQL API plus SDKs and drivers to run SQL and manage objects programmatically.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "jwt",
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authentication.html",
+    "confidence": "high",
+    "note": "The SQL API documentation explicitly describes OAuth 2.0 and key-pair (JWT/private-key) authentication and usage of bearer tokens. 'api_key' and 'token' included as general labels because the docs show use of bearer tokens (access tokens) and key-pair credentials registered for API Integration. See the cited page for exact supported flows."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.snowflake.com/get-started/",
+    "confidence": "high",
+    "note": "Snowflake offers a public free trial sign-up flow allowing developers to create accounts and obtain credentials without human approval; combined with docs showing how to create API_INTEGRATION objects inside an account, this supports self-serve credential setup."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index.html",
+    "confidence": "high",
+    "note": "The SQL API docs state the SQL API is a REST API for sending SQL statements over HTTPS. Because the SQL API executes SQL statements, it can access and manage a wide range of Snowflake objects via SQL, so breadth is 'broad'. Additional SDKs and drivers are documented on the developer hub."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developer-facing REST SQL API docs exist and a public free trial sign-up is available, so a developer can obtain credentials and begin integrating immediately. Production usage may require paid account/consumption (per pricing), but that does not prevent building and testing."
+  },
+  "research_meta": {
+    "queries": [
+      "Snowflake developer API documentation root docs.snowflake.com API",
+      "site:docs.snowflake.com \"authentication\" \"SQL API\" Snowflake authentication docs OAuth key pair CREATE API INTEGRATION",
+      "Snowflake get API credentials sign up create API integration where to get client id secret \"create API integration\" \"snowflake\" signup trial",
+      "site:snowflake.com \"partner\" \"API\" \"Snowflake\" \"partner\" \"API access\"",
+      "site:snowflake.com pricing \"API\" \"SQL API\" \"access\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

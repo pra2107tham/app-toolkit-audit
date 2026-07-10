@@ -1,0 +1,49 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/authentication.html",
+      "confidence": "high",
+      "note": "Zoho Cliq REST API uses OAuth 2.0; access tokens are passed in the Authorization header as 'Zoho-oauthtoken <access_token>'."
+    },
+    "final_value": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/authentication.html",
+      "confidence": "low",
+      "note": "Unable to fetch the official authentication page due to access blocking (robot challenge / 403). The record retains OAuth 2.0 as the claimed method, but it could not be re-verified from fetched primary sources in this run."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.zoho.com/accounts/help/api/console.html",
+      "confidence": "high",
+      "note": "Developers can sign in to the Zoho API Console to create a client and obtain client_id and client_secret without mention of payment or manual approval."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.zoho.com/accounts/help/api/console.html",
+      "confidence": "low",
+      "note": "Unable to fetch the Zoho API Console help page due to access blocking in this run, so self-serve credential creation could not be re-verified from fetched primary sources here."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST API docs and self-serve OAuth client registration exist; developers can obtain credentials and call APIs today."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "REST API docs are publicly listed; however, OAuth and credential issuance could not be re-verified in this run due to access blocking (robot challenge/403) on key pages. Treat auth/credential confidence as low until confirmed."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "clay",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com",
+      "reasoning": "The homepage provides a general overview of Clay's offerings but does not specifically confirm the details about the no-code/low-code workspace for building and automating data tables and workflows."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.clay.com/en/articles/4979624-api-keys",
+      "reasoning": "The URL for the API keys help article resulted in a FETCH_ERROR, preventing confirmation of the claim regarding the use of API keys and bearer tokens."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://www.clay.com/signup",
+      "reasoning": "The signup page confirms that there is a self-serve account creation flow, supporting the claim about self-serve access without requiring sales or admin approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.clay.com/en/articles/5242850-webhooks-and-api",
+      "reasoning": "The URL for the Webhooks and API help article resulted in a FETCH_ERROR, preventing confirmation of the claim regarding the REST API and its endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com",
+      "reasoning": "While the claim states that public REST API docs and self-serve API key generation exist, the lack of accessible documentation due to dead URLs means the buildability cannot be confirmed."
+    }
+  ]
+}

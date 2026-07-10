@@ -1,0 +1,40 @@
+{
+  "slug": "apify",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://apify.com",
+      "reasoning": "The description accurately reflects the capabilities of the Apify platform as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.apify.com/api/v2",
+      "reasoning": "The evidence confirms that authentication can be done via API tokens as described."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL provided for credential access returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.apify.com/api/v2",
+      "reasoning": "The API documentation confirms the breadth of the REST API surface as stated."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the public REST API docs exist, the lack of verification for credential access raises doubts about the ability to build integrations immediately."
+    }
+  ]
+}

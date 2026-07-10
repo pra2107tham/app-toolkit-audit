@@ -1,0 +1,40 @@
+{
+  "slug": "klaviyo",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.klaviyo.com",
+      "reasoning": "The homepage describes Klaviyo as a marketing automation platform for email, SMS, and customer data, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.klaviyo.com/en/v2025-01-15/docs/authenticate_",
+      "reasoning": "The developer documentation confirms the use of Private API Keys, Public/Client Keys, and OAuth for authentication methods, matching the recorded values."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.klaviyo.com/hc/en-us/articles/360045726811",
+      "reasoning": "The Help Center states that API keys can be created without requiring a paid plan or human approval, confirming the self-serve free access claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.klaviyo.com/en/",
+      "reasoning": "The API documentation indicates that Klaviyo provides REST endpoints for various product objects, confirming the broad REST API surface claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.klaviyo.com/en/",
+      "reasoning": "The existence of public REST API documentation and self-serve API keys supports the claim that building integrations is possible today."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "whatsapp-business",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "whatsapp",
+    "tools_count": 57.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "whatsapp"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=WhatsApp%20Business"
+  },
+  "homepage_alive": true
+}

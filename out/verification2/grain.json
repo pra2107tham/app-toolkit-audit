@@ -1,0 +1,40 @@
+{
+  "slug": "grain",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A meeting capture tool for recording meetings, creating clips/highlights, and sharing/exporting meeting moments with integrations (Zoom, Slack, Notion).",
+      "better_evidence_url": "https://grain.com",
+      "reasoning": "The homepage confirms that Grain is an AI notetaker designed for capturing and enriching meetings, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://help.grain.com/en/articles/5239892-integrations",
+      "reasoning": "The cited Help Center article could not be accessed due to a FETCH_ERROR, leaving the claim about public API auth methods unverified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "partner_gated",
+      "better_evidence_url": "https://grain.com/contact",
+      "reasoning": "The contact page indicates that advanced access is managed through sales or partnerships, supporting the claim of partner_gated access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://help.grain.com/",
+      "reasoning": "The Help Center homepage could not be accessed due to a FETCH_ERROR, preventing verification of the public API documentation claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://grain.com/contact",
+      "reasoning": "The lack of public API documentation and the need to contact sales for integration confirms that building against a public API is blocked."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "magento",
+  "name": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "description": "Open-source and enterprise ecommerce platform (Magento / Adobe Commerce) providing REST, GraphQL and SOAP APIs for storefront and back-office integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+    "confidence": "high",
+    "note": "Adobe Commerce as a Cloud Service REST APIs use Adobe IMS (OAuth 2) and bearer access tokens for API authorization (server-to-server and user flows). Older / non‑SaaS Magento docs also reference OAuth 1.0a and admin/integration tokens (see Getting Started), but the cited page explicitly documents OAuth2 and bearer token flows for Cloud."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.adobe.com/commerce/webapi/get-started/",
+    "confidence": "high",
+    "note": "The developer guide shows how to create integrations and obtain integration/admin tokens from the Magento Admin (System > Extensions > Integrations), which a developer can do on a self-hosted Magento/Open Source instance without human approval. (Adobe Commerce Cloud as-a-service variants require an Adobe license/Cloud account; see product page.)"
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developer.adobe.com/commerce/webapi/",
+    "confidence": "high",
+    "note": "The Commerce Web API docs describe REST and GraphQL APIs (and historically SOAP) covering core objects (products, customers, orders, inventory), indicating broad coverage of product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developers can self-host Magento Open Source or run a local/dev instance and create integrations/admin tokens to access REST/GraphQL APIs per docs, so building integrations/agent toolkits is possible today. (If targeting Adobe Commerce Cloud, a licensed Cloud account is required.)"
+  },
+  "research_meta": {
+    "queries": [
+      "https://developer.adobe.com/commerce/webapi/",
+      "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+      "https://developer.adobe.com/commerce/webapi/graphql/authentication/",
+      "https://developer.adobe.com/commerce/webapi/get-started/",
+      "https://developer.adobe.com/commerce/docs/",
+      "https://business.adobe.com/products/magento/magento-commerce.html",
+      "https://magento.com/compare"
+    ],
+    "insufficient_public_docs": false
+  }
+}

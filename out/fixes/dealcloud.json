@@ -1,0 +1,53 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://api.docs.dealcloud.com/docs/authentication",
+      "confidence": "high",
+      "note": "Official docs list OAuth2 (Authorization Code and Client Credentials), API Key via X-Api-Key header, and Personal Access Tokens (used as Bearer tokens)."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://dealcloudapidev.azurewebsites.net/docs/authentication",
+      "confidence": "high",
+      "note": "The official DealCloud REST API 'Authentication' documentation describes OAuth 2.0 flows (Authorization Code and Client Credentials), API Key authentication using the X-Api-Key header, and Personal Access Tokens used as Bearer tokens."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "admin_approval",
+      "evidence_url": "https://api.docs.dealcloud.com/docs/getting-started/obtain-api-credentials",
+      "confidence": "high",
+      "note": "Docs state API Keys and Personal Access Tokens are provisioned by your DealCloud administrator or by contacting DealCloud support; non-admins must contact support/sales."
+    },
+    "final_value": {
+      "value": "admin_approval",
+      "evidence_url": "https://dealcloudapidev.azurewebsites.net/docs/getting-started/obtain-api-credentials",
+      "confidence": "high",
+      "note": "The 'Obtain API credentials' documentation indicates credentials (API keys / OAuth client credentials / personal access tokens) are provisioned within DealCloud by an administrator (or via contacting DealCloud/Intapp support), implying non-admin users require admin/support involvement rather than fully self-serve signup."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Public docs exist and the REST API is documented, but API credentials must be provisioned by an admin or support/sales contact, preventing immediate self-serve developer access; requires contacting admin or sales."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Although the REST API is publicly documented, obtaining working API credentials requires DealCloud admin provisioning and/or contacting support, so a developer cannot immediately self-serve and build without organizational approval."
+    },
+    "verdict": "contradicted"
+  }
+}

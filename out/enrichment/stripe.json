@@ -1,0 +1,44 @@
+{
+  "slug": "stripe",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "stripe",
+    "tools_count": 425.0,
+    "auth_schemes": [
+      "API_KEY",
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "stripe"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "com.stripe/mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "io.github.CSOAI-ORG/meok-stripe-acp-checkout-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.CSOAI-ORG/stripe-billing-mcp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Stripe"
+  },
+  "homepage_alive": true
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "github",
+  "name": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Git hosting and collaboration platform with extensive REST and GraphQL APIs for repositories, issues, pull requests, actions, apps, and more.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "token",
+      "jwt",
+      "basic",
+      "other"
+    ],
+    "evidence_url": "https://docs.github.com/en/rest/overview/authenticating-to-the-rest-api",
+    "confidence": "high",
+    "note": "Docs explicitly list personal access tokens (classic) (used like API keys/tokens), OAuth access tokens (oauth2), GitHub Apps using JWTs and installation access tokens, and mention basic auth has been deprecated (recorded). 'api_key' is represented by personal access tokens; 'token' by installation/access tokens; 'other' covers fine-grained PATs and Actions tokens."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token",
+    "confidence": "high",
+    "note": "Docs show steps for a signed-in user to generate a personal access token (no human approval). Account signup is free (https://github.com/join) and many developer features are available on Free plan (https://github.com/pricing)."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://docs.github.com/en/developers",
+    "confidence": "high",
+    "note": "Developer docs root links to REST (https://docs.github.com/en/rest) and GraphQL; REST docs show wide coverage of product objects (repos, issues, pulls, actions, apps)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs and self-serve credentials (PATs, OAuth app registration, GitHub App keys) exist and can be used immediately to build integrations. Evidence: REST auth docs, PAT creation, OAuth app creation, GitHub Apps auth pages."
+  },
+  "research_meta": {
+    "queries": [
+      "GitHub REST API authenticating to the REST API",
+      "Creating a personal access token GitHub docs",
+      "Authenticating with a GitHub App docs",
+      "Creating an OAuth App GitHub docs",
+      "GitHub REST API docs root",
+      "GitHub developer docs root",
+      "GitHub signup",
+      "GitHub pricing"
+    ],
+    "insufficient_public_docs": false
+  }
+}

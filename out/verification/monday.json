@@ -1,0 +1,40 @@
+{
+  "slug": "monday",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://monday.com",
+      "reasoning": "The description provided aligns with the content on the homepage, which describes Monday.com as a work operating system for teams."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for the authentication methods returned a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.monday.com/api-reference/docs/the-developer-center",
+      "reasoning": "The Developer Center documentation confirms that personal API tokens can be generated without partner approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.monday.com/api-reference/docs/getting-started",
+      "reasoning": "The API surface is confirmed as GraphQL, with the documentation detailing the GraphQL schema and endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The ability to build integrations is supported by the availability of developer documentation and public API endpoints."
+    }
+  ]
+}

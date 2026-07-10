@@ -1,0 +1,44 @@
+{
+  "slug": "hubspot",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "hubspot",
+    "tools_count": 244.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "hubspot"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.Centrify-Internal/hubspot-integrations-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Servosity/hubspot-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Servosity/hubspot-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.mindstone/mcp-server-hubspot",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.mindstone/mcp-server-hubspot",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=HubSpot"
+  },
+  "homepage_alive": true
+}

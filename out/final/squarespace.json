@@ -1,0 +1,45 @@
+{
+  "slug": "squarespace",
+  "name": "Squarespace",
+  "category": "Ecommerce",
+  "description": "Website and commerce platform with REST Commerce APIs to manage products, orders, customers, inventory and more.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "evidence_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "confidence": "high",
+    "note": "Official docs state 'The Commerce APIs use OAuth and Developer API Keys' and require an Authorization: Bearer <token> header."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://support.squarespace.com/hc/en-us/articles/206541167-Developer-API-keys",
+    "confidence": "low",
+    "note": "Squarespace support docs explain where to generate Developer API keys in a site\u2019s Settings > Advanced > Developer API keys and how to use them, but do not state whether generating/using working keys requires a paid plan vs. trial, or any partner/developer approval constraints."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.squarespace.com/commerce-apis",
+    "confidence": "high",
+    "note": "Commerce APIs docs state 'The Commerce APIs are REST APIs' and list endpoints for products, orders, customers, fulfillment, subscriptions, inventory, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "other",
+    "note": "Docs show you can generate Developer API Keys from a Squarespace site dashboard (Settings > Advanced > Developer API Keys) and use them as Bearer tokens, but the official public docs reviewed do not clarify whether a paid plan/trial status or partner approval is required to obtain working credentials."
+  },
+  "research_meta": {
+    "queries": [
+      "Squarespace developer API documentation site:developers.squarespace.com API authentication how to obtain API credentials Squarespace REST API developer docs",
+      "site:developers.squarespace.com \"pricing\" \"Commerce APIs\" \"plan\" \"partner\" Squarespace API access requires partner",
+      "site:squarespace.com \"Developer API Keys\"",
+      "\"Developer API Keys\" \"Settings > Advanced > Developer API Keys\" site:developers.squarespace.com",
+      "\"Developer API Keys\" \"Settings\" \"Advanced\"",
+      "site:developers.squarespace.com \"OAuth\" \"Commerce APIs\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "dataforseo",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "dataforseo",
+    "tools_count": 312.0,
+    "auth_schemes": [
+      "BASIC"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "dataforseo"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=DataForSEO"
+  },
+  "homepage_alive": true
+}

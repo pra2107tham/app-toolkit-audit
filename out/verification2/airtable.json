@@ -1,0 +1,40 @@
+{
+  "slug": "airtable",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.airtable.com",
+      "reasoning": "The homepage describes Airtable as an app-building platform but does not specifically confirm the claim that it is for creating and sharing business applications."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://airtable.com/developers/web/api/authentication",
+      "reasoning": "The authentication documentation explicitly states that the API uses personal access tokens and OAuth 2.0."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://support.airtable.com/docs/creating-and-using-api-keys-and-access-tokens",
+      "reasoning": "The support documentation confirms that users can create personal access tokens from their Airtable account."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://airtable.com/api",
+      "reasoning": "The API reference confirms that Airtable provides a comprehensive REST API for bases, including endpoints for tables, records, attachments, and fields."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://airtable.com/api",
+      "reasoning": "Given the confirmed public REST API documentation and authentication methods, it is indeed possible to build an integration today."
+    }
+  ]
+}

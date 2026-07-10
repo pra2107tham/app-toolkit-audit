@@ -1,0 +1,40 @@
+{
+  "slug": "harvest",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.getharvest.com",
+      "reasoning": "The homepage confirms that Harvest is a time tracking, invoicing, and project management tool for teams and freelancers."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.getharvest.com/api-v2/authentication/",
+      "reasoning": "The URL for authentication methods returns a 404 error, making it impossible to confirm the claim about OAuth 2.0 and Personal Access Tokens."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.getharvest.com/api-v2/personal-access-tokens/",
+      "reasoning": "The URL for credential access returns a 404 error, preventing confirmation of the claim regarding self-service access to Personal Access Tokens."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.getharvest.com/api-v2/",
+      "reasoning": "The API documentation confirms that Harvest provides a REST API with various resource endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.getharvest.com/api-v2/",
+      "reasoning": "While the API documentation exists, the lack of confirmation for authentication methods and credential access means the claim of buildability cannot be fully supported."
+    }
+  ]
+}

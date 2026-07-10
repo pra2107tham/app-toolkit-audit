@@ -1,0 +1,43 @@
+{
+  "slug": "github",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "github",
+    "tools_count": 871.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "github"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.smithery/Hint-Services-obsidian-github-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/saidsef-mcp-github-pr-issue-analyser",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.smithery/smithery-ai-github",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/github",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/github",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=GitHub"
+  },
+  "homepage_alive": true
+}

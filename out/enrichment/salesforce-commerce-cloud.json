@@ -1,0 +1,20 @@
+{
+  "slug": "salesforce-commerce-cloud",
+  "composio_toolkit": {
+    "exists": false,
+    "slug": null,
+    "tools_count": null,
+    "auth_schemes": null,
+    "match_kind": "ambiguous",
+    "candidates": [
+      "salesforce"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Salesforce%20Commerce%20Cloud"
+  },
+  "homepage_alive": true
+}

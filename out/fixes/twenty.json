@@ -1,0 +1,66 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "Auth for the application is implemented via Supabase (project README references SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY). There is no evidence of a vendor-hosted public API supporting OAuth2/API keys/basic/token/JWT on twenty.com; app-level auth relies on Supabase tokens for self-hosted instances (classified as 'other')."
+    },
+    "final_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://docs.twenty.com/",
+      "confidence": "high",
+      "note": "Twenty's official documentation states that Twenty uses Supabase Auth for user authentication (self-hosted deployments), rather than advertising a vendor-hosted OAuth2/API-key scheme for a public integration API."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "Repository README and docs show instructions and environment variables for obtaining and using Supabase credentials to run the app locally or self-host; developers can get Supabase free-tier credentials without vendor approval to run Twenty."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "The official GitHub repository instructs users to run Twenty by creating/using a Supabase project and configuring env vars like SUPABASE_URL, SUPABASE_ANON_KEY, and SUPABASE_SERVICE_ROLE_KEY, implying credentials are obtained via self-serve Supabase signup for self-hosting."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://github.com/twentyapp/twenty",
+      "confidence": "high",
+      "note": "There is no vendor-hosted public REST/GraphQL API documented on twenty.com. The codebase exposes Next.js API routes and integrates with Supabase for DB access, but these are part of the self-hosted app (not a documented public API)."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://docs.twenty.com/",
+      "confidence": "high",
+      "note": "Twenty's official documentation states it currently does not provide a public API for third-party integrations; the app uses internal endpoints / a GraphQL layer that may change."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "no_public_api",
+      "note": "You can build integrations by self-hosting Twenty and using its internal API routes or the Supabase backend (requires signing up for Supabase to obtain keys). There is no hosted vendor API to directly integrate with without self-hosting. (Normalized main_blocker from 'no_vendor_hosted_api' to allowed enum 'no_public_api'.)"
+    },
+    "final_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "no_public_api",
+      "note": "Integrations are buildable primarily by self-hosting Twenty and working with its internal endpoints/GraphQL layer and Supabase-backed configuration (requires obtaining Supabase project keys). The main blocker for a direct vendor-hosted integration is that Twenty does not currently offer a stable public third-party API."
+    },
+    "verdict": "dead_url"
+  }
+}

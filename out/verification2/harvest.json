@@ -1,0 +1,40 @@
+{
+  "slug": "harvest",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.getharvest.com",
+      "reasoning": "The homepage confirms that Harvest is a time tracking, invoicing, and project management tool for teams and freelancers."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "reasoning": "The URL for the authentication methods resulted in a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.getharvest.com/api-v2/authentication-api/authentication/personal-access-tokens/",
+      "reasoning": "The URL for credential access resulted in a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.getharvest.com/api-v2/",
+      "reasoning": "The API documentation confirms that Harvest has a REST API with many resource endpoints."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.getharvest.com/api-v2/",
+      "reasoning": "While the API documentation exists, the lack of verification for authentication methods and credential access means the claim of immediate usability cannot be fully supported."
+    }
+  ]
+}

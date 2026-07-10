@@ -1,0 +1,40 @@
+{
+  "slug": "woocommerce",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Open-source eCommerce plugin for WordPress providing REST APIs for store and admin (products, orders, customers, etc.).",
+      "better_evidence_url": "https://woocommerce.com",
+      "reasoning": "The homepage confirms that WooCommerce is an open-source eCommerce platform for WordPress."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "api_key, basic, other",
+      "better_evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "reasoning": "The official WooCommerce REST API documentation states that WooCommerce uses API keys and supports Basic Authentication over HTTPS."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "reasoning": "The documentation describes how to create REST API keys in the WordPress admin without any vendor approval flow."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "reasoning": "The official REST API documentation confirms that it covers most store objects, indicating a broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+      "reasoning": "The documentation supports that the REST API is ready for immediate development, confirming the buildability claim."
+    }
+  ]
+}

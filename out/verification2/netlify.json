@@ -1,0 +1,40 @@
+{
+  "slug": "netlify",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.netlify.com",
+      "reasoning": "The description provided aligns with the information available on the homepage, which describes Netlify as a platform for deploying, hosting, and managing modern web projects."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.netlify.com/api/get-started/#authentication",
+      "reasoning": "The evidence confirms that Netlify API authenticates using Personal Access Tokens passed as a Bearer token in the Authorization header."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL provided for credential access leads to a 404 error, indicating that the page does not exist and thus cannot confirm the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.netlify.com/api/get-started/",
+      "reasoning": "The evidence supports that Netlify provides a broad REST API covering many product objects and publishes an OpenAPI spec."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the claim states that the API is buildable today, the lack of a specific URL for evidence and the dead URL for credential access raises doubts about the overall buildability claim."
+    }
+  ]
+}

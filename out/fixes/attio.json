@@ -1,0 +1,40 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.attio.com/reference/authentication",
+      "confidence": "high",
+      "note": "The official Authentication reference page (meta/description) states Attio uses API keys and OAuth 2.0 for authentication; SDK examples (npm/pypi) also show api_key usage."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "oauth2"
+      ],
+      "evidence_url": "https://docs.attio.com/reference/authentication",
+      "confidence": "high",
+      "note": "Attio's official Authentication docs state that interacting with the Attio API requires an Attio API key (sent as `Authorization: Bearer <api_key>`), and also document OAuth 2.0 for integrations across multiple workspaces (access tokens also sent via the Bearer Authorization header)."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://docs.attio.com/reference/overview",
+      "confidence": "high",
+      "note": "The API reference overview page (meta/description) mentions 'endpoints, models, REST examples' and there are reference pages for product objects (e.g. Collections, People) showing multiple endpoints."
+    },
+    "final_value": {
+      "value": "rest",
+      "breadth": "broad",
+      "docs_url": "https://docs.attio.com/reference/overview",
+      "confidence": "high",
+      "note": "The official API Overview states the Attio API is a RESTful API using standard HTTP methods over HTTPS with JSON responses, with a v2 base URL (https://api.attio.com/v2) and resources including Lists, Objects, Records, Notes, Tasks, and more\u2014indicating a broad REST surface."
+    },
+    "verdict": "dead_url"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "consensus",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Search engine that provides research-backed answers with citations from papers, abstracts, and clinical trials; offers team/enterprise features such as SSO and admin controls.",
+      "better_evidence_url": "https://consensus.app",
+      "reasoning": "The homepage content supports the description provided in the record."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://consensus.app/",
+      "reasoning": "The homepage mentions SSO and enterprise admin controls but does not provide any developer/authentication documentation, making the claim unsupported."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://consensus.app/teams",
+      "reasoning": "The URL for the teams page returns a 404 error, indicating that the information regarding credential access is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://consensus.app/",
+      "reasoning": "The homepage does not provide any public API documentation, confirming the claim of no public API."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://consensus.app/",
+      "reasoning": "The lack of public API documentation and self-serve credential issuance confirms that integration is blocked."
+    }
+  ]
+}

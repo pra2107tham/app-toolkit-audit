@@ -1,0 +1,40 @@
+{
+  "slug": "mrscraper",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mrscraper.com",
+      "reasoning": "The homepage describes MrScraper as a scraping platform that provides a RESTful API and SDKs to create and run web scrapes, manage projects, and retrieve results, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for authentication methods returns a 404 error, making it impossible to verify the claim about API keys and token authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The evidence URL for credential access also returns a 404 error, preventing verification of the claim regarding self-serve paid trials and API key creation."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.mrscraper.com/",
+      "reasoning": "The documentation confirms that MrScraper exposes a RESTful HTTP API covering various functionalities, which supports the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://docs.mrscraper.com/",
+      "reasoning": "While the API documentation suggests that self-serve API key creation is possible, the lack of accessible evidence for credential access and the dead URLs prevent a definitive confirmation of the buildability claim."
+    }
+  ]
+}

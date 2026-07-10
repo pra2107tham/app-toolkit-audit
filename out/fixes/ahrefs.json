@@ -1,0 +1,23 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://docs.ahrefs.com/en/api/docs/authentication",
+      "confidence": "high",
+      "note": "Documentation explicitly states authentication uses API tokens (API keys) that can be provided as a Bearer Authorization header or as a token query parameter."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://docs.ahrefs.com/en/api/docs/authentication",
+      "confidence": "high",
+      "note": "Ahrefs API docs state all requests require an API token, which can be sent either as an Authorization header using the Bearer scheme (Authorization: Bearer YOUR_API_TOKEN) or as a query parameter (?token=YOUR_API_TOKEN)."
+    },
+    "verdict": "dead_url"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "gumroad",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "gumroad",
+    "tools_count": 7.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "gumroad"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Gumroad"
+  },
+  "homepage_alive": true
+}

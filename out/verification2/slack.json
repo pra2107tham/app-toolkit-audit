@@ -1,0 +1,40 @@
+{
+  "slug": "slack",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://slack.com",
+      "reasoning": "The description of Slack as a work operating system that enhances communication and collaboration is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/authentication",
+      "reasoning": "The evidence confirms that Slack uses OAuth 2.0 and tokens as authentication methods, aligning with the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/apps",
+      "reasoning": "The evidence supports that developers can create Slack Apps and obtain credentials without human approval, confirming the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/",
+      "reasoning": "The evidence confirms that Slack provides a broad Web API and additional APIs, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://api.slack.com/",
+      "reasoning": "The existence of public documentation and self-serve credential creation supports the claim that integrations can be built immediately."
+    }
+  ]
+}

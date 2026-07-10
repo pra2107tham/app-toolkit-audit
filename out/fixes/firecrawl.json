@@ -1,0 +1,49 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://docs.firecrawl.dev/api-reference/authentication",
+      "confidence": "high",
+      "note": "API keys are passed as Bearer tokens in the Authorization header. Docs mention contacting support for OAuth support."
+    },
+    "final_value": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "confidence": "high",
+      "note": "The API reference states to authenticate by including the API key in the Authorization header as a Bearer token (example shown as `Authorization: Bearer fc-xxxxxxxx`)."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.firecrawl.dev/api-reference/authentication",
+      "confidence": "high",
+      "note": "You can create API keys in the dashboard under Settings \u2192 API Keys. Scopes may be limited by plan."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://www.firecrawl.dev/pricing",
+      "confidence": "high",
+      "note": "Firecrawl publishes a self-serve \"Free\" plan on its Pricing page. API keys are managed via the Firecrawl dashboard (Settings \u2192 API Keys) per the API reference introduction."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "paid_only",
+      "note": "API keys are available via the dashboard, but some endpoints require elevated scopes available on paid plans."
+    },
+    "final_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "none",
+      "note": "The API is buildable after self-serve signup by using an API key from the dashboard (Settings \u2192 API Keys). Product limits are plan-based (e.g., rate limits/usage by plan), but the docs do not substantiate the prior claim about paid-plan-only endpoint scopes."
+    },
+    "verdict": "contradicted"
+  }
+}

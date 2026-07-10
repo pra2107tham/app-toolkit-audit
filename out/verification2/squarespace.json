@@ -1,0 +1,40 @@
+{
+  "slug": "squarespace",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Website and commerce platform with REST Commerce APIs to manage products, orders, customers, inventory and more.",
+      "better_evidence_url": "https://www.squarespace.com",
+      "reasoning": "The homepage describes Squarespace as a website builder and commerce platform, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, api_key",
+      "better_evidence_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "reasoning": "The official documentation explicitly states that the Commerce APIs use OAuth and Developer API Keys for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://support.squarespace.com/hc/en-us/articles/206541167-Developer-API-keys",
+      "reasoning": "The provided URL for credential access returns a 404 error, indicating that the information is not accessible."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.squarespace.com/commerce-apis",
+      "reasoning": "The documentation clearly states that the Commerce APIs are REST APIs and lists various endpoints, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "reasoning": "While the documentation indicates that Developer API Keys can be generated, it does not clarify whether a paid plan or partner approval is required, leading to uncertainty about buildability."
+    }
+  ]
+}

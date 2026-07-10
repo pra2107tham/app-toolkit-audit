@@ -1,0 +1,46 @@
+{
+  "slug": "neo4j",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "neo4j",
+    "tools_count": 21.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "BASIC",
+      "API_KEY",
+      "S2S_OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "neo4j"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.neo4j-contrib/mcp-neo4j-cypher",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Neo4j"
+  },
+  "homepage_alive": true
+}

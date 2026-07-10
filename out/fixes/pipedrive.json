@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://support.pipedrive.com/en/article/how-to-find-your-api-token",
+      "confidence": "high",
+      "note": "Personal API token can be obtained from a user's Settings > Personal preferences > API without contacting support. Documentation shows how to retrieve the token from the account UI, indicating developers can self-serve credentials. Marketplace/app publication has review, but basic API access uses account token."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "confidence": "high",
+      "note": "Official Pipedrive developer documentation states each Pipedrive user has an API token and that it can be found in Personal preferences under the user menu, indicating credentials can be obtained self-serve from the product UI without contacting support."
+    },
+    "verdict": "dead_url"
+  }
+}

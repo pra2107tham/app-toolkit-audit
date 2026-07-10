@@ -1,0 +1,44 @@
+{
+  "slug": "clickup",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "clickup",
+    "tools_count": 162.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "clickup"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/clickup",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/clickup",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.cvrt-jh/clickup-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.cvrt-jh/clickup-mcp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=ClickUp"
+  },
+  "homepage_alive": true
+}

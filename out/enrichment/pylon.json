@@ -1,0 +1,33 @@
+{
+  "slug": "pylon",
+  "composio_toolkit": {
+    "exists": false,
+    "slug": null,
+    "tools_count": null,
+    "auth_schemes": null,
+    "match_kind": "ambiguous",
+    "candidates": [
+      "pylon_mcp"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.JustinBeckwith/pylon-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.JustinBeckwith/pylon-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.JustinBeckwith/pylon-mcp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Pylon"
+  },
+  "homepage_alive": true
+}

@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.clickup.com/hc/en-us/articles/360001131449-How-to-get-your-API-Token",
+      "confidence": "medium",
+      "note": "The Help Center documents how a user can generate a personal API token from Profile \u2192 Apps (self-serve). The docs do not explicitly state a paid-plan requirement; pricing page does not indicate API is restricted to paid plans, so credential creation appears self-serve. However there is no single page explicitly stating 'free plan users may create API tokens', hence medium confidence."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.clickup.com/hc/en-us/articles/360001131449-How-to-get-your-API-Token",
+      "confidence": "medium",
+      "note": "ClickUp Help Center shows self-serve steps to generate an API Token from within the product UI (Avatar \u2192 Settings \u2192 Apps \u2192 API Token \u2192 Generate). The page does not state any paid-plan requirement, so access appears self-serve; confidence remains medium because the doc does not explicitly confirm Free-plan eligibility."
+    },
+    "verdict": "dead_url"
+  }
+}

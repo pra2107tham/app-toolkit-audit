@@ -1,0 +1,52 @@
+{
+  "slug": "jira",
+  "name": "Jira",
+  "category": "Productivity and Project Management",
+  "description": "Issue and project tracking platform for software teams, providing issues, projects, workflows, boards, and related services.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://developer.atlassian.com/cloud/jira/platform/authentication/",
+    "confidence": "high",
+    "note": "Jira Cloud supports OAuth 2.0 (3LO), OAuth 2.0 client credentials, API tokens (used with basic auth as email:APItoken), and references legacy OAuth 1.0a; documentation page lists these authentication methods."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.atlassian.com/console/",
+    "confidence": "high",
+    "note": "The Atlassian Developer Console allows developers to create apps and obtain OAuth client credentials; API tokens can be created from an Atlassian account (id.atlassian.com) without manual approval. Public docs and console show self-service credential creation; product pricing does not state API access requires paid plan."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.atlassian.com/cloud/jira/platform/",
+    "confidence": "high",
+    "note": "Jira Cloud provides a comprehensive REST API covering issues, projects, users, worklogs, boards, sprints, etc., per the platform root docs. (GraphQL is not documented as public for Jira Cloud REST API.)"
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developer docs plus self-serve console and API tokens enable building integrations immediately. Rate limits and plan-specific quotas exist and should be respected but do not block initial development. Marketplace publishing or commercial distribution may require additional vendor steps."
+  },
+  "research_meta": {
+    "queries": [
+      "Jira developer API documentation root site:developer.atlassian.com \"Jira\" \"API\" documentation root",
+      "Jira Cloud authentication site:developer.atlassian.com \"authentication\" \"Jira\"",
+      "site:developer.atlassian.com \"Atlassian Developer Console\" \"create credentials\"",
+      "site:atlassian.com \"API token\" \"id.atlassian.com\" \"manage api tokens\"",
+      "site:developer.atlassian.com \"developer console\" \"Atlassian Developer Console\" create app OAuth credentials \"console\"",
+      "site:developer.atlassian.com \"pricing\" \"API\" \"Jira\" \"developer\"",
+      "site:developer.atlassian.com \"rate limit\" \"Jira\" API rate limits cloud jira developer.atlassian.com",
+      "site:developer.atlassian.com \"partnership\" \"API\" \"Atlassian\" partner required API access marketplace partner\"",
+      "site:developer.atlassian.com \"create API token\" \"Atlassian\" \"developer\"",
+      "\"OAuth 2.0 (3LO)\" \"developer.atlassian.com\" jira oauth-2-3lo-apps",
+      "site:developer.atlassian.com \"client credentials\" \"service account\" \"jira\" \"oauth\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

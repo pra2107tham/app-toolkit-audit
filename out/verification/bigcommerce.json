@@ -1,0 +1,40 @@
+{
+  "slug": "bigcommerce",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "BigCommerce is a hosted e-commerce platform for building and operating online stores.",
+      "better_evidence_url": "https://www.bigcommerce.com",
+      "reasoning": "The description aligns with the homepage content, confirming the nature of the platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "oauth2, api_key, token",
+      "better_evidence_url": "https://developer-center-bigcommerce-dx.vercel.app/docs/start/authentication/api-accounts",
+      "reasoning": "While the page loads successfully, it does not provide specific details confirming the listed authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developer.bigcommerce.com/apps/guide/getting-started",
+      "reasoning": "The URL returns a 404 error, indicating that the evidence for credential access is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "both",
+      "better_evidence_url": "https://developer.bigcommerce.com/api-reference",
+      "reasoning": "The API reference page confirms the existence of both REST and GraphQL APIs, supporting the claim of broad coverage."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.bigcommerce.com/api-reference",
+      "reasoning": "While the claim suggests buildability, the lack of supporting evidence from the dead URL for credential access raises doubts about the ability to build today."
+    }
+  ]
+}

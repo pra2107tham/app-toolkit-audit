@@ -1,0 +1,23 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "other"
+      ],
+      "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/authorization-and-authentication",
+      "confidence": "high",
+      "note": "SP-API uses Login with Amazon (LWA) (OAuth 2.0) to obtain access tokens and requires requests to be signed with AWS Signature Version 4 (AWS IAM credentials). 'other' represents AWS SigV4 signing using AWS access keys."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "other"
+      ],
+      "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/signing-selling-partner-api-requests",
+      "confidence": "high",
+      "note": "SP-API uses Login with Amazon (LWA) OAuth 2.0 to obtain access tokens and requires all SP-API requests to be signed with AWS Signature Version 4 (SigV4) using AWS IAM credentials; 'other' represents the SigV4 request-signing requirement."
+    },
+    "verdict": "dead_url"
+  }
+}

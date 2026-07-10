@@ -1,0 +1,45 @@
+{
+  "slug": "klaviyo",
+  "name": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "A marketing automation platform for email, SMS, and customer data that provides APIs for managing profiles, events, lists, and campaigns.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2",
+      "other"
+    ],
+    "evidence_url": "https://developers.klaviyo.com/en/v2025-01-15/docs/authenticate_",
+    "confidence": "high",
+    "note": "Official developer docs list Private API Keys (Authorization: Klaviyo-API-Key), Public/Client Keys for client-side calls (mapped to 'other'), and OAuth for integrations."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.klaviyo.com/hc/en-us/articles/360045726811",
+    "confidence": "high",
+    "note": "Help Center explains how to create API keys in Account > Settings > API Keys in the dashboard; no mention of requiring paid plan or human approval to generate keys."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.klaviyo.com/en/",
+    "confidence": "high",
+    "note": "Developers site and API reference show REST endpoints for profiles, lists, metrics, templates, etc., covering broad product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs and self-serve API keys exist; a developer can obtain keys and call the API without gatekeeping, so building integrations is possible today."
+  },
+  "research_meta": {
+    "queries": [
+      "Klaviyo developer API documentation root developers.klaviyo.com Klaviyo API docs site:klaviyo.com site:developers.klaviyo.com",
+      "Authenticate API requests Klaviyo developers.klaviyo.com \"Authenticate API requests\"",
+      "Klaviyo generate API key get API key Klaviyo dashboard \"API key\"",
+      "Klaviyo API access requires paid plan partnership \"API access\" pricing Klaviyo \"developer\"",
+      "site:klaviyo.com \"API key\" \"Account\" \"API Keys\" Klaviyo \"Account > Settings > API Keys\"",
+      "Klaviyo partner API access \"Partner\" \"API\" \"contact sales\" Klaviyo partners program API access requirements"
+    ],
+    "insufficient_public_docs": false
+  }
+}

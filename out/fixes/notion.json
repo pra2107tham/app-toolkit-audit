@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.notion.com/docs/faq",
+      "confidence": "high",
+      "note": "Docs and FAQ explain developers can create integrations and obtain internal integration tokens via 'My integrations' and state the API is available to all Notion users (no paid plan required)."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developers.notion.com/docs/create-a-notion-integration",
+      "confidence": "high",
+      "note": "Official docs show developers can self-serve credentials by creating an integration from Notion settings and then copying the Internal Integration Token to authenticate API requests."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Developer can self-register an integration (My integrations) and obtain an internal integration token or implement the OAuth 2.0 flow; official REST docs and SDKs are available."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Adjusted to match allowed enum values: verdict options are buildable_today/buildable_with_key_signup/blocked; user provided \"buildable\". Based on the provided note, this should be buildable_today (no approval required). Please confirm desired mapping."
+    },
+    "verdict": "unsupported"
+  }
+}

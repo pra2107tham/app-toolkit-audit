@@ -1,0 +1,44 @@
+{
+  "slug": "ipayx",
+  "name": "iPayX",
+  "category": "Finance and Fintech",
+  "description": "Provider of an MCP (modular connector) FX audit server and related payment/FX connector software (appears to publish connector code on GitHub rather than host public API docs).",
+  "auth_methods": {
+    "value": [
+      "other"
+    ],
+    "evidence_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+    "confidence": "low",
+    "note": "No official vendor auth documentation was found on the vendor site. The primary developer-facing content is a GitHub repo for an MCP FX audit server which documents running/configuration but does not state a public API's supported auth flows (OAuth2, API keys, JWT, etc.)."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://ipayx.ai",
+    "confidence": "low",
+    "note": "Vendor homepage contains no developer signup, dashboard, pricing, or credential instructions. GitHub repos show software to run but do not document a vendor-managed credential issuance flow, so it's unclear whether public API credentials exist or how they'd be obtained."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+    "confidence": "medium",
+    "note": "No public API documentation or docs root was found on the vendor domain. The GitHub repo is the only developer-facing resource and contains code/readme for an MCP connector (suggesting code to run a local connector rather than a hosted REST/GraphQL API). This implies there is no broad vendor-hosted REST/GraphQL API documented publicly; the repo focuses on a specific MCP FX audit connector (narrow scope)."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "insufficient_docs",
+    "note": "There are code repositories to run a connector locally, but there are no vendor-hosted public API docs or a clear way to obtain API credentials. This blocks building an integration against a public vendor API today. If the intent is to run the GitHub-provided server locally, that is possible, but that is not the same as using a documented vendor-hosted API."
+  },
+  "research_meta": {
+    "queries": [
+      "ipayx.ai/docs",
+      "site:ipayx.ai docs api ipayx",
+      "ipayx.ai",
+      "Ipayx-stellar mcp-fx-audit README api key",
+      "ipayx api key \"ipayx\" \"api key\"",
+      "ipayx.ai \"docs\"",
+      "Ipayx-stellar/mcp-fx-audit README api key auth"
+    ],
+    "insufficient_public_docs": true
+  }
+}

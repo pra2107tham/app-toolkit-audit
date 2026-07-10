@@ -1,0 +1,42 @@
+{
+  "slug": "netlify",
+  "name": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "description": "A platform for deploying, hosting, and managing modern web projects (static sites and serverless functions) with a REST API for programmatic control of sites, deploys, builds, DNS, and more.",
+  "auth_methods": {
+    "value": [
+      "token"
+    ],
+    "evidence_url": "https://docs.netlify.com/api/get-started/#authentication",
+    "confidence": "high",
+    "note": "Netlify API authenticates using Personal Access Tokens passed as a Bearer token in the Authorization header (Authorization: Bearer <personal_access_token>)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.netlify.com/accounts-and-billing/members-teams/#personal-access-tokens",
+    "confidence": "high",
+    "note": "Netlify docs state that users create personal access tokens in the Netlify UI via User settings > Applications > Personal access tokens > New access token, which is self-serve and does not require human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.netlify.com/api/get-started/",
+    "confidence": "high",
+    "note": "Netlify provides a broad REST API covering many product objects (sites, deploys, builds, functions, DNS, teams, etc.) and publishes an OpenAPI spec at https://open-api.netlify.com/."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Netlify\u2019s API documentation describes REST API usage and authentication via a self-created personal access token (Bearer token in Authorization header), enabling immediate programmatic access once a user has an account. Evidence: https://docs.netlify.com/api/get-started/"
+  },
+  "research_meta": {
+    "queries": [
+      "Netlify API authentication personal access token Authorization: Bearer",
+      "Netlify personal access tokens create account settings applications",
+      "Netlify OpenAPI spec open-api.netlify.com",
+      "Netlify pricing free plan API access"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "reducto",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://reducto.ai",
+      "reasoning": "The description accurately reflects the content on the homepage, which describes Reducto as a research- and media-focused AI assistant for parsing documents and supporting research workflows."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://reducto.ai/",
+      "reasoning": "The evidence supports that there are no public authentication methods available, as the site only offers early access and demos without a public API."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://reducto.ai/contact",
+      "reasoning": "The contact page indicates that access is gated and requires contacting sales for demos or enterprise access, confirming the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The absence of public API documentation on the official site supports the claim that there is no public API surface available."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The lack of a public API and developer documentation confirms that buildability is blocked, aligning with the other fields' findings."
+    }
+  ]
+}

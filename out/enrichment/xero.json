@@ -1,0 +1,43 @@
+{
+  "slug": "xero",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "xero",
+    "tools_count": 53.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "xero"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.Servosity/xero-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.asklokesh/xero-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.codespar/mcp-xero",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.codespar/mcp-xero",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.pipeworx-io/xero",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Xero"
+  },
+  "homepage_alive": true
+}

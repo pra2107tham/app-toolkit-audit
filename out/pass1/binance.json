@@ -1,0 +1,46 @@
+{
+  "slug": "binance",
+  "name": "Binance",
+  "category": "Finance and Fintech",
+  "description": "Cryptocurrency exchange providing market data, spot/futures trading, wallets and partner integration APIs.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token",
+      "oauth2",
+      "other"
+    ],
+    "evidence_url": "https://binance-docs.github.io/apidocs/spot/en/#signed-endpoint",
+    "confidence": "high",
+    "note": "Public Spot API: 'SIGNED' endpoints require API key in X-MBX-APIKEY header and HMAC SHA256 signature (api_key + signature). Binance Developers docs also describe OAuth2 flows (OAuth for Binance Login / OAuth API) for other platform flows and token-based calls."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.binance.com/docs/binance_link/link-and-trade/fast-api/create-api-key",
+    "confidence": "high",
+    "note": "Users can create API keys via their Binance account API Management (create API key flow), which is a self-serve process tied to user account (no human approval)."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developers.binance.com/docs/",
+    "confidence": "high",
+    "note": "Binance provides broad REST (Spot, Futures, Margin, Connect Prime) and WebSocket APIs covering market data, account, trading and partner product APIs (Connect Prime). Official docs root and Spot API docs describe extensive endpoints."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST and WebSocket docs exist and API keys can be obtained self-serve from Binance user dashboard; OAuth partner flows and Connect Prime partner integrations exist but those advanced flows are partner-gated. For standard trading and market data, you can build today with a user API key."
+  },
+  "research_meta": {
+    "queries": [
+      "Binance API documentation developer docs site:binance.com OR site:binance-docs.github.io OR site:github.io Binance API authentication obtain API key how to get API credentials pricing partnership \"Binance API\"",
+      "site:binance-docs.github.io Binance API docs apidocs spot en \"Binance API\"",
+      "Binance developers API authentication \"API key\" \"signature\" \"X-MBX-APIKEY\" site:developers.binance.com OR site:binance-docs.github.io OR site:binance.com",
+      "\"How to create API key\" \"Binance\" \"API Management\"",
+      "site:developers.binance.com \"Integration Guideline\" \"partnership\" \"contact\" Binance connect_prime integration-guideline",
+      "Binance API pricing \"API\" \"pricing\" \"Binance API\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

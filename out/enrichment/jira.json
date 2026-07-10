@@ -1,0 +1,45 @@
+{
+  "slug": "jira",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "jira",
+    "tools_count": 97.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "S2S_OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "jira"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.waystation/jira",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/atlassian-jira",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/atlassian-jira",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.MrRefactoring/atlassian-dc-mcp-jira",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Jira"
+  },
+  "homepage_alive": true
+}

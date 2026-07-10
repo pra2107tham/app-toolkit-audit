@@ -1,0 +1,42 @@
+{
+  "slug": "consensus",
+  "name": "Consensus",
+  "category": "AI, Research and Media-native",
+  "description": "Search engine that provides research-backed answers with citations from papers, abstracts, and clinical trials; offers team/enterprise features such as SSO and admin controls.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://consensus.app/",
+    "confidence": "low",
+    "note": "Public pages (homepage, teams) mention SSO and enterprise admin controls but no public developer/authentication documentation (no API key, OAuth2, token, or other developer auth instructions) was found on the main site."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://consensus.app/teams",
+    "confidence": "low",
+    "note": "Teams page emphasizes contact-sales and enterprise/demo requests; there is no public self-serve API key or developer account signup documented on the site, so it is unclear whether API credentials (if any) are self-serve, paid, or partner-gated."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://consensus.app/",
+    "confidence": "high",
+    "note": "No public REST or GraphQL API documentation or developer portal was found on the official domains (consensus.app and consensus.ai). The vendor pages reviewed contain product and enterprise information but no API reference or docs."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "Because there are no public API docs or self-serve credential issuance pages on the official sites, integration is blocked. Next steps would be contacting enterprise/sales or following third-party leads, but that implies partner/enterprise gating or private APIs."
+  },
+  "research_meta": {
+    "queries": [
+      "site:consensus.app api OR developer OR docs OR \"API\" OR \"developer\"",
+      "consensus.ai API docs \"API\" \"developer\"",
+      "\"Consensus API\" \"API key\" \"developer\"",
+      "consensus \"developer\" \"API\" \"docs\" \"consensus.app\" -towardsdatascience -stackoverflow",
+      "site:consensus.app \"API\" -\"third-party\""
+    ],
+    "insufficient_public_docs": true
+  }
+}

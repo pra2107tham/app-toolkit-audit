@@ -1,0 +1,66 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "confidence": "high",
+      "note": "Official help article states API access is provisioned for Enterprise customers via sales/account manager; the article does not publish public API docs or list authentication schemes (OAuth2, API key, etc.), so exact auth methods are unclear from public docs."
+    },
+    "final_value": {
+      "value": [
+        "other"
+      ],
+      "evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "confidence": "medium",
+      "note": "Otter\u2019s official Help Center page confirms an API exists and is available for Enterprise organizations via contacting an Account Executive or Customer Success Manager, but it does not specify the authentication method (e.g., OAuth2 vs API key). Therefore, the exact auth scheme is not publicly documented."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "partner_gated",
+      "evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "confidence": "high",
+      "note": "Help Center explicitly instructs Enterprise customers to contact sales or account manager to request API access; API access is not available via self-serve signup."
+    },
+    "final_value": {
+      "value": "partner_gated",
+      "evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "confidence": "high",
+      "note": "The official Help Center states API access is for Enterprise organizations and must be requested through an Account Executive or Customer Success Manager; it also states API access is not available for individual users."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Requesting-API-access-for-your-organization",
+      "confidence": "high",
+      "note": "There is no public REST or GraphQL API documentation on otter.ai or help.otter.ai; the only official page references requesting API access for enterprise customers. Public integrations (Zapier, Zoom, etc.) exist but vendor-hosted API docs are not published."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "unknown",
+      "docs_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "confidence": "high",
+      "note": "No public API reference (endpoints, schemas, auth details) is provided in the official documentation located; the available official page only describes how Enterprise customers can request access."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "Without published API endpoints/auth methods and with API access requiring sales provisioning, building against Otter programmatically is blocked for typical developers until enterprise access is granted."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "partner_gate",
+      "note": "Otter\u2019s official documentation indicates API access is Enterprise-only and must be requested via an Account Executive/Customer Success Manager (not available to individual users). Without self-serve credentials and without public API reference docs, typical developer buildability is blocked."
+    },
+    "verdict": "unsupported"
+  }
+}

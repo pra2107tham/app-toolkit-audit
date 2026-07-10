@@ -1,0 +1,42 @@
+{
+  "slug": "plain",
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "description": "Plain is a modern customer support / helpdesk platform for product teams, offering inboxes, knowledge bases, integrations, AI assistants and extensibility.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://www.plain.com/help",
+    "confidence": "high",
+    "note": "The Help Center states that for API access and developer documentation you must contact sales or your account representative, indicating there are no publicly documented API auth methods."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://www.plain.com/help",
+    "confidence": "high",
+    "note": "Help Center explicitly instructs to contact sales or your account representative for API access and developer documentation, which implies access is partner-gated rather than self-serve."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://www.plain.com/help",
+    "confidence": "high",
+    "note": "The site and Help Center indicate Plain is API-first in product messaging, but developer documentation and API reference are not publicly available — you must contact sales/account rep to obtain API docs, so public API surface cannot be confirmed."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "No public API docs or self-serve credential issuance found; API access requires contacting sales/account representative, preventing building without establishing a commercial relationship."
+  },
+  "research_meta": {
+    "queries": [
+      "Plain support helpdesk Plain.com developer API docs \"Plain API\" \"plain.com\"",
+      "site:plain.com \"API\" \"Plain\" \"developers\"",
+      "Plain helpdesk \"API\" \"plain\" \"developer\"",
+      "\"Plain API\" \"plain.com\" -plaintext -other \"support\" \"helpdesk\"",
+      "Composio Tavily advanced search constrained to include_domains: [\"plain.com\"]"
+    ],
+    "insufficient_public_docs": true
+  }
+}

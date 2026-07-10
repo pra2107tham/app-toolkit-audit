@@ -1,0 +1,42 @@
+{
+  "slug": "help-scout",
+  "name": "Help Scout",
+  "category": "Support and Helpdesk",
+  "description": "A customer support platform providing shared inboxes, knowledge base, and customer management tools.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "evidence_url": "https://developer.helpscout.com/api-auth/",
+    "confidence": "high",
+    "note": "Docs state Help Scout supports OAuth 2.0; legacy API Keys are still mentioned as supported for existing apps."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.helpscout.com/docs/getting-started/",
+    "confidence": "high",
+    "note": "Developers can register apps in the Developer Dashboard and obtain client ID/secret for development; creating a test app implies self-serve credentials without human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.helpscout.com/api/",
+    "confidence": "high",
+    "note": "API Reference states a REST API covering Conversations, Customers, Mailboxes, Users, reports and webhooks; community SDKs exist but no official SDKs."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs and self-serve OAuth credentials exist, so integrations can be built today."
+  },
+  "research_meta": {
+    "queries": [
+      "Help Scout API authentication OAuth 2.0",
+      "Help Scout API keys legacy",
+      "How to register Help Scout app Developer Dashboard",
+      "Help Scout API reference conversations customers mailboxes"
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "waterfall-io",
+  "name": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "description": "A SaaS platform that connects analytics and search data (Google Analytics, Search Console, Ads, Bing, Shopify, HubSpot) to build dashboards and insights.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://waterfall.io/security",
+    "confidence": "high",
+    "note": "Waterfall states it uses OAuth 2.0 (where available) to request permissioned access when connecting third-party services, and it does not store third-party account passwords."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://waterfall.io/pricing",
+    "confidence": "high",
+    "note": "The pricing page FAQ explicitly says: \"Do you have an API? No, Waterfall does not currently offer a public API.\" Therefore there is no self-serve way to obtain API credentials."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://waterfall.io/pricing",
+    "confidence": "high",
+    "note": "Waterfall's pricing FAQ states it does not currently offer a public API; the product instead provides access/export via dashboards and reports."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "Waterfall states it does not currently offer a public API (pricing FAQ). Without a public API and self-serve credentials, an AI-agent integration cannot be built via standard API methods."
+  },
+  "research_meta": {
+    "queries": [
+      "Waterfall.io API documentation Waterfall API developer docs waterfall.io \"API\" \"developer\" \"authentication\"",
+      "Waterfall API site:waterfall.io OR site:help.waterfall.io \"API\" \"developer\" \"authentication\" \"API key\"",
+      "waterfall.io API documentation \"API\" \"developer\" \"help.waterfall.io\"",
+      "site:help.waterfall.io \"API\" OR \"API key\" OR \"developer\" \"Waterfall\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

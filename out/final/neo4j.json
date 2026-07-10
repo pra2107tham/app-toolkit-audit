@@ -1,0 +1,43 @@
+{
+  "slug": "neo4j",
+  "name": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "description": "A graph database platform (server, managed AuraDB, drivers, and HTTP/Bolt APIs) for storing and querying graph data with Cypher.",
+  "auth_methods": {
+    "value": [
+      "basic",
+      "token",
+      "none_public"
+    ],
+    "evidence_url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+    "confidence": "high",
+    "note": "The HTTP API documentation explicitly documents Basic Authentication (Authorization: Basic ...) and Bearer tokens (Authorization: Bearer ...). No OAuth2 flow is described on this page; other protocols (e.g., driver auth tokens for Bolt) are covered in driver docs linked from the docs root."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://neo4j.com/aura/pricing/",
+    "confidence": "high",
+    "note": "Aura pricing docs state that an Aura Free tier is available and links to sign-up flows where developers can create an instance and obtain credentials via the Aura Console (see Aura Console docs)."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://neo4j.com/docs/",
+    "confidence": "high",
+    "note": "The docs root lists HTTP/REST API and Bolt protocol (drivers) and links to language drivers (Java, JavaScript, Python, .NET). This indicates both REST HTTP endpoints and driver/bolt APIs are publicly documented and cover broad product functionality (querying, management, etc.)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs exist for HTTP API and drivers and Aura provides a free tier where developers can sign up and obtain credentials via the console, so one can obtain credentials and build against the APIs today."
+  },
+  "research_meta": {
+    "queries": [
+      "site:neo4j.com/docs neo4j API documentation developer docs neo4j.com/docs/api neo4j REST HTTP Bolt drivers",
+      "site:neo4j.com/docs \"authentication\" neo4j API auth \"basic auth\" \"bearer\" \"token\" \"OAuth\"",
+      "site:neo4j.com Aura pricing signup console \"Aura Console\" \"get credentials\"",
+      "site:neo4j.com \"contact sales\" \"Aura\" API \"contact sales\" neo4j \"partner\" \"API access\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

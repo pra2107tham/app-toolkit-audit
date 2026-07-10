@@ -1,0 +1,43 @@
+{
+  "slug": "smartsheet",
+  "name": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "description": "A cloud-based platform for work management and collaboration (sheets, reports, dashboards, automation, integrations).",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://smartsheet-platform.github.io/api-docs/?shell#authentication",
+    "confidence": "high",
+    "note": "Smartsheet supports OAuth 2.0 (Authorization Code flow) for integrations and user-generated API Access Tokens used as Bearer tokens in the Authorization header."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.smartsheet.com/articles/2476158-accessing-the-smartsheet-api",
+    "confidence": "high",
+    "note": "Personal API access tokens are generated from a user account (Account > Apps & Integrations > API Access). The Help Center shows how an individual user creates tokens from their account, implying self-service access for account holders. Pricing page does not indicate partner gating or paid-only restriction."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://smartsheet.redoc.ly/",
+    "confidence": "high",
+    "note": "Official REST API reference lists broad resource coverage (sheets, rows, columns, users, workspaces, webhooks, attachments, etc.) and links to SDKs for multiple languages."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs are available and developers can self-generate an API access token or use OAuth 2.0 to start building. SDKs and examples are provided."
+  },
+  "research_meta": {
+    "queries": [
+      "Smartsheet API developer documentation site:smartsheet.com \"API\" \"developers\"",
+      "Smartsheet authentication API token site:smartsheet.com",
+      "Smartsheet API access token how to obtain site:smartsheet.com",
+      "Smartsheet API docs authentication OAuth site:smartsheet.com",
+      "Smartsheet developers API docs redoc"
+    ],
+    "insufficient_public_docs": false
+  }
+}

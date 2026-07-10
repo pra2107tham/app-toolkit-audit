@@ -1,0 +1,40 @@
+{
+  "slug": "asana",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Work management platform for teams to track tasks, projects, and workflows; provides an API to create, read, update, and automate Asana data and embed app components.",
+      "better_evidence_url": "https://asana.com",
+      "reasoning": "The description accurately reflects the information available on the homepage, which describes Asana as a work and project management platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://developers.asana.com/docs/authentication",
+      "reasoning": "The authentication documentation explicitly states that Asana supports OAuth 2.0 and Personal Access Tokens, confirming the recorded values."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developers.asana.com/docs/personal-access-token",
+      "reasoning": "The documentation confirms that Personal Access Tokens can be created without human approval and that API access does not require a paid plan, supporting the claim of self-serve free access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for the API surface returned a 404 error, indicating that the specific page could not be found, and thus the claim about the API surface cannot be verified."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "Since the API surface URL is dead, the claim about buildability cannot be confirmed as there is no supporting evidence to validate the ability to build integrations today."
+    }
+  ]
+}

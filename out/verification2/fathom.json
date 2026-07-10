@@ -1,0 +1,40 @@
+{
+  "slug": "fathom",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Automated meeting recording, transcription, and highlights for calls; provides an HTTP API to create and manage recordings and webhooks.",
+      "better_evidence_url": "https://fathom.video",
+      "reasoning": "The homepage describes Fathom's functionality as an AI notetaker that summarizes meetings, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "token",
+      "better_evidence_url": "https://fathom-e4df0608.mintlify.app/",
+      "reasoning": "The API documentation states that authentication is done via API token, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://help.fathom.video/en/articles/360018127491-using-the-api",
+      "reasoning": "The URL for credential access leads to a 404 error, indicating that the evidence is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://fathom-e4df0608.mintlify.app/",
+      "reasoning": "The API documentation confirms that the primary surface is REST with specific endpoints listed, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "contradicted",
+      "corrected_value": "not buildable_today",
+      "better_evidence_url": "https://fathom-e4df0608.mintlify.app/",
+      "reasoning": "While the documentation provides information on authentication and endpoints, the dead URL for credential access raises concerns about immediate development capabilities."
+    }
+  ]
+}

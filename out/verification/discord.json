@@ -1,0 +1,40 @@
+{
+  "slug": "discord",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://discord.com",
+      "reasoning": "The description accurately reflects the features of Discord as a real-time chat platform for communities and developers."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://discord.com/developers/docs/topics/oauth2",
+      "reasoning": "The evidence supports the claim that Discord uses OAuth2, basic, and token authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://discord.com/developers/applications",
+      "reasoning": "The evidence confirms that developers can create applications and obtain necessary credentials without human approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://discord.com/developers/docs",
+      "reasoning": "The evidence confirms that Discord provides a broad REST API and real-time Gateway for events."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://discord.com/developers/docs",
+      "reasoning": "The evidence supports that developers can build today, with operational considerations noted for certain privileged data."
+    }
+  ]
+}

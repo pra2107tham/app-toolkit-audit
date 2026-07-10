@@ -1,0 +1,40 @@
+{
+  "slug": "zendesk",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Customer service platform providing ticketing, user and organization management, messaging, and related support APIs.",
+      "better_evidence_url": "https://www.zendesk.com",
+      "reasoning": "The description accurately reflects the services provided by Zendesk as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "oauth2, api_key, basic",
+      "better_evidence_url": "https://developer.zendesk.com/documentation/ticketing/using-the-zendesk-api/authentication/",
+      "reasoning": "The URL provided for authentication methods returns a 404 error, making it impossible to confirm the claim based on the evidence."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "admin_approval",
+      "better_evidence_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Generating-a-new-API-token",
+      "reasoning": "The support article confirms that generating API tokens requires admin-level access, supporting the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+      "reasoning": "The API reference confirms that the Ticketing API is a broad REST API, supporting the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "N/A",
+      "reasoning": "The claim about buildability being blocked due to the requirement for admin approval for API tokens is consistent with the confirmed credential access."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "grain",
+  "name": "Grain",
+  "category": "AI, Research and Media-native",
+  "description": "A meeting capture tool for recording meetings, creating clips/highlights, and sharing/exporting meeting moments with integrations (Zoom, Slack, Notion).",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://help.grain.com/en/articles/5239892-integrations",
+    "confidence": "low",
+    "note": "Unable to fetch the cited official Help Center article due to repeated gateway/timeout errors (502/timeout), so the claim that no public API auth methods are documented cannot be verified from primary sources at this time."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://grain.com/contact",
+    "confidence": "medium",
+    "note": "Grain's contact and enterprise pages invite visitors to contact sales for enterprise or custom needs, implying programmatic or advanced access is handled via sales/partnership rather than self-serve; documentation does not explicitly state the gating model, so partner_gated is inferred from contact/sales messaging."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "narrow",
+    "docs_url": "https://help.grain.com/",
+    "confidence": "low",
+    "note": "Unable to fetch the official Help Center homepage due to repeated timeouts, so the absence of public REST/GraphQL API documentation cannot be re-verified from primary sources at this time."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "There are no public API docs or developer credential signup flows; programmatic integration appears to require contacting Grain (sales/support) for enterprise/custom arrangements, so building against a public API today is blocked."
+  },
+  "research_meta": {
+    "queries": [
+      "Grain API developer documentation site:grain.com OR site:developers.grain.com OR grain.com \"API\" \"developer\" OR \"docs\" \"grain.com\" \"developer\" \"API\" \"Grain\" meeting notes export API",
+      "site:help.grain.com API OR \"API\" OR \"developer\" OR \"developer docs\" OR \"API key\" OR \"integration\" OR \"developer API\"",
+      "\"Grain API\" \"Grain\" \"API\" \"developer\" \"help.grain.com\" \"developer API\"",
+      "site:grain.com developer OR developers OR \"API\" OR \"developer\" OR partner OR partnership OR \"developer portal\"",
+      "api.grain.com OR developer.grain.com OR docs.grain.com OR \"Grain API\" site:grain.com -help.grain.com",
+      "\"Grain\" \"API key\" \"Grain\" \"developer\" \"SDK\" \"API key\"",
+      "site:grain.com enterprise partnership \"partner\" \"partnership\" \"enterprise\" \"contact sales\" \"custom\""
+    ],
+    "insufficient_public_docs": true,
+    "pass": 2
+  }
+}

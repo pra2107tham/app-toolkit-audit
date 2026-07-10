@@ -1,0 +1,38 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://help.grain.com/en/articles/5239892-integrations",
+      "confidence": "high",
+      "note": "No public API auth methods are documented; the Integrations help article describes UI integrations but contains no API/auth docs, supporting that a public API is not documented."
+    },
+    "final_value": {
+      "value": [
+        "none_public"
+      ],
+      "evidence_url": "https://help.grain.com/en/articles/5239892-integrations",
+      "confidence": "low",
+      "note": "Unable to fetch the cited official Help Center article due to repeated gateway/timeout errors (502/timeout), so the claim that no public API auth methods are documented cannot be verified from primary sources at this time."
+    },
+    "verdict": "dead_url"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://help.grain.com/",
+      "confidence": "high",
+      "note": "No public REST/GraphQL API documentation or developer portal was found on the official domains; only UI-focused integrations and enterprise support are documented in the Help Center."
+    },
+    "final_value": {
+      "value": "none_public",
+      "breadth": "narrow",
+      "docs_url": "https://help.grain.com/",
+      "confidence": "low",
+      "note": "Unable to fetch the official Help Center homepage due to repeated timeouts, so the absence of public REST/GraphQL API documentation cannot be re-verified from primary sources at this time."
+    },
+    "verdict": "dead_url"
+  }
+}

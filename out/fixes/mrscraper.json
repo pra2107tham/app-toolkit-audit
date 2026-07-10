@@ -1,0 +1,50 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "token"
+      ],
+      "evidence_url": "https://docs.mrscraper.com/reference/authentication",
+      "confidence": "high",
+      "note": "Official authentication reference states API keys are sent in the Authorization header as a bearer token; no OAuth or other flows supported."
+    },
+    "final_value": {
+      "value": [
+        "api_key"
+      ],
+      "evidence_url": "https://docs.mrscraper.com/getting-started/authentication",
+      "confidence": "high",
+      "note": "Official docs state MrScraper authenticates requests using an API key created in the dashboard and sent in the Authorization header as a Bearer token (\"Authorization: Bearer <YOUR_API_KEY>\")."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_paid_trial",
+      "evidence_url": "https://docs.mrscraper.com/getting-started",
+      "confidence": "high",
+      "note": "Developers can sign up and create API keys from the dashboard; free trial credits are available on signup but continued use requires a paid plan per pricing page."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://docs.mrscraper.com/getting-started",
+      "confidence": "medium",
+      "note": "Getting Started docs instruct users to sign up at dashboard.mrscraper.com and create an API key in the dashboard (self-serve credential issuance). The fetched docs do not confirm paid trial/plan requirements."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "paid_only",
+      "note": "API docs and onboarding allow self-serve API key creation and examples; free trial credits exist but long-term use requires paying for a plan (pricing page)."
+    },
+    "final_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "paid_only",
+      "note": "Docs confirm self-serve signup and API key creation in the dashboard and show how to authenticate requests with an API key. However, the fetched primary sources do not confirm whether long-term usage is paid-only; monetization is not verified from the fetched docs."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.fathom.video/en/articles/360018127491-using-the-api",
+      "confidence": "high",
+      "note": "Help doc states 'You can find your API token in your Fathom dashboard under Settings \u2192 Integrations', implying developers can obtain tokens from their dashboard without manual approval. No docs were found stating API access requires paid plan or sales contact."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://help.fathom.video/en/articles/360018127491-using-the-api",
+      "confidence": "high",
+      "note": "Help article says you can find your API token in the Fathom dashboard under Settings \u2192 Integrations, indicating self-serve token access (no sales/support approval mentioned)."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public docs plus self-serve API token available in dashboard -> developer can obtain credentials and call REST endpoints immediately. Rate limit increases require contacting support but do not block initial development."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "The help article states the API token is available in the dashboard (Settings \u2192 Integrations) and the API reference shows how to authenticate with `Authorization: Bearer <YOUR_API_TOKEN>` and provides concrete REST endpoints, enabling immediate development with self-serve credentials."
+    },
+    "verdict": "unsupported"
+  }
+}

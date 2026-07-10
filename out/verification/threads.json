@@ -1,0 +1,40 @@
+{
+  "slug": "threads",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.threads.net",
+      "reasoning": "The homepage confirms the existence of Threads but does not provide specific details about the API functionalities or its purpose."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/threads/guides/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the claim about the authentication methods cannot be verified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developers.facebook.com/apps",
+      "reasoning": "The content from the Apps page supports the claim that developers can create apps and obtain access tokens, confirming the self-serve nature of credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.facebook.com/docs/threads",
+      "reasoning": "The API surface is confirmed as REST based on the documentation that outlines the functionalities available through the Threads API."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The buildability claim cannot be verified due to the lack of specific evidence supporting the claim about app review and business verification requirements."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "intercom",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "intercom",
+    "tools_count": 133.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "intercom"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.pipeworx-io/intercom",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Intercom"
+  },
+  "homepage_alive": true
+}

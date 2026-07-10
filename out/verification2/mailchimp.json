@@ -1,0 +1,40 @@
+{
+  "slug": "mailchimp",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com",
+      "reasoning": "The description accurately reflects the services provided by Mailchimp as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/developer/marketing/guides/authorization/",
+      "reasoning": "The evidence confirms that both API keys and OAuth 2.0 are supported for authorization."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/help/how-do-i-find-my-api-key/",
+      "reasoning": "The URL for credential access returned a 404 error, making it impossible to verify the claim regarding API key creation."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/developer/marketing/api/",
+      "reasoning": "The evidence supports that Mailchimp's Marketing API is a REST API covering various functionalities."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mailchimp.com/developer/marketing/api/",
+      "reasoning": "The existence of public REST API documentation and the ability to create API keys confirms that integration is feasible."
+    }
+  ]
+}

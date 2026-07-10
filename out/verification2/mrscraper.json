@@ -1,0 +1,40 @@
+{
+  "slug": "mrscraper",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://mrscraper.com",
+      "reasoning": "The homepage confirms that MrScraper is a scraping platform that provides a RESTful API and SDKs for web scraping, project management, and result retrieval."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.mrscraper.com/getting-started/authentication",
+      "reasoning": "The evidence URL for authentication methods returns a 404 error, making it impossible to verify the claim about API key authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.mrscraper.com/getting-started",
+      "reasoning": "The evidence URL for credential access returns a 404 error, preventing confirmation of the claim regarding self-serve credential issuance."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.mrscraper.com/",
+      "reasoning": "The documentation confirms that MrScraper exposes a RESTful API covering various aspects such as projects, scrapes, billing, and SDKs."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://docs.mrscraper.com/",
+      "reasoning": "While the documentation indicates self-serve signup and API key creation, it does not clarify whether long-term usage is paid-only, leading to uncertainty about buildability."
+    }
+  ]
+}

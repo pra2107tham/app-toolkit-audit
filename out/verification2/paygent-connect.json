@@ -1,0 +1,40 @@
+{
+  "slug": "paygent-connect",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Paygent provides payment gateway and payment infrastructure services for online and in-person transactions; 'Paygent Connect' appears to be a merchant/integration offering for connecting to Paygent's platform (public developer docs not found).",
+      "better_evidence_url": "https://paygent.com",
+      "reasoning": "The homepage describes Paygent's services, confirming the description provided."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://paygent.com/en/",
+      "reasoning": "The page does not provide any information on API authentication methods, thus the claim remains unsupported."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://paygent.com/en/partner",
+      "reasoning": "The partner page does not document any self-serve developer portal or how API credentials are obtained, leaving the claim unsupported."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://paygent.com/en/products",
+      "reasoning": "The products page does not link to or include public API documentation, making the claim unsupported."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "N/A",
+      "reasoning": "The lack of public developer documentation and self-serve API credential issuance confirms that integration is blocked."
+    }
+  ]
+}

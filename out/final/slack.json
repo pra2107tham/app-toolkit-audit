@@ -1,0 +1,45 @@
+{
+  "slug": "slack",
+  "name": "Slack",
+  "category": "Communications and Messaging",
+  "description": "Slack is a work operating system that brings people, apps, and AI together to help teams work more efficiently through communication and collaboration.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://api.slack.com/authentication",
+    "confidence": "high",
+    "note": "Slack recommends OAuth 2.0 for app installation and issues bearer tokens (bot/user/app tokens) used in the Authorization: Bearer <token> header; tokens are the primary authentication mechanism for Web API calls."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://api.slack.com/apps",
+    "confidence": "high",
+    "note": "Developers can create a Slack App in the App Dashboard to obtain client ID/secret and install to a workspace to receive tokens; this can be done on a workspace (including free plan) without human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://api.slack.com/",
+    "confidence": "high",
+    "note": "Slack exposes a broad Web API (HTTP REST methods) plus Events (webhook delivery), RTM (WebSocket) and additional APIs like SCIM and Admin; the docs root lists Web API, Events API, RTM, SCIM, Admin, and SDKs."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs and self-serve credential creation exist, so you can build integrations immediately. Note some admin/provisioning endpoints (e.g., SCIM, Admin APIs) are restricted to Enterprise Grid or require paid/enterprise plans."
+  },
+  "research_meta": {
+    "queries": [
+      "site:api.slack.com authentication",
+      "site:api.slack.com oauth v2 slack",
+      "site:api.slack.com/apps create app client id secret",
+      "site:api.slack.com scim enterprise grid",
+      "site:api.slack.com admin apis enterprise grid",
+      "slack pricing enterprise grid contact sales"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

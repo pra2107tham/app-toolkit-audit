@@ -1,0 +1,44 @@
+{
+  "slug": "higgsfield",
+  "name": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "description": "Higgsfield is an AI image & video generation platform exposing a Minimal Connector Protocol (MCP) server and CLI for programmatic agent integrations.",
+  "auth_methods": {
+    "value": [
+      "token",
+      "other"
+    ],
+    "evidence_url": "https://higgsfield.ai/cli",
+    "confidence": "high",
+    "note": "The CLI page explicitly states the CLI opens a browser to complete login and 'stores session tokens locally' for programmatic use. MCP docs also state authentication is via your Higgsfield account (no API keys), i.e., account web login + session tokens."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://higgsfield.ai/pricing",
+    "confidence": "low",
+    "note": "Pricing documents show credit-based plans and that a credit card is required for paid billing/overages, but the public docs do not explicitly state whether a developer can self-register and obtain free trial credits or immediate self-serve access for programmatic use without human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "narrow",
+    "docs_url": "https://higgsfield.ai/mcp",
+    "confidence": "medium",
+    "note": "Public developer-facing material describes a hosted MCP server (https://mcp.higgsfield.ai), connector manifests, and webhooks (programmatic endpoints). There is no separate, extensive REST or GraphQL reference site; the MCP page is the authoritative programmatic doc, so the surface appears to be a narrow REST-like MCP server interface rather than a broad documented public REST/GraphQL API."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "paid_only",
+    "note": "MCP developer docs and a CLI exist showing how to authenticate and call the MCP server programmatically. Building is possible today once you sign in (CLI or web) and have account credits. The main operational blocker is account provisioning/credits (pricing/billing) rather than missing technical docs."
+  },
+  "research_meta": {
+    "queries": [
+      "Higgsfield MCP docs",
+      "Higgsfield MCP API",
+      "Higgsfield CLI auth login tokens",
+      "Higgsfield API keys no api keys",
+      "Higgsfield pricing credits free trial",
+      "Higgsfield enterprise SSO provisioning"
+    ],
+    "insufficient_public_docs": false
+  }
+}

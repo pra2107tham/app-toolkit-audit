@@ -1,0 +1,40 @@
+{
+  "slug": "youtube-transcript",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://transcriptapi.com",
+      "reasoning": "The homepage confirms that the service is for transcribing and summarizing audio and video content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://transcriptapi.com/docs#authentication",
+      "reasoning": "The documentation states that requests must include an Authorization header with the API key, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://transcriptapi.com/pricing",
+      "reasoning": "The pricing page shows a Free tier and indicates that users can sign up to receive an API key, confirming the self-serve free access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://transcriptapi.com/docs",
+      "reasoning": "The documentation provides a REST base URL and lists various endpoints, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://transcriptapi.com/docs",
+      "reasoning": "The availability of public REST docs, self-serve signup, and a free API key confirms that the API is buildable today."
+    }
+  ]
+}

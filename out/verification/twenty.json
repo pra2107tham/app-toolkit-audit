@@ -1,0 +1,40 @@
+{
+  "slug": "twenty",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://twenty.com",
+      "reasoning": "The homepage confirms that Twenty is an open-source CRM built with Next.js and Supabase, intended for self-hosting."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://github.com/twentyapp/twenty",
+      "reasoning": "The URL for auth methods returns a 404 error, preventing verification of the claim regarding authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://github.com/twentyapp/twenty",
+      "reasoning": "The URL for credential access returns a 404 error, preventing verification of the claim regarding obtaining Supabase credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://github.com/twentyapp/twenty",
+      "reasoning": "The URL for API surface returns a 404 error, preventing verification of the claim regarding the existence of a public API."
+    },
+    {
+      "field": "buildability",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "N/A",
+      "reasoning": "The buildability claim cannot be verified due to the lack of accessible evidence from the URLs provided."
+    }
+  ]
+}

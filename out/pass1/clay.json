@@ -1,0 +1,43 @@
+{
+  "slug": "clay",
+  "name": "Clay",
+  "category": "Data, SEO and Scraping",
+  "description": "Clay is a no-code / low-code workspace for building and automating data tables and workflows, with webhooks and a REST API to programmatically read and write rows in tables.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://help.clay.com/en/articles/4979624-api-keys",
+    "confidence": "high",
+    "note": "Clay uses API keys presented as bearer tokens in the Authorization header (Authorization: Bearer <API_KEY>) per the API Keys help article. The Webhooks & API article also shows Authorization: Bearer usage for REST endpoints."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.clay.com/signup",
+    "confidence": "high",
+    "note": "The signup page provides a self-serve account creation flow and the API Keys help article documents creating API keys in the dashboard. The help docs do not state that keys require sales or admin approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://help.clay.com/en/articles/5242850-webhooks-and-api",
+    "confidence": "high",
+    "note": "The Webhooks and API help article documents a REST API under https://api.clay.com/v1/ with CRUD endpoints for tables and rows (GET /v1/tables, POST /v1/tables/{id}/rows, PATCH /v1/tables/{id}/rows/{row_id}, etc.), indicating broad coverage of core product objects (tables, rows)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs and self-serve API key generation exist in the help center; a developer can sign up and obtain keys to start integrating immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "site:help.clay.com \"API Keys\" Clay",
+      "site:help.clay.com \"Webhooks and API\" Clay",
+      "site:clay.com \"pricing\" \"API\" Clay",
+      "Clay API keys create dashboard",
+      "Clay REST API tables rows"
+    ],
+    "insufficient_public_docs": false
+  }
+}

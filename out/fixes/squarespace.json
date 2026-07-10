@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "confidence": "low",
+      "note": "Docs show Developer API Keys are created from the site dashboard (Settings > Advanced > Developer API Keys), but the documentation does not state whether obtaining working API credentials requires a paid plan, trial, or partner approval\u2014public docs do not state plan/approval constraints."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://support.squarespace.com/hc/en-us/articles/206541167-Developer-API-keys",
+      "confidence": "low",
+      "note": "Squarespace support docs explain where to generate Developer API keys in a site\u2019s Settings > Advanced > Developer API keys and how to use them, but do not state whether generating/using working keys requires a paid plan vs. trial, or any partner/developer approval constraints."
+    },
+    "verdict": "unsupported"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "other",
+      "note": "Requires access to a Squarespace site/account to create Developer API Keys from the site dashboard (Settings > Advanced > Developer API Keys). Public docs do not state whether a paid plan or partner approval is required."
+    },
+    "final_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "other",
+      "note": "Docs show you can generate Developer API Keys from a Squarespace site dashboard (Settings > Advanced > Developer API Keys) and use them as Bearer tokens, but the official public docs reviewed do not clarify whether a paid plan/trial status or partner approval is required to obtain working credentials."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "quickbooks",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://quickbooks.intuit.com",
+      "reasoning": "The homepage could not be fetched due to a timeout, leaving the description unverified."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "reasoning": "The evidence confirms that QuickBooks Online uses OAuth 2.0 for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/how-to/create-an-app",
+      "reasoning": "The evidence supports that developers can create an app and obtain credentials without manual approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+      "reasoning": "The evidence indicates that the API surface is REST-based and covers various product objects."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+      "reasoning": "The evidence supports that developers can build and test using sandbox keys and OAuth2."
+    }
+  ]
+}

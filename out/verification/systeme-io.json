@@ -1,0 +1,40 @@
+{
+  "slug": "systeme-io",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "All-in-one marketing platform for funnels, email, memberships, and online courses.",
+      "better_evidence_url": "https://systeme.io",
+      "reasoning": "The homepage confirms that systeme.io is a platform for sales funnels, email marketing, and online courses, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.systeme.io/docs/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the evidence is not accessible to confirm the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.systeme.io/en/articles/839499-api-access",
+      "reasoning": "The URL for credential access returns a 404 error, indicating that the evidence is not available to support the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.systeme.io/",
+      "reasoning": "The URL for API surface details returns a 404 error, which means there is no accessible evidence to confirm the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "Since the URLs for the other fields are dead, there is no evidence to support the buildability claim, leading to an inability to confirm it."
+    }
+  ]
+}

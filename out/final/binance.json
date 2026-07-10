@@ -1,0 +1,45 @@
+{
+  "slug": "binance",
+  "name": "Binance",
+  "category": "Finance and Fintech",
+  "description": "Cryptocurrency exchange providing market data, spot/futures trading, wallets and partner integration APIs.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "other"
+    ],
+    "evidence_url": "https://binance-docs.github.io/apidocs/spot/en/#signed-endpoint",
+    "confidence": "high",
+    "note": "Binance Spot API docs specify that some endpoints require a valid API-Key and a SIGNED request. API keys are passed via the X-MBX-APIKEY header, and SIGNED endpoints use an HMAC SHA256 signature produced with the secretKey (i.e., API key + HMAC signature scheme)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.binance.com/docs/binance_link/link-and-trade/fast-api/create-api-key",
+    "confidence": "high",
+    "note": "Users can create API keys via their Binance account API Management (create API key flow), which is a self-serve process tied to user account (no human approval)."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developers.binance.com/docs/",
+    "confidence": "high",
+    "note": "The official Binance Developers portal organizes documentation across many API product areas (including Spot, Futures, Options, Fiat, Pay, Gift Card, Convert, Copy Trading, Margin, Mining) and provides API Reference resources, indicating broad coverage across products and interfaces (documented APIs plus streaming where applicable)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Binance provides public developer documentation (Binance Developers portal) and self-serve instructions to create API credentials from a Binance account (Profile \u2192 Account \u2192 API Management \u2192 Create API, then security verification). Combined with the Spot API\u2019s documented API-key header + HMAC signature requirements, this supports that standard API integrations can be built today without a partner approval step."
+  },
+  "research_meta": {
+    "queries": [
+      "Binance API documentation developer docs site:binance.com OR site:binance-docs.github.io OR site:github.io Binance API authentication obtain API key how to get API credentials pricing partnership \"Binance API\"",
+      "site:binance-docs.github.io Binance API docs apidocs spot en \"Binance API\"",
+      "Binance developers API authentication \"API key\" \"signature\" \"X-MBX-APIKEY\" site:developers.binance.com OR site:binance-docs.github.io OR site:binance.com",
+      "\"How to create API key\" \"Binance\" \"API Management\"",
+      "site:developers.binance.com \"Integration Guideline\" \"partnership\" \"contact\" Binance connect_prime integration-guideline",
+      "Binance API pricing \"API\" \"pricing\" \"Binance API\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

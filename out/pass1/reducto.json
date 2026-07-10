@@ -1,0 +1,46 @@
+{
+  "slug": "reducto",
+  "name": "Reducto",
+  "category": "AI, Research and Media-native",
+  "description": "Research- and media-focused AI assistant for parsing documents, transcripts, and supporting research workflows.",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://reducto.ai/",
+    "confidence": "high",
+    "note": "Site CTAs are for requesting early access / demos; no public API or documented authentication methods are exposed on the public site."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://reducto.ai/contact",
+    "confidence": "low",
+    "note": "Contact page routes inquiries to demos/enterprise and a contact form, indicating access (including any programmatic access) is handled via contact-sales/early access rather than a self-serve developer signup."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "",
+    "confidence": "high",
+    "note": "No public REST/GraphQL/docs root found on the official site; product pages are marketing only and do not link to developer documentation."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "There are no public developer docs or a self-serve API key/signup; access appears to require contacting the vendor for demos/enterprise."
+  },
+  "research_meta": {
+    "queries": [
+      "reducto.ai developer documentation API",
+      "site:reducto.ai api",
+      "\"Reducto API\"",
+      "site:reducto.ai \"docs\" OR \"documentation\"",
+      "site:reducto.ai \"api\" OR \"/api\"",
+      "reducto api key \"Reducto\"",
+      "reducto.ai pricing OR plans OR signup OR \"request access\"",
+      "\"Reducto\" \"early access\" \"API\"",
+      "reducto developer docs \"reducto.ai\""
+    ],
+    "insufficient_public_docs": true
+  }
+}

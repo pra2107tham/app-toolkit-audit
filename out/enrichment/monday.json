@@ -1,0 +1,28 @@
+{
+  "slug": "monday",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "monday",
+    "tools_count": 121.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "monday",
+      "monday_mcp"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "com.monday/monday.com",
+        "official_vendor": true
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Monday.com"
+  },
+  "homepage_alive": true
+}

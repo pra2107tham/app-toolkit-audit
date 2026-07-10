@@ -1,0 +1,45 @@
+{
+  "slug": "apify",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "apify",
+    "tools_count": 112.0,
+    "auth_schemes": [
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "apify",
+      "apify_mcp",
+      "geoapify"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "com.apify/apify-mcp-server",
+        "official_vendor": true
+      },
+      {
+        "name": "com.apify/apify-mcp-server",
+        "official_vendor": true
+      },
+      {
+        "name": "com.apify/apify-mcp-server",
+        "official_vendor": true
+      },
+      {
+        "name": "com.apify/apify-mcp-server",
+        "official_vendor": true
+      },
+      {
+        "name": "com.apify/apify-mcp-server",
+        "official_vendor": true
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Apify"
+  },
+  "homepage_alive": true
+}

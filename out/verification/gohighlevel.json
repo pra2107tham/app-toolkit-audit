@@ -1,0 +1,40 @@
+{
+  "slug": "gohighlevel",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "All-in-one marketing & CRM platform for agencies with a public REST API for integrations and Marketplace apps.",
+      "better_evidence_url": "https://www.gohighlevel.com",
+      "reasoning": "The homepage confirms that GoHighLevel is an all-in-one solution for business growth, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+      "reasoning": "The documentation explicitly describes the use of Private Integration Tokens and OAuth 2.0, confirming the recorded authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_paid_trial",
+      "better_evidence_url": "https://help.gohighlevel.com/support/solutions/articles/360003419193-register-your-app-for-developer-marketplace",
+      "reasoning": "The URL for credential access returns a 404 error, meaning the evidence is not available to confirm or contradict the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/intro/welcome",
+      "reasoning": "The documentation confirms that API v2 is a RESTful API, which supports the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_with_key_signup",
+      "better_evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+      "reasoning": "While there is documentation available, the lack of explicit confirmation regarding the buildability and the nature of the signup process means this claim is not fully supported."
+    }
+  ]
+}

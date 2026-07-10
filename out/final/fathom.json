@@ -1,0 +1,51 @@
+{
+  "slug": "fathom",
+  "name": "Fathom",
+  "category": "AI, Research and Media-native",
+  "description": "Automated meeting recording, transcription, and highlights for calls; provides an HTTP API to create and manage recordings and webhooks.",
+  "auth_methods": {
+    "value": [
+      "token"
+    ],
+    "evidence_url": "https://fathom-e4df0608.mintlify.app/",
+    "confidence": "high",
+    "note": "Docs state 'Authentication is done via API token' and examples use 'Authorization: Bearer <YOUR_API_TOKEN>'."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.fathom.video/en/articles/360018127491-using-the-api",
+    "confidence": "high",
+    "note": "Help article says you can find your API token in the Fathom dashboard under Settings \u2192 Integrations, indicating self-serve token access (no sales/support approval mentioned)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "narrow",
+    "docs_url": "https://fathom-e4df0608.mintlify.app/",
+    "confidence": "high",
+    "note": "The API reference lists REST endpoints (POST /recordings, GET /recordings, GET/DELETE /recordings/{id}) and webhook support. SDKs are mentioned but the primary surface is REST; endpoints appear focused on recordings and webhooks (limited/narrow coverage)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "The help article states the API token is available in the dashboard (Settings \u2192 Integrations) and the API reference shows how to authenticate with `Authorization: Bearer <YOUR_API_TOKEN>` and provides concrete REST endpoints, enabling immediate development with self-serve credentials."
+  },
+  "research_meta": {
+    "queries": [
+      "Fathom API documentation site:fathom.video OR \"Fathom\" \"API\" \"documentation\" \"fathom.video\"",
+      "Fathom API documentation site:fathom.video",
+      "\"Using the API\" site:help.fathom.video Fathom",
+      "\"Fathom API\" \"mintlify\" \"fathom-e4df0608.mintlify.app\"",
+      "site:fathom.video \"API\" \"key\" OR \"token\" OR \"authentication\"",
+      "\"Fathom API\" \"API key\" OR \"API token\" OR \"Bearer\"",
+      "site:help.fathom.video \"API\" \"Using the API\" \"webhook\" Fathom authentication \"webhook-signature\"",
+      "Fathom \"developer\" \"API\" \"pricing\" site:fathom.video OR site:help.fathom.video",
+      "\"fathom-e4df0608.mintlify.app\" authentication \"API\" \"token\"",
+      "site:help.fathom.video \"Using the API\" \"authentication\"",
+      "Fathom \"API\" \"signup\" \"API key\" \"dashboard\"",
+      "site:app.fathom.video \"API\" \"token\" \"settings\" \"developer\"",
+      "\"Fathom API\" \"partnership\" \"contact\" \"sales\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

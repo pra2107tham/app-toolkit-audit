@@ -1,0 +1,40 @@
+{
+  "slug": "se-ranking",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://seranking.com",
+      "reasoning": "The description accurately reflects the services provided by SE Ranking as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://seranking.com/api/",
+      "reasoning": "The evidence confirms that the API uses a token provided in the Authorization header as a bearer token."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.seranking.com/en/articles/4210866-how-to-get-api-access",
+      "reasoning": "The URL provided for credential access returns a 404 error, indicating the page does not exist."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://seranking.com/api/",
+      "reasoning": "The API documentation lists a wide set of endpoints and confirms the use of standard HTTP methods."
+    },
+    {
+      "field": "buildability",
+      "verdict": "contradicted",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://seranking.com/api/",
+      "reasoning": "The buildability is supported by the evidence that API access may need to be enabled by support, indicating that automated self-serve credential issuance is not guaranteed."
+    }
+  ]
+}

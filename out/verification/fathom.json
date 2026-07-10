@@ -1,0 +1,40 @@
+{
+  "slug": "fathom",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://fathom.video",
+      "reasoning": "The homepage confirms that Fathom provides automated meeting recording, transcription, and highlights for calls."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://fathom-e4df0608.mintlify.app/",
+      "reasoning": "The API documentation states that authentication is done via API token, supporting the recorded claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://help.fathom.video/en/articles/360018127491-using-the-api",
+      "reasoning": "The URL for the credential access evidence returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://fathom-e4df0608.mintlify.app/",
+      "reasoning": "The API documentation lists REST endpoints and mentions webhook support, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://fathom-e4df0608.mintlify.app/",
+      "reasoning": "While the documentation supports some aspects of buildability, the lack of a clear confirmation from the evidence pages leads to an unsupported verdict."
+    }
+  ]
+}

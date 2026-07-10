@@ -1,0 +1,40 @@
+{
+  "slug": "twenty",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://twenty.com",
+      "reasoning": "The homepage confirms that Twenty is an open-source CRM built with Next.js and Supabase, intended for self-hosting."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.twenty.com/",
+      "reasoning": "The official documentation states that Twenty uses Supabase Auth for user authentication, confirming the claim about self-hosted deployments."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://github.com/twentyapp/twenty",
+      "reasoning": "The GitHub repository URL returns a 404 error, making it impossible to verify the claim about self-serve credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.twenty.com/",
+      "reasoning": "The documentation explicitly states that Twenty does not provide a public API for third-party integrations, confirming the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "contradicted",
+      "corrected_value": "not_buildable",
+      "better_evidence_url": "https://docs.twenty.com/",
+      "reasoning": "While the documentation supports the lack of a public API, it does not confirm that integrations are buildable, as the main blocker is the absence of a stable public API."
+    }
+  ]
+}

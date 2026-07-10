@@ -1,0 +1,40 @@
+{
+  "slug": "clickup",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Task and project management platform with workspaces, tasks, docs, goals, time tracking and integrations.",
+      "better_evidence_url": "https://clickup.com",
+      "reasoning": "The homepage describes ClickUp as a productivity platform with various features including task and project management."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://developer.clickup.com/docs/authentication",
+      "reasoning": "The developer documentation explicitly states that ClickUp API can be accessed using OAuth 2.0 and a personal API token."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://help.clickup.com/hc/en-us/articles/360001131449-How-to-get-your-API-Token",
+      "reasoning": "The URL provided for credential access returns a 404 error, indicating that the page does not exist."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developer.clickup.com/",
+      "reasoning": "The official developer documentation confirms that ClickUp provides a RESTful API with broad coverage of various features."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.clickup.com/",
+      "reasoning": "The availability of public REST API documentation and the ability to generate personal API tokens supports the claim that the API is buildable today."
+    }
+  ]
+}

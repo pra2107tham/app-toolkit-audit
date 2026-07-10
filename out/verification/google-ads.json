@@ -1,0 +1,40 @@
+{
+  "slug": "google-ads",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://ads.google.com",
+      "reasoning": "The description accurately reflects the capabilities of the Google Ads API as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.google.com/google-ads/api/rest/auth",
+      "reasoning": "The evidence confirms that OAuth2 is the primary authorization method, including service-account flows, as stated in the record."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.google.com/google-ads/api/docs/get-started/dev-token",
+      "reasoning": "The evidence supports that developers can create OAuth2 credentials and use test developer tokens without prior approval, aligning with the record."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.google.com/google-ads/api",
+      "reasoning": "The evidence confirms that the API provides both gRPC and REST interfaces and covers a broad range of functionalities as described."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.google.com/google-ads/api/docs/get-started/dev-token",
+      "reasoning": "The evidence supports that while test accounts can be created without approval, production access requires an approved developer token, consistent with the record."
+    }
+  ]
+}

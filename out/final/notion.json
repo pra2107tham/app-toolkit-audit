@@ -1,0 +1,44 @@
+{
+  "slug": "notion",
+  "name": "Notion",
+  "category": "Productivity and Project Management",
+  "description": "Notion is an all-in-one workspace for notes, docs, databases, and project management; its API allows creating and managing content and data across Notion workspaces.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.notion.com/docs/authorization",
+    "confidence": "high",
+    "note": "Official docs state the Notion API uses OAuth 2.0 for third-party integrations and 'internal integration' bearer tokens (returned from My integrations) for workspace-scoped access; requests use an Authorization: Bearer TOKEN header."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.notion.com/docs/create-a-notion-integration",
+    "confidence": "high",
+    "note": "Official docs show developers can self-serve credentials by creating an integration from Notion settings and then copying the Internal Integration Token to authenticate API requests."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.notion.com/reference/intro",
+    "confidence": "high",
+    "note": "Official API reference describes a HTTP REST API (GET, POST, PATCH, DELETE) covering pages, databases, blocks, users, search, and more; official client SDKs (JS, Python) are also provided that wrap the REST API."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "other",
+    "note": "Adjusted to match allowed enum values: verdict options are buildable_today/buildable_with_key_signup/blocked; user provided \"buildable\". Based on the provided note, this should be buildable_today (no approval required). Please confirm desired mapping."
+  },
+  "research_meta": {
+    "queries": [
+      "Notion API authorization",
+      "Create a Notion integration My integrations token",
+      "Notion API REST reference",
+      "Do I need a paid plan to use the Notion API",
+      "Notion client libraries SDKs"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

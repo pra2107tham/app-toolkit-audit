@@ -1,0 +1,40 @@
+{
+  "slug": "lark",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The homepage confirms that Lark is a productivity superapp for chat, meetings, docs, and projects, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The authentication documentation confirms the existence of OAuth2, token, and other methods as stated in the record."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The documentation indicates that users can create an app and obtain App ID and App Secret through a self-serve process, supporting the recorded claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The Open Platform documentation confirms a broad REST API surface, which aligns with the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The availability of public developer docs and self-serve app creation supports the claim that development is possible today."
+    }
+  ]
+}

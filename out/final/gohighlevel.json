@@ -1,0 +1,47 @@
+{
+  "slug": "gohighlevel",
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "All-in-one marketing & CRM platform for agencies with a public REST API for integrations and Marketplace apps.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+    "confidence": "high",
+    "note": "Docs explicitly describe Private Integration Token (used as a Bearer token) and OAuth 2.0 (authorization code & token exchange)."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+    "confidence": "low",
+    "note": "The accessible primary source confirms auth mechanisms (Private Integration Token and OAuth 2.0) but does not state whether obtaining developer credentials requires a paid plan, a trial, or any billing. The previously referenced Help Center article for Marketplace app registration was not available to verify signup requirements."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/intro/welcome",
+    "confidence": "high",
+    "note": "API v2 is documented as a RESTful API with many product areas covered (contacts, campaigns, appointments, etc.). Official OpenAPI sources are in the project's GitHub repo."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "other",
+    "note": "Buildable from public docs: the official API auth page documents how to call the API with a Private Integration Token (Bearer token) and how to use OAuth 2.0 (authorization URL and token URL). However, the exact credential provisioning/onboarding path (and whether any paid requirement exists) is not confirmed in the fetched primary sources."
+  },
+  "research_meta": {
+    "queries": [
+      "GoHighLevel API documentation stoplight highlevel.stoplight.io GoHighLevel developer API auth \"GoHighLevel API\"",
+      "site:stoplight.io \"GoHighLevel\" OR \"highlevel.stoplight.io\" API docs",
+      "site:gohighlevel.com \"API\" \"developer\" \"marketplace\" \"docs\"",
+      "\"HighLevel Public API\" \"authentication\" site:gohighlevel.com OR site:help.gohighlevel.com",
+      "\"Register your App for Developer Marketplace\" \"HighLevel\" site:help.gohighlevel.com",
+      "site:github.com GoHighLevel \"highlevel-api-docs\" \"README\"",
+      "\"Marketplace Docs \u2014 HighLevel\" \"marketplace.gohighlevel.com/docs\"",
+      "\"How to get started with the Developer's Marketplace\" \"GoHighLevel\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

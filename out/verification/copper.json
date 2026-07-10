@@ -1,0 +1,40 @@
+{
+  "slug": "copper",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A CRM built for Google Workspace users that manages contacts, pipelines, and sales workflows.",
+      "better_evidence_url": "https://www.copper.com",
+      "reasoning": "The homepage clearly describes Copper as a CRM for Google Workspace users, managing contacts, pipelines, and sales workflows."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, api_key",
+      "better_evidence_url": "https://developer.copper.com/introduction/authentication.html",
+      "reasoning": "The developer documentation explicitly lists OAuth2.0 and API Keys as the two supported authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+      "reasoning": "While the OAuth quickstart indicates self-serve registration, there is no explicit confirmation that API access is available on the free plan, leading to uncertainty."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developer.copper.com/",
+      "reasoning": "The developer site states that the Copper Developer API provides a RESTful interface, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.copper.com/",
+      "reasoning": "The public developer documentation provides sufficient information to enable development today, confirming that it is buildable without manual approval."
+    }
+  ]
+}

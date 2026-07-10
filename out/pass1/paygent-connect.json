@@ -1,0 +1,46 @@
+{
+  "slug": "paygent-connect",
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "description": "Paygent provides payment gateway and payment infrastructure services for online and in-person transactions; 'Paygent Connect' appears to be a merchant/integration offering for connecting to Paygent's platform (public developer docs not found).",
+  "auth_methods": {
+    "value": [
+      "none_public"
+    ],
+    "evidence_url": "https://paygent.com/",
+    "confidence": "low",
+    "note": "No public developer or API documentation pages found on the official site that describe supported auth methods. Homepage is marketing-only and does not document API auth."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://paygent.com/en/partner",
+    "confidence": "low",
+    "note": "Partner page emphasizes contacting Paygent and joining a partner program; site lacks publicly accessible signup or developer portal describing self-serve credential issuance."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://paygent.com/en/products",
+    "confidence": "low",
+    "note": "Product pages list features and integrations but no public REST/GraphQL API docs or SDK links were found; suggests API documentation is not publicly published."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "no_public_api",
+    "note": "Public developer documentation and self-serve API credential issuance are not available on the official site; integration likely requires contacting Paygent or becoming a partner."
+  },
+  "research_meta": {
+    "queries": [
+      "Paygent Connect API",
+      "site:paygent.com \"API\" \"Paygent\"",
+      "Paygent API ドキュメント",
+      "Paygent 開発者",
+      "Paygent Connect NMI",
+      "site:paygent.com developer",
+      "paygent developer portal",
+      "docs.paygent.com",
+      "paygent connect API documentation"
+    ],
+    "insufficient_public_docs": true
+  }
+}

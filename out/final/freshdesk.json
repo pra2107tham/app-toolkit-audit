@@ -1,0 +1,43 @@
+{
+  "slug": "freshdesk",
+  "name": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "description": "Customer support ticketing and helpdesk platform with APIs to manage tickets, contacts, agents, solutions and more.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2",
+      "basic"
+    ],
+    "evidence_url": "https://developers.freshdesk.com/api/#authentication",
+    "confidence": "high",
+    "note": "Official docs state API key usage via HTTP Basic Auth (API key as username, 'X' as password) and also mention OAuth 2.0 Bearer tokens."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://support.freshdesk.com/en/support/solutions/articles/215517-how-to-get-your-api-key",
+    "confidence": "high",
+    "note": "Support article shows an individual user can obtain their API key from their profile settings after logging in; implies self-serve access. Freshdesk offers a free plan and trial signup (pricing page) so developers can create accounts without manual approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.freshdesk.com/api/",
+    "confidence": "high",
+    "note": "API v2 is a REST API covering tickets, contacts, agents, companies, conversations, solutions, forums, time entries and more per the official API reference."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs and self-serve API key (via profile) exist; developers can sign up on Free plan or trial and immediately obtain API credentials to build integrations."
+  },
+  "research_meta": {
+    "queries": [
+      "Freshdesk API authentication api key basic oauth2",
+      "How to get Freshdesk API key profile",
+      "Freshdesk API v2 docs endpoints tickets contacts agents",
+      "Freshdesk pricing api access free plan"
+    ],
+    "insufficient_public_docs": false
+  }
+}

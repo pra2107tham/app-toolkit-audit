@@ -1,0 +1,40 @@
+{
+  "slug": "neo4j",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://neo4j.com",
+      "reasoning": "The description accurately reflects the capabilities of Neo4j as a graph database platform, which is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+      "reasoning": "The evidence confirms that both Basic Authentication and Bearer tokens are supported, aligning with the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://neo4j.com/aura/pricing/",
+      "reasoning": "The evidence supports the claim that there is a self-serve free tier available for developers to obtain credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://neo4j.com/docs/",
+      "reasoning": "The documentation confirms the existence of both HTTP/REST API and Bolt protocol, supporting the claim of broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The existence of public documentation and a free tier for developers confirms that Neo4j is buildable today."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "vonage",
+  "name": "Vonage",
+  "category": "Communications and Messaging",
+  "description": "Cloud communications APIs and SDKs for voice, SMS, messaging, video, and verification.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "jwt",
+      "other"
+    ],
+    "evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "confidence": "high",
+    "note": "Official docs describe API key & secret usage, Application JWTs for apps, and other signing/auth concepts (signatures)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.vonage.com/en/account/guides/api-key-secret",
+    "confidence": "high",
+    "note": "Vonage\u2019s official account guide states you can obtain/find your API key and secret in the Vonage API Dashboard, indicating self-serve access after creating an account."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.vonage.com/en/home",
+    "confidence": "high",
+    "note": "Vonage exposes RESTful APIs across its product surfaces (SMS, Voice, Messages, Verify, etc.) and provides official SDKs that wrap those REST APIs; documentation root lists product APIs and SDKs."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs and self-serve account signup + API key issuance allow developers to start building immediately. Some specific channels/features (e.g., WhatsApp Business) require additional verification/onboarding documented separately and may block that channel until approved."
+  },
+  "research_meta": {
+    "queries": [
+      "Vonage authentication methods",
+      "Vonage API key secret Developer Dashboard",
+      "Vonage developer sign up get api key",
+      "Vonage Developer home APIs SDKs",
+      "Vonage WhatsApp onboarding verification",
+      "Vonage communications APIs pricing"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "pitchbook",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com",
+      "reasoning": "The description accurately reflects the services provided by PitchBook as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com/products/direct-data",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the information cannot be verified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com/products/direct-data",
+      "reasoning": "The URL for credential access returns a 404 error, meaning the information cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://pitchbook.com/products/direct-data",
+      "reasoning": "The URL for API surface information returns a 404 error, meaning the information cannot be verified."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The lack of accessible documentation and the gated access indicates that building an integration is not possible without becoming a customer."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "whatsapp-business",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://business.whatsapp.com",
+      "reasoning": "The description accurately reflects the capabilities of the WhatsApp Business Platform as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "reasoning": "The authentication method using a Bearer token is explicitly supported by the documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "reasoning": "The claim about self-serve free access for initial credentials is supported by the documentation."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "reasoning": "The API surface being REST and covering various functionalities is confirmed by the documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "reasoning": "The ability to obtain test tokens and a test phone number for development is supported by the evidence."
+    }
+  ]
+}

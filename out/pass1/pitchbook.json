@@ -1,0 +1,43 @@
+{
+  "slug": "pitchbook",
+  "name": "PitchBook",
+  "category": "Finance and Fintech",
+  "description": "PitchBook provides private capital markets data; Direct Data delivers that data via an API and bulk datafeeds (SFTP/cloud) for enterprise integrations.",
+  "auth_methods": {
+    "value": [
+      "other"
+    ],
+    "evidence_url": "https://pitchbook.com/products/direct-data",
+    "confidence": "low",
+    "note": "PitchBook's Direct Data/product pages mention a 'flexible API' but do not publish technical auth details (OAuth2, API keys, tokens, etc.) on public pages; access/setup is handled via sales/account teams, so public auth method is not documented."
+  },
+  "credential_access": {
+    "value": "partner_gated",
+    "evidence_url": "https://pitchbook.com/products/direct-data",
+    "confidence": "high",
+    "note": "Direct Data is described as an enterprise-grade product and the page instructs clients to contact their account rep or sales for access; this indicates access is gated and requires a sales/partnership process."
+  },
+  "api_surface": {
+    "value": "none_public",
+    "breadth": "unknown",
+    "docs_url": "https://pitchbook.com/products/direct-data",
+    "confidence": "low",
+    "note": "Product pages state there is a 'flexible API' and bulk Datafeed (SFTP/AWS/Azure) but no public developer reference, REST/GraphQL details, or endpoint documentation is published on pitchbook.com; thus no public API surface to reference."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "Because Direct Data is an enterprise product that requires engagement with sales or an account representative to obtain access, you cannot obtain self-serve credentials or public API docs to build against today."
+  },
+  "research_meta": {
+    "queries": [
+      "PitchBook API documentation pitchbook.com",
+      "site:pitchbook.com API documentation \"API\" OR \"Datafeed\" OR \"Direct Data\"",
+      "PitchBook API documentation api.pitchbook.com",
+      "PitchBook \"Direct Data\" API documentation site:pitchbook.com \"Direct Data\" \"API\"",
+      "site:pitchbook.com \"API\" \"Datafeed\" \"Direct Data\" \"API key\"",
+      "COMPOSIO_SEARCH_TAVILY with include_domains [\"pitchbook.com\"] and query \"PitchBook API documentation\""
+    ],
+    "insufficient_public_docs": true
+  }
+}

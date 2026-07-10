@@ -1,0 +1,45 @@
+{
+  "slug": "mailchimp",
+  "name": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Email marketing platform providing APIs to manage audiences, campaigns, automations, and reports.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "evidence_url": "https://mailchimp.com/developer/marketing/guides/authorization/",
+    "confidence": "high",
+    "note": "Official developer docs describe both API keys (used via HTTP Basic or Authorization header) and OAuth 2.0 for the Marketing API."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://mailchimp.com/help/how-do-i-find-my-api-key/",
+    "confidence": "high",
+    "note": "Help Center shows account admins can create API keys from Account > Extras > API keys. Docs do not state a paid plan or partner approval is required to generate keys; API keys are created within an account (free accounts exist)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://mailchimp.com/developer/marketing/api/",
+    "confidence": "high",
+    "note": "Marketing API is HTTP/JSON REST API covering lists, members, campaigns, automations, reports, etc.; docs list many resource endpoints and base URL format."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs and self-serve API key creation exist, allowing developers to obtain credentials and start integration immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "Mailchimp developer portal site:mailchimp.com/developer",
+      "site:mailchimp.com/developer \"Marketing API\"",
+      "site:mailchimp.com/help \"API key\" Mailchimp",
+      "site:mailchimp.com \"How do I find my API key\"",
+      "site:mailchimp.com \"OAuth2\" \"Mailchimp\" \"developer\"",
+      "site:mailchimp.com \"API\" \"paid\" \"pricing\" Mailchimp",
+      "site:mailchimp.com \"API keys\" \"free\" Mailchimp account"
+    ],
+    "insufficient_public_docs": false
+  }
+}

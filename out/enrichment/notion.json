@@ -1,0 +1,44 @@
+{
+  "slug": "notion",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "notion",
+    "tools_count": 45.0,
+    "auth_schemes": [
+      "OAUTH2",
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "notion"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.smithery/smithery-notion",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/notion",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/notion",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.ai-aviate/better-notion",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.awkoy/notion-mcp-server",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Notion"
+  },
+  "homepage_alive": true
+}

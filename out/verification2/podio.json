@@ -1,0 +1,40 @@
+{
+  "slug": "podio",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "A collaborative work platform for managing projects, CRM, and workflows with a RESTful API to automate and integrate Podio data and actions.",
+      "better_evidence_url": "https://www.podio.com",
+      "reasoning": "The homepage describes Podio as a work management platform that supports project management, CRM, and workflows, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token, other",
+      "better_evidence_url": "https://developers.podio.com/authentication",
+      "reasoning": "The authentication documentation confirms that Podio uses OAuth2 and supports Bearer tokens, matching the recorded values."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://developers.podio.com/applications",
+      "reasoning": "The evidence URL returned a 500 error, preventing confirmation of the self-serve access claim for credentials."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://developers.podio.com/api",
+      "reasoning": "The evidence URL returned a 500 error, which means the claim about the RESTful API surface could not be confirmed."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developers.podio.com/api",
+      "reasoning": "The buildability claim cannot be confirmed due to the 500 error on the API documentation page, which is necessary to validate the claim."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "systeme-io",
+  "name": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "All-in-one marketing platform for funnels, email, memberships, and online courses.",
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "evidence_url": "https://developers.systeme.io/docs/authentication",
+    "confidence": "high",
+    "note": "The Authentication docs specify using an API key sent in the HTTP Authorization header as a Bearer token (i.e., `Authorization: Bearer <api_key>`)."
+  },
+  "credential_access": {
+    "value": "self_serve_paid_trial",
+    "evidence_url": "https://help.systeme.io/en/articles/839499-api-access",
+    "confidence": "high",
+    "note": "The help article states API access is only available on specific paid plans (e.g., Growth and above) and that eligible users can generate/manage the API key from their systeme.io account/dashboard (self-serve once on an eligible plan)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.systeme.io/",
+    "confidence": "high",
+    "note": "The developer portal is a REST API documentation site with multiple resource endpoints and sections (including Authentication and Webhooks), indicating a broad REST surface across core systeme.io objects."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "paid_only",
+    "note": "Public REST documentation is available and authentication is via API key, but the official help article indicates API access requires being on an eligible paid plan (e.g., Growth+), making the primary blocker paid-only access."
+  },
+  "research_meta": {
+    "queries": [
+      "systeme.io api authentication",
+      "systeme.io how to get api key",
+      "systeme.io api access growth plan",
+      "systeme.io developers docs"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "bigcommerce",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.bigcommerce.com",
+      "reasoning": "The description accurately reflects the purpose of BigCommerce as a hosted e-commerce platform for building and operating online stores, which is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.bigcommerce.com/docs/start/authentication/api-accounts",
+      "reasoning": "The evidence URL is accessible, but it does not provide sufficient detail to confirm the specific authentication methods listed in the record."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.bigcommerce.com/apps/guide/getting-started",
+      "reasoning": "The evidence URL returns a 404 error, indicating that the information regarding credential access cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.bigcommerce.com/api-reference",
+      "reasoning": "The API reference confirms the existence of both Store Management REST APIs and Storefront GraphQL API, supporting the claim of broad API surface coverage."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.bigcommerce.com/api-reference",
+      "reasoning": "While the public API reference is available, the lack of confirmation for the other fields leads to uncertainty about the overall buildability status."
+    }
+  ]
+}

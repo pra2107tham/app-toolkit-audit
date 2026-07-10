@@ -1,0 +1,40 @@
+{
+  "slug": "coda",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Coda is an all-in-one collaborative workspace that brings teams, tools, and workflows together in one doc so teams can make docs, build workflows, and move work forward.",
+      "better_evidence_url": "https://coda.io",
+      "reasoning": "The homepage confirms the description of Coda as a collaborative workspace that integrates teams and tools."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1#authentication",
+      "reasoning": "The official documentation explicitly states that Personal API tokens and OAuth 2.0 are used for authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "self_serve_free",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1",
+      "reasoning": "The documentation confirms that the Coda API is available free of charge to all users, including those with free workspaces."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1",
+      "reasoning": "The API documentation confirms that it is a RESTful API covering various resources such as docs, pages, and tables."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://coda.io/developers/apis/v1beta1",
+      "reasoning": "The ability to create personal API tokens and the availability of public REST documentation confirm that the API is buildable today."
+    }
+  ]
+}

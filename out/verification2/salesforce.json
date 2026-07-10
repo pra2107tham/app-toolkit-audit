@@ -1,0 +1,40 @@
+{
+  "slug": "salesforce",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.salesforce.com",
+      "reasoning": "The homepage confirms Salesforce is a cloud-based CRM platform, but it does not provide specific details about APIs or their functionalities."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_oauth.htm",
+      "reasoning": "The evidence URL for authentication methods returned a 403 error, preventing verification of the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/signup",
+      "reasoning": "The evidence URL for credential access returned a 403 error, preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "reasoning": "The evidence URL for API surface returned a 403 error, preventing verification of the claim."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/signup",
+      "reasoning": "The claim about buildability cannot be confirmed due to the lack of accessible evidence supporting the ability to build integrations."
+    }
+  ]
+}

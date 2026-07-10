@@ -1,0 +1,43 @@
+{
+  "slug": "zoho-cliq",
+  "name": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "description": "Team chat and collaboration platform with channels, messaging, bots, and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/authentication.html",
+    "confidence": "high",
+    "note": "Zoho Cliq REST API uses OAuth 2.0; access tokens are passed in the Authorization header as 'Zoho-oauthtoken <access_token>'."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.zoho.com/accounts/help/api/console.html",
+    "confidence": "high",
+    "note": "Developers can sign in to the Zoho API Console to create a client and obtain client_id and client_secret without mention of payment or manual approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+    "confidence": "high",
+    "note": "The REST API v2 provides endpoints for messages, channels, users, bots, webhooks and more (full reference available in the v2 docs)."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs and self-serve OAuth client registration exist; developers can obtain credentials and call APIs today."
+  },
+  "research_meta": {
+    "queries": [
+      "Zoho Cliq API documentation",
+      "site:zoho.com/cliq \"developer guide\" Cliq",
+      "Zoho Cliq authentication OAuth client id client secret \"Cliq\" \"OAuth\" site:zoho.com",
+      "Zoho API Console create client \"api-console.zoho.com\" obtain client_id client_secret ZohoCliq",
+      "Zoho Cliq pricing API access \"Cliq\" pricing \"API\" site:zoho.com/cliq",
+      "Does Zoho Cliq API require paid plan partnership \"Cliq API\" \"partner\""
+    ],
+    "insufficient_public_docs": false
+  }
+}

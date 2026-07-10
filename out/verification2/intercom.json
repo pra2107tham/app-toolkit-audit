@@ -1,0 +1,40 @@
+{
+  "slug": "intercom",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Customer messaging, helpdesk, and product support platform (inbox, conversations, users, and automation).",
+      "better_evidence_url": "https://www.intercom.com",
+      "reasoning": "The description aligns with the information provided on the homepage, confirming the nature of the platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token",
+      "better_evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "reasoning": "The evidence clearly states that Intercom supports OAuth 2.0 for public apps and Personal Access Tokens for private apps, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.intercom.com/docs/build-an-integration/app-configuration/",
+      "reasoning": "The URL provided for credential access returns a 404 error, indicating that the information cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "both",
+      "better_evidence_url": "https://developers.intercom.com/docs/references/2.13/rest-api/api.intercom.io",
+      "reasoning": "The evidence confirms that Intercom exposes both a broad REST API and a GraphQL endpoint, supporting the claim of a broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "reasoning": "While the claim states that integrations can be built today, the lack of supporting evidence from the dead URL for credential access raises doubts about the overall buildability."
+    }
+  ]
+}

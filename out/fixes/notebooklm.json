@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "unclear",
+      "evidence_url": "https://cloud.google.com/products/generative-ai/ai-enterprise",
+      "confidence": "medium",
+      "note": "Setup docs show enabling the API and creating service accounts in a Google Cloud project (which is self-serve if you have a project and billing). However the product page surfaces enterprise/contact-sales messaging and there is no published self-serve NotebookLM Enterprise signup or pricing; it's unclear whether NotebookLM Enterprise access is gated by enterprise sales for most customers or available to self-serve Google Cloud projects with billing enabled."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://cloud.google.com/products/generative-ai/ai-enterprise",
+      "confidence": "medium",
+      "note": "The official AI Enterprise product page positions AI Enterprise (including NotebookLM) as an organizational/enterprise offering and the primary call-to-action to get started is 'Contact sales', suggesting access may be sales-gated; however, it does not explicitly confirm whether NotebookLM Enterprise API credentials can be obtained self-serve in any billed Google Cloud project."
+    },
+    "verdict": "unsupported"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "Although REST API and auth mechanisms are documented and code examples use gcloud access tokens, public product messaging directs enterprise customers to contact sales and there's no clear public self-serve signup/pricing for NotebookLM Enterprise. The main blocker is uncertainty whether a developer can obtain usable NotebookLM Enterprise credentials without engaging Google Cloud sales or enterprise enrollment."
+    },
+    "final_value": {
+      "verdict": "blocked",
+      "main_blocker": "other",
+      "note": "The setup guide documents technical prerequisites (Google Cloud project, billing enabled, enabling the NotebookLM Enterprise API, creating a service account, and using Bearer access tokens), but it does not clarify whether the NotebookLM Enterprise API is generally available to any self-serve Google Cloud project or requires enterprise enrollment/sales approval to actually obtain working access; this uncertainty blocks buildability determination."
+    },
+    "verdict": "unsupported"
+  }
+}

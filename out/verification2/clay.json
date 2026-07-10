@@ -1,0 +1,40 @@
+{
+  "slug": "clay",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com",
+      "reasoning": "The homepage describes Clay as an AI-powered platform for scaling personalized outbound and automating GTM workflows, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com/developers",
+      "reasoning": "The URL for the auth methods returned a 404 error, indicating that the evidence for the claim is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com/signup",
+      "reasoning": "The signup page confirms that there is a self-serve account creation flow, supporting the claim about credential access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com/developers",
+      "reasoning": "The URL for the API surface returned a 404 error, indicating that the evidence for the claim is not accessible."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.clay.com/signup",
+      "reasoning": "While the signup page is accessible, the lack of evidence from the developers page (404 error) means the claim about buildability cannot be fully supported."
+    }
+  ]
+}

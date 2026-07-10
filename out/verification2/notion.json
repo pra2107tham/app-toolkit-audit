@@ -1,0 +1,40 @@
+{
+  "slug": "notion",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.notion.so",
+      "reasoning": "The description accurately reflects the capabilities of Notion as an all-in-one workspace for notes, docs, databases, and project management, as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.notion.com/docs/authorization",
+      "reasoning": "The evidence confirms that Notion's API uses OAuth 2.0 and bearer tokens for authorization, aligning with the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.notion.com/docs/create-a-notion-integration",
+      "reasoning": "The documentation supports the claim that developers can self-serve credentials by creating an integration and obtaining an Internal Integration Token."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.notion.com/reference/intro",
+      "reasoning": "The evidence confirms that Notion provides a REST API covering various functionalities, which matches the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "contradicted",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developers.notion.com/docs/create-a-notion-integration",
+      "reasoning": "The note indicates that the buildability should be 'buildable_today' based on the provided information, contradicting the recorded value of 'blocked'."
+    }
+  ]
+}

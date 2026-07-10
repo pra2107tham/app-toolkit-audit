@@ -1,0 +1,45 @@
+{
+  "slug": "mongodb-atlas",
+  "name": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "description": "Managed, cloud-hosted MongoDB database service with administration APIs for programmatic management of clusters, projects, and account-level resources.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2",
+      "other",
+      "none_public"
+    ],
+    "evidence_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "confidence": "high",
+    "note": "Atlas supports Public/Private Key (HTTP Digest) API keys, OAuth2 service-account tokens, and the docs explicitly describe these. The schema does not include 'digest_auth' as a value, so 'HTTP Digest (public/private key)' is represented here as 'other'. 'none_public' kept only for clarity although Atlas administration API generally requires authentication."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.mongodb.com/docs/atlas/configure-api-access/#manage-programmatic-api-keys",
+    "confidence": "high",
+    "note": "MongoDB Atlas docs describe creating (programmatic) API keys directly in the Atlas UI via Project Settings \u2192 Access Manager \u2192 API Keys \u2192 Create API Key, requiring Organization Owner or Project Owner role\u2014indicating self-serve credential creation for eligible users."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "confidence": "high",
+    "note": "Atlas exposes a versioned REST administration API (base URL https://cloud.mongodb.com/api/atlas/v2/) with many endpoints covering clusters, projects, users, alerts, backup, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API docs exist, and Atlas supports self-serve creation of programmatic API keys in the Atlas UI for users with the required roles (Org Owner/Project Owner), enabling immediate authenticated API access."
+  },
+  "research_meta": {
+    "queries": [
+      "MongoDB Atlas API documentation root site:mongodb.com/docs/atlas/api",
+      "site:mongodb.com \"API Key\" \"Atlas\" \"create\" \"API key\" \"service account\" \"Atlas\"",
+      "site:mongodb.com/docs/atlas \"Create an API Key\"",
+      "site:mongodb.com \"Atlas\" \"API\" \"paid\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

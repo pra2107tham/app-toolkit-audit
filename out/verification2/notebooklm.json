@@ -1,0 +1,40 @@
+{
+  "slug": "notebooklm",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://notebooklm.google.com",
+      "reasoning": "The homepage does not provide specific details about the programmatic creation and management of NotebookLM notebooks on Google Cloud, making the description unsupported."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token, other, none_public",
+      "better_evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "reasoning": "The setup documentation confirms the use of OAuth2 bearer tokens and service accounts, supporting the listed authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://cloud.google.com/products/generative-ai/ai-enterprise",
+      "reasoning": "The URL provided for credential access leads to a 404 error, indicating that the information is not accessible."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "reasoning": "The API documentation confirms the REST endpoints for various notebook management tasks, supporting the claim of a broad REST surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "reasoning": "The setup guide does not clarify whether the API is available for self-serve projects or requires sales approval, leaving the buildability determination unsupported."
+    }
+  ]
+}

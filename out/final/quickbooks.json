@@ -1,0 +1,42 @@
+{
+  "slug": "quickbooks",
+  "name": "QuickBooks",
+  "category": "Finance and Fintech",
+  "description": "Accounting software (QuickBooks Online) that helps businesses manage finances\u2014track income and expenses, invoice customers, and accept payments, with integrations via QuickBooks APIs for connecting apps to company data.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+    "confidence": "high",
+    "note": "Official Intuit docs state QuickBooks Online uses OAuth 2.0 and describes the authorization code flow and token use (Authorization: Bearer <access_token>)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/how-to/create-an-app",
+    "confidence": "high",
+    "note": "Developer documentation shows you can create an app in the Developer Dashboard to obtain Client ID and Client Secret and use sandbox credentials for development without manual approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+    "confidence": "high",
+    "note": "Documentation hub and API reference indicate REST-based Accounting, Payments, Reports APIs covering most product objects; API Explorer and Postman collections are provided."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developers can self-register, obtain sandbox keys, and call REST APIs using OAuth2 for development. Production access requires app review but sandbox allows building and testing today."
+  },
+  "research_meta": {
+    "queries": [
+      "QuickBooks Online API OAuth 2.0",
+      "How to create an app QuickBooks Developer Dashboard Client ID Client Secret",
+      "QuickBooks move an app to production app review",
+      "QuickBooks API reference REST Accounting API"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

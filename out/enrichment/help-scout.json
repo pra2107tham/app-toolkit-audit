@@ -1,0 +1,22 @@
+{
+  "slug": "help-scout",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "help_scout",
+    "tools_count": 129.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "help_scout"
+    ]
+  },
+  "mcp_server": {
+    "exists": false,
+    "official": false,
+    "matches": [],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Help%20Scout"
+  },
+  "homepage_alive": true
+}

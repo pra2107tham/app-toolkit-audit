@@ -1,0 +1,43 @@
+{
+  "slug": "quickbooks",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "quickbooks",
+    "tools_count": 114.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "quickbooks"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "io.github.NyxToolsDev/quickbooks-mcp-server",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Servosity/quickbooks-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Servosity/quickbooks-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Servosity/quickbooks-mcp",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.Servosity/quickbooks-mcp",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=QuickBooks"
+  },
+  "homepage_alive": false
+}

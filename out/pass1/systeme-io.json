@@ -1,0 +1,42 @@
+{
+  "slug": "systeme-io",
+  "name": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "All-in-one marketing platform for funnels, email, memberships, and online courses.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://developers.systeme.io/docs/authentication",
+    "confidence": "high",
+    "note": "Documentation specifies use of API key in Authorization header as a Bearer token and allows api_key query parameter for some endpoints."
+  },
+  "credential_access": {
+    "value": "self_serve_paid_trial",
+    "evidence_url": "https://help.systeme.io/en/articles/839499-api-access",
+    "confidence": "high",
+    "note": "Help Center states API is available for Growth and higher plans, so a paid plan upgrade is required to obtain API access; generating the key is self-serve from the dashboard once on an eligible plan."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.systeme.io/",
+    "confidence": "high",
+    "note": "Developer portal lists REST API docs and multiple endpoints (Authentication, Endpoints, Webhooks, SDKs). The API covers core product objects (funnels, emails, contacts), per developer docs and portal."
+  },
+  "buildability": {
+    "verdict": "buildable_with_key_signup",
+    "main_blocker": "paid_only",
+    "note": "Public REST docs exist and API keys are generated from the dashboard, but API access requires upgrading to Growth or higher, so development is possible after routine paid plan upgrade."
+  },
+  "research_meta": {
+    "queries": [
+      "systeme.io api authentication",
+      "systeme.io how to get api key",
+      "systeme.io api access growth plan",
+      "systeme.io developers docs"
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "airtable",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.airtable.com",
+      "reasoning": "The homepage provides a general overview of Airtable's capabilities but does not specifically confirm the claim about being a 'cloud spreadsheet-database hybrid for building collaborative apps and workflows with a REST API, SDKs, webhooks, and OAuth integration.'"
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.airtable.com/developers/authentication",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the evidence to confirm the claim about supported authentication methods is not available."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://support.airtable.com/docs/personal-access-tokens",
+      "reasoning": "The URL for credential access returns a 404 error, indicating that the evidence to support the claim about self-serve access to personal access tokens is not available."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://airtable.com/api",
+      "reasoning": "The API page confirms that Airtable provides a REST API for bases, which supports the claim about the API surface being REST."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "https://airtable.com/api",
+      "reasoning": "While the API page is accessible, the lack of confirmation for the other fields, particularly regarding authentication methods and credential access, means that the claim about buildability cannot be fully supported."
+    }
+  ]
+}

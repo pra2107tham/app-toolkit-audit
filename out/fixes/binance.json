@@ -1,0 +1,55 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "token",
+        "oauth2",
+        "other"
+      ],
+      "evidence_url": "https://binance-docs.github.io/apidocs/spot/en/#signed-endpoint",
+      "confidence": "high",
+      "note": "Public Spot API: 'SIGNED' endpoints require API key in X-MBX-APIKEY header and HMAC SHA256 signature (api_key + signature). Binance Developers docs also describe OAuth2 flows (OAuth for Binance Login / OAuth API) for other platform flows and token-based calls."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "other"
+      ],
+      "evidence_url": "https://binance-docs.github.io/apidocs/spot/en/#signed-endpoint",
+      "confidence": "high",
+      "note": "Binance Spot API docs specify that some endpoints require a valid API-Key and a SIGNED request. API keys are passed via the X-MBX-APIKEY header, and SIGNED endpoints use an HMAC SHA256 signature produced with the secretKey (i.e., API key + HMAC signature scheme)."
+    },
+    "verdict": "unsupported"
+  },
+  "api_surface": {
+    "pass1_value": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://developers.binance.com/docs/",
+      "confidence": "high",
+      "note": "Binance provides broad REST (Spot, Futures, Margin, Connect Prime) and WebSocket APIs covering market data, account, trading and partner product APIs (Connect Prime). Official docs root and Spot API docs describe extensive endpoints."
+    },
+    "final_value": {
+      "value": "both",
+      "breadth": "broad",
+      "docs_url": "https://developers.binance.com/docs/",
+      "confidence": "high",
+      "note": "The official Binance Developers portal organizes documentation across many API product areas (including Spot, Futures, Options, Fiat, Pay, Gift Card, Convert, Copy Trading, Margin, Mining) and provides API Reference resources, indicating broad coverage across products and interfaces (documented APIs plus streaming where applicable)."
+    },
+    "verdict": "unsupported"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST and WebSocket docs exist and API keys can be obtained self-serve from Binance user dashboard; OAuth partner flows and Connect Prime partner integrations exist but those advanced flows are partner-gated. For standard trading and market data, you can build today with a user API key."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Binance provides public developer documentation (Binance Developers portal) and self-serve instructions to create API credentials from a Binance account (Profile \u2192 Account \u2192 API Management \u2192 Create API, then security verification). Combined with the Spot API\u2019s documented API-key header + HMAC signature requirements, this supports that standard API integrations can be built today without a partner approval step."
+    },
+    "verdict": "unsupported"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "sendgrid",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://sendgrid.com",
+      "reasoning": "The description of SendGrid as an email delivery and marketing platform for sending transactional and marketing email at scale is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+      "reasoning": "The authentication methods listed (api_key, oauth2, basic) are explicitly mentioned in the documentation, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://sendgrid.com/pricing",
+      "reasoning": "The claim that SendGrid offers a self-serve free tier and allows developers to create API keys without human approval is supported by the pricing page."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.sendgrid.com/",
+      "reasoning": "The broad REST API surface covering various functionalities is confirmed by the documentation, which details the capabilities of the Web API."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.sendgrid.com/",
+      "reasoning": "The ability to build integrations today is supported by the public documentation and the availability of self-created API keys on the free tier."
+    }
+  ]
+}

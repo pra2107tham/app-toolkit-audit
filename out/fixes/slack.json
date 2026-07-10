@@ -1,0 +1,7 @@
+{
+  "description": {
+    "pass1_value": "Team communication platform providing messaging, channels, and integrations via HTTP Web APIs, Events (webhooks), and real-time APIs.",
+    "final_value": "Slack is a work operating system that brings people, apps, and AI together to help teams work more efficiently through communication and collaboration.",
+    "verdict": "unsupported"
+  }
+}

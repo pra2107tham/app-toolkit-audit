@@ -1,0 +1,43 @@
+{
+  "slug": "notion",
+  "name": "Notion",
+  "category": "Productivity and Project Management",
+  "description": "Notion is an all-in-one workspace for notes, docs, databases, and project management; its API allows creating and managing content and data across Notion workspaces.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://developers.notion.com/docs/authorization",
+    "confidence": "high",
+    "note": "Official docs state the Notion API uses OAuth 2.0 for third-party integrations and 'internal integration' bearer tokens (returned from My integrations) for workspace-scoped access; requests use an Authorization: Bearer TOKEN header."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.notion.com/docs/faq",
+    "confidence": "high",
+    "note": "Docs and FAQ explain developers can create integrations and obtain internal integration tokens via 'My integrations' and state the API is available to all Notion users (no paid plan required)."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.notion.com/reference/intro",
+    "confidence": "high",
+    "note": "Official API reference describes a HTTP REST API (GET, POST, PATCH, DELETE) covering pages, databases, blocks, users, search, and more; official client SDKs (JS, Python) are also provided that wrap the REST API."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Developer can self-register an integration (My integrations) and obtain an internal integration token or implement the OAuth 2.0 flow; official REST docs and SDKs are available."
+  },
+  "research_meta": {
+    "queries": [
+      "Notion API authorization",
+      "Create a Notion integration My integrations token",
+      "Notion API REST reference",
+      "Do I need a paid plan to use the Notion API",
+      "Notion client libraries SDKs"
+    ],
+    "insufficient_public_docs": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "whatsapp-business",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://business.whatsapp.com",
+      "reasoning": "The description accurately reflects the capabilities of the WhatsApp Business Platform as stated on the homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL provided for authentication methods returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "reasoning": "The information about self-serve free access for developers is supported by the content on the fetched page."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp",
+      "reasoning": "The claim about the REST API surface and its broad coverage is supported by the content on the fetched page."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "reasoning": "The claim regarding buildability today is consistent with the information provided about obtaining test tokens and phone numbers."
+    }
+  ]
+}

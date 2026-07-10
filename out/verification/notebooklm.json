@@ -1,0 +1,40 @@
+{
+  "slug": "notebooklm",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "NotebookLM Enterprise (part of Gemini Enterprise) provides programmatic creation and management of NotebookLM notebooks on Google Cloud.",
+      "better_evidence_url": "https://notebooklm.google.com",
+      "reasoning": "The description accurately reflects the functionality of NotebookLM as stated on its homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "oauth2, token, other, none_public",
+      "better_evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "reasoning": "The evidence supports the claim about the authentication methods, detailing OAuth2 bearer tokens and service accounts."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://cloud.google.com/products/generative-ai/ai-enterprise",
+      "reasoning": "The evidence URL returns a 404 error, and the claim about credential access being unclear is not substantiated by the available evidence."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "rest",
+      "better_evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "reasoning": "The evidence confirms that the API surface is REST and describes the breadth of the API functionalities."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "reasoning": "While the buildability is noted as blocked, the evidence does not provide sufficient clarity on whether developers can obtain usable credentials without engaging sales, making the claim unsupported."
+    }
+  ]
+}

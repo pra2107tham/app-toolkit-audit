@@ -1,0 +1,40 @@
+{
+  "slug": "shopify",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.shopify.com",
+      "reasoning": "The description accurately reflects the content on the homepage, which describes Shopify as a comprehensive ecommerce platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://shopify.dev/docs/apps/auth",
+      "reasoning": "The evidence supports the claim about the authentication methods available for Shopify apps, including OAuth, access tokens, API keys, and JWT."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL provided for credential access returns a 404 error, indicating that the evidence is not accessible."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://shopify.dev/docs/api",
+      "reasoning": "The evidence confirms the existence of both REST and GraphQL APIs, supporting the claim of broad API surface coverage."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://shopify.dev/docs/api",
+      "reasoning": "While the claim about buildability is likely true, the evidence does not explicitly confirm it, as the buildability section lacks a dedicated URL and relies on other fields."
+    }
+  ]
+}

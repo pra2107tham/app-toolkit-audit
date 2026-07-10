@@ -1,0 +1,44 @@
+{
+  "slug": "devin",
+  "name": "Devin",
+  "category": "AI, Research and Media-native",
+  "description": "An autonomous AI software engineer (agent) that can write, run, and test code and expose functionality via a REST API for integrations.",
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "token"
+    ],
+    "evidence_url": "https://docs.devin.ai/api-reference/overview",
+    "confidence": "high",
+    "note": "The API reference shows REST endpoints and examples using an Authorization: Bearer <API_KEY>/service user credentials (cog_ prefix), indicating API-key-style bearer tokens for authentication."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://devin.ai/pricing",
+    "confidence": "high",
+    "note": "The pricing page explicitly lists a Free plan that includes API access and API keys, indicating developers can obtain API access on a free self-serve plan."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.devin.ai/api-reference/overview",
+    "confidence": "high",
+    "note": "The API reference documents a RESTful API (base URLs, many endpoints like /models, /chat/completions, /images, /files, /usage, organization and enterprise scopes), indicating broad coverage of product objects."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs exist and the pricing page shows a Free tier with API access, so a developer can sign up and start building today without special approval."
+  },
+  "research_meta": {
+    "queries": [
+      "https://docs.devin.ai/",
+      "https://docs.devin.ai/api-reference/overview",
+      "https://docs.devin.ai/authentication",
+      "https://docs.devin.ai/api-keys",
+      "https://devin.ai/pricing",
+      "https://devin.ai/contact"
+    ],
+    "insufficient_public_docs": false
+  }
+}

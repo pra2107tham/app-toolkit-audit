@@ -1,0 +1,44 @@
+{
+  "slug": "slack",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "slack",
+    "tools_count": 158.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "slack",
+      "slackbot"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "ai.smithery/smithery-ai-slack",
+        "official_vendor": false
+      },
+      {
+        "name": "ai.waystation/slack",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/slack",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/slack",
+        "official_vendor": false
+      },
+      {
+        "name": "com.pulsemcp/slack",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Slack"
+  },
+  "homepage_alive": true
+}

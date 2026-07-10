@@ -1,0 +1,40 @@
+{
+  "slug": "mongodb-atlas",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/atlas",
+      "reasoning": "The homepage describes MongoDB Atlas as a managed, cloud-hosted database service, which aligns with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "reasoning": "The documentation confirms that Atlas supports API key and OAuth2 authentication methods, matching the recorded values."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/tutorial/create-api-key/",
+      "reasoning": "The URL for the credential access evidence returns a 404 error, making it impossible to confirm the claim regarding self-serve API key creation."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+      "reasoning": "The API reference documentation confirms that Atlas exposes a REST administration API, supporting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the other fields suggest buildability, the lack of confirmation for credential access due to the dead URL means the overall buildability cannot be confirmed."
+    }
+  ]
+}

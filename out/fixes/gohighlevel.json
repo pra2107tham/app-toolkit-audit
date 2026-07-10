@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_paid_trial",
+      "evidence_url": "https://help.gohighlevel.com/support/solutions/articles/360003419193-register-your-app-for-developer-marketplace",
+      "confidence": "medium",
+      "note": "Docs show developers can create Private Integrations and register Marketplace apps via the Developer section and must submit apps for review. The docs do not explicitly state whether a paid plan or card is required to create developer credentials; however, developer onboarding runs through agency/developer accounts (which commonly require account setup). No explicit public doc states entirely free, self-serve credentials without any account setup or billing \u2014 so classified as self_serve_paid_trial (routine signup likely required)."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://highlevel.stoplight.io/docs/highlevel-api-v2/reference/base/auth",
+      "confidence": "low",
+      "note": "The accessible primary source confirms auth mechanisms (Private Integration Token and OAuth 2.0) but does not state whether obtaining developer credentials requires a paid plan, a trial, or any billing. The previously referenced Help Center article for Marketplace app registration was not available to verify signup requirements."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "other",
+      "note": "Public REST docs, examples, and SDKs exist and authentication methods are documented. Building integrations requires creating Private Integration Tokens or registering an OAuth Marketplace app (which involves submitting for review). No explicit paid/partner gating found in docs, so a routine developer signup and app registration is the likely path."
+    },
+    "final_value": {
+      "verdict": "buildable_with_key_signup",
+      "main_blocker": "other",
+      "note": "Buildable from public docs: the official API auth page documents how to call the API with a Private Integration Token (Bearer token) and how to use OAuth 2.0 (authorization URL and token URL). However, the exact credential provisioning/onboarding path (and whether any paid requirement exists) is not confirmed in the fetched primary sources."
+    },
+    "verdict": "unsupported"
+  }
+}

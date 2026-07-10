@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://mailchimp.com/help/how-do-i-find-my-api-key/",
+      "confidence": "high",
+      "note": "Help Center shows account admins can create API keys from Account > Extras > API keys. Docs do not state a paid plan or partner approval is required to generate keys; API keys are created within an account (free accounts exist)."
+    },
+    "final_value": {
+      "value": "unclear",
+      "evidence_url": "https://mailchimp.com/help/how-do-i-find-my-api-key/",
+      "confidence": "low",
+      "note": "Could not verify Mailchimp API key creation/self-serve availability because the official Help Center article could not be fetched from this environment (HTTP 403 via CloudFront access restrictions). The URL is the official Mailchimp Help article the fact-checker referenced, but its contents were not accessible for confirmation."
+    },
+    "verdict": "dead_url"
+  }
+}

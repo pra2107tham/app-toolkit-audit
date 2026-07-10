@@ -1,0 +1,40 @@
+{
+  "slug": "higgsfield",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Higgsfield is an AI image & video generation platform exposing a Minimal Connector Protocol (MCP) server and CLI for programmatic agent integrations.",
+      "better_evidence_url": "https://higgsfield.ai",
+      "reasoning": "The homepage describes Higgsfield as an AI-native creative suite focused on image and video generation, aligning with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "token, other",
+      "better_evidence_url": "https://higgsfield.ai/cli",
+      "reasoning": "The CLI page confirms that authentication is done via a Higgsfield account and session tokens, supporting the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://higgsfield.ai/pricing",
+      "reasoning": "The pricing page indicates credit-based plans and the requirement of a credit card, but does not clarify if developers can self-register or obtain free trial credits, leaving the claim unsupported."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "contradicted",
+      "corrected_value": "narrow",
+      "better_evidence_url": "https://higgsfield.ai/mcp",
+      "reasoning": "The MCP page indicates a narrow REST-like interface rather than a broad documented public REST/GraphQL API, contradicting the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "contradicted",
+      "corrected_value": "not buildable today",
+      "better_evidence_url": "https://higgsfield.ai/pricing",
+      "reasoning": "The main operational blocker is account provisioning/credits, which suggests that building is not feasible without prior account setup, contradicting the claim of being buildable today."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "hubspot",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.hubspot.com",
+      "reasoning": "The description accurately reflects the offerings of HubSpot as a CRM platform with REST APIs and developer tools."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "reasoning": "The evidence supports the listed authentication methods, including OAuth 2.0 and the mention of deprecated API keys."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+      "reasoning": "The evidence confirms that private apps can be created in the HubSpot UI to generate scoped access tokens without requiring human approval."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "reasoning": "The evidence confirms that HubSpot provides a broad REST API surface covering various product areas, with no indication of GraphQL or SDK-only access replacing REST."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The buildability claim is supported by the existence of documentation and self-service credential issuance, allowing for immediate integration building."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "close",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "close",
+    "tools_count": 6.0,
+    "auth_schemes": [
+      "API_KEY"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "close"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": true,
+    "matches": [
+      {
+        "name": "com.close/close-mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "com.close/close-mcp",
+        "official_vendor": true
+      },
+      {
+        "name": "io.github.pipeworx-io/close-crm",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Close"
+  },
+  "homepage_alive": true
+}

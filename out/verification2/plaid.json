@@ -1,0 +1,40 @@
+{
+  "slug": "plaid",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://plaid.com",
+      "reasoning": "The description accurately reflects Plaid's services as stated on their homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://plaid.com/docs/api/",
+      "reasoning": "The evidence confirms that API requests require a client_id and secret, and that these can be sent in the request body or via HTTP Basic authentication."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://dashboard.plaid.com/signup",
+      "reasoning": "The evidence supports that developers can create a free Plaid Dashboard account to access Sandbox and Development."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://plaid.com/docs/api/",
+      "reasoning": "The evidence confirms that Plaid provides a broad REST API covering various functionalities."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://plaid.com/docs/api/",
+      "reasoning": "The evidence supports that developers can build integrations today with the available self-serve Dashboard and documented APIs."
+    }
+  ]
+}

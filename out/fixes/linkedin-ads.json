@@ -1,0 +1,21 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://learn.microsoft.com/linkedin/shared/authentication/",
+      "confidence": "high",
+      "note": "Official docs state LinkedIn uses OAuth 2.0 and supports Authorization Code Flow and Client Credentials Flow for obtaining access tokens required by REST API calls."
+    },
+    "final_value": {
+      "value": [
+        "oauth2"
+      ],
+      "evidence_url": "https://learn.microsoft.com/linkedin/shared/authentication/",
+      "confidence": "high",
+      "note": "Microsoft Learn (LinkedIn) states that LinkedIn uses OAuth 2.0 for authentication and describes obtaining access tokens and supported OAuth 2.0 flows (including Authorization Code Flow and Client Credentials Flow) for making LinkedIn API requests."
+    },
+    "verdict": "dead_url"
+  }
+}

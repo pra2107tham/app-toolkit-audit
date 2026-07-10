@@ -1,0 +1,44 @@
+{
+  "slug": "twilio",
+  "name": "Twilio",
+  "category": "Communications and Messaging",
+  "description": "Cloud communications platform providing REST APIs and SDKs for SMS, Voice, Video, WhatsApp, and other messaging/real-time communications services.",
+  "auth_methods": {
+    "value": [
+      "basic",
+      "api_key"
+    ],
+    "evidence_url": "https://www.twilio.com/docs/iam/api",
+    "confidence": "high",
+    "note": "Twilio's main REST API uses HTTP Basic Auth with Account SID as username and Auth Token as password. API Key SID/Secret can also be used in place of Account SID/Auth Token (used in HTTP Basic Auth)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+    "confidence": "high",
+    "note": "Developers can sign up for a free Twilio trial account and receive Account SID and Auth Token (and create API Keys) without human approval; trial has usage limits."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://www.twilio.com/docs",
+    "confidence": "high",
+    "note": "Twilio provides REST APIs across its products plus official helper libraries (SDKs) in multiple languages; the docs hub lists REST APIs, SDKs, quickstarts, and API references covering messaging, voice, video, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST APIs and self-serve credentials are available; developers can build integrations immediately. Some specific product features (e.g., WhatsApp Business onboarding, short codes) require additional approvals or provisioning which may require applications/fees (see evidence)."
+  },
+  "research_meta": {
+    "queries": [
+      "Twilio API authentication",
+      "Twilio API Keys SID Secret",
+      "Twilio REST API docs",
+      "Twilio free trial account credentials",
+      "Twilio WhatsApp request access",
+      "Twilio short codes provisioning"
+    ],
+    "insufficient_public_docs": false
+  }
+}

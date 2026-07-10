@@ -1,0 +1,40 @@
+{
+  "slug": "close",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.close.com",
+      "reasoning": "The homepage confirms that Close is a sales CRM built for teams that sell, providing features like calling, email, SMS, and pipeline management."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for authentication methods returned a 404 error, so the claim cannot be verified."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "The URL for credential access returned a FETCH_ERROR, preventing verification of the claim."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.close.com/",
+      "reasoning": "The developer documentation confirms that the Close API is a REST API with a full endpoint documentation available."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "buildable_today",
+      "better_evidence_url": "https://developer.close.com/",
+      "reasoning": "While the API is confirmed to be REST and documentation exists, the lack of verification for authentication and credential access means the buildability claim cannot be fully supported."
+    }
+  ]
+}

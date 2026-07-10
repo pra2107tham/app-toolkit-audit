@@ -1,0 +1,45 @@
+{
+  "slug": "gladly",
+  "name": "Gladly",
+  "category": "Support and Helpdesk",
+  "description": "Customer service platform (inbox) that centralizes customer conversations across channels and exposes a REST API for integrations.",
+  "auth_methods": {
+    "value": [
+      "basic",
+      "token"
+    ],
+    "evidence_url": "https://developer.gladly.com/rest/index.html",
+    "confidence": "high",
+    "note": "Official REST API docs state Gladly uses HTTP Basic Authentication with an API token: use the agent email address as the username and an API token as the password (sent via the Authorization header)."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+    "confidence": "high",
+    "note": "Help center shows how to generate API tokens in Settings > App Developer Tools > API Tokens; procedure implies developers can self-generate tokens from the product UI without contacting sales."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developer.gladly.com/rest/index.html",
+    "confidence": "high",
+    "note": "API reference lists many REST endpoints across conversations, contacts, messages, webhooks, etc., indicating broad REST coverage. No public GraphQL docs found."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST docs plus self-serve API token generation allow immediate integration and development using Basic auth with API tokens."
+  },
+  "research_meta": {
+    "queries": [
+      "Gladly API developer documentation site Gladly API authentication \"Gladly API\" \"developer\" site:gladly.com OR site:developers.gladly.com OR site:docs.gladly.com OR \"Gladly API\" authentication \"API key\"",
+      "site:developer.gladly.com developer.gladly.com REST index \"Gladly API\" \"developer\"",
+      "site:developer.gladly.com \"Authentication\" \"Gladly\" \"API token\" \"API Tokens\"",
+      "site:help.gladly.com \"Generate API Tokens\" Gladly \"API Tokens\" \"webhooks\"",
+      "site:gladly.com \"App Platform\" \"API\" Gladly pricing API access \"partner\" \"partnership\" \"contact sales\"",
+      "\"developer.gladly.com\" \"authentication\" \"API token\" \"Basic Authentication\" site:developer.gladly.com/rest"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

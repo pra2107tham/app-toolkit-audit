@@ -1,0 +1,40 @@
+{
+  "slug": "close",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.close.com",
+      "reasoning": "The homepage confirms that Close is a CRM focused on sales teams, providing various functionalities including managing leads and activities."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.close.com/getting-started/authentication/",
+      "reasoning": "The URL for authentication methods returns a 404 error, meaning the evidence for this claim is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://docs.close.com/docs/api-keys",
+      "reasoning": "The URL for credential access returns a FETCH_ERROR, indicating that the evidence for this claim is not accessible."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.close.com/",
+      "reasoning": "The developer documentation confirms that the Close API is a REST API with a base URL and example endpoints, supporting the claim of broad API surface."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "",
+      "better_evidence_url": "",
+      "reasoning": "While the claim of buildability is likely supported by the confirmed fields, the lack of accessible evidence for authentication and credential access means this claim cannot be fully verified."
+    }
+  ]
+}

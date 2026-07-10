@@ -1,0 +1,42 @@
+{
+  "slug": "linkedin-ads",
+  "name": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "LinkedIn Marketing APIs provide programmatic access to campaign management, ads, audiences, creatives, and analytics for managing and reporting on LinkedIn advertising.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://learn.microsoft.com/linkedin/shared/authentication/",
+    "confidence": "high",
+    "note": "Microsoft Learn (LinkedIn) states that LinkedIn uses OAuth 2.0 for authentication and describes obtaining access tokens and supported OAuth 2.0 flows (including Authorization Code Flow and Client Credentials Flow) for making LinkedIn API requests."
+  },
+  "credential_access": {
+    "value": "admin_approval",
+    "evidence_url": "https://learn.microsoft.com/linkedin/marketing/getting-access",
+    "confidence": "high",
+    "note": "Marketing APIs require applying for the Marketing Developer Platform and may require application review, business details, and approval/whitelisting; developers create apps in the LinkedIn Developers portal but marketing access is often gated by review."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://learn.microsoft.com/linkedin/marketing/",
+    "confidence": "high",
+    "note": "Marketing docs describe REST API resources for campaign management, ads, analytics, audience, creatives and related endpoints (comprehensive coverage)."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "partner_gate",
+    "note": "Although REST APIs and OAuth credentials exist and apps can be created via the Developers portal, access to full Marketing APIs requires applying and being approved (partner/program review or whitelisting), which blocks immediate buildability for advertising features without approval."
+  },
+  "research_meta": {
+    "queries": [
+      "LinkedIn Marketing API authentication OAuth2 authorization code client credentials",
+      "LinkedIn developers apps client id client secret marketing products request access",
+      "LinkedIn Marketing API getting access apply for marketing developer platform",
+      "LinkedIn marketing API access whitelisting partner review"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

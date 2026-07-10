@@ -1,0 +1,35 @@
+{
+  "slug": "asana",
+  "composio_toolkit": {
+    "exists": true,
+    "slug": "asana",
+    "tools_count": 153.0,
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "match_kind": "exact",
+    "candidates": [
+      "asana"
+    ]
+  },
+  "mcp_server": {
+    "exists": true,
+    "official": false,
+    "matches": [
+      {
+        "name": "com.mcparmory/asana",
+        "official_vendor": false
+      },
+      {
+        "name": "com.mcparmory/asana",
+        "official_vendor": false
+      },
+      {
+        "name": "io.github.pipeworx-io/asana",
+        "official_vendor": false
+      }
+    ],
+    "registry_url": "https://registry.modelcontextprotocol.io/v0/servers?search=Asana"
+  },
+  "homepage_alive": true
+}

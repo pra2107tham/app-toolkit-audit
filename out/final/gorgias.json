@@ -1,0 +1,45 @@
+{
+  "slug": "gorgias",
+  "name": "Gorgias",
+  "category": "Support and Helpdesk",
+  "description": "Customer support helpdesk platform for ecommerce teams (tickets, customers, integrations, automation).",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "token"
+    ],
+    "evidence_url": "https://developers.gorgias.com/reference/authentication",
+    "confidence": "high",
+    "note": "Docs explicitly describe private apps using API keys (HTTP Basic or Bearer) and public apps using OAuth2 Bearer tokens."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "confidence": "high",
+    "note": "Help Center shows API keys can be created from the dashboard (Settings \u2192 Integrations \u2192 API & Webhooks). This implies a developer user can self-serve to obtain keys; pricing pages do not state API is gated."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://developers.gorgias.com/reference",
+    "confidence": "high",
+    "note": "The developer reference lists endpoints for accounts, tickets, users, customers, integrations and more; OpenAPI spec is available for SDK generation."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public docs + self-serve API keys or OAuth app registration exist, so integrations can be built today."
+  },
+  "research_meta": {
+    "queries": [
+      "Gorgias API authentication",
+      "Gorgias API keys create dashboard Settings Integrations API & Webhooks",
+      "Gorgias OAuth2 developer portal",
+      "Gorgias REST API reference endpoints tickets customers users",
+      "Gorgias API access requirements pricing"
+    ],
+    "insufficient_public_docs": false
+  }
+}

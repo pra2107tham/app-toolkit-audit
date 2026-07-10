@@ -1,0 +1,40 @@
+{
+  "slug": "amazon-selling-partner",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.amazonservices.com",
+      "reasoning": "The description of the SP-API as a REST-based API for programmatic access to Amazon seller data is supported by the homepage content."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer-docs.amazon.com/sp-api/docs/signing-selling-partner-api-requests",
+      "reasoning": "The URL provided for auth methods returns a 404 error, making it impossible to verify the claim."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+      "reasoning": "The documentation confirms that developers can self-register and obtain credentials, aligning with the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer-docs.amazon.com/sp-api/",
+      "reasoning": "The SP-API is described as a modern REST-based API covering various product areas, confirming the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer-docs.amazon.com/sp-api/",
+      "reasoning": "The public documentation provides sufficient information for building applications today, confirming the buildability claim."
+    }
+  ]
+}

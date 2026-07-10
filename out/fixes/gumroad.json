@@ -1,0 +1,24 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "oauth2",
+        "token",
+        "none_public"
+      ],
+      "evidence_url": "https://app.gumroad.com/api/authentication",
+      "confidence": "high",
+      "note": "Docs show OAuth (application id/secret and access tokens) for most endpoints and a license-key verification endpoint that does not require OAuth (public). 'token' used for generated access tokens; none_public refers to the license verification endpoint which is public."
+    },
+    "final_value": {
+      "value": [
+        "oauth2",
+        "token"
+      ],
+      "evidence_url": "https://app.gumroad.com/api/authentication",
+      "confidence": "high",
+      "note": "Gumroad's official API Authentication documentation lists two authentication types: Personal Access Token and OAuth. For both, API requests use an access token either as a URL parameter named \"access_token\" or as a Bearer token in the Authorization header."
+    },
+    "verdict": "dead_url"
+  }
+}

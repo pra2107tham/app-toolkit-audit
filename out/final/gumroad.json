@@ -1,0 +1,46 @@
+{
+  "slug": "gumroad",
+  "name": "Gumroad",
+  "category": "Ecommerce",
+  "description": "A platform for creators to sell digital and physical products; provides an OAuth-based REST API plus a license-key verification endpoint.",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token"
+    ],
+    "evidence_url": "https://app.gumroad.com/api/authentication",
+    "confidence": "high",
+    "note": "Gumroad's official API Authentication documentation lists two authentication types: Personal Access Token and OAuth. For both, API requests use an access token either as a URL parameter named \"access_token\" or as a Bearer token in the Authorization header."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://gumroad.com/help/article/280-create-application-api",
+    "confidence": "high",
+    "note": "Help center instructions state you can register an OAuth application via your Gumroad dashboard and view application id/secret and generate access tokens \u2014 achievable via the dashboard without human approval."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://app.gumroad.com/api",
+    "confidence": "high",
+    "note": "Official API docs list many REST endpoints (products, orders, oauth_applications, license verification) covering most product/sales objects; responses are JSON. No GraphQL mentioned."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "Public REST API and self-serve OAuth application creation exist; license verification available without auth. Developer can obtain credentials and start building immediately."
+  },
+  "research_meta": {
+    "queries": [
+      "site:gumroad.com OAuth \"Gumroad\" \"API\" authentication \"application\"",
+      "site:app.gumroad.com \"API\" \"OAuth\" \"app\"",
+      "Gumroad \"Create an application for the API\" \"help\" \"application ID\" \"secret\"",
+      "site:gumroad.com \"API\" \"pricing\" \"developer\" \"API\"",
+      "site:gumroad.com \"partner\" \"API\" \"Gumroad\"",
+      "Gumroad developer API \"requires\" \"partner\" \"paid\"",
+      "Gumroad API \"register an OAuth application\" \"dashboard\""
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

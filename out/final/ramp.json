@@ -1,0 +1,43 @@
+{
+  "slug": "ramp",
+  "name": "Ramp",
+  "category": "Finance and Fintech",
+  "description": "Corporate card, spend management, and finance automation platform with APIs for cards, transactions, bills, reimbursements, and integrations.",
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "evidence_url": "https://docs.ramp.com/developer-api/v1/authentication",
+    "confidence": "low",
+    "note": "Unable to verify authentication methods from the fetched official documentation page because the retrieved content did not include the actual authentication details (page content appeared non-substantive/empty in extraction). Therefore, only the prior claim cannot be confirmed from primary-source text here."
+  },
+  "credential_access": {
+    "value": "unclear",
+    "evidence_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "confidence": "low",
+    "note": "Unable to confirm how developer credentials are obtained from the fetched Getting Started page because the extracted content did not contain the relevant instructions (content not present in fetch). Credential access method cannot be validated from the fetched primary source."
+  },
+  "api_surface": {
+    "value": "rest",
+    "breadth": "broad",
+    "docs_url": "https://docs.ramp.com/developer-api/v1/reference",
+    "confidence": "low",
+    "note": "Could not verify the API surface from the fetched API Reference page because the extracted content did not include the reference material (content not present in fetch). The REST/breadth assessment is therefore not confirmable from fetched primary-source text."
+  },
+  "buildability": {
+    "verdict": "blocked",
+    "main_blocker": "insufficient_docs",
+    "note": "Buildability cannot be confirmed because the fetched official docs pages for authentication, getting started/credential acquisition, and reference did not yield the substantive content needed to validate auth method(s), credential access, or API surface."
+  },
+  "research_meta": {
+    "queries": [
+      "site:docs.ramp.com developer-api",
+      "site:docs.ramp.com developer-api getting-started",
+      "site:docs.ramp.com authentication authorization client_id client secret",
+      "site:ramp.com API developer dashboard signup api key",
+      "Ramp API credentials how to get client_id client_secret site:docs.ramp.com"
+    ],
+    "insufficient_public_docs": false,
+    "pass": 2
+  }
+}

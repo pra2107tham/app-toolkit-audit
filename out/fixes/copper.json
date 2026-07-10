@@ -1,0 +1,17 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+      "confidence": "medium",
+      "note": "The OAuth quickstart shows developers register an app in the Copper developer dashboard to obtain client_id and client_secret (self-serve). The public pricing page indicates Copper offers free trials / 'Start free, no credit card required' (https://www.copper.com/pricing), but no official page explicitly states API access is available on the free plan, so classification is medium confidence."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+      "confidence": "medium",
+      "note": "OAuth QuickStart states you can \"register your app in our Developer Dashboard\" (login and click \u201cCreate\u201d), after which Copper generates a client_id and client_secret\u2014indicating self-serve credential issuance. However, this page does not explicitly confirm that API access is included on a free plan (it describes registration/credentials, not plan entitlements), so confidence remains medium."
+    },
+    "verdict": "unsupported"
+  }
+}

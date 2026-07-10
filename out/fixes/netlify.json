@@ -1,0 +1,30 @@
+{
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.netlify.com/accounts-and-billing/members-teams/#personal-access-tokens",
+      "confidence": "high",
+      "note": "Personal Access Tokens are created by users via the Netlify account UI (Account Settings > Applications) without requiring human approval; Netlify offers a Free tier account signup per pricing page."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.netlify.com/accounts-and-billing/members-teams/#personal-access-tokens",
+      "confidence": "high",
+      "note": "Netlify docs state that users create personal access tokens in the Netlify UI via User settings > Applications > Personal access tokens > New access token, which is self-serve and does not require human approval."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Documentation + self-service creation of personal access tokens on a free account allow immediate use of the REST API. OpenAPI spec available for integration tooling."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Netlify\u2019s API documentation describes REST API usage and authentication via a self-created personal access token (Bearer token in Authorization header), enabling immediate programmatic access once a user has an account. Evidence: https://docs.netlify.com/api/get-started/"
+    },
+    "verdict": "unsupported"
+  }
+}

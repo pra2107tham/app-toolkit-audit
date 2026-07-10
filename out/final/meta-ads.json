@@ -1,0 +1,45 @@
+{
+  "slug": "meta-ads",
+  "name": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "description": "Programmatic access to Meta (Facebook & Instagram) advertising objects and management (ads, campaigns, creatives, insights, audiences).",
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "token",
+      "api_key",
+      "other"
+    ],
+    "evidence_url": "https://developers.facebook.com/docs/marketing-api/authentication",
+    "confidence": "high",
+    "note": "Meta uses OAuth 2.0 flows to obtain user access tokens; apps have App ID and App Secret; supports various access tokens (user, page, app, system user). 'token' denotes access tokens; 'api_key' here maps to App ID/App Secret used for app identification; 'other' covers client tokens and system-user tokens."
+  },
+  "credential_access": {
+    "value": "self_serve_free",
+    "evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started",
+    "confidence": "high",
+    "note": "Developers can create a Meta App in App Dashboard and generate App ID/App Secret, obtain access tokens or create System Users without requiring sales or partner approval. Production advanced permissions require App Review and possibly Business Verification, but basic access/keys are self-serve."
+  },
+  "api_surface": {
+    "value": "both",
+    "breadth": "broad",
+    "docs_url": "https://developers.facebook.com/docs/marketing-apis/",
+    "confidence": "high",
+    "note": "Marketing API is built on the Graph API (REST-style endpoints) and official SDKs exist (JS, PHP, Python). The docs list broad coverage of ads, campaigns, creatives, insights, audiences, etc."
+  },
+  "buildability": {
+    "verdict": "buildable_today",
+    "main_blocker": "none",
+    "note": "With a self-serve app and generated access tokens or system-user tokens, developers can build against the Marketing API today. Some advanced permissions/features require App Review and Business Verification which may block production use for certain use-cases."
+  },
+  "research_meta": {
+    "queries": [
+      "Meta Marketing API authentication",
+      "Get started with Marketing API App ID App Secret access token system user",
+      "Marketing API access levels advanced access app review business verification",
+      "Meta Marketing Partners partner-only capabilities",
+      "Meta App Dashboard create app get App ID App Secret"
+    ],
+    "insufficient_public_docs": false
+  }
+}

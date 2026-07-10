@@ -1,0 +1,51 @@
+{
+  "auth_methods": {
+    "pass1_value": {
+      "value": [
+        "api_key",
+        "basic"
+      ],
+      "evidence_url": "https://developer.close.com/en/guide/authentication",
+      "confidence": "high",
+      "note": "Close uses API Keys; keys are supplied via HTTP Basic auth (API key as username, blank password) or an Authorization header with Basic <base64(API_KEY:)>."
+    },
+    "final_value": {
+      "value": [
+        "api_key",
+        "basic"
+      ],
+      "evidence_url": "https://developer.close.com/getting-started/authentication/",
+      "confidence": "high",
+      "note": "Close API authentication requires an API key and uses HTTP Basic Authentication: use your API key as the username and leave the password blank (e.g., curl -u \"YOUR_API_KEY:\" ...). Docs also indicate you can authenticate via an Authorization header using a Basic token."
+    },
+    "verdict": "dead_url"
+  },
+  "credential_access": {
+    "pass1_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.close.com/article/44-api-keys",
+      "confidence": "high",
+      "note": "API keys are created by a logged-in user in Settings -> API Keys in the Close dashboard; documentation shows a user can create keys from the UI. Docs note that if you don't see API Keys, organization permissions may restrict visibility (admin settings), but generally keys are self-service from the dashboard."
+    },
+    "final_value": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.close.com/docs/api-keys",
+      "confidence": "high",
+      "note": "API keys can be created and managed in the Close app via Settings \u2192 API Keys (New API Key). If a user doesn\u2019t see API Keys in Settings, they may lack permission (e.g., admin-only), but credential creation is otherwise self-serve."
+    },
+    "verdict": "dead_url"
+  },
+  "buildability": {
+    "pass1_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public REST docs exist and API keys can be created self-serve in the dashboard, so a developer can build integrations today. Only potential blocker is organization-level permission settings may prevent some users from creating keys (requires admin in that org)."
+    },
+    "final_value": {
+      "verdict": "buildable_today",
+      "main_blocker": "none",
+      "note": "Public Close REST API docs exist; authentication is API-key-based HTTP Basic auth; API keys are created in-app (subject to org permissions)."
+    },
+    "verdict": "unsupported"
+  }
+}

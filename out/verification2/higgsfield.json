@@ -1,0 +1,40 @@
+{
+  "slug": "higgsfield",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Higgsfield is an AI image & video generation platform exposing a Minimal Connector Protocol (MCP) server and CLI for programmatic agent integrations.",
+      "better_evidence_url": "https://higgsfield.ai",
+      "reasoning": "The homepage confirms the description of Higgsfield as an AI image and video generation platform with a focus on the MCP and CLI."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "token, other",
+      "better_evidence_url": "https://higgsfield.ai/cli",
+      "reasoning": "The CLI page explicitly states that authentication is done via a Higgsfield account and session tokens, confirming the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://higgsfield.ai/pricing",
+      "reasoning": "The pricing page is accessible but does not provide sufficient information to confirm how developers can access credentials, leaving the claim unsupported."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "unsupported",
+      "corrected_value": "narrow",
+      "better_evidence_url": "https://higgsfield.ai/mcp",
+      "reasoning": "While the MCP documentation is accessible, it does not provide enough detail to confirm the breadth of the API surface, thus the claim remains unsupported."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "unclear",
+      "better_evidence_url": "https://higgsfield.ai",
+      "reasoning": "Due to the lack of clarity on credential access and API surface, the buildability remains unsupported as it cannot be confirmed whether account creation and credits are self-serve."
+    }
+  ]
+}

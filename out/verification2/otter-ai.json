@@ -1,0 +1,40 @@
+{
+  "slug": "otter-ai",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "Transcription and meeting-note AI that generates searchable, shareable transcripts and summaries from audio and meetings.",
+      "better_evidence_url": "https://otter.ai",
+      "reasoning": "The description accurately reflects the capabilities of Otter AI as stated on its homepage."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "other",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "reasoning": "The URL provided for authentication methods returns a 404 error, indicating that the information is not accessible."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "dead_url",
+      "corrected_value": "partner_gated",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "reasoning": "The URL for credential access also returns a 404 error, meaning the claim cannot be verified."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "none_public",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "reasoning": "The API surface claim cannot be confirmed as the URL is dead, preventing access to the necessary documentation."
+    },
+    {
+      "field": "buildability",
+      "verdict": "unsupported",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://help.otter.ai/hc/en-us/articles/360051532714-Otter-AI-API",
+      "reasoning": "The buildability is consistent with the other fields, but the lack of accessible documentation confirms that typical developer buildability is presumably unsupported."
+    }
+  ]
+}

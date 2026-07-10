@@ -1,0 +1,40 @@
+{
+  "slug": "pinterest",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://www.pinterest.com",
+      "reasoning": "The description accurately reflects Pinterest as a visual discovery engine for finding ideas."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+      "reasoning": "The evidence confirms that Pinterest uses OAuth 2.0 for authentication, as stated in the documentation."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+      "reasoning": "The evidence supports that developers can register apps to obtain client credentials, confirming the self-serve free access."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pinterest.com/docs/",
+      "reasoning": "The evidence confirms that Pinterest provides a v5 REST API covering various aspects, aligning with the recorded value."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "",
+      "better_evidence_url": "https://developers.pinterest.com/docs/getting-started/auth/",
+      "reasoning": "The evidence supports that the public REST API is buildable with key signup, as developers need to register to use it."
+    }
+  ]
+}
