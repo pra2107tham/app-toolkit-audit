@@ -1,0 +1,30 @@
+{
+  "slug": "airtable",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage content describes Airtable as a next-gen app-building platform for creating and sharing business applications, matching the record description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The Airtable Web API authentication documentation states the API uses personal access tokens (Bearer tokens) and OAuth 2.0, supporting the recorded auth methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The official support documentation explains how users create personal access tokens from their Airtable account in a self-serve manner, matching the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API reference at https://airtable.com/api is an auto-generated REST API for bases, tables, records, etc., confirming the broad REST API surface recorded."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Given the public REST API documentation and supported authentication methods, the integration is buildable today with no blockers."
+    }
+  ]
+}

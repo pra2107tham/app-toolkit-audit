@@ -1,0 +1,30 @@
+{
+  "slug": "asana",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage text describes Asana as a work and project management platform for teams, tracking tasks, projects, and workflows, consistent with the record's description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The authentication page explicitly documents OAuth 2.0 and personal access tokens (PATs) used as Bearer tokens, matching the recorded auth_methods value and note."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The personal access token page confirms PATs can be created from the developer console without human approval and that OAuth client credentials are created similarly; no paid plan requirement for API access is stated."
+    },
+    {
+      "field": "api_surface",
+      "faithful": false,
+      "reasoning": "The cited API reference URL returns a 404 page not found error, so the evidence does not support the claim of a broad REST API surface documented at that URL."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The combination of authentication docs and API reference (despite the 404 on the API reference page) plus the publicly accessible documentation supports that integrations can be built today without blockers."
+    }
+  ]
+}

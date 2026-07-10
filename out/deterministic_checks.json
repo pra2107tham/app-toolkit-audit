@@ -1,0 +1,9 @@
+{
+  "records_ok": 100,
+  "schema_valid": 100,
+  "evidence_urls_total": 266,
+  "evidence_urls_live": 200,
+  "evidence_urls_bot_blocked": 7,
+  "evidence_urls_dead": 59,
+  "coverage_problems": []
+}

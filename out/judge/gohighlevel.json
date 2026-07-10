@@ -1,0 +1,30 @@
+{
+  "slug": "gohighlevel",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage describes GoHighLevel as an all-in-one marketing and CRM platform with extensive tools for agencies, consistent with the record's description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The auth documentation page explicitly describes Private Integration Token (Bearer token) and OAuth 2.0 methods, matching the recorded auth_methods value."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The auth docs confirm the auth methods but do not clarify credential provisioning or payment requirements, supporting the 'unclear' value and low confidence."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API docs page confirms a broad RESTful API covering many product areas, consistent with the recorded 'rest' and 'broad' values."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The public docs show how to authenticate and call the API but do not confirm credential onboarding details or paid requirements, supporting the 'buildable_with_key_signup' verdict with 'other' blocker."
+    }
+  ]
+}

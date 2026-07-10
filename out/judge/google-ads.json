@@ -1,0 +1,30 @@
+{
+  "slug": "google-ads",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage https://ads.google.com describes Google Ads as a platform to manage campaigns, ads, keywords, budgets, and reporting, consistent with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The auth page https://developers.google.com/google-ads/api/rest/auth confirms OAuth2 as primary authorization and mentions developer tokens, matching the recorded value and note."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The developer token page https://developers.google.com/google-ads/api/docs/get-started/dev-token states developers can create OAuth2 credentials and test developer tokens without approval, with production tokens requiring review, matching the record."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API overview https://developers.google.com/google-ads/api confirms the API offers gRPC as primary protocol with a limited REST interface, broad coverage of campaign, ad group, keyword, budget, bidding, and reporting objects, consistent with the record."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The evidence indicates test developer tokens and OAuth2 credentials can be obtained immediately for development, but production tokens require approval and review, matching the record's buildability note."
+    }
+  ]
+}

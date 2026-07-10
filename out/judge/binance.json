@@ -1,0 +1,30 @@
+{
+  "slug": "binance",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage (https://www.binance.com) confirms Binance is a cryptocurrency exchange offering market data, trading, wallets, and partner integration APIs, consistent with the description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The Binance Spot API docs redirect to https://developers.binance.com/docs/binance-spot-api-docs, which documents API key and HMAC SHA256 signature authentication with the X-MBX-APIKEY header, supporting the recorded auth_methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The create API key page at https://developers.binance.com/docs/binance_link/link-and-trade/fast-api/create-api-key confirms users can self-serve API keys via their account without human approval, matching the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The Binance Developers portal (https://developers.binance.com/docs/) documents a broad range of API products including Spot, Futures, Options, and more, supporting the 'both' and 'broad' api_surface values."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The combination of public developer docs, self-serve API key creation, and documented authentication methods supports that integrations can be built today without partner approval, consistent with the buildability verdict."
+    }
+  ]
+}

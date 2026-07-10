@@ -1,51 +1,87 @@
 {
-  "n_apps": 30,
+  "n_apps": 100,
   "headline": {
-    "pct_oauth2": 67,
-    "pct_api_key": 50,
-    "pct_self_serve": 87,
-    "pct_gated": 13,
-    "pct_buildable_now": 87,
+    "pct_oauth2": 58,
+    "pct_api_key": 45,
+    "pct_self_serve": 75,
+    "pct_gated": 12,
+    "pct_buildable_now": 78,
     "top_blocker": [
-      "other",
-      3
+      "partner_gate",
+      7
     ],
-    "composio_already_covers": 16,
-    "existing_mcp_servers": 14,
-    "easy_wins_count": 12
+    "composio_already_covers": 53,
+    "existing_mcp_servers": 49,
+    "easy_wins_count": 27
   },
   "auth_distribution": {
-    "oauth2": 20,
-    "api_key": 15,
-    "token": 14,
-    "basic": 7,
-    "other": 6,
-    "none_public": 3,
-    "jwt": 2
+    "oauth2": 58,
+    "token": 54,
+    "api_key": 45,
+    "other": 20,
+    "basic": 16,
+    "none_public": 12,
+    "jwt": 6
   },
   "auth_combos": {
-    "api_key+oauth2": 5,
-    "oauth2+token": 4,
-    "oauth2+other+token": 2,
-    "oauth2": 2,
-    "api_key+basic": 2,
-    "api_key+basic+oauth2": 2,
-    "api_key": 2,
-    "jwt+none_public+oauth2+token": 1,
-    "none_public+oauth2+other+token": 1,
-    "other": 1
+    "oauth2+token": 19,
+    "oauth2": 8,
+    "none_public": 8,
+    "api_key+oauth2": 7,
+    "api_key": 7,
+    "api_key+token": 7,
+    "api_key+oauth2+token": 5,
+    "other": 4,
+    "api_key+basic+oauth2": 3,
+    "token": 3
   },
   "credential_access": {
-    "self_serve_free": 26,
-    "admin_approval": 3,
-    "partner_gated": 1
+    "self_serve_free": 72,
+    "unclear": 13,
+    "admin_approval": 6,
+    "partner_gated": 6,
+    "self_serve_paid_trial": 3
   },
   "credential_access_by_category": {
+    "AI, Research and Media-native": {
+      "unclear": 4,
+      "partner_gated": 3,
+      "self_serve_free": 3
+    },
     "CRM and Sales": {
       "self_serve_free": 9,
       "admin_approval": 1
     },
     "Communications and Messaging": {
+      "self_serve_free": 10
+    },
+    "Data, SEO and Scraping": {
+      "self_serve_paid_trial": 2,
+      "admin_approval": 1,
+      "unclear": 3,
+      "self_serve_free": 4
+    },
+    "Developer, Infra and Data platforms": {
+      "self_serve_free": 10
+    },
+    "Ecommerce": {
+      "self_serve_free": 7,
+      "admin_approval": 1,
+      "unclear": 1,
+      "partner_gated": 1
+    },
+    "Finance and Fintech": {
+      "self_serve_free": 6,
+      "unclear": 3,
+      "partner_gated": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "self_serve_free": 6,
+      "admin_approval": 1,
+      "unclear": 2,
+      "self_serve_paid_trial": 1
+    },
+    "Productivity and Project Management": {
       "self_serve_free": 10
     },
     "Support and Helpdesk": {
@@ -55,11 +91,15 @@
     }
   },
   "buildability": {
-    "buildable_today": 23,
-    "blocked": 4,
-    "buildable_with_key_signup": 3
+    "buildable_today": 66,
+    "blocked": 22,
+    "buildable_with_key_signup": 12
   },
   "buildability_by_category": {
+    "AI, Research and Media-native": {
+      "blocked": 7,
+      "buildable_today": 3
+    },
     "CRM and Sales": {
       "buildable_today": 8,
       "buildable_with_key_signup": 1,
@@ -69,74 +109,209 @@
       "buildable_today": 8,
       "buildable_with_key_signup": 2
     },
+    "Data, SEO and Scraping": {
+      "buildable_with_key_signup": 4,
+      "blocked": 3,
+      "buildable_today": 3
+    },
+    "Developer, Infra and Data platforms": {
+      "buildable_today": 10
+    },
+    "Ecommerce": {
+      "buildable_today": 7,
+      "blocked": 2,
+      "buildable_with_key_signup": 1
+    },
+    "Finance and Fintech": {
+      "buildable_today": 6,
+      "blocked": 4
+    },
+    "Marketing, Ads, Email and Social": {
+      "buildable_today": 5,
+      "blocked": 1,
+      "buildable_with_key_signup": 4
+    },
+    "Productivity and Project Management": {
+      "blocked": 1,
+      "buildable_today": 9
+    },
     "Support and Helpdesk": {
       "blocked": 3,
       "buildable_today": 7
     }
   },
   "blocker_taxonomy": {
-    "other": 3,
-    "none": 2,
-    "no_public_api": 1,
-    "partner_gate": 1
+    "partner_gate": 7,
+    "no_public_api": 7,
+    "other": 6,
+    "insufficient_docs": 2
   },
   "composio_covered": [
+    "ahrefs",
+    "airtable",
+    "apify",
+    "asana",
     "attio",
+    "brex",
+    "bright-data",
+    "clickup",
     "close",
+    "cloudflare",
+    "coda",
+    "datadog",
+    "dataforseo",
     "discord",
+    "fathom",
+    "firecrawl",
     "freshdesk",
+    "github",
+    "google-ads",
     "gorgias",
+    "gumroad",
+    "harvest",
     "help-scout",
     "hubspot",
     "intercom",
+    "jira",
+    "klaviyo",
+    "linear",
+    "linkedin-ads",
+    "mailchimp",
+    "meta-ads",
+    "monday",
+    "neo4j",
+    "notion",
     "pipedrive",
     "plain",
+    "quickbooks",
+    "ramp",
     "salesforce",
+    "sendgrid",
+    "sentry",
+    "shopify",
     "slack",
+    "snowflake",
+    "stripe",
+    "supabase",
     "telegram",
+    "vercel",
     "whatsapp-business",
+    "xero",
+    "youtube-transcript",
     "zendesk",
     "zoho-crm"
   ],
   "mcp_servers": {
     "any": [
+      "ahrefs",
+      "airtable",
+      "apify",
+      "asana",
       "attio",
+      "binance",
+      "clickup",
       "close",
+      "cloudflare",
+      "coda",
+      "consensus",
+      "datadog",
       "discord",
+      "fathom",
+      "firecrawl",
       "freshdesk",
+      "github",
+      "harvest",
       "hubspot",
       "intercom",
+      "jira",
+      "klaviyo",
+      "linear",
+      "mailchimp",
+      "monday",
+      "neo4j",
+      "notebooklm",
+      "notion",
+      "pinterest",
       "pipedrive",
       "pylon",
+      "quickbooks",
+      "ramp",
       "salesforce",
+      "sendgrid",
+      "sentry",
+      "sherlock",
+      "shopify",
       "slack",
+      "snowflake",
+      "stripe",
+      "supabase",
       "telegram",
       "twilio",
+      "vercel",
       "vonage",
+      "woocommerce",
+      "xero",
       "zendesk"
     ],
     "vendor_official": [
-      "close"
+      "airtable",
+      "apify",
+      "close",
+      "cloudflare",
+      "linear",
+      "monday",
+      "stripe",
+      "supabase",
+      "vercel"
     ]
   },
   "easy_wins": [
     "aircall",
+    "amazon-selling-partner",
+    "bigcommerce",
+    "binance",
+    "clay",
     "copper",
+    "devin",
+    "ecwid",
     "front",
     "gladly",
     "lark",
     "liveagent",
+    "magento",
+    "mongodb-atlas",
+    "netlify",
+    "pinterest",
+    "plaid",
     "podio",
     "pumble",
+    "smartsheet",
+    "systeme-io",
+    "threads",
     "twenty",
     "twilio",
     "vonage",
+    "woocommerce",
     "zoho-cliq"
   ],
   "needs_outreach": [
-    "plain"
+    "fanbasis",
+    "grain",
+    "otter-ai",
+    "pitchbook",
+    "plain",
+    "reducto"
   ],
   "insufficient_public_docs": [
-    "plain"
+    "consensus",
+    "dataforseo",
+    "fanbasis",
+    "grain",
+    "ipayx",
+    "mermaid-cli",
+    "paygent-connect",
+    "pitchbook",
+    "plain",
+    "reducto"
   ]
 }

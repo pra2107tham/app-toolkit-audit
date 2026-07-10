@@ -1,0 +1,99 @@
+{
+  "overall": {
+    "pass1_accuracy": 0.668,
+    "final_accuracy": 0.734,
+    "pass1_verdicts": {
+      "confirmed": 334,
+      "unsupported": 66,
+      "dead_url": 94,
+      "contradicted": 6
+    },
+    "final_verdicts": {
+      "confirmed": 367,
+      "unsupported": 53,
+      "dead_url": 75,
+      "contradicted": 5
+    }
+  },
+  "per_field": {
+    "description": {
+      "pass1_accuracy": 0.89,
+      "final_accuracy": 0.94,
+      "pass1_verdicts": {
+        "confirmed": 89,
+        "unsupported": 11
+      },
+      "final_verdicts": {
+        "confirmed": 94,
+        "unsupported": 6
+      }
+    },
+    "auth_methods": {
+      "pass1_accuracy": 0.53,
+      "final_accuracy": 0.63,
+      "pass1_verdicts": {
+        "dead_url": 37,
+        "confirmed": 53,
+        "unsupported": 9,
+        "contradicted": 1
+      },
+      "final_verdicts": {
+        "dead_url": 29,
+        "confirmed": 63,
+        "unsupported": 7,
+        "contradicted": 1
+      }
+    },
+    "credential_access": {
+      "pass1_accuracy": 0.53,
+      "final_accuracy": 0.63,
+      "pass1_verdicts": {
+        "dead_url": 39,
+        "confirmed": 53,
+        "unsupported": 8
+      },
+      "final_verdicts": {
+        "dead_url": 30,
+        "confirmed": 63,
+        "unsupported": 7
+      }
+    },
+    "api_surface": {
+      "pass1_accuracy": 0.8,
+      "final_accuracy": 0.82,
+      "pass1_verdicts": {
+        "dead_url": 14,
+        "confirmed": 80,
+        "unsupported": 5,
+        "contradicted": 1
+      },
+      "final_verdicts": {
+        "dead_url": 12,
+        "confirmed": 82,
+        "unsupported": 6
+      }
+    },
+    "buildability": {
+      "pass1_accuracy": 0.59,
+      "final_accuracy": 0.65,
+      "pass1_verdicts": {
+        "unsupported": 33,
+        "confirmed": 59,
+        "dead_url": 4,
+        "contradicted": 4
+      },
+      "final_verdicts": {
+        "unsupported": 27,
+        "confirmed": 65,
+        "contradicted": 4,
+        "dead_url": 4
+      }
+    }
+  },
+  "fixed_apps": 74,
+  "judge_sample": {
+    "fields_scored": 100,
+    "faithful_rate": 0.83
+  },
+  "human_check": null
+}

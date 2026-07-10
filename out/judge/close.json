@@ -1,0 +1,30 @@
+{
+  "slug": "close",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage https://www.close.com confirms Close is a CRM focused on sales teams with features like leads, activities, contacts, and pipeline management, consistent with the description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited auth_methods URL returns a 404 error, so there is no direct evidence supporting the claim that Close API uses API key and HTTP Basic Authentication as described."
+    },
+    {
+      "field": "credential_access",
+      "faithful": false,
+      "reasoning": "The cited credential_access URL failed to load due to DNS resolution error, providing no evidence to support the claim that API keys are self-serve and free to create."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The developer.close.com page confirms Close provides a REST API with broad coverage, including API reference, SDKs, and multiple endpoints, supporting the api_surface claim."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Based on the available developer docs and homepage, the API is publicly documented, uses API key authentication, and has no blockers mentioned, supporting the buildability verdict."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "front",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage https://front.com describes Front as a customer service platform with shared inbox and customer communication features, matching the description given."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited evidence URL https://dev.front.com/docs/authentication failed to fetch, so no direct evidence supports the claim about API key and OAuth2 authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The help article https://help.front.com/en/articles/2331 confirms that personal API tokens can be created by company admins via settings without mention of paid plans or human approval, supporting self_serve_free."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The developer portal https://dev.frontapp.com shows extensive REST API documentation and references, supporting the claim of a broad REST API surface."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The combination of public docs, self-serve token creation, and API references indicates the API is buildable today with no main blockers, consistent with the note."
+    }
+  ]
+}

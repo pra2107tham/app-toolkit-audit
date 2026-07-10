@@ -1,0 +1,30 @@
+{
+  "slug": "brex",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage content describes Brex as a modern finance software platform offering corporate cards, expense management, payments, travel, and related financial services, which aligns well with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited evidence URL for authentication methods returns a 404 error, providing no support for the claim of OAuth2, API key, and token authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": false,
+      "reasoning": "The cited evidence URL for credential access also returns a 404 error, so there is no direct evidence supporting the claim that credentials are self-serve and free."
+    },
+    {
+      "field": "api_surface",
+      "faithful": false,
+      "reasoning": "The API reference URL returns a 404 error, providing no evidence to support the claim that the API surface is REST with broad breadth."
+    },
+    {
+      "field": "buildability",
+      "faithful": false,
+      "reasoning": "Since the supporting documentation URLs for authentication, credential access, and API reference all return 404 errors, there is no evidence to support the claim that the API is buildable today without blockers."
+    }
+  ]
+}

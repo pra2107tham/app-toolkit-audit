@@ -1,0 +1,30 @@
+{
+  "slug": "consensus",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage text 'Consensus: AI for Research Research starts here Sources Corpus Deep Filter' aligns with the description of a search engine providing research-backed answers with citations."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The homepage does not mention any public developer authentication methods such as API keys, OAuth, or tokens, supporting the claim of 'none_public' authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The /teams URL returns a 404 error, indicating no public information about credential access, supporting the 'unclear' value."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "No public API documentation or developer portal was found on the homepage or related domains, supporting the 'none_public' API surface value."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Given the lack of public API and credential issuance, the integration is blocked, consistent with the 'blocked' verdict and 'no_public_api' main blocker."
+    }
+  ]
+}

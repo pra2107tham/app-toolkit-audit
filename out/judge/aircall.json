@@ -1,0 +1,30 @@
+{
+  "slug": "aircall",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage describes Aircall as a cloud-based phone system and call center platform with integrations, matching the record's description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The developer site references OAuth2 and API tokens (personal access tokens) as authentication methods, supporting the recorded value."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The developer portal allows developers to register apps and obtain credentials after signing up, consistent with 'self_serve_free'."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API is REST-based with broad coverage and an OpenAPI JSON available, as stated on the developer site."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The public REST API requires account signup and app credential creation, with no blockers mentioned, supporting 'buildable_with_key_signup'."
+    }
+  ]
+}

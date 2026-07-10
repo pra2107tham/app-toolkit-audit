@@ -1,0 +1,30 @@
+{
+  "slug": "attio",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage describes Attio as a modern CRM with AI features, developer platform, API, and SDK, supporting relationship and company data management, consistent with the description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited authentication documentation URL returns a 404 page, providing no evidence for API key or OAuth2 authentication methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The pricing page clearly states 'Start for free' with no credit card required, indicating self-serve free credential access is available."
+    },
+    {
+      "field": "api_surface",
+      "faithful": false,
+      "reasoning": "The cited API overview documentation URL returns a 404 page, providing no evidence for a broad REST API surface."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The homepage and pricing page indicate public API docs exist and free signup is available, supporting the claim that the API is buildable today with no main blockers."
+    }
+  ]
+}

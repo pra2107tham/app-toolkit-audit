@@ -1,0 +1,30 @@
+{
+  "slug": "cloudflare",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage content describes Cloudflare as a platform providing CDN, security, and networking services, consistent with the description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited authentication documentation URL returns a 404 error, so there is no evidence supporting the listed auth methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": false,
+      "reasoning": "The cited API tokens documentation URL returns a 404 error, providing no evidence for self-serve free credential access."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API reference page confirms a broad REST API surface with extensive endpoints and documentation."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Based on the API surface and homepage, Cloudflare provides public REST APIs and self-serve authentication methods enabling buildability today."
+    }
+  ]
+}

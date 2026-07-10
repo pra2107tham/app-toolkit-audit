@@ -1,0 +1,30 @@
+{
+  "slug": "amazon-selling-partner",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage https://developer.amazonservices.com clearly states that the Selling Partner API (SP-API) is a REST-based API for programmatic access to Amazon seller data including listings, orders, payments, reports, etc., matching the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited evidence URL for auth_methods returns a 404 Page Not Found error, so there is no direct evidence supporting the claim that SP-API uses OAuth2 (Login with Amazon) and AWS SigV4 signing. Thus, the recorded auth_methods value is not supported by the provided evidence."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The registration documentation at https://developer-docs.amazon.com/sp-api/docs/registering-your-application describes a self-registration process in the Developer Console to create security profiles and obtain LWA client credentials and AWS IAM credentials. It does not mention fees or paid approval requirements on the public pages, supporting the 'self_serve_free' value with medium confidence."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The SP-API documentation homepage https://developer-docs.amazon.com/sp-api/ describes the API as a modern REST-based API covering multiple product areas such as listings, orders, payments, and reports, supporting the recorded 'rest' and 'broad' api_surface values."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The public documentation provides REST API references and step-by-step self-registration instructions, including obtaining credentials and authorization via LWA OAuth workflow, indicating the API is buildable today with no main blockers."
+    }
+  ]
+}

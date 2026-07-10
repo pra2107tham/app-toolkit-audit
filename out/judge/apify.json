@@ -1,0 +1,30 @@
+{
+  "slug": "apify",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage content describes Apify as a platform for web scraping, automation, and web data extraction with actors, datasets, key-value stores, task scheduling, and webhooks, matching the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The API v2 documentation clearly states authentication via API tokens passed as HTTP Authorization: Bearer <API_TOKEN> and also mentions an alternative apiKey query parameter (?token=<API_TOKEN>), supporting the recorded auth methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": false,
+      "reasoning": "The cited evidence URL for credential access returns a 404 page, providing no support for the claim that API tokens can be created self-serve in the Apify Console."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API v2 reference lists a broad set of REST endpoints covering actors, tasks, runs, users, storages, datasets, key-value stores, request queues, webhooks, and more, confirming broad REST API coverage."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Given the public REST API docs and the general availability of API tokens (implied by other evidence), the platform is buildable today with no main blockers."
+    }
+  ]
+}

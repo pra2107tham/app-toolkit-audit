@@ -67,7 +67,9 @@ def run_deterministic(results):
         insufficient = (r.get("research_meta") or {}).get("insufficient_public_docs")
         for f in RESEARCHED_FIELDS:
             claim = r.get(f)
-            if isinstance(claim, dict) and not claim.get("evidence_url") and not insufficient and f != "buildability":
+            if not isinstance(claim, dict) or insufficient or f == "buildability":
+                continue
+            if not (claim.get("evidence_url") or claim.get("docs_url")):
                 coverage_missing.append({"slug": r["slug"], "problem": f"no_evidence:{f}"})
         all_urls.update(evidence_urls(r))
     for u in sorted(all_urls):
@@ -192,11 +194,15 @@ def run_accuracy(results):
         ver = r.get("verification") or {}
         pass1 = {v["field"]: v["verdict"] for v in ver.get("pass1") or []}
         post = {v["field"]: v["verdict"] for v in ver.get("post_fix") or []}
+        fixed = set(ver.get("fixed_fields") or [])
         for f in RESEARCHED_FIELDS:
             if f in pass1:
                 per_field[f]["pass1"][pass1[f]] += 1
-                # final verdict: post-fix grade if the field was re-verified, else the pass-1 grade
-                per_field[f]["final"][post.get(f, pass1[f])] += 1
+                # final verdict: the post-fix grade for fields the fixer actually
+                # changed; unfixed fields keep their pass-1 grade (re-grading them
+                # would just add verifier noise to the attribution)
+                final_verdict = post[f] if (f in fixed and f in post) else pass1[f]
+                per_field[f]["final"][final_verdict] += 1
 
     def rate(counts):
         total = sum(counts.values())

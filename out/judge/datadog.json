@@ -1,0 +1,30 @@
+{
+  "slug": "datadog",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage describes Datadog as an integrated platform for monitoring and observability across infrastructure, applications, logs, and more, consistent with the recorded description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The authentication documentation confirms use of DD-API-KEY and DD-APPLICATION-KEY headers (API key and application key) and does not mention OAuth2, Basic, or JWT, supporting the recorded auth methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The API and application keys are created in the account UI, and users can sign up for a free trial to obtain keys, with no indication of partner gating or manual approval, matching the recorded value."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API reference documents many RESTful endpoint groups and client libraries/SDKs, confirming a broad REST API surface as recorded."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Public REST APIs are documented and keys can be self-created via the UI or API with trial accounts available, enabling immediate development, supporting the 'buildable_today' verdict."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "salesforce-commerce-cloud",
+  "verdicts": [
+    {
+      "field": "description",
+      "verdict": "confirmed",
+      "corrected_value": "An enterprise commerce platform (B2C) providing storefront, shopper, and admin REST APIs (SCAPI/Shopper APIs and Admin APIs) for products, baskets, orders, customers, and related commerce operations.",
+      "better_evidence_url": "https://www.salesforce.com/commerce",
+      "reasoning": "The description aligns with the general information provided on the Salesforce Commerce homepage, which describes it as an enterprise commerce platform."
+    },
+    {
+      "field": "auth_methods",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "reasoning": "The URL for the auth_methods is dead (HTTP 404), so the claim cannot be confirmed or contradicted based on the evidence."
+    },
+    {
+      "field": "credential_access",
+      "verdict": "confirmed",
+      "corrected_value": "admin_approval",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/setting-up-api-access.html",
+      "reasoning": "The content from the credential_access URL confirms that API clients and credentials require admin approval and access to a Business Manager account."
+    },
+    {
+      "field": "api_surface",
+      "verdict": "dead_url",
+      "corrected_value": "",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/overview.html",
+      "reasoning": "The URL for the api_surface is dead (HTTP 404), so the claim cannot be confirmed or contradicted based on the evidence."
+    },
+    {
+      "field": "buildability",
+      "verdict": "confirmed",
+      "corrected_value": "blocked",
+      "better_evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/setting-up-api-access.html",
+      "reasoning": "The buildability claim is supported by the credential_access evidence, which indicates that access to a Business Manager is required, thus blocking integration without it."
+    }
+  ]
+}

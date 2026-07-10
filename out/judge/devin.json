@@ -1,0 +1,30 @@
+{
+  "slug": "devin",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage https://devin.ai describes Devin as an AI software engineer agent that can write, run, and test code and expose functionality via a REST API, matching the description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The API reference overview page https://docs.devin.ai/api-reference/overview shows usage of Authorization: Bearer <API_KEY> tokens and service user credentials, supporting api_key and token as auth methods."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The pricing page https://devin.ai/pricing explicitly lists a Free plan with API access and API keys, confirming self-serve free credential access."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API reference overview https://docs.devin.ai/api-reference/overview documents a broad RESTful API with many endpoints and scopes, supporting the 'rest' and 'broad' api_surface value."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Public REST docs exist and the pricing page shows a Free tier with API access, so a developer can sign up and start building today without special approval, supporting 'buildable_today' with no blockers."
+    }
+  ]
+}

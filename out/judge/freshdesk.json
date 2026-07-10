@@ -1,0 +1,30 @@
+{
+  "slug": "freshdesk",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage describes Freshdesk as a customer service platform with ticketing and support features, matching the description of a customer support ticketing and helpdesk platform."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The API docs mention API key usage via HTTP Basic Auth and OAuth 2.0 Bearer tokens, supporting the recorded auth methods of api_key, oauth2, and basic."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The support article explains that users can self-serve to get their API key from profile settings after login, and Freshdesk offers free plans and trials, supporting self_serve_free access."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API reference shows a broad REST API v2 covering tickets, contacts, agents, and more, consistent with the recorded broad REST API surface."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Public REST API docs and self-serve API key access exist, and developers can sign up for free plans or trials to build integrations immediately, supporting the buildable_today verdict with no blockers."
+    }
+  ]
+}

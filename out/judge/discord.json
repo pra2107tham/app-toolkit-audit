@@ -1,0 +1,30 @@
+{
+  "slug": "discord",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage describes Discord as a real-time chat platform for communities with text, voice, and video chat, servers (guilds), and customization features, consistent with the record's description."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The OAuth2 documentation confirms support for OAuth2 flows including authorization code, client credentials, and bot token authentication using HTTP Basic auth and Bot tokens in the Authorization header."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The Developer Portal page confirms developers can create applications and obtain client ID, client secret, and bot tokens without human approval or paid plans, supporting self-serve free credential access."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The Developer Docs describe a broad REST API and a real-time Gateway (WebSocket) for events, covering channels, guilds, users, messages, etc., matching the record's claim of broad API surface with both REST and real-time."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The available documentation and developer portal allow immediate development with no blockers; verification and privileged intents require human review but do not prevent initial development, consistent with 'buildable_today' and 'none' main blocker."
+    }
+  ]
+}

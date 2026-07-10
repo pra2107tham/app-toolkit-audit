@@ -1,0 +1,30 @@
+{
+  "slug": "ahrefs",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": true,
+      "reasoning": "The homepage content describes Ahrefs as a platform providing SEO and backlink data products, consistent with the description in the record."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": false,
+      "reasoning": "The cited URL for authentication returns a 404 error, so there is no evidence supporting the claim about API token usage or the methods of passing it."
+    },
+    {
+      "field": "credential_access",
+      "faithful": true,
+      "reasoning": "The introduction page clearly states API v3 is available to paying customers with API access enabled on the workspace, matching the record's claim."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The introduction page details REST API v3 endpoints with broad coverage, confirming the record's claim about a broad REST API surface."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "The documentation and pricing information indicate the API requires a paid plan and API tokens generated in the dashboard, supporting the buildability claim."
+    }
+  ]
+}

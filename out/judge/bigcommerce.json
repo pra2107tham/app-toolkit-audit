@@ -1,0 +1,30 @@
+{
+  "slug": "bigcommerce",
+  "scores": [
+    {
+      "field": "description",
+      "faithful": false,
+      "reasoning": "The homepage URL provided returns an HTTP 403 error with a security verification page, so the description 'BigCommerce is a hosted e-commerce platform for building and operating online stores' is not directly supported by the evidence."
+    },
+    {
+      "field": "auth_methods",
+      "faithful": true,
+      "reasoning": "The API Accounts documentation page supports the claim that BigCommerce uses OAuth 2.0 for apps and Store API Accounts that generate Client ID and Access Token used as headers, matching the recorded auth_methods of oauth2, api_key, and token."
+    },
+    {
+      "field": "credential_access",
+      "faithful": false,
+      "reasoning": "The cited Getting Started guide URL returns a 404 error, so there is no direct evidence supporting the claim that credential access is self_serve_free or that trial stores can be used for development/testing."
+    },
+    {
+      "field": "api_surface",
+      "faithful": true,
+      "reasoning": "The API Reference page clearly documents both REST and GraphQL APIs covering store management and storefront, supporting the recorded value of 'both' with broad breadth."
+    },
+    {
+      "field": "buildability",
+      "faithful": true,
+      "reasoning": "Although there is no separate URL for buildability, the combined evidence from the API reference and authentication docs supports the claim that the platform is buildable today with no main blockers."
+    }
+  ]
+}
