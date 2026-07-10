@@ -95,5 +95,87 @@
     "fields_scored": 100,
     "faithful_rate": 0.83
   },
-  "human_check": null
+  "human_check": {
+    "graded": 100,
+    "agree": 91,
+    "agreement_rate": 0.91,
+    "by_field": {
+      "description": {
+        "agree": 20,
+        "total": 20
+      },
+      "auth_methods": {
+        "agree": 15,
+        "total": 20
+      },
+      "credential_access": {
+        "agree": 16,
+        "total": 20
+      },
+      "api_surface": {
+        "agree": 20,
+        "total": 20
+      },
+      "buildability": {
+        "agree": 20,
+        "total": 20
+      }
+    },
+    "disagreements": [
+      {
+        "slug": "attio",
+        "field": "auth_methods",
+        "value": "[\"api_key\",\"oauth2\"]",
+        "correction": "Missing Basic auth; docs moved"
+      },
+      {
+        "slug": "front",
+        "field": "auth_methods",
+        "value": "[\"api_key\",\"oauth2\"]",
+        "correction": "Docs URL outdated"
+      },
+      {
+        "slug": "discord",
+        "field": "auth_methods",
+        "value": "[\"oauth2\",\"basic\",\"token\"]",
+        "correction": "Basic not primary auth"
+      },
+      {
+        "slug": "aircall",
+        "field": "auth_methods",
+        "value": "[\"oauth2\",\"token\"]",
+        "correction": "Use OAuth2 + Basic auth"
+      },
+      {
+        "slug": "gohighlevel",
+        "field": "credential_access",
+        "value": "unclear",
+        "correction": "Available by plan"
+      },
+      {
+        "slug": "ahrefs",
+        "field": "credential_access",
+        "value": "self_serve_paid_trial",
+        "correction": "Paid access required"
+      },
+      {
+        "slug": "binance",
+        "field": "credential_access",
+        "value": "self_serve_free",
+        "correction": "Depends on verified account"
+      },
+      {
+        "slug": "brex",
+        "field": "auth_methods",
+        "value": "[\"oauth2\",\"api_key\",\"token\"]",
+        "correction": "API key not primary auth :contentReference[oaicite:1]{index=1}"
+      },
+      {
+        "slug": "devin",
+        "field": "credential_access",
+        "value": "self_serve_free",
+        "correction": "Paid subscription required"
+      }
+    ]
+  }
 }
